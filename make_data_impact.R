@@ -70,30 +70,6 @@ save(data_scholar, file="data/data_scholar.Rdata")
 
 data <- data_scholar$scholar_data
 
-
-p1 <- data %>%
-  filter(Year >= 2014) %>%
-  ggplot(aes(x = Year, y = Number)) +
-  geom_bar(aes(alpha=Year), stat="identity") +
-  geom_line(aes(colour = Index), size = 2) +
-  see::theme_modern() +
-  ylab("") +
-  scale_x_continuous(labels = as.character(data$Year), breaks = data$Year) +
-  # scale_x_continuous(breaks = seq(min(stats$Year), max(stats$Year), by = 1)) +
-  scale_color_manual(values = c("#2196F3", "#E91E63")) +
-  facet_wrap(~Index, scales = "free", strip.position = "top") +
-  theme(
-    strip.background = element_blank(),
-    strip.placement = "outside",
-    # strip.text.y = element_blank(),
-    strip.text = element_text(face = "plain", size = 16),
-    axis.title = element_text(face = "plain", size = 16),
-    axis.title.x = element_blank(),
-    legend.position = "none"
-  )
-p1
-
-
 p2 <- data_scholar[["scholar_publications"]]  %>%
   ggplot(aes(x = Publication, y = cites, label = Journal)) +
   geom_bar(aes(fill=Publication), stat="identity") +
