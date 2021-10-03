@@ -13,7 +13,10 @@ data_scholar <- list()
 data_scholar[["date"]] <- format(Sys.time(), "%d %B %Y")
 data_scholar[["scholar_stats"]] <- scholar::get_profile("bg0BZ-QAAAAJ")
 data_scholar[["scholar_history"]] <- scholar::get_citation_history("bg0BZ-QAAAAJ")
-data_scholar[["scholar_publications"]] <-  scholar::get_publications("bg0BZ-QAAAAJ", flush = TRUE)
+data_scholar[["scholar_publications"]] <-  scholar::get_publications("bg0BZ-QAAAAJ", flush = TRUE) |>
+  mutate(author = scholar::get_complete_authors("bg0BZ-QAAAAJ", pubid))
+
+
 data_scholar[["scholar_data"]] <-  data_scholar[["scholar_publications"]]  %>%
   dplyr::filter(year > 1950) %>%
   dplyr::group_by(year) %>%
@@ -33,6 +36,9 @@ data_scholar[["scholar_data"]] <-  data_scholar[["scholar_publications"]]  %>%
                         Year = year) %>%
           mutate(Index = "Citations",
                  Number = cumsum(Number)))
+
+
+
 
 # Publications individual
 data <- data_scholar[["scholar_publications"]] %>%
@@ -65,30 +71,6 @@ save(data_scholar, file="data/data_scholar.Rdata")
 
 
 
-
-# load("data_scholar.Rdata")
-
-data <- data_scholar$scholar_data
-
-p2 <- data_scholar[["scholar_publications"]]  %>%
-  ggplot(aes(x = Publication, y = cites, label = Journal)) +
-  geom_bar(aes(fill=Publication), stat="identity") +
-  # geom_text(angle=90, y=1, hjust = 0) +
-  see::theme_modern() +
-  scale_fill_material_d(palette="rainbow", reverse=TRUE) +
-  ylab("Number of citations") +
-  scale_y_continuous(expand = c(0, 0), limits = c(0, NA)) +
-  theme(
-    # axis.title = element_text(face = "plain"),
-    axis.title.x = element_blank(),
-    axis.text.x = element_text(angle=45, hjust=1),
-    legend.position = "none"
-  )
-p2
-
-
-# p1 / p2
-
 # p2 <- data_scholar$scholar_publications %>%
 #   ggplot(aes(x = cites)) +
 #   geom_histogram(bins = 30) +
@@ -102,5 +84,5 @@ p2
 # p2
 
 # p1 / p2
-ggsave(paste0(path, "img/plot_impact.png"), p1, dpi=450, width=10, height=8)
-ggsave(paste0(path, "img/plot_citations.png"), p2, dpi=450, width=10, height=4)
+# ggsave(paste0(path, "img/plot_impact.png"), p1, dpi=450, width=10, height=8)
+# ggsave(paste0(path, "img/plot_citations.png"), p2, dpi=450, width=10, height=4)

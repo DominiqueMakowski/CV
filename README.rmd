@@ -1,0 +1,43 @@
+---
+output: 
+  github_document:
+    toc: false
+    fig_width: 10.08
+    fig_height: 6
+tags: [r, reports]
+vignette: >
+  \usepackage[utf8]{inputenc}
+  %\VignetteEngine{knitr::rmarkdown}
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  tidy.opts = list(width.cutoff = 80),
+  tidy = TRUE,
+  fig.path = "README-",
+  fig.width = 600,
+  comment = "#>"
+)
+options(knitr.kable.NA = '', digits = 2, width = 80)
+```
+
+# My CV (WIP)
+
+
+<!-- - My CV can be downloaded [**from here**](dominiquemakowski.github.io/cv/). -->
+- More information can be found on [my website](https://dominiquemakowski.github.io).
+
+## Steps 
+
+
+```{r}
+# 1. Update scientific impact data
+source("make_data_impact.R")
+
+# 4. Render CV (and CV-data)
+rmarkdown::render('C:/Dropbox/PERSO/CV/DominiqueMakowski_CV.Rmd',  encoding = 'UTF-8')
+```

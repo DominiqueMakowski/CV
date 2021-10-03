@@ -149,6 +149,8 @@ H-index & Citations\\
 \end{table}
 
 
+\includegraphics[width=1\linewidth]{DominiqueMakowski_CV_files/figure-latex/ScientificImpactFigure-1} 
+
 
 # Publications
 

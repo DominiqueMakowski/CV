@@ -318,19 +318,20 @@ detailed_entries(data, Position, Date, Institution, Where, Activity, .protect = 
 
 ## Scientific Impact
 
-```{r ScientificImpact}
+```{r ScientificImpact, echo = FALSE}
 load("data/data_scholar.Rdata")
+source("https://raw.githubusercontent.com/DominiqueMakowski/CV/main/functions.R")
 
-data.frame(
-  "H.index" = data_scholar$scholar_stats$h_index,
-  "Citations" = data_scholar$scholar_stats$total_cites
-  ) |> 
-  knitr::kable(col.names = c("H-index", "Citations"),
+get_stats(data_scholar) |> 
+  knitr::kable(col.names = c("n Publications", "n 1st-author", "n 2nd-author", "n Last-author", "H-index", "Citations"),
                format = "latex",
                booktabs = TRUE) %>%
   kableExtra::kable_styling(position = "center")
 ```
 
+```{r ScientificImpactFigure, echo = FALSE, fig.height=3, fig.width=10, out.width="100%"}
+plot_impact(data_scholar)
+```
 
 
 # Publications
