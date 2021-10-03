@@ -18,8 +18,8 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   tidy.opts = list(width.cutoff = 80),
   tidy = TRUE,
-  fig.path = "README-",
-  fig.width = 600,
+  fig.path = "img/",
+  fig.width = 10,
   comment = "#>"
 )
 options(knitr.kable.NA = '', digits = 2, width = 80)
@@ -28,11 +28,10 @@ options(knitr.kable.NA = '', digits = 2, width = 80)
 # My CV (WIP)
 
 
-<!-- - My CV can be downloaded [**from here**](dominiquemakowski.github.io/cv/). -->
+- My CV can be downloaded [**from here**](dominiquemakowski.github.io/cv/).
 - More information can be found on [my website](https://dominiquemakowski.github.io).
 
-## Steps 
-
+The steps to pull the data from Google scholar and render the CV are the following:
 
 ```{r}
 # 1. Update scientific impact data
@@ -40,4 +39,15 @@ source("make_data_impact.R")
 
 # 4. Render CV (and CV-data)
 rmarkdown::render('C:/Dropbox/PERSO/CV/DominiqueMakowski_CV.Rmd',  encoding = 'UTF-8')
+```
+
+
+## Steps 
+
+```{r echo = FALSE, fig.height=3, fig.width=10, fig.align="center"}
+load("data/data_scholar.Rdata")
+
+source("https://raw.githubusercontent.com/DominiqueMakowski/CV/main/functions.R")
+
+plot_impact(data_scholar)
 ```
