@@ -1,3 +1,7 @@
+library(dplyr)
+library(ggplot2)
+
+
 # Get dataframe with stats
 get_stats <- function(data_scholar) {
 
@@ -37,7 +41,7 @@ plot_impact <- function(data_scholar) {
   data <- data_scholar$scholar_data
 
   data %>%
-    filter(Year >= 2014) %>%
+    dplyr::filter(Year >= 2014) %>%
     ggplot(aes(x = Year, y = Number)) +
     geom_bar(aes(alpha=Year), stat="identity") +
     geom_line(aes(colour = Index), size = 2) +

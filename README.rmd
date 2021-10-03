@@ -23,6 +23,9 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 options(knitr.kable.NA = '', digits = 2, width = 80)
+
+library(dplyr)
+library(ggplot2)
 ```
 
 # My CV (WIP)
@@ -33,7 +36,7 @@ options(knitr.kable.NA = '', digits = 2, width = 80)
 
 The steps to pull the data from Google scholar and render the CV are the following:
 
-```{r}
+```{r eval=FALSE}
 # 1. Update scientific impact data
 source("make_data_impact.R")
 
