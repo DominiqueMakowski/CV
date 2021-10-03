@@ -47,12 +47,14 @@ data <- tibble(
   where = "Singapore",
   details = c(
     paste(
-      "The",  
-      link("NTU Presidential Postdoc award", "https://www.ntu.edu.sg/research/research-careers/presidential-postdoctoral-fellowship-(ppf)"), 
-      "funded two years of postdoc for my project about the neurocognitive and affective processes underlying the beliefs in fake vs. real material (e.g., fake news, fiction, etc.)."),
+      "The",
+      link("NTU Presidential Postdoc award", "https://www.ntu.edu.sg/research/research-careers/presidential-postdoctoral-fellowship-(ppf)"),
+      "funded two years of postdoc for my project about the neurocognitive and affective processes underlying the beliefs in fake vs. real material (e.g., fake news, fiction, etc.)."
+    ),
     paste(
-      "Reference:", 
-      link("Pr Annabel Chen", "https://www.clinicalbrain.org/author/annabel-chen/"))
+      "Reference:",
+      link("Pr Annabel Chen", "https://www.clinicalbrain.org/author/annabel-chen/")
+    )
   )
 )
 
@@ -71,9 +73,9 @@ data <- rbind(tibble(
   where = "France",
   details = paste0(
     "Thesis: Cognitive Neuropsychology of Implicit Emotion Regulation through Fictional Reappraisal (supervised by ",
-    link("Pr Serge Nicolas", "http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Serge-Nicolas"), 
-    " \\& ", 
-    link("Pr Pascale Piolino", "http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Pascale-Piolino"), 
+    link("Pr Serge Nicolas", "http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Serge-Nicolas"),
+    " \\& ",
+    link("Pr Pascale Piolino", "http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Pascale-Piolino"),
     ")."
   )
 ), tibble(
@@ -101,7 +103,7 @@ data <- rbind(tibble(
   details = NA
 ))
 
-if(short) {
+if (short) {
   data <- data[1:3, ]
   data$details <- NA
 }
@@ -125,7 +127,7 @@ data <- rbind(tibble(
   with = "Collaborative Institutional Training Initiative (ethics and scientific integrity in research)",
   where = "Online",
   details = NA
-),tibble(
+), tibble(
   what = "Academic Teaching Certificate",
   when = "2017",
   with = "Université of Paris (40h training in pedagogy and innovative teaching)",
@@ -146,13 +148,13 @@ data <- rbind(tibble(
   with = "National Guild of Hypnotists (100h - Note that although trained and qualified, I do not endorse hypnosis)",
   where = "Singapore",
   details = NA
-),tibble(
+), tibble(
   what = "Mindfulness based on Compassion and Insight (MBCI)",
   when = "2016",
   with = "Institute for psychiatry, Sainte-Anne Hospital (16h master class)",
   where = "France",
   details = NA
-),tibble(
+), tibble(
   what = "First Aid Certificate",
   when = "2016",
   with = "Université de Paris (16h - level 1)",
@@ -173,21 +175,21 @@ data <- rbind(tibble(
   where = "Online",
   instructor = "Dr Paul Johns",
   details = NA
-),tibble(
+), tibble(
   what = "MRI Connectivity Analysis",
   when = "2015",
   with = "National Institute of Nuclear Sciences \\& Techniques - INSTN (32h)",
   where = "Marseille, France",
   instructor = "Dr Jorge L. Armony",
   details = NA
-),tibble(
+), tibble(
   what = "fMRI : Preprocessing and Analysis",
   when = "2014 - 15",
   with = "Sainte-Anne Hospital (32h)",
   where = "Paris, France",
   instructor = "Dr Sylvain Charron",
   details = NA
-),tibble(
+), tibble(
   what = "Signal Processing Theory and Application for EEG",
   when = "2014",
   with = "École Supérieure de Physique et de Chimie Industrielle - ESPCI (24h)",
@@ -209,21 +211,21 @@ data <- rbind(tibble(
   where = "Online",
   instructor = "Dr Rebecca Hirst",
   details = NA
-),tibble(
+), tibble(
   what = "Scientific Programming with Python and Software Engineering Best Practices",
   when = "2016",
   with = "Telecom ParisTech (16h)",
   where = "Paris, France",
   instructor = "Dr Alexandre Gramfort",
   details = NA
-),tibble(
+), tibble(
   what = "P4N: Python for Neuroscience (and Psychology)",
   when = "2016",
   with = "University of Nottingham (24h)",
   where = "Nottingham, UK",
   instructor = "Dr Jon Peirce",
   details = NA
-),tibble(
+), tibble(
   what = "Machine Learning and Brain-to-Computer Interfaces",
   when = "2014",
   with = "École Supérieure de Physique et de Chimie Industrielle - ESPCI (16h)",
@@ -251,54 +253,6 @@ detailed_entries(data, with, when, what, where, why = details, .protect = FALSE)
 ```
 
 
-# Experience
-
-## Research
-
-```{r ExperienceResearch}
-data <- rbind(tibble(
-  Position = "Research Fellow",
-  Date = "2019 - 20",
-  Institution = "Clinical Brain Lab, Nanyang Technological University (NTU)",
-  Where = "Singapore",
-  Activity = paste0(
-    "First postdoc position, working on a project funded by the ministry of defence about the neurocognitive correlates of deception. Responsible for studies design and completion, data analysis, publications and co-supervision of one PhD student, two research assistants and several graduate and undergraduate students (reference: ", 
-    link("Pr Annabel Chen", "https://www.clinicalbrain.org/author/annabel-chen/"),
-    ")."
-  )
-), tibble(
-  Position = "Internship",
-  Date = "2012",
-  Institution = "Developmental Psychology Lab (LaPsyDé), Université de Paris",
-  Where = "France",
-  Activity = paste0(
-    "Data collection for a study ", 
-    link("(Borst, 2016)", "http://psycnet.apa.org/journals/emo/13/5/811/"),
-    " on emotions and mental rotation (reference: ", link("Pr Grégoire Borst", "https://www.lapsyde.com/gregoire-borst"),
-    ")."
-  )
-), tibble(
-  Position = "Internship",
-  Date = "2011",
-  Institution = "Memory \\& Cognition Lab (LMC), Université de Paris",
-  Where = "France",
-  Activity = paste0(
-    "Experiment creation and data collection for a study on memory, salience and bizarreness effect (reference: ",
-    link("Pr Serge Nicolas", "http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Serge-Nicolas"),
-    ")."
-  )
-))
-
-if(short) {
-  data <- data[1:1, ]
-}
-
-# Save for re-useability
-write.csv(data, "data/experience_research.csv", row.names = FALSE)
-
-detailed_entries(data, Position, Date, Institution, Where, Activity, .protect = FALSE)
-```
-
 
 
 # Skills
@@ -310,32 +264,266 @@ detailed_entries(data, Position, Date, Institution, Where, Activity, .protect = 
 - **English**: Fluent
 - **Italian**: B1 level (currently learning)
 
+
+## Neuroimaging
+
+## Programming
+
+Some of my main software include ... 
+
+## Open Science and Reproducibility
+
+Involved in open-science. 
+
+Active in open-software communities to help users to answer technical and methodological questions.
+
+
+
 # Research Track Record
 
-## Awards
+## Grants and Awards
+
+
+```{r GrantsAwards}
+data <- rbind(tibble(
+  Name = link("Singapore National Research Foundation's Intra-CREATE Grant (co-PI)", "https://researchgrant.gov.sg/Pages/GrantCallDetail.aspx?AXID=NRF2021-ITS008&CompanyCode=nrf", color = "333333"),
+  Details = link("A Neuroscientific investigation of the Interaction between Crowdedness and Environment typology (NICE)", "https://fcl.ethz.ch/research/research-projects/NICE.html", color = "5D5D5D"),
+  Date = "2021 - 22",
+  Amount = "\\$249,730",
+  Activity = NA
+),tibble(
+  Name = link("NTU Presidential Postdoctoral Fellowship", "https://www.ntu.edu.sg/research/research-careers/presidential-postdoctoral-fellowship-(ppf)", color = "333333"),
+  Details = "'That's Fake News': Modulating the Neurocognitive Processes Underlying the Belief in Deceptive Information",
+  Date = "2020 - 22",
+  Amount = "\\$360,000",
+  Activity = NA
+),tibble(
+  Name = link("Best Article Award (Psychonomic Society)", "https://www.psychonomic.org/page/2020BestArticleAwards", color = "333333") ,
+  Details = paste0("Obtained for ", link("Makowski et al. (2019)", "https://dominiquemakowski.github.io/publication/makowski2019phenomenal/")),
+  Date = "2020",
+  Amount = "\\$1,000",
+  Activity = NA
+),tibble(
+  Name = link("Commendation (Society for the Improvement of Psychological Science - SIPS)", "https://improvingpsych.org/mission/awards/", color = "333333") ,
+  Details = paste0("Obtained for the bayestestR R package ", link("(Makowski et al., 2019)", "https://joss.theoj.org/papers/10.21105/joss.01541")),
+  Date = "2020",
+  Amount = "N/A",
+  Activity = NA
+),tibble(
+  Name = link("Ministerial PhD scholarship", "https://improvingpsych.org/mission/awards/", color = "333333") ,
+  Details = "Three years of PhD fully funded by the French Ministry of Research",
+  Date = "2014 - 17",
+  Amount = "€80,000",
+  Activity = NA
+))
+
+detailed_entries(data, Details, Date, Name, Amount, Activity, .protect = FALSE)
+```
+
 
 ## Editorial Responsibilities
 
+
+```{r EditorialResponsabilities}
+data <- rbind(tibble(
+  Position = "Associate Editor",
+  Where = link("Frontiers in Psychology: \\textit{Quantitative Psychology and Measurement}", "https://www.frontiersin.org/journals/all/sections/quantitative-psychology-and-measurement", color = "333333"),
+  Date = "2020 - present",
+  Activity = NA
+),tibble(
+  Position = "Regular Reviewer",
+  Where = link("Journal of Open Source Software", "https://joss.theoj.org/", color = "333333"),
+  Date = "2018 - present",
+  Activity = NA
+),tibble(
+  Position = "Reviewer",
+  Where = "\\color[HTML]{333333}{Biological Psychiatry, Personality and Individual Differences, Scientific Reports, Acta Psychologica, ...}",
+  Date = "2017 - present",
+  Activity = NA
+))
+
+brief_entries(data, Where, Date, Position, .protect = FALSE)
+# detailed_entries(data, Where, Date, Position, Amount, Activity, .protect = FALSE)
+```
+
 ## Scientific Impact
 
-```{r ScientificImpact, echo = FALSE}
+
+```{r ScientificImpactFigure, echo = FALSE, fig.height=3, fig.width=10, out.width="100%"}
 load("data/data_scholar.Rdata")
 source("https://raw.githubusercontent.com/DominiqueMakowski/CV/main/functions.R")
 
-get_stats(data_scholar) |> 
-  knitr::kable(col.names = c("n Publications", "n 1st-author", "n 2nd-author", "n Last-author", "H-index", "Citations"),
-               format = "latex",
-               booktabs = TRUE) %>%
-  kableExtra::kable_styling(position = "center")
-```
-
-```{r ScientificImpactFigure, echo = FALSE, fig.height=3, fig.width=10, out.width="100%"}
 plot_impact(data_scholar)
 ```
 
+
+```{r ScientificImpact, echo = FALSE}
+get_stats(data_scholar) |>
+  knitr::kable(
+    col.names = c(
+      "\\textit{n}-Publications \\textit{(total)}",
+      "\\textit{n}-1\\textsuperscript{st} author",
+      "\\textit{n}-2\\textsuperscript{nd} author",
+      "\\textit{n}-Senior author",
+      "H-index",
+      "Citations \\textit{(total)}"
+    ),
+    format = "latex",
+    booktabs = TRUE,
+    escape = FALSE
+  ) %>%
+  kableExtra::kable_styling(position = "center", font_size = 8, latex_options = "hold_position")
+```
+
+
+# Teaching Record
+
+
+## Academic
+
+I have given academic lectures (total hours since 2014: **400**) on the following topics:
+
+- **Neuropsychology** (*192 hours; 2nd year, 3rd year and master level*)
+    - Clinical Neuropsychology \scriptsize(Neuropsychological syndromes; Neuropsychological examination and diagnostic; Cognitive rehabilitation; Clinical practice supervision; Neuropsychology in psychiatry)\normalsize
+    - Cognitive Neuroscience \scriptsize(Neuroanatomy; Emotion Regulation; Mindfulness; Memory; Neuroimaging)\normalsize
+- **Differential Psychology** (*144 hours; 1st year level*)
+    - Hands-on Lectures \scriptsize(Experimental Methodology; Scientific Reasoning; Psychometric properties of tests and questionnaires; Introductory Statistics)\normalsize
+    - Theory \scriptsize(Intelligence; Personality; Creativity)\normalsize
+- **Cognitive Psychology** (*48 hours; 3rd year level*):
+    - Working memory
+    - Mental imagery and categorisation
+- **Other** (*16 hours*): Internet; Research Ethics; Digital Rights
+
+
+## Technical
+
+I have performed several technical trainings and courses on topics like:
+
+- Statistics using R
+- Experiment creation using Python
+- How to acquire electrophysiological (EDA, ECG, EMG) signal using *BIOPAC* and *AcqKnowledge®*
+- How to ask and handle sensitive personal information about patients or participants
+
+
+# Experience
+
+## Research
+
+```{r ExperienceResearch}
+data <- rbind(tibble(
+  Position = "Research Fellow",
+  Date = "2019 - 20",
+  Institution = "Clinical Brain Lab, Nanyang Technological University (NTU)",
+  Where = "Singapore",
+  Activity = paste0(
+    "First postdoc position, working on a project funded by the ministry of defence about the neurocognitive correlates of deception. Responsible for studies design and completion, data analysis, publications and co-supervision of one PhD student, two research assistants and several graduate and undergraduate students (reference: ",
+    link("Pr Annabel Chen", "https://www.clinicalbrain.org/author/annabel-chen/"),
+    ")."
+  )
+), tibble(
+  Position = "Research Assistant",
+  Date = "2012",
+  Institution = "Developmental Psychology Lab (LaPsyDé), Université de Paris",
+  Where = "Paris, France",
+  Activity = paste0(
+    "Data collection for a study ",
+    link("(Borst, 2016)", "http://psycnet.apa.org/journals/emo/13/5/811/"),
+    " on emotions and mental rotation (reference: ", link("Pr Grégoire Borst", "https://www.lapsyde.com/gregoire-borst"),
+    ")."
+  )
+), tibble(
+  Position = "Research Assistant",
+  Date = "2011",
+  Institution = "Memory \\& Cognition Lab (LMC), Université de Paris",
+  Where = "Paris, France",
+  Activity = paste0(
+    "Experiment creation and data collection for a study on memory, salience and bizarreness effect (reference: ",
+    link("Pr Serge Nicolas", "http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Serge-Nicolas"),
+    ")."
+  )
+))
+
+if (short) {
+  data <- data[1:1, ]
+}
+
+# Save for re-useability
+write.csv(data, "data/experience_research.csv", row.names = FALSE)
+
+detailed_entries(data, Institution, Date, Position, Where, Activity, .protect = FALSE)
+```
+
+
+## Clinical
+
+```{r ExperienceClinical}
+data <- rbind(tibble(
+  Position = "Assistant Neuropsychologist",
+  Date = "2013 - 14",
+  Institution = "Department of adult psychiatry, Pitié-Salpêtrière Hospital",
+  Where = "Paris, France",
+  Activity = "Neuropsychology internship (512 h) under Dr Séverine Hatif. Assessment and diagnostic of psychiatric or neurological illnesses among adults, as well as development and application of cognitive rehabilitation programs."
+),tibble(
+  Position = "Assistant Neuropsychologist",
+  Date = "2012 - 13",
+  Institution = "Department of geriatric psychiatry, Sainte-Anne Hospital",
+  Where = "Paris, France",
+  Activity = "Neuropsychology internship (304 h) under Emmanuel Guiliano. Assessment and diagnostic of psychiatric and neurological illnesses among an elderly population."
+),tibble(
+  Position = "Assistant Neuropsychologist",
+  Date = "2012",
+  Institution = "Department of gerontology, La Porte Verte Hospital",
+  Where = "Versailles, France",
+  Activity = "Neuropsychology internship (96 h) under Sophie Fleury. Observation of assessment and diagnostic of memory related deficits such as neurodegenerative diseases, somatic ageing-related illnesses or depression."
+))
+
+
+# Save for re-useability
+write.csv(data, "data/experience_clinical.csv", row.names = FALSE)
+
+detailed_entries(data, Institution, Date, Position, Where, Activity, .protect = FALSE)
+```
+
+## Teaching
+
+
+```{r ExperienceTeaching}
+data <- rbind(tibble(
+  Position = "Lecturer (Clinical Neuropsychology)",
+  Date = "2017 - 18",
+  Institution = "Université de Paris (under Pr Isabelle Jambaqué)",
+  Where = "Paris, France",
+  Activity = "Courses (192 h; bachelor \\& master students): Neurology and psychiatry (main neurodegenerative, neurological and psychiatric disorders), assessment (examination, diagnostic, psychometry), rehabilitation and psychotherapy (CBT, mindfulness-based therapies, cognitive rehabilitation, practice supervision), general neuroscience and psychology (neuroanatomy, emotion regulation...)."
+),tibble(
+  Position = "Teaching Assistant (Differential Cognitive Psychology)",
+  Date = "2015 - 17",
+  Institution = "Université de Paris (under Dr Christophe Mouchiroud)",
+  Where = "Paris, France",
+  Activity = "Courses (144 h; 1st \\& 2nd year students): Experimental methodology (assessment and related problems, scientific reasoning, psychometric properties of tests and questionnaires, statistics...) and introduction to concepts such as intelligence, personality and creativity."
+),tibble(
+  Position = "Teaching Assistant (Cognitive Psychology)",
+  Date = "2014 - 16",
+  Institution = "Université de Paris",
+  Where = "Versailles, France",
+  Activity = c("Courses: Neurology and psychiatry (main neurodegenerative, neurological and psychiatric disorders), assessment (examination, diagnostic, psychometry), rehabilitation and psychotherapy (CBT, mindfulness-based therapies, cognitive rehabilitation, practice supervision), general neuroscience and psychology (neuroanatomy, emotion regulation...).",
+               "Supervisor: Pr Isabelle Jambaqué")
+))
+
+
+# Save for re-useability
+write.csv(data, "data/experience_clinical.csv", row.names = FALSE)
+
+detailed_entries(data, Institution, Date, Position, Where, Activity, .protect = FALSE)
+```
 
 # Publications
 
 ## Reality Manipulation
 
 
+# References
+
+- **Prof. Annabel Chen** (Postdoc supervisor): AnnabelChen@ntu.edu.sg
+- **Dr. Marco Sperduti** (PhD mentor): marco.sperduti@parisdescartes.fr
+- **Prof. Pascale Piolino** (PhD cosupervisor): pascale.piolino@parisdescartes.fr
+- **Prof. Serge Nicolas** (PhD cosupervisor): serge.nicolas@parisdescartes.fr
