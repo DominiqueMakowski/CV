@@ -448,7 +448,7 @@ if (short) {
 }
 
 # Save for re-useability
-write.csv(data, "data/experience_research.csv", row.names = FALSE)
+write.csv(data, "data/experience_research.csv", row.names = FALSE, fileEncoding = "UTF-8")
 
 detailed_entries(data, Institution, Date, Position, Where, Activity, .protect = FALSE)
 ```
@@ -479,7 +479,7 @@ data <- rbind(tibble(
 
 
 # Save for re-useability
-write.csv(data, "data/experience_clinical.csv", row.names = FALSE)
+write.csv(data, "data/experience_clinical.csv", row.names = FALSE, fileEncoding = "UTF-8")
 
 detailed_entries(data, Institution, Date, Position, Where, Activity, .protect = FALSE)
 ```
@@ -511,7 +511,7 @@ data <- rbind(tibble(
 
 
 # Save for re-useability
-write.csv(data, "data/experience_clinical.csv", row.names = FALSE)
+write.csv(data, "data/experience_clinical.csv", row.names = FALSE, fileEncoding = "UTF-8")
 
 detailed_entries(data, Institution, Date, Position, Where, Activity, .protect = FALSE)
 ```
