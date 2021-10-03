@@ -20,7 +20,8 @@ knitr::opts_chunk$set(
   tidy = TRUE,
   fig.path = "img/",
   fig.width = 10,
-  comment = "#>"
+  comment = "#>",
+  dpi = 300
 )
 options(knitr.kable.NA = '', digits = 2, width = 80)
 
@@ -45,12 +46,12 @@ rmarkdown::render('C:/Dropbox/PERSO/CV/DominiqueMakowski_CV.Rmd',  encoding = 'U
 ```
 
 
-## Steps 
+## Figures 
 
-```{r echo = FALSE, fig.height=3, fig.width=10, fig.align="center"}
+```{r echo = FALSE, fig.height=6, fig.width=10, fig.align="center"}
 load("data/data_scholar.Rdata")
 
-source("https://raw.githubusercontent.com/DominiqueMakowski/CV/main/functions.R")
+source("functions.R")
 
 plot_impact(data_scholar)
 ```
