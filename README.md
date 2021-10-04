@@ -1,5 +1,5 @@
 
-# My CV (WIP)
+# My CV
 
 -   My CV can be downloaded [**from
     here**](dominiquemakowski.github.io/cv/).

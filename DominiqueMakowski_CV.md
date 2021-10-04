@@ -41,14 +41,14 @@ csl: C:/Users/domma/Documents/R/win-library/4.1/vitae/vitae.csl
 
 \begin{cventries}
 	\cventry{Université de Paris}{Doctor of Philosophy (PhD) - Psychology}{France}{2014 - 18}{\begin{cvitems}
-\item Thesis: Cognitive Neuropsychology of Implicit Emotion Regulation through Fictional Reappraisal (supervised by \href{http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Serge-Nicolas}{\color[HTML]{1976D2}{Pr Serge Nicolas}} \& \href{http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Pascale-Piolino}{\color[HTML]{1976D2}{Pr Pascale Piolino}}).
+\item Thesis: Cognitive Neuropsychology of Implicit Emotion Regulation through Fictional Reappraisal (supervised by \href{http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Serge-Nicolas}{\color[HTML]{1976D2}{Pr Serge Nicolas}} \& \href{http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Pascale-Piolino}{\color[HTML]{1976D2}{Pr Pascale Piolino}})
 \end{cvitems}}
 	\cventry{French Association for Cognitive Behavioural Therapy (AFTCC)}{Certified Psychotherapist - Cognitive Behavioural Therapy (CBT)}{France}{2014 - 17}{\begin{cvitems}
 \item Thesis: Cognitive Behavioural Therapy for two Patients: One suffering from Motivation Disorder associated with Dysthymia and the other from Social Anxiety (supervised by Sophie Kindynis)
 \end{cvitems}}
 	\cventry{Université de Paris}{Master of Science (MSc) - Neuropsychology and Cognitive Psychology}{France}{2012 - 14}{\begin{cvitems}
-\item Second year thesis: How the Study of Emotions in Schizophrenia enlight the Paradox of Fiction (supervised by \href{http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Pascale-Piolino}{\color[HTML]{1976D2}{Pr Pascale Piolino}}).
-\item First year thesis: The Cognitive Development of the Aesthetic Judgement in Children and Adults (supervised \href{https://www.researchgate.net/profile/Sandrine-Rossi}{\color[HTML]{1976D2}{Pr Sandrine Rossi}}).
+\item Second year thesis: How the Study of Emotions in Schizophrenia enlight the Paradox of Fiction (supervised by \href{http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Pascale-Piolino}{\color[HTML]{1976D2}{Pr Pascale Piolino}})
+\item First year thesis: The Cognitive Development of the Aesthetic Judgement in Children and Adults (supervised \href{https://www.researchgate.net/profile/Sandrine-Rossi}{\color[HTML]{1976D2}{Pr Sandrine Rossi}})
 \end{cvitems}}
 	\cventry{Université de Paris}{Bachelor of Arts (BA) - Psychology}{France}{2009 - 12}{}\vspace{-4.0mm}
 \end{cventries}
@@ -131,7 +131,7 @@ My PhD, on the effect of reality beliefs on emotion, attempted at integrate my t
 
 I have developed strong technical expertise with several tools (EEG, bodily signals, Virtual Reality) and methods. In particular, I employ advanced statistical procedures (Bayesian framework, predictive and structural modelling, machine/deep learning) to address the scientific challenges that I encounter. In parallel, I develop open-source software, such as the \href{https://github.com/easystats/easystats}{\color[HTML]{1976D2}{\textbf{easystats}}} collection of R packages; \href{https://github.com/neuropsychology/NeuroKit}{\color[HTML]{1976D2}{\textbf{NeuroKit}}}, a Python package for neurophysiological signal processing; \href{https://github.com/realitybending/Pyllusion}{\color[HTML]{1976D2}{\textbf{Pyllusion}}}, a framework to generate visual illusions; or \href{https://github.com/neuropsychology/Neuropsydia.py}{\color[HTML]{1976D2}{\textbf{Neuropsydia}}}, a software to create experiments. 
 
-Initially created to increase the efficiency and quality of my own research, some of these tools have become quite popular and are actively used by the scientific community (e.g., the *easystats* packages have been downloaded more than 5 million times since their creation about 3 years ago, and *NeuroKit* has become the most popular Python package for multimodal physiology). 
+Initially created to increase the efficiency and quality of my own research, some of these tools have become quite popular and are actively used by the scientific community (e.g., the *easystats* packages have been downloaded more than 5 million times since their creation about 3 years ago, and *NeuroKit* has become one of the most popular toolbox for multimodal physiology). 
 
 ## Open Science
 
@@ -170,8 +170,8 @@ I fully endorse to the highest standards of open science, by sharing data and re
 
 
 \begin{cventries}
-	\cventry{\href{https://fcl.ethz.ch/research/research-projects/NICE.html}{\color[HTML]{5D5D5D}{A Neuroscientific investigation of the Interaction between Crowdedness and Environment typology (NICE)}}}{\href{https://researchgrant.gov.sg/Pages/GrantCallDetail.aspx?AXID=NRF2021-ITS008&CompanyCode=nrf}{\color[HTML]{333333}{Singapore National Research Foundation's Intra-CREATE Grant (co-PI)}}}{\$249,730}{2021 - 22}{}\vspace{-4.0mm}
-	\cventry{'That's Fake News': Modulating the Neurocognitive Processes Underlying the Belief in Deceptive Information}{\href{https://www.ntu.edu.sg/research/research-careers/presidential-postdoctoral-fellowship-(ppf)}{\color[HTML]{333333}{NTU Presidential Postdoctoral Fellowship}}}{\$360,000}{2020 - 22}{}\vspace{-4.0mm}
+	\cventry{\href{https://fcl.ethz.ch/research/research-projects/NICE.html}{\color[HTML]{5D5D5D}{A Neuroscientific investigation of the Interaction between Crowdedness and Environment typology (NICE)}}}{co-PI: \href{https://researchgrant.gov.sg/Pages/GrantCallDetail.aspx?AXID=NRF2021-ITS008&CompanyCode=nrf}{\color[HTML]{333333}{Singapore National Research Foundation's Intra-CREATE Grant}}}{\$249,730}{2021 - 22}{}\vspace{-4.0mm}
+	\cventry{'That's Fake News': Modulating the Neurocognitive Processes Underlying the Belief in Deceptive Information}{PI: \href{https://www.ntu.edu.sg/research/research-careers/presidential-postdoctoral-fellowship-(ppf)}{\color[HTML]{333333}{NTU Presidential Postdoctoral Fellowship}}}{\$360,000}{2020 - 22}{}\vspace{-4.0mm}
 	\cventry{Obtained for \href{https://dominiquemakowski.github.io/publication/makowski2019phenomenal/}{\color[HTML]{1976D2}{Makowski et al. (2019)}}}{\href{https://www.psychonomic.org/page/2020BestArticleAwards}{\color[HTML]{333333}{Best Article Award (Psychonomic Society)}}}{\$1,000}{2020}{}\vspace{-4.0mm}
 	\cventry{Obtained for the bayestestR R package \href{https://joss.theoj.org/papers/10.21105/joss.01541}{\color[HTML]{1976D2}{(Makowski et al., 2019)}}}{\href{https://improvingpsych.org/mission/awards/}{\color[HTML]{333333}{Commendation (Society for the Improvement of Psychological Science - SIPS)}}}{N/A}{2020}{}\vspace{-4.0mm}
 	\cventry{Three years of PhD fully funded by the French Ministry of Research}{\href{https://improvingpsych.org/mission/awards/}{\color[HTML]{333333}{Ministerial PhD scholarship}}}{€80,000}{2014 - 17}{}\vspace{-4.0mm}
@@ -224,7 +224,7 @@ I have given academic lectures (total hours since 2014: **400**) on the followin
 
 \small
 
-I have performed several technical trainings and courses on topics like:
+I have performed several technical courses on topics like:
 
 - Statistics using R
 - Experiment creation using Python
@@ -337,7 +337,7 @@ Lüdecke, D., Patil, I., Ben-Shachar, M., Wiernik, B., Waggoner, P., & **Makowsk
 
 Lüdecke, D., Ben-Shachar, M., Patil, I., Waggoner, P., & **Makowski, D.** (2021). [performance: An R Package for Assessment, Comparison and Testing of Statistical Models](https://joss.theoj.org/papers/10.21105/joss.03139). *Journal of Open Source Software, 6*(60), 3139.
 
-Ben-Shachar, M. S., Lüdecke, D., **Makowski, D.** (2020). [effectsize: Estimation of Effect Size Indices and Standardized Parameters](https://joss.theoj.org/papers/10.21105/joss.02815). *Journal of Open Source Software, 5*(56), 2815.
+Ben-Shachar, M. S., Lüdecke, D., & **Makowski, D.** (2020). [effectsize: Estimation of Effect Size Indices and Standardized Parameters](https://joss.theoj.org/papers/10.21105/joss.02815). *Journal of Open Source Software, 5*(56), 2815.
 
 Lüdecke, D., Ben-Shachar, M. S., Patil, I., & **Makowski, D.** (2020). [parameters: Extracting, Computing and Exploring the Parameters of Statistical Models using R](https://joss.theoj.org/papers/10.21105/joss.02445). *Journal of Open Source Software, 5*(53), 2445.
 
@@ -369,7 +369,7 @@ Girardeau, J. C., Blondé, P., **Makowski D.**, Abram, M., Piolino, P., & Sperdu
 
 **Makowski, D.**, Dutriaux, L. (2017). [Neuropsydia.py: A Python Module for Creating Experiments, Tasks and Questionnaires](https://joss.theoj.org/papers/10.21105/joss.00259), *Journal of Open Source Software, 2*(19), 259.
 
-Sperduti, M., Armougum, A., **Makowski, D.** & Piolino, P. (2017). [Interaction between attentional systems and episodic memory encoding: the impact of conflict on binding of information](https://dominiquemakowski.github.io/publication/sperduti2017interaction/sperduti2017interaction.pdf), *Experimental Brain Research*, 235(12), 3553-3560.
+Sperduti, M., Armougum, A., **Makowski, D.**, & Piolino, P. (2017). [Interaction between attentional systems and episodic memory encoding: the impact of conflict on binding of information](https://dominiquemakowski.github.io/publication/sperduti2017interaction/sperduti2017interaction.pdf), *Experimental Brain Research*, 235(12), 3553-3560.
 
 Nicolas, S., & **Makowski, D**. (2017). [Centenaire Ribot (I). La réception de l'oeuvre de Théodule Ribot chez l'éditeur Ladrange (1870-1873)](https://dominiquemakowski.github.io/publication/nicolas2017centenaire/nicolas2017centenaire.pdf). *Bulletin de Psychologie*, 70(3), 163-178.
 

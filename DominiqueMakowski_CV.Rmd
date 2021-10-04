@@ -76,7 +76,7 @@ data <- rbind(tibble(
     link("Pr Serge Nicolas", "http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Serge-Nicolas"),
     " \\& ",
     link("Pr Pascale Piolino", "http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Pascale-Piolino"),
-    ")."
+    ")"
   )
 ), tibble(
   what = "Certified Psychotherapist - Cognitive Behavioural Therapy (CBT)",
@@ -92,8 +92,8 @@ data <- rbind(tibble(
   with = "Université de Paris",
   where = "France",
   details = c(
-    paste0("Second year thesis: How the Study of Emotions in Schizophrenia enlight the Paradox of Fiction (supervised by ", link("Pr Pascale Piolino", "http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Pascale-Piolino"), ")."),
-    paste0("First year thesis: The Cognitive Development of the Aesthetic Judgement in Children and Adults (supervised ", link("Pr Sandrine Rossi", "https://www.researchgate.net/profile/Sandrine-Rossi"), ").")
+    paste0("Second year thesis: How the Study of Emotions in Schizophrenia enlight the Paradox of Fiction (supervised by ", link("Pr Pascale Piolino", "http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Pascale-Piolino"), ")"),
+    paste0("First year thesis: The Cognitive Development of the Aesthetic Judgement in Children and Adults (supervised ", link("Pr Sandrine Rossi", "https://www.researchgate.net/profile/Sandrine-Rossi"), ")")
   )
 ), tibble(
   what = "Bachelor of Arts (BA) - Psychology",
@@ -147,11 +147,13 @@ data <- rbind(tibble(
   when = "2019",
   with = "National Guild of Hypnotists (100h - Note that although trained and qualified, I do not endorse hypnosis)",
   where = "Singapore",
+  instructor = "Fauziah Shah",
   details = NA
 ), tibble(
   what = "Mindfulness based on Compassion and Insight (MBCI)",
   when = "2016",
   with = "Institute for psychiatry, Sainte-Anne Hospital (16h master class)",
+  instructor = "Pr Pascal Delamillieure",
   where = "France",
   details = NA
 ), tibble(
@@ -159,6 +161,7 @@ data <- rbind(tibble(
   when = "2016",
   with = "Université de Paris (16h - level 1)",
   where = "France",
+  instructor = NA,
   details = NA
 ))
 
@@ -282,7 +285,7 @@ My PhD, on the effect of reality beliefs on emotion, attempted at integrate my t
 
 I have developed strong technical expertise with several tools (EEG, bodily signals, Virtual Reality) and methods. In particular, I employ advanced statistical procedures (Bayesian framework, predictive and structural modelling, machine/deep learning) to address the scientific challenges that I encounter. In parallel, I develop open-source software, such as the `r link("\\textbf{easystats}", "https://github.com/easystats/easystats")` collection of R packages; `r link("\\textbf{NeuroKit}", "https://github.com/neuropsychology/NeuroKit")`, a Python package for neurophysiological signal processing; `r link("\\textbf{Pyllusion}", "https://github.com/realitybending/Pyllusion")`, a framework to generate visual illusions; or `r link("\\textbf{Neuropsydia}", "https://github.com/neuropsychology/Neuropsydia.py")`, a software to create experiments. 
 
-Initially created to increase the efficiency and quality of my own research, some of these tools have become quite popular and are actively used by the scientific community (e.g., the *easystats* packages have been downloaded more than 5 million times since their creation about 3 years ago, and *NeuroKit* has become the most popular Python package for multimodal physiology). 
+Initially created to increase the efficiency and quality of my own research, some of these tools have become quite popular and are actively used by the scientific community (e.g., the *easystats* packages have been downloaded more than 5 million times since their creation about 3 years ago, and *NeuroKit* has become one of the most popular toolbox for multimodal physiology). 
 
 ## Open Science
 
@@ -331,13 +334,13 @@ get_stats(data_scholar) |>
 
 ```{r GrantsAwards}
 data <- rbind(tibble(
-  Name = link("Singapore National Research Foundation's Intra-CREATE Grant (co-PI)", "https://researchgrant.gov.sg/Pages/GrantCallDetail.aspx?AXID=NRF2021-ITS008&CompanyCode=nrf", color = "333333"),
+  Name = paste0("co-PI: ", link("Singapore National Research Foundation's Intra-CREATE Grant", "https://researchgrant.gov.sg/Pages/GrantCallDetail.aspx?AXID=NRF2021-ITS008&CompanyCode=nrf", color = "333333")),
   Details = link("A Neuroscientific investigation of the Interaction between Crowdedness and Environment typology (NICE)", "https://fcl.ethz.ch/research/research-projects/NICE.html", color = "5D5D5D"),
   Date = "2021 - 22",
   Amount = "\\$249,730",
   Activity = NA
 ),tibble(
-  Name = link("NTU Presidential Postdoctoral Fellowship", "https://www.ntu.edu.sg/research/research-careers/presidential-postdoctoral-fellowship-(ppf)", color = "333333"),
+  Name = paste0("PI: ", link("NTU Presidential Postdoctoral Fellowship", "https://www.ntu.edu.sg/research/research-careers/presidential-postdoctoral-fellowship-(ppf)", color = "333333")),
   Details = "'That's Fake News': Modulating the Neurocognitive Processes Underlying the Belief in Deceptive Information",
   Date = "2020 - 22",
   Amount = "\\$360,000",
@@ -449,7 +452,7 @@ I have given academic lectures (total hours since 2014: **400**) on the followin
 
 \small
 
-I have performed several technical trainings and courses on topics like:
+I have performed several technical courses on topics like:
 
 - Statistics using R
 - Experiment creation using Python
@@ -629,7 +632,7 @@ Lüdecke, D., Patil, I., Ben-Shachar, M., Wiernik, B., Waggoner, P., & **Makowsk
 
 Lüdecke, D., Ben-Shachar, M., Patil, I., Waggoner, P., & **Makowski, D.** (2021). [performance: An R Package for Assessment, Comparison and Testing of Statistical Models](https://joss.theoj.org/papers/10.21105/joss.03139). *Journal of Open Source Software, 6*(60), 3139.
 
-Ben-Shachar, M. S., Lüdecke, D., **Makowski, D.** (2020). [effectsize: Estimation of Effect Size Indices and Standardized Parameters](https://joss.theoj.org/papers/10.21105/joss.02815). *Journal of Open Source Software, 5*(56), 2815.
+Ben-Shachar, M. S., Lüdecke, D., & **Makowski, D.** (2020). [effectsize: Estimation of Effect Size Indices and Standardized Parameters](https://joss.theoj.org/papers/10.21105/joss.02815). *Journal of Open Source Software, 5*(56), 2815.
 
 Lüdecke, D., Ben-Shachar, M. S., Patil, I., & **Makowski, D.** (2020). [parameters: Extracting, Computing and Exploring the Parameters of Statistical Models using R](https://joss.theoj.org/papers/10.21105/joss.02445). *Journal of Open Source Software, 5*(53), 2445.
 
@@ -661,7 +664,7 @@ Girardeau, J. C., Blondé, P., **Makowski D.**, Abram, M., Piolino, P., & Sperdu
 
 **Makowski, D.**, Dutriaux, L. (2017). [Neuropsydia.py: A Python Module for Creating Experiments, Tasks and Questionnaires](https://joss.theoj.org/papers/10.21105/joss.00259), *Journal of Open Source Software, 2*(19), 259.
 
-Sperduti, M., Armougum, A., **Makowski, D.** & Piolino, P. (2017). [Interaction between attentional systems and episodic memory encoding: the impact of conflict on binding of information](https://dominiquemakowski.github.io/publication/sperduti2017interaction/sperduti2017interaction.pdf), *Experimental Brain Research*, 235(12), 3553-3560.
+Sperduti, M., Armougum, A., **Makowski, D.**, & Piolino, P. (2017). [Interaction between attentional systems and episodic memory encoding: the impact of conflict on binding of information](https://dominiquemakowski.github.io/publication/sperduti2017interaction/sperduti2017interaction.pdf), *Experimental Brain Research*, 235(12), 3553-3560.
 
 Nicolas, S., & **Makowski, D**. (2017). [Centenaire Ribot (I). La réception de l'oeuvre de Théodule Ribot chez l'éditeur Ladrange (1870-1873)](https://dominiquemakowski.github.io/publication/nicolas2017centenaire/nicolas2017centenaire.pdf). *Bulletin de Psychologie*, 70(3), 163-178.
 
