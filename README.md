@@ -2,9 +2,13 @@
 # My CV
 
 -   My CV can be downloaded [**from
-    here**](dominiquemakowski.github.io/cv/).
--   More information can be found on [my
-    website](https://dominiquemakowski.github.io).
+    here**](https://dominiquemakowski.github.io/CV/).
+-   More information can be found on [**my
+    website**](https://dominiquemakowski.github.io).
+
+[![](img/preview.png)](https://dominiquemakowski.github.io/CV/)
+
+## Steps
 
 The steps to pull the data from Google scholar and render the CV are the
 following:
