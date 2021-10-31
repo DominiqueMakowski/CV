@@ -93,7 +93,7 @@ data <- rbind(tibble(
   where = "France",
   details = c(
     paste0("Second year thesis: How the Study of Emotions in Schizophrenia enlight the Paradox of Fiction (supervised by ", link("Pr Pascale Piolino", "http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Pascale-Piolino"), ")"),
-    paste0("First year thesis: The Cognitive Development of the Aesthetic Judgement in Children and Adults (supervised ", link("Pr Sandrine Rossi", "https://www.researchgate.net/profile/Sandrine-Rossi"), ")")
+    paste0("First year thesis: The Cognitive Development of the Aesthetic Judgement in Children and Adults (supervised by ", link("Pr Sandrine Rossi", "https://www.researchgate.net/profile/Sandrine-Rossi"), ")")
   )
 ), tibble(
   what = "Bachelor of Arts (BA) - Psychology",
@@ -518,7 +518,7 @@ data <- rbind(tibble(
   Date = "2013 - 14",
   Institution = "Department of adult psychiatry, Pitié-Salpêtrière Hospital",
   Where = "Paris, France",
-  Activity = "Neuropsychology internship (512 h) under Dr Séverine Hatif. Assessment and diagnostic of psychiatric or neurological illnesses among adults, as well as development and application of cognitive rehabilitation programs."
+  Activity = paste0("Neuropsychology internship (512 h) under ", link("Dr Séverine Hatif", "https://fr.linkedin.com/in/hatif-severine-032596157"), ". Assessment and diagnostic of psychiatric or neurological illnesses among adults, as well as development and application of cognitive rehabilitation programs.")
 ),tibble(
   Position = "Assistant Neuropsychologist",
   Date = "2012 - 13",
@@ -547,27 +547,27 @@ detailed_entries(data, Institution, Date, Position, Where, Activity, .protect = 
 data <- rbind(tibble(
   Position = "Lecturer (Clinical Neuropsychology)",
   Date = "2017 - 18",
-  Institution = "Université de Paris (under Pr Isabelle Jambaqué)",
+  Institution = "Université de Paris",
   Where = "Paris, France",
-  Activity = "Courses (192 h; bachelor \\& master students): Neurology and psychiatry (main neurodegenerative, neurological and psychiatric disorders), assessment (examination, diagnostic, psychometry), rehabilitation and psychotherapy (CBT, mindfulness-based therapies, cognitive rehabilitation, practice supervision), general neuroscience and psychology (neuroanatomy, emotion regulation...)."
+  Activity = paste0("Courses (192 h; bachelor \\& master students): Neurology and psychiatry (main neurodegenerative, neurological and psychiatric disorders), assessment (examination, diagnostic, psychometry), rehabilitation and psychotherapy (CBT, mindfulness-based therapies, cognitive rehabilitation, practice supervision), general neuroscience and psychology (neuroanatomy, emotion regulation...). Reference: ", link("Pr Isabelle Jambaqué", "http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Isabelle-Jambaque-Aubourg"), ".")
 ),tibble(
   Position = "Teaching Assistant (Differential Cognitive Psychology)",
   Date = "2015 - 17",
-  Institution = "Université de Paris (under Dr Christophe Mouchiroud)",
+  Institution = "Université de Paris",
   Where = "Paris, France",
-  Activity = "Courses (144 h; 1st \\& 2nd year students): Experimental methodology (assessment and related problems, scientific reasoning, psychometric properties of tests and questionnaires, statistics...) and introduction to concepts such as intelligence, personality and creativity."
+  Activity = "Courses (144 h; 1st \\& 2nd year students): Experimental methodology (assessment and related problems, scientific reasoning, psychometric properties of tests and questionnaires, statistics...) and introduction to concepts such as intelligence, personality and creativity. Reference: Dr Christophe Mouchiroud."
 ),tibble(
   Position = "Teaching Assistant (Cognitive Psychology)",
   Date = "2014 - 16",
-  Institution = "Université de Paris (under Pr Todd Lubart)",
+  Institution = "Université de Paris",
   Where = "Paris, France",
-  Activity = "Courses (48 h; 3rd year students): Models of working memory, mental imagery and categorisation."
+  Activity = paste0("Courses (48 h; 3rd year students): Models of working memory, mental imagery and categorisation. Reference: ", link("Pr Todd Lubart", "https://lapea.recherche.parisdescartes.fr/membres-permanents/todd-lubart/"), ".")
 ),tibble(
   Position = "Teaching Assistant (University Services)",
   Date = "2013",
-  Institution = "Université de Paris (under Dr Christian Fondrat)",
+  Institution = "Université de Paris",
   Where = "Paris, France",
-  Activity = "Courses (16 h; 1st year students): Introduction to the use of internet (internet security, anonymity, etc.) and on-line university services for first year students."
+  Activity = "Courses (16 h; 1st year students): Introduction to the use of internet (internet security, anonymity, etc.) and on-line university services for first year students. Reference: Dr Christian Fondrat."
 ))
 
 
@@ -700,7 +700,7 @@ Sperduti, M., **Makowski, D.**, & Piolino, P. (2016). [The protective role of lo
 
 <!-- \begin{center}\textit{2018}\end{center} -->
 
-**Co-organizer**, La recherche aux temps de la COVID (2021), `r link("1ère journée du COllaborative COgnitive Science", "https://sites.google.com/view/les-cocos/")`, 29 November, Online.
+**Co-organizer** (2021). *La recherche aux temps de la COVID*, `r link("1ère journée du COllaborative COgnitive Science", "https://sites.google.com/view/les-cocos/")`, 29 November, Online.
 
 **Makowski, D.**, Sperduti, M., Nicolas, S. & Piolino, P. (2018). *Interindividual Determinants of Emotion Regulation through Fiction*. 2ème Congrès Francophone de TCC, 14-16 June, Geneva, Switzerland.
 

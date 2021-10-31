@@ -48,7 +48,7 @@ csl: C:/Users/domma/Documents/R/win-library/4.1/vitae/vitae.csl
 \end{cvitems}}
 	\cventry{Université de Paris}{Master of Science (MSc) - Neuropsychology and Cognitive Psychology}{France}{2012 - 14}{\begin{cvitems}
 \item Second year thesis: How the Study of Emotions in Schizophrenia enlight the Paradox of Fiction (supervised by \href{http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Pascale-Piolino}{\color[HTML]{1976D2}{Pr Pascale Piolino}})
-\item First year thesis: The Cognitive Development of the Aesthetic Judgement in Children and Adults (supervised \href{https://www.researchgate.net/profile/Sandrine-Rossi}{\color[HTML]{1976D2}{Pr Sandrine Rossi}})
+\item First year thesis: The Cognitive Development of the Aesthetic Judgement in Children and Adults (supervised by \href{https://www.researchgate.net/profile/Sandrine-Rossi}{\color[HTML]{1976D2}{Pr Sandrine Rossi}})
 \end{cvitems}}
 	\cventry{Université de Paris}{Bachelor of Arts (BA) - Psychology}{France}{2009 - 12}{}\vspace{-4.0mm}
 \end{cventries}
@@ -254,7 +254,7 @@ I have performed several technical courses on topics like:
 
 \begin{cventries}
 	\cventry{Department of adult psychiatry, Pitié-Salpêtrière Hospital}{Assistant Neuropsychologist}{Paris, France}{2013 - 14}{\begin{cvitems}
-\item Neuropsychology internship (512 h) under Dr Séverine Hatif. Assessment and diagnostic of psychiatric or neurological illnesses among adults, as well as development and application of cognitive rehabilitation programs.
+\item Neuropsychology internship (512 h) under \href{https://fr.linkedin.com/in/hatif-severine-032596157}{\color[HTML]{1976D2}{Dr Séverine Hatif}}. Assessment and diagnostic of psychiatric or neurological illnesses among adults, as well as development and application of cognitive rehabilitation programs.
 \end{cvitems}}
 	\cventry{Department of geriatric psychiatry, Sainte-Anne Hospital}{Assistant Neuropsychologist}{Paris, France}{2012 - 13}{\begin{cvitems}
 \item Neuropsychology internship (304 h) under Emmanuel Guiliano. Assessment and diagnostic of psychiatric and neurological illnesses among an elderly population.
@@ -268,17 +268,17 @@ I have performed several technical courses on topics like:
 
 
 \begin{cventries}
-	\cventry{Université de Paris (under Pr Isabelle Jambaqué)}{Lecturer (Clinical Neuropsychology)}{Paris, France}{2017 - 18}{\begin{cvitems}
-\item Courses (192 h; bachelor \& master students): Neurology and psychiatry (main neurodegenerative, neurological and psychiatric disorders), assessment (examination, diagnostic, psychometry), rehabilitation and psychotherapy (CBT, mindfulness-based therapies, cognitive rehabilitation, practice supervision), general neuroscience and psychology (neuroanatomy, emotion regulation...).
+	\cventry{Université de Paris}{Lecturer (Clinical Neuropsychology)}{Paris, France}{2017 - 18}{\begin{cvitems}
+\item Courses (192 h; bachelor \& master students): Neurology and psychiatry (main neurodegenerative, neurological and psychiatric disorders), assessment (examination, diagnostic, psychometry), rehabilitation and psychotherapy (CBT, mindfulness-based therapies, cognitive rehabilitation, practice supervision), general neuroscience and psychology (neuroanatomy, emotion regulation...). Reference: \href{http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Isabelle-Jambaque-Aubourg}{\color[HTML]{1976D2}{Pr Isabelle Jambaqué}}.
 \end{cvitems}}
-	\cventry{Université de Paris (under Dr Christophe Mouchiroud)}{Teaching Assistant (Differential Cognitive Psychology)}{Paris, France}{2015 - 17}{\begin{cvitems}
-\item Courses (144 h; 1st \& 2nd year students): Experimental methodology (assessment and related problems, scientific reasoning, psychometric properties of tests and questionnaires, statistics...) and introduction to concepts such as intelligence, personality and creativity.
+	\cventry{Université de Paris}{Teaching Assistant (Differential Cognitive Psychology)}{Paris, France}{2015 - 17}{\begin{cvitems}
+\item Courses (144 h; 1st \& 2nd year students): Experimental methodology (assessment and related problems, scientific reasoning, psychometric properties of tests and questionnaires, statistics...) and introduction to concepts such as intelligence, personality and creativity. Reference: Dr Christophe Mouchiroud.
 \end{cvitems}}
-	\cventry{Université de Paris (under Pr Todd Lubart)}{Teaching Assistant (Cognitive Psychology)}{Paris, France}{2014 - 16}{\begin{cvitems}
-\item Courses (48 h; 3rd year students): Models of working memory, mental imagery and categorisation.
+	\cventry{Université de Paris}{Teaching Assistant (Cognitive Psychology)}{Paris, France}{2014 - 16}{\begin{cvitems}
+\item Courses (48 h; 3rd year students): Models of working memory, mental imagery and categorisation. Reference: \href{https://lapea.recherche.parisdescartes.fr/membres-permanents/todd-lubart/}{\color[HTML]{1976D2}{Pr Todd Lubart}}.
 \end{cvitems}}
-	\cventry{Université de Paris (under Dr Christian Fondrat)}{Teaching Assistant (University Services)}{Paris, France}{2013}{\begin{cvitems}
-\item Courses (16 h; 1st year students): Introduction to the use of internet (internet security, anonymity, etc.) and on-line university services for first year students.
+	\cventry{Université de Paris}{Teaching Assistant (University Services)}{Paris, France}{2013}{\begin{cvitems}
+\item Courses (16 h; 1st year students): Introduction to the use of internet (internet security, anonymity, etc.) and on-line university services for first year students. Reference: Dr Christian Fondrat.
 \end{cvitems}}
 \end{cventries}
 
@@ -405,8 +405,9 @@ Sperduti, M., **Makowski, D.**, & Piolino, P. (2016). [The protective role of lo
 
 <!-- \begin{center}\textit{2018}\end{center} -->
 
+**Co-organizer** (2021). *La recherche aux temps de la COVID*, \href{https://sites.google.com/view/les-cocos/}{\color[HTML]{1976D2}{1ère journée du COllaborative COgnitive Science}}, 29 November, Online.
 
-**Makowski, D.**, Sperduti, M., Nicolas, S. & Piolino, P. (2017). *Interindividual Determinants of Emotion Regulation through Fiction*. 2ème Congrès Francophone de TCC, 14-16 June, Geneva, Switzerland.
+**Makowski, D.**, Sperduti, M., Nicolas, S. & Piolino, P. (2018). *Interindividual Determinants of Emotion Regulation through Fiction*. 2ème Congrès Francophone de TCC, 14-16 June, Geneva, Switzerland.
 
 **Makowski, D.** (2018, *invited*). *How Reality can Modulate Memory and Emotions*. CRPCPO's monthly seminar, 23 March, Amiens, France.
 
