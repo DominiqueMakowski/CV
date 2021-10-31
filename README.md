@@ -33,7 +33,7 @@ my publications.
 
 ## Impact
 
-<img src="img/unnamed-chunk-3-1.png" style="display: block; margin: auto;" />
+<img src="img/scientificImpact-1.png" style="display: block; margin: auto;" />
 
 ## Collaboration Network
 

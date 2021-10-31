@@ -60,7 +60,7 @@ rmarkdown::render('C:/Dropbox/PERSO/CV/DominiqueMakowski_CV.Rmd',  encoding = 'U
 
 ## Impact 
 
-```{r echo = FALSE, fig.height=6, fig.width=10, fig.align="center"}
+```{r scientificImpact, echo = FALSE, fig.height=6, fig.width=10, fig.align="center"}
 load("data/data_scholar.Rdata")
 
 source("functions.R")
