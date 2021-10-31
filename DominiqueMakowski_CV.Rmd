@@ -700,8 +700,9 @@ Sperduti, M., **Makowski, D.**, & Piolino, P. (2016). [The protective role of lo
 
 <!-- \begin{center}\textit{2018}\end{center} -->
 
+**Co-organizer**, La recherche aux temps de la COVID (2021), `r link("1ère journée du COllaborative COgnitive Science", "https://sites.google.com/view/les-cocos/")`, 29 November, Online.
 
-**Makowski, D.**, Sperduti, M., Nicolas, S. & Piolino, P. (2017). *Interindividual Determinants of Emotion Regulation through Fiction*. 2ème Congrès Francophone de TCC, 14-16 June, Geneva, Switzerland.
+**Makowski, D.**, Sperduti, M., Nicolas, S. & Piolino, P. (2018). *Interindividual Determinants of Emotion Regulation through Fiction*. 2ème Congrès Francophone de TCC, 14-16 June, Geneva, Switzerland.
 
 **Makowski, D.** (2018, *invited*). *How Reality can Modulate Memory and Emotions*. CRPCPO's monthly seminar, 23 March, Amiens, France.
 
