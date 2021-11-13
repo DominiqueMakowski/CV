@@ -49,7 +49,12 @@ data <- tibble(
     paste(
       "The",
       link("NTU Presidential Postdoc award", "https://www.ntu.edu.sg/research/research-careers/presidential-postdoctoral-fellowship-(ppf)"),
-      "funded two years of postdoc for my project about the neurocognitive and affective processes underlying the beliefs in fake vs. real material (e.g., fake news, fiction, etc.)."
+      "funded two years of postdoc to develop my own research direction"
+    ),
+    paste(
+      "The team I lead (see ",
+       link("Reality Bending", "https://realitybending.github.io/"),
+      ") works on the neurocognitive and affective processes underlying the beliefs in fake vs. real stimuli (fake news, fiction, ...)"
     ),
     paste(
       "Reference:",
@@ -452,7 +457,7 @@ I have given academic lectures (total hours since 2014: **400**) on the followin
 
 \small
 
-I have performed several technical courses on topics like:
+I have performed several technical courses (typically in-lab training) on topics like:
 
 - Statistics using R
 - Experiment creation using Python
@@ -585,7 +590,7 @@ detailed_entries(data, Institution, Date, Position, Where, Activity, .protect = 
 
 **Makowski, D.**, Lau, Z. J., Pham, T., Ayache, J., Sperduti, M., Sumich, A., Heym, N. & Chen, S., A. (*under review*). Psychological Determinants of the Susceptibility to COVID-19 Fake News.
 
-**Makowski, D.**, Lau, Z. J., Pham, T., Boyce, W. P. \& Chen, S. A. (*under review*). [A Parametric Framework to Generate Visual Illusions using Python](https://github.com/RealityBending/Pyllusion).
+**Makowski, D.**, Lau, Z. J., Pham, T., Boyce, W. P. \& Chen, S. A. (*in press*). [A Parametric Framework to Generate Visual Illusions using Python](https://github.com/RealityBending/Pyllusion).
 
 **Makowski, D.**, Pham, T., Lau, Z. J., Raine, A., & Chen, S. H. (2021). [The Structure of Deception: Validation of the Lying Profile Questionnaire](https://dominiquemakowski.github.io/publication/makowski2021structure/makowski2021structure.pdf). *Current Psychology*, 1-16.
 
