@@ -1,11 +1,3 @@
-# Set Path
-# path <- "../../"  # If manually
-path <- ""  # If from GH action
-
-
-# ------------------------------
-# Network data
-# ------------------------------
 library(dplyr)
 library(stringr)
 library(scholar)
@@ -88,16 +80,17 @@ create_graph <- function(data){
 
 # Scrap data from google scholar
 data <- get_coauthors("bg0BZ-QAAAAJ", n_deep=2, sleep=15)
-write.csv(data, "data_network.csv", row.names = FALSE)
-# data <- read.csv("data_network.csv", stringsAsFactors = FALSE)
 
 # Prune
+# 1. Find direct co-authors directly related to DM
 data1 <- data[(data$author=="Dominique Makowski" | data$coauthors=="Dominique Makowski"), ]
 firstlevel <- unique(c(data1$author, data1$coauthors))
 
+# 2. Find direct co-authors of co-authors
 data2 <- data[(data$author %in% firstlevel | data$coauthors %in% firstlevel), ]
 secondlevel <- unique(c(data2$author, data2$coauthors))
 
+# 3. Find whether these have also coauthors in the list
 data3 <- data[(data$author %in% secondlevel & data$coauthors %in% secondlevel) |
                 (data$author %in% secondlevel & data$coauthors %in% secondlevel), ]
 
@@ -110,8 +103,8 @@ data3 <- data[(data$author %in% secondlevel & data$coauthors %in% secondlevel) |
 data_semi <- create_graph(data3)
 
 
-p_semi <- tidygraph::tbl_graph(nodes=data_semi$nodes, edges=data_semi$edges, directed=FALSE) %>%
-  ggraph::ggraph(layout = 'fr') +
+p <- tidygraph::tbl_graph(nodes=data_semi$nodes, edges=data_semi$edges, directed=FALSE) %>%
+  ggraph::ggraph(layout = 'nicely') + # fr, kk, nicely, lgl, graphopt, dh
   ggraph::geom_edge_arc(aes(alpha=importance), show.legend = FALSE, strength=0.1) +
   ggraph::geom_node_point(aes(size = degree, colour=group2), show.legend = FALSE) +
   ggraph::geom_node_text(aes(label = name, size=degree), repel = TRUE, check_overlap = TRUE, show.legend = FALSE, max.overlaps = 20) +
@@ -121,6 +114,6 @@ p_semi <- tidygraph::tbl_graph(nodes=data_semi$nodes, edges=data_semi$edges, dir
   # scale_color_viridis_d() +
   see::scale_color_material_d(palette="rainbow", reverse=TRUE)
 
-p_semi
-ggsave(paste0(path, "content/cv/img/plot_network.png"), p_semi, dpi=500, width=10, height=10)
+p
+ggsave("img/collaboration_network.png", p, dpi=500, width=10, height=10)
 
