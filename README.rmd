@@ -46,7 +46,7 @@ The steps to pull the data from Google scholar and render the CV are the followi
 source("make_data_impact.R")
 
 # 4. Render CV (and CV-data)
-rmarkdown::render('C:/Dropbox/PERSO/CV/DominiqueMakowski_CV.Rmd',  encoding = 'UTF-8')
+rmarkdown::render('DominiqueMakowski_CV.Rmd')
 ```
 
 ## Research Wordcloud
