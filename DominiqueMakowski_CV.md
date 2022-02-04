@@ -1,237 +1,108 @@
 ---
 name: Dominique
 surname: Makowski
-profilepic: "./img/profile.png"
-position: "Research Fellow"
-qualifications: "PhD"
-address: "Nanyang Technological University, Singapore"
-# phone: +1 22 3333 4444
+profilepic: ./img/profile.png
+position: Research Fellow
+qualifications: PhD
+address: Nanyang Technological University, Singapore
 www: dominiquemakowski.github.io
-email: "dom.makowski@gmail.com"
+email: dom.makowski@gmail.com
 twitter: Dom_Makowski
 github: DominiqueMakowski
-# linkedin: dominiquemakowski
-# orcid: "0000-0001-5375-9967"
 aboutme: |
   \RaggedRight Trained as neuropsychologist, I am currently a postdoc in Singapore researching aspects of reality bending (e.g., neuroscience of deception, perception of fake news, altered states of consciousness), the role of the body and emotions in cognition (e.g., emotion regulation and interoception), and methodology (statistics, programming, and neurophysiological techniques).
-date: "`r format(Sys.time(), '%B %Y')`"
-headcolor: "1976D2"
-output: 
+date: February 2022
+headcolor: 1976D2
+output:
   vitae::awesomecv:
-    page_total: true
-    keep_md: true
-editor_options: 
+    page_total: yes
+    keep_md: yes
+editor_options:
   chunk_output_type: console
+nocite: '@'
+csl: C:/Users/domma/Documents/R/win-library/4.1/vitae/vitae.csl
+
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
-library(vitae)
-library(dplyr)
-library(ggplot2)
 
-link <- function(txt, url, color = "1976D2") {
-  paste0("\\href{", url, "}{\\color[HTML]{", color, "}{", txt, "}}")
-}
-
-short <- FALSE
-```
 
 # Current Position
 
-```{r CurrentEmployment}
-data <- tibble(
-  what = "Presidential Postdoctoral Fellow",
-  when = "2020 - Present",
-  with = "Clinical Brain Lab, Nanyang Technological University (NTU)",
-  where = "Singapore",
-  details = c(
-    paste(
-      "The",
-      link("NTU Presidential Postdoc award", "https://www.ntu.edu.sg/research/research-careers/presidential-postdoctoral-fellowship-(ppf)"),
-      "funded two years of postdoc to develop my own research direction"
-    ),
-    paste(
-      "The team I lead (see ",
-       link("Reality Bending", "https://realitybending.github.io/"),
-      ") works on the neurocognitive and affective processes underlying the beliefs in fake vs. real stimuli (fake news, fiction, ...)"
-    ),
-    paste(
-      "Reference:",
-      link("Pr Annabel Chen", "https://www.clinicalbrain.org/author/annabel-chen/")
-    )
-  )
-)
-
-detailed_entries(data, with, when, what, where, details, .protect = FALSE)
-```
+\begin{cventries}
+	\cventry{Clinical Brain Lab, Nanyang Technological University (NTU)}{Presidential Postdoctoral Fellow}{Singapore}{2020 - Present}{\begin{cvitems}
+\item The \href{https://www.ntu.edu.sg/research/research-careers/presidential-postdoctoral-fellowship-(ppf)}{\color[HTML]{1976D2}{NTU Presidential Postdoc award}} funded two years of postdoc to develop my own research direction
+\item The team I lead (see  \href{https://realitybending.github.io/}{\color[HTML]{1976D2}{Reality Bending}} ) works on the neurocognitive and affective processes underlying the beliefs in fake vs. real stimuli (fake news, fiction, ...)
+\item Reference: \href{https://www.clinicalbrain.org/author/annabel-chen/}{\color[HTML]{1976D2}{Pr Annabel Chen}}
+\end{cvitems}}
+\end{cventries}
 
 
 
 # Education
 
-```{r Education}
-data <- rbind(tibble(
-  what = "Doctor of Philosophy (PhD) - Psychology",
-  when = "2014 - 18",
-  with = "Université de Paris",
-  where = "France",
-  details = paste0(
-    "Thesis: Cognitive Neuropsychology of Implicit Emotion Regulation through Fictional Reappraisal (supervised by ",
-    link("Pr Serge Nicolas", "http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Serge-Nicolas"),
-    " \\& ",
-    link("Pr Pascale Piolino", "http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Pascale-Piolino"),
-    ")"
-  )
-), tibble(
-  what = "Certified Psychotherapist - Cognitive Behavioural Therapy (CBT)",
-  when = "2014 - 17",
-  with = "French Association for Cognitive Behavioural Therapy (AFTCC)",
-  where = "France",
-  details = c(
-    "Thesis: Cognitive Behavioural Therapy for two Patients: One suffering from Motivation Disorder associated with Dysthymia and the other from Social Anxiety (supervised by Sophie Kindynis)"
-  )
-), tibble(
-  what = "Master of Science (MSc) - Neuropsychology and Cognitive Psychology",
-  when = "2012 - 14",
-  with = "Université de Paris",
-  where = "France",
-  details = c(
-    paste0("Second year thesis: How the Study of Emotions in Schizophrenia enlight the Paradox of Fiction (supervised by ", link("Pr Pascale Piolino", "http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Pascale-Piolino"), ")"),
-    paste0("First year thesis: The Cognitive Development of the Aesthetic Judgement in Children and Adults (supervised by ", link("Pr Sandrine Rossi", "https://www.researchgate.net/profile/Sandrine-Rossi"), ")")
-  )
-), tibble(
-  what = "Bachelor of Arts (BA) - Psychology",
-  when = "2009 - 12",
-  with = "Université de Paris",
-  where = "France",
-  details = NA
-))
-
-if (short) {
-  data <- data[1:3, ]
-  data$details <- NA
-}
-
-detailed_entries(data, with, when, what, where, details, .protect = FALSE)
-```
+\begin{cventries}
+	\cventry{Université de Paris}{Doctor of Philosophy (PhD) - Psychology}{France}{2014 - 18}{\begin{cvitems}
+\item Thesis: Cognitive Neuropsychology of Implicit Emotion Regulation through Fictional Reappraisal (supervised by \href{http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Serge-Nicolas}{\color[HTML]{1976D2}{Pr Serge Nicolas}} \& \href{http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Pascale-Piolino}{\color[HTML]{1976D2}{Pr Pascale Piolino}})
+\end{cvitems}}
+	\cventry{French Association for Cognitive Behavioural Therapy (AFTCC)}{Certified Psychotherapist - Cognitive Behavioural Therapy (CBT)}{France}{2014 - 17}{\begin{cvitems}
+\item Thesis: Cognitive Behavioural Therapy for two Patients: One suffering from Motivation Disorder associated with Dysthymia and the other from Social Anxiety (supervised by Sophie Kindynis)
+\end{cvitems}}
+	\cventry{Université de Paris}{Master of Science (MSc) - Neuropsychology and Cognitive Psychology}{France}{2012 - 14}{\begin{cvitems}
+\item Second year thesis: How the Study of Emotions in Schizophrenia enlight the Paradox of Fiction (supervised by \href{http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Pascale-Piolino}{\color[HTML]{1976D2}{Pr Pascale Piolino}})
+\item First year thesis: The Cognitive Development of the Aesthetic Judgement in Children and Adults (supervised by \href{https://www.researchgate.net/profile/Sandrine-Rossi}{\color[HTML]{1976D2}{Pr Sandrine Rossi}})
+\end{cvitems}}
+	\cventry{Université de Paris}{Bachelor of Arts (BA) - Psychology}{France}{2009 - 12}{}\vspace{-4.0mm}
+\end{cventries}
 
 
 # Experience
 
 ## Research
 
-```{r ExperienceResearch}
-data <- rbind(tibble(
-  Position = "Research Fellow",
-  Date = "2019 - 20",
-  Institution = "Clinical Brain Lab, Nanyang Technological University (NTU)",
-  Where = "Singapore",
-  Activity = paste0(
-    "First postdoc position, working on a project funded by the ministry of defence about the neurocognitive correlates of deception. Responsible for studies design and completion, data analysis, publications and co-supervision of one PhD student, two research assistants and several graduate and undergraduate students (reference: ",
-    link("Pr Annabel Chen", "https://www.clinicalbrain.org/author/annabel-chen/"),
-    ")."
-  )
-), tibble(
-  Position = "Research Assistant",
-  Date = "2012",
-  Institution = "Developmental Psychology Lab (LaPsyDé), Université de Paris",
-  Where = "Paris, France",
-  Activity = paste0(
-    "Data collection for a study ",
-    link("(Borst, 2016)", "http://psycnet.apa.org/journals/emo/13/5/811/"),
-    " on emotions and mental rotation (reference: ", link("Pr Grégoire Borst", "https://www.lapsyde.com/gregoire-borst"),
-    ")."
-  )
-), tibble(
-  Position = "Research Assistant",
-  Date = "2011",
-  Institution = "Memory \\& Cognition Lab (LMC), Université de Paris",
-  Where = "Paris, France",
-  Activity = paste0(
-    "Experiment creation and data collection for a study on memory, salience and bizarreness effect (reference: ",
-    link("Pr Serge Nicolas", "http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Serge-Nicolas"),
-    ")."
-  )
-))
-
-if (short) {
-  data <- data[1:1, ]
-}
-
-# Save for re-useability
-write.csv(data, "data/experience_research.csv", row.names = FALSE, fileEncoding = "UTF-8")
-
-detailed_entries(data, Institution, Date, Position, Where, Activity, .protect = FALSE)
-```
+\begin{cventries}
+	\cventry{Clinical Brain Lab, Nanyang Technological University (NTU)}{Research Fellow}{Singapore}{2019 - 20}{\begin{cvitems}
+\item First postdoc position, working on a project funded by the ministry of defence about the neurocognitive correlates of deception. Responsible for studies design and completion, data analysis, publications and co-supervision of one PhD student, two research assistants and several graduate and undergraduate students (reference: \href{https://www.clinicalbrain.org/author/annabel-chen/}{\color[HTML]{1976D2}{Pr Annabel Chen}}).
+\end{cvitems}}
+	\cventry{Developmental Psychology Lab (LaPsyDé), Université de Paris}{Research Assistant}{Paris, France}{2012}{\begin{cvitems}
+\item Data collection for a study \href{http://psycnet.apa.org/journals/emo/13/5/811/}{\color[HTML]{1976D2}{(Borst, 2016)}} on emotions and mental rotation (reference: \href{https://www.lapsyde.com/gregoire-borst}{\color[HTML]{1976D2}{Pr Grégoire Borst}}).
+\end{cvitems}}
+	\cventry{Memory \& Cognition Lab (LMC), Université de Paris}{Research Assistant}{Paris, France}{2011}{\begin{cvitems}
+\item Experiment creation and data collection for a study on memory, salience and bizarreness effect (reference: \href{http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Serge-Nicolas}{\color[HTML]{1976D2}{Pr Serge Nicolas}}).
+\end{cvitems}}
+\end{cventries}
 
 
 ## Clinical
 
-```{r ExperienceClinical}
-data <- rbind(tibble(
-  Position = "Assistant Neuropsychologist",
-  Date = "2013 - 14",
-  Institution = "Department of adult psychiatry, Pitié-Salpêtrière Hospital",
-  Where = "Paris, France",
-  Activity = paste0("Neuropsychology internship (512 h) under ", link("Dr Séverine Hatif", "https://fr.linkedin.com/in/hatif-severine-032596157"), ". Assessment and diagnostic of psychiatric or neurological illnesses among adults, as well as development and application of cognitive rehabilitation programs.")
-),tibble(
-  Position = "Assistant Neuropsychologist",
-  Date = "2012 - 13",
-  Institution = "Department of geriatric psychiatry, Sainte-Anne Hospital",
-  Where = "Paris, France",
-  Activity = "Neuropsychology internship (304 h) under Emmanuel Guiliano. Assessment and diagnostic of psychiatric and neurological illnesses among an elderly population."
-),tibble(
-  Position = "Assistant Neuropsychologist",
-  Date = "2012",
-  Institution = "Department of gerontology, La Porte Verte Hospital",
-  Where = "Versailles, France",
-  Activity = "Neuropsychology internship (96 h) under Sophie Fleury. Observation of assessment and diagnostic of memory related deficits such as neurodegenerative diseases, somatic ageing-related illnesses or depression."
-))
-
-
-# Save for re-useability
-write.csv(data, "data/experience_clinical.csv", row.names = FALSE, fileEncoding = "UTF-8")
-
-detailed_entries(data, Institution, Date, Position, Where, Activity, .protect = FALSE)
-```
+\begin{cventries}
+	\cventry{Department of adult psychiatry, Pitié-Salpêtrière Hospital}{Assistant Neuropsychologist}{Paris, France}{2013 - 14}{\begin{cvitems}
+\item Neuropsychology internship (512 h) under \href{https://fr.linkedin.com/in/hatif-severine-032596157}{\color[HTML]{1976D2}{Dr Séverine Hatif}}. Assessment and diagnostic of psychiatric or neurological illnesses among adults, as well as development and application of cognitive rehabilitation programs.
+\end{cvitems}}
+	\cventry{Department of geriatric psychiatry, Sainte-Anne Hospital}{Assistant Neuropsychologist}{Paris, France}{2012 - 13}{\begin{cvitems}
+\item Neuropsychology internship (304 h) under Emmanuel Guiliano. Assessment and diagnostic of psychiatric and neurological illnesses among an elderly population.
+\end{cvitems}}
+	\cventry{Department of gerontology, La Porte Verte Hospital}{Assistant Neuropsychologist}{Versailles, France}{2012}{\begin{cvitems}
+\item Neuropsychology internship (96 h) under Sophie Fleury. Observation of assessment and diagnostic of memory related deficits such as neurodegenerative diseases, somatic ageing-related illnesses or depression.
+\end{cvitems}}
+\end{cventries}
 
 ## Teaching
 
 
-```{r ExperienceTeaching}
-data <- rbind(tibble(
-  Position = "Lecturer (Clinical Neuropsychology)",
-  Date = "2017 - 18",
-  Institution = "Université de Paris",
-  Where = "Paris, France",
-  Activity = paste0("Courses (192 h; bachelor \\& master students): Neurology and psychiatry (main neurodegenerative, neurological and psychiatric disorders), assessment (examination, diagnostic, psychometry), rehabilitation and psychotherapy (CBT, mindfulness-based therapies, cognitive rehabilitation, practice supervision), general neuroscience and psychology (neuroanatomy, emotion regulation...). Reference: ", link("Pr Isabelle Jambaqué", "http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Isabelle-Jambaque-Aubourg"), ".")
-),tibble(
-  Position = "Teaching Assistant (Differential Cognitive Psychology)",
-  Date = "2015 - 17",
-  Institution = "Université de Paris",
-  Where = "Paris, France",
-  Activity = "Courses (144 h; 1st \\& 2nd year students): Experimental methodology (assessment and related problems, scientific reasoning, psychometric properties of tests and questionnaires, statistics...) and introduction to concepts such as intelligence, personality and creativity. Reference: Dr Christophe Mouchiroud."
-),tibble(
-  Position = "Teaching Assistant (Cognitive Psychology)",
-  Date = "2014 - 16",
-  Institution = "Université de Paris",
-  Where = "Paris, France",
-  Activity = paste0("Courses (48 h; 3rd year students): Models of working memory, mental imagery and categorisation. Reference: ", link("Pr Todd Lubart", "https://lapea.recherche.parisdescartes.fr/membres-permanents/todd-lubart/"), ".")
-),tibble(
-  Position = "Teaching Assistant (University Services)",
-  Date = "2013",
-  Institution = "Université de Paris",
-  Where = "Paris, France",
-  Activity = "Courses (16 h; 1st year students): Introduction to the use of internet (internet security, anonymity, etc.) and on-line university services for first year students. Reference: Dr Christian Fondrat."
-))
-
-
-# Save for re-useability
-write.csv(data, "data/experience_teaching.csv", row.names = FALSE, fileEncoding = "UTF-8")
-
-detailed_entries(data, Institution, Date, Position, Where, Activity, .protect = FALSE)
-```
+\begin{cventries}
+	\cventry{Université de Paris}{Lecturer (Clinical Neuropsychology)}{Paris, France}{2017 - 18}{\begin{cvitems}
+\item Courses (192 h; bachelor \& master students): Neurology and psychiatry (main neurodegenerative, neurological and psychiatric disorders), assessment (examination, diagnostic, psychometry), rehabilitation and psychotherapy (CBT, mindfulness-based therapies, cognitive rehabilitation, practice supervision), general neuroscience and psychology (neuroanatomy, emotion regulation...). Reference: \href{http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Isabelle-Jambaque-Aubourg}{\color[HTML]{1976D2}{Pr Isabelle Jambaqué}}.
+\end{cvitems}}
+	\cventry{Université de Paris}{Teaching Assistant (Differential Cognitive Psychology)}{Paris, France}{2015 - 17}{\begin{cvitems}
+\item Courses (144 h; 1st \& 2nd year students): Experimental methodology (assessment and related problems, scientific reasoning, psychometric properties of tests and questionnaires, statistics...) and introduction to concepts such as intelligence, personality and creativity. Reference: Dr Christophe Mouchiroud.
+\end{cvitems}}
+	\cventry{Université de Paris}{Teaching Assistant (Cognitive Psychology)}{Paris, France}{2014 - 16}{\begin{cvitems}
+\item Courses (48 h; 3rd year students): Models of working memory, mental imagery and categorisation. Reference: \href{https://lapea.recherche.parisdescartes.fr/membres-permanents/todd-lubart/}{\color[HTML]{1976D2}{Pr Todd Lubart}}.
+\end{cvitems}}
+	\cventry{Université de Paris}{Teaching Assistant (University Services)}{Paris, France}{2013}{\begin{cvitems}
+\item Courses (16 h; 1st year students): Introduction to the use of internet (internet security, anonymity, etc.) and on-line university services for first year students. Reference: Dr Christian Fondrat.
+\end{cvitems}}
+\end{cventries}
 
 
 # Skills
@@ -259,15 +130,15 @@ My PhD, on the effect of reality beliefs on emotion, attempted at integrate my t
 
 \small
 
-I have developed strong technical expertise with several tools (EEG, bodily signals, Virtual Reality) and methods. In particular, I employ advanced statistical procedures (Bayesian framework, predictive and structural modelling, machine/deep learning) to address the scientific challenges that I encounter. In parallel, I develop open-source software, such as the `r link("\\textbf{easystats}", "https://github.com/easystats/easystats")` collection of R packages; `r link("\\textbf{NeuroKit}", "https://github.com/neuropsychology/NeuroKit")`, a Python package for neurophysiological signal processing; `r link("\\textbf{Pyllusion}", "https://github.com/realitybending/Pyllusion")`, a framework to generate visual illusions; or `r link("\\textbf{Neuropsydia}", "https://github.com/neuropsychology/Neuropsydia.py")`, a software to create experiments. 
+I have developed strong technical expertise with several tools (EEG, bodily signals, Virtual Reality) and methods. In particular, I employ advanced statistical procedures (Bayesian framework, predictive and structural modelling, machine/deep learning) to address the scientific challenges that I encounter. In parallel, I develop open-source software, such as the \href{https://github.com/easystats/easystats}{\color[HTML]{1976D2}{\textbf{easystats}}} collection of R packages; \href{https://github.com/neuropsychology/NeuroKit}{\color[HTML]{1976D2}{\textbf{NeuroKit}}}, a Python package for neurophysiological signal processing; \href{https://github.com/realitybending/Pyllusion}{\color[HTML]{1976D2}{\textbf{Pyllusion}}}, a framework to generate visual illusions; or \href{https://github.com/neuropsychology/Neuropsydia.py}{\color[HTML]{1976D2}{\textbf{Neuropsydia}}}, a software to create experiments. 
 
 Initially created to increase the efficiency and quality of my own research, some of these tools have become quite popular and are actively used by the scientific community (e.g., the *easystats* packages have been downloaded more than 5 million times since their creation about 3 years ago, and *NeuroKit* has become one of the most popular toolbox for multimodal physiology). 
 
 ## Open Science
 
-My interest in improving accessibility, widening the usage of advanced methods and best practices by means of open access tools and tutorials, and staying active in open-software communities (e.g., on `r link("\\textbf{GitHub}", "https://github.com/DominiqueMakowski")` by answer technical and methodological questions, is motivated by the fact that, coming myself from a different background (clinical neuropsychology) in which programming, computer science and advanced statistics are not taught, I realized how harnessing such powerful tools can improve one's research (and quality of life) at many levels. 
+My interest in improving accessibility, widening the usage of advanced methods and best practices by means of open access tools and tutorials, and staying active in open-software communities (e.g., on \href{https://github.com/DominiqueMakowski}{\color[HTML]{1976D2}{\textbf{GitHub}}} by answer technical and methodological questions, is motivated by the fact that, coming myself from a different background (clinical neuropsychology) in which programming, computer science and advanced statistics are not taught, I realized how harnessing such powerful tools can improve one's research (and quality of life) at many levels. 
 
-I fully endorse to the highest standards of open science, by sharing data and reproducible scripts of my experiments (see this `r link("\\textbf{Supplementary Materials Template}", "https://github.com/RealityBending/TemplateResults")` that I created to facilitate the sharing of additional material). Naturally, my concrete engagement in open, honest and reproducible science, is accompanied by the highest standards in terms of methodological rigour and ethical responsibility.
+I fully endorse to the highest standards of open science, by sharing data and reproducible scripts of my experiments (see this \href{https://github.com/RealityBending/TemplateResults}{\color[HTML]{1976D2}{\textbf{Supplementary Materials Template}}} that I created to facilitate the sharing of additional material). Naturally, my concrete engagement in open, honest and reproducible science, is accompanied by the highest standards in terms of methodological rigour and ethical responsibility.
 
 
 
@@ -280,140 +151,44 @@ I fully endorse to the highest standards of open science, by sharing data and re
 
 ## Teaching
 
-```{r TrainingTeaching}
-data <- rbind(tibble(
-  what = "CITI Certification",
-  when = "2019",
-  with = "Collaborative Institutional Training Initiative (ethics and scientific integrity in research)",
-  where = "Online",
-  details = NA
-), tibble(
-  what = "Academic Teaching Certificate",
-  when = "2017",
-  with = "Université of Paris (40h training in pedagogy and innovative teaching)",
-  where = "France",
-  details = NA
-))
-
-detailed_entries(data, with, when, what, where, why = details, .protect = FALSE)
-```
+\begin{cventries}
+	\cventry{Collaborative Institutional Training Initiative (ethics and scientific integrity in research)}{CITI Certification}{Online}{2019}{}\vspace{-4.0mm}
+	\cventry{Université of Paris (40h training in pedagogy and innovative teaching)}{Academic Teaching Certificate}{France}{2017}{}\vspace{-4.0mm}
+\end{cventries}
 
 
 ## Clinical
 
-```{r TrainingClinical}
-data <- rbind(tibble(
-  what = "Certified Hypnotherapist",
-  when = "2019",
-  with = "National Guild of Hypnotists (100h - Note that although trained and qualified, I do not endorse hypnosis)",
-  where = "Singapore",
-  instructor = "Fauziah Shah",
-  details = NA
-), tibble(
-  what = "Mindfulness based on Compassion and Insight (MBCI)",
-  when = "2016",
-  with = "Institute for psychiatry, Sainte-Anne Hospital (16h master class)",
-  instructor = "Pr Pascal Delamillieure",
-  where = "France",
-  details = NA
-), tibble(
-  what = "First Aid Certificate",
-  when = "2016",
-  with = "Université de Paris (16h - level 1)",
-  where = "France",
-  instructor = NA,
-  details = NA
-))
-
-detailed_entries(data, with, when, what, where, why = details, .protect = FALSE)
-```
+\begin{cventries}
+	\cventry{National Guild of Hypnotists (100h - Note that although trained and qualified, I do not endorse hypnosis)}{Certified Hypnotherapist}{Singapore}{2019}{}\vspace{-4.0mm}
+	\cventry{Institute for psychiatry, Sainte-Anne Hospital (16h master class)}{Mindfulness based on Compassion and Insight (MBCI)}{France}{2016}{}\vspace{-4.0mm}
+	\cventry{Université de Paris (16h - level 1)}{First Aid Certificate}{France}{2016}{}\vspace{-4.0mm}
+\end{cventries}
 
 ## Neuroimaging
 
-```{r TrainingNeuroimaging}
-data <- rbind(tibble(
-  what = "Structural, Functional and Radiological Neuroanatomy",
-  when = "2020",
-  with = "Neurocourses UK (32h)",
-  where = "Online",
-  instructor = "Dr Paul Johns",
-  details = NA
-), tibble(
-  what = "MRI Connectivity Analysis",
-  when = "2015",
-  with = "National Institute of Nuclear Sciences \\& Techniques - INSTN (32h)",
-  where = "Marseille, France",
-  instructor = "Dr Jorge L. Armony",
-  details = NA
-), tibble(
-  what = "fMRI : Preprocessing and Analysis",
-  when = "2014 - 15",
-  with = "Sainte-Anne Hospital (32h)",
-  where = "Paris, France",
-  instructor = "Dr Sylvain Charron",
-  details = NA
-), tibble(
-  what = "Signal Processing Theory and Application for EEG",
-  when = "2014",
-  with = "École Supérieure de Physique et de Chimie Industrielle - ESPCI (24h)",
-  where = "Paris, France",
-  instructor = "Dr François Vialatte",
-  details = NA
-))
-
-detailed_entries(data, with, when, what, where, why = details, .protect = FALSE)
-```
+\begin{cventries}
+	\cventry{Neurocourses UK (32h)}{Structural, Functional and Radiological Neuroanatomy}{Online}{2020}{}\vspace{-4.0mm}
+	\cventry{National Institute of Nuclear Sciences \& Techniques - INSTN (32h)}{MRI Connectivity Analysis}{Marseille, France}{2015}{}\vspace{-4.0mm}
+	\cventry{Sainte-Anne Hospital (32h)}{fMRI : Preprocessing and Analysis}{Paris, France}{2014 - 15}{}\vspace{-4.0mm}
+	\cventry{École Supérieure de Physique et de Chimie Industrielle - ESPCI (24h)}{Signal Processing Theory and Application for EEG}{Paris, France}{2014}{}\vspace{-4.0mm}
+\end{cventries}
 
 ## Statistics and Programming
 
-```{r TrainingStatistics}
-data <- rbind(tibble(
-  what = "Creating Online Experiments in PsychoPy and Pavlovia",
-  when = "2020",
-  with = "University of Nottingham (24h)",
-  where = "Online",
-  instructor = "Dr Rebecca Hirst",
-  details = NA
-), tibble(
-  what = "Scientific Programming with Python and Software Engineering Best Practices",
-  when = "2016",
-  with = "Telecom ParisTech (16h)",
-  where = "Paris, France",
-  instructor = "Dr Alexandre Gramfort",
-  details = NA
-), tibble(
-  what = "P4N: Python for Neuroscience (and Psychology)",
-  when = "2016",
-  with = "University of Nottingham (24h)",
-  where = "Nottingham, UK",
-  instructor = "Dr Jon Peirce",
-  details = NA
-), tibble(
-  what = "Machine Learning and Brain-to-Computer Interfaces",
-  when = "2014",
-  with = "École Supérieure de Physique et de Chimie Industrielle - ESPCI (16h)",
-  where = "Paris, France",
-  instructor = "Dr François Vialatte",
-  details = NA
-))
-
-detailed_entries(data, with, when, what, where, why = details, .protect = FALSE)
-```
+\begin{cventries}
+	\cventry{University of Nottingham (24h)}{Creating Online Experiments in PsychoPy and Pavlovia}{Online}{2020}{}\vspace{-4.0mm}
+	\cventry{Telecom ParisTech (16h)}{Scientific Programming with Python and Software Engineering Best Practices}{Paris, France}{2016}{}\vspace{-4.0mm}
+	\cventry{University of Nottingham (24h)}{P4N: Python for Neuroscience (and Psychology)}{Nottingham, UK}{2016}{}\vspace{-4.0mm}
+	\cventry{École Supérieure de Physique et de Chimie Industrielle - ESPCI (16h)}{Machine Learning and Brain-to-Computer Interfaces}{Paris, France}{2014}{}\vspace{-4.0mm}
+\end{cventries}
 
 
 ## Miscellaneous
 
-```{r TrainingMisc}
-data <- rbind(tibble(
-  what = "History of Arts",
-  when = "2017-- 18",
-  with = "École du Louvre (74h)",
-  where = "Paris, France",
-  details = NA
-))
-
-detailed_entries(data, with, when, what, where, why = details, .protect = FALSE)
-```
+\begin{cventries}
+	\cventry{École du Louvre (74h)}{History of Arts}{Paris, France}{2017-- 18}{}\vspace{-4.0mm}
+\end{cventries}
 
 
 
@@ -425,127 +200,53 @@ detailed_entries(data, with, when, what, where, why = details, .protect = FALSE)
 ## Scientific Impact
 
 
-```{r ScientificImpactFigure, echo = FALSE, fig.height=3, fig.width=10, out.width="80%", fig.align="center"}
-load("data/data_scholar.Rdata")
-source("https://raw.githubusercontent.com/DominiqueMakowski/CV/main/functions.R")
 
-plot_impact(data_scholar)
-```
+\begin{center}\includegraphics[width=0.8\linewidth]{DominiqueMakowski_CV_files/figure-latex/ScientificImpactFigure-1} \end{center}
 
 
-```{r ScientificImpact, echo = FALSE}
-get_stats(data_scholar) |>
-  knitr::kable(
-    col.names = c(
-      "\\textit{n}-Publications \\textit{(total)}",
-      "\\textit{n}-1\\textsuperscript{st} author",
-      "\\textit{n}-2\\textsuperscript{nd} author",
-      "\\textit{n}-Senior author",
-      "H-index",
-      "Citations \\textit{(total)}"
-    ),
-    format = "latex",
-    booktabs = TRUE,
-    escape = FALSE
-  ) %>%
-  kableExtra::kable_styling(position = "center", font_size = 8, latex_options = "hold_position")
-```
+\begin{table}[!h]
+\centering\begingroup\fontsize{8}{10}\selectfont
+
+\begin{tabular}{rrrrrr}
+\toprule
+\textit{n}-Publications \textit{(total)} & \textit{n}-1\textsuperscript{st} author & \textit{n}-2\textsuperscript{nd} author & \textit{n}-Senior author & H-index & Citations \textit{(total)}\\
+\midrule
+39 & 20 & 6 & 7 & 15 & 1701\\
+\bottomrule
+\end{tabular}
+\endgroup{}
+\end{table}
 
 
 
 ## Grants and Awards
 
 
-```{r GrantsAwards}
-data <- rbind(tibble(
-  Name = paste0("co-PI: ", link("Singapore National Research Foundation's Intra-CREATE Grant", "https://researchgrant.gov.sg/Pages/GrantCallDetail.aspx?AXID=NRF2021-ITS008&CompanyCode=nrf", color = "333333")),
-  Details = link("A Neuroscientific investigation of the Interaction between Crowdedness and Environment typology (NICE)", "https://fcl.ethz.ch/research/research-projects/NICE.html", color = "5D5D5D"),
-  Date = "2021 - 22",
-  Amount = "\\$249,730",
-  Activity = NA
-),tibble(
-  Name = paste0("PI: ", link("NTU Presidential Postdoctoral Fellowship", "https://www.ntu.edu.sg/research/research-careers/presidential-postdoctoral-fellowship-(ppf)", color = "333333")),
-  Details = "'That's Fake News': Modulating the Neurocognitive Processes Underlying the Belief in Deceptive Information",
-  Date = "2020 - 22",
-  Amount = "\\$360,000",
-  Activity = NA
-),tibble(
-  Name = link("Best Article Award (Psychonomic Society)", "https://www.psychonomic.org/page/2020BestArticleAwards", color = "333333") ,
-  Details = paste0("Obtained for ", link("Makowski et al. (2019)", "https://dominiquemakowski.github.io/publication/makowski2019phenomenal/")),
-  Date = "2020",
-  Amount = "\\$1,000",
-  Activity = NA
-),tibble(
-  Name = link("Commendation (Society for the Improvement of Psychological Science - SIPS)", "https://improvingpsych.org/mission/awards/", color = "333333") ,
-  Details = paste0("Obtained for the bayestestR R package ", link("(Makowski et al., 2019)", "https://joss.theoj.org/papers/10.21105/joss.01541")),
-  Date = "2020",
-  Amount = "N/A",
-  Activity = NA
-),tibble(
-  Name = link("Ministerial PhD scholarship", "https://improvingpsych.org/mission/awards/", color = "333333") ,
-  Details = "Three years of PhD fully funded by the French Ministry of Research",
-  Date = "2014 - 17",
-  Amount = "€80,000",
-  Activity = NA
-))
-
-detailed_entries(data, Details, Date, Name, Amount, Activity, .protect = FALSE)
-```
+\begin{cventries}
+	\cventry{\href{https://fcl.ethz.ch/research/research-projects/NICE.html}{\color[HTML]{5D5D5D}{A Neuroscientific investigation of the Interaction between Crowdedness and Environment typology (NICE)}}}{co-PI: \href{https://researchgrant.gov.sg/Pages/GrantCallDetail.aspx?AXID=NRF2021-ITS008&CompanyCode=nrf}{\color[HTML]{333333}{Singapore National Research Foundation's Intra-CREATE Grant}}}{\$249,730}{2021 - 22}{}\vspace{-4.0mm}
+	\cventry{'That's Fake News': Modulating the Neurocognitive Processes Underlying the Belief in Deceptive Information}{PI: \href{https://www.ntu.edu.sg/research/research-careers/presidential-postdoctoral-fellowship-(ppf)}{\color[HTML]{333333}{NTU Presidential Postdoctoral Fellowship}}}{\$360,000}{2020 - 22}{}\vspace{-4.0mm}
+	\cventry{Obtained for \href{https://dominiquemakowski.github.io/publication/makowski2019phenomenal/}{\color[HTML]{1976D2}{Makowski et al. (2019)}}}{\href{https://www.psychonomic.org/page/2020BestArticleAwards}{\color[HTML]{333333}{Best Article Award (Psychonomic Society)}}}{\$1,000}{2020}{}\vspace{-4.0mm}
+	\cventry{Obtained for the bayestestR R package \href{https://joss.theoj.org/papers/10.21105/joss.01541}{\color[HTML]{1976D2}{(Makowski et al., 2019)}}}{\href{https://improvingpsych.org/mission/awards/}{\color[HTML]{333333}{Commendation (Society for the Improvement of Psychological Science - SIPS)}}}{N/A}{2020}{}\vspace{-4.0mm}
+	\cventry{Three years of PhD fully funded by the French Ministry of Research}{\href{https://improvingpsych.org/mission/awards/}{\color[HTML]{333333}{Ministerial PhD scholarship}}}{€80,000}{2014 - 17}{}\vspace{-4.0mm}
+\end{cventries}
 
 
 ## Editorial Responsibilities
 
 
-```{r EditorialResponsabilities}
-data <- rbind(tibble(
-  Position = "Associate Editor",
-  Where = link("Frontiers in Psychology: \\textit{Quantitative Psychology and Measurement}", "https://www.frontiersin.org/journals/all/sections/quantitative-psychology-and-measurement", color = "333333"),
-  Date = "2020 - present",
-  Location = NA,
-  Activity = NA
-),tibble(
-  Position = "Regular Reviewer",
-  Where = link("Journal of Open Source Software", "https://joss.theoj.org/", color = "333333"),
-  Date = "2018 - present",
-  Location = NA,
-  Activity = NA
-),tibble(
-  Position = "Reviewer",
-  Where = "Biological Psychiatry, Personality and Individual Differences, Scientific Reports, Acta Psychologica, ...",
-  Date = "2017 - present",
-  Location = NA,
-  Activity = NA
-))
-
-# brief_entries(data, Where, Date, Position, .protect = FALSE)
-detailed_entries(data, Where, Date, Position, Location, Activity, .protect = FALSE)
-```
+\begin{cventries}
+	\cventry{\href{https://www.frontiersin.org/journals/all/sections/quantitative-psychology-and-measurement}{\color[HTML]{333333}{Frontiers in Psychology: \textit{Quantitative Psychology and Measurement}}}}{Associate Editor}{}{2020 - present}{}\vspace{-4.0mm}
+	\cventry{\href{https://joss.theoj.org/}{\color[HTML]{333333}{Journal of Open Source Software}}}{Regular Reviewer}{}{2018 - present}{}\vspace{-4.0mm}
+	\cventry{Biological Psychiatry, Personality and Individual Differences, Scientific Reports, Acta Psychologica, ...}{Reviewer}{}{2017 - present}{}\vspace{-4.0mm}
+\end{cventries}
 
 ## Academic Responsibilities
 
-```{r AcademicResponsabilities}
-data <- rbind(tibble(
-  Position = "Elected Representative",
-  Details = "Representation of the PhD students at the university level",
-  Where = "ED261-3CH doctoral school",
-  Date = "2016 - 18",
-  Activity = NA
-),tibble(
-  Position = "Community Manager",
-  Details = "Organization of seminars, local conferences and social events",
-  Where = "Memory \\& Cognition Lab",
-  Date = "2014 - 15",
-  Activity = NA
-),tibble(
-  Position = "Active Member",
-  Details = "Organization of social events for students",
-  Where = "Student Association (BDE)",
-  Date = "2009 - 12",
-  Activity = NA
-))
-
-detailed_entries(data, Details, Date, Position, Where, Activity, .protect = FALSE)
-```
+\begin{cventries}
+	\cventry{Representation of the PhD students at the university level}{Elected Representative}{ED261-3CH doctoral school}{2016 - 18}{}\vspace{-4.0mm}
+	\cventry{Organization of seminars, local conferences and social events}{Community Manager}{Memory \& Cognition Lab}{2014 - 15}{}\vspace{-4.0mm}
+	\cventry{Organization of social events for students}{Active Member}{Student Association (BDE)}{2009 - 12}{}\vspace{-4.0mm}
+\end{cventries}
 
 <!-- ## Collaborations -->
 
@@ -693,12 +394,12 @@ Sperduti, M., **Makowski, D.**, & Piolino, P. (2016). [The protective role of lo
 
 \footnotesize
 
-- Invited on the "Learning Bayesian Statistics" Podcast, `r link("\\#55 Neuropsychology, Illusions \\& Bending Reality, with Dominique Makowski", "https://www.learnbayesstats.com/episode/55-neuropsychology-illusions-bending-reality-dominique-makowski")`. 01 Feb 2022, learnbayesstats.com
-- Speaker at the Pint of Science, `r link("Back to the Matrix : pilule bleue ou rouge ?", "https://pintofscience.com/")`. 16 May 2018, Paris, France.
-- Invited to participate in a Public Debate, `r link("Art \\& science discussion on sensory illusions", "https://facts2017.u-bordeaux.fr/FESTIVAL/Programme/Agenda-2017/Rencards-du-savoir-Les-illusions-sensorielles.html")`. 24 November 2017, Bordeaux, France.
-- Published article in magazine, `r link("Neuroanatomie de la réalité : quand le réel n'est plus", "https://biblineuropsy.com/2016/04/19/les-yeux-brouilles/")`. 2016, Les yeux brouillés, 1, 48-55.
-- Featured on National TV, `r link("The effect of violent images on the brain and body", "https://www.youtube.com/watch?v=ihGs1V9kz4w")`. 2015, Testé sous contrôle médical, France 4
-- Research Featured in Online journal, `r link("”Avengers, l'ère d’Ultron” en 3D : aussitôt vu, aussitôt oublié ?", "(http://blog.francetvinfo.fr/actu-cine/2015/05/07/avengers-lere-dultron-en-3d-aussitot-vu-aussitot-oublie.html")` 2015, francetvinfos.fr
+- Invited on the "Learning Bayesian Statistics" Podcast, \href{https://www.learnbayesstats.com/episode/55-neuropsychology-illusions-bending-reality-dominique-makowski}{\color[HTML]{1976D2}{\#55 Neuropsychology, Illusions \& Bending Reality, with Dominique Makowski}}. 01 Feb 2022, learnbayesstats.com
+- Speaker at the Pint of Science, \href{https://pintofscience.com/}{\color[HTML]{1976D2}{Back to the Matrix : pilule bleue ou rouge ?}}. 16 May 2018, Paris, France.
+- Invited to participate in a Public Debate, \href{https://facts2017.u-bordeaux.fr/FESTIVAL/Programme/Agenda-2017/Rencards-du-savoir-Les-illusions-sensorielles.html}{\color[HTML]{1976D2}{Art \& science discussion on sensory illusions}}. 24 November 2017, Bordeaux, France.
+- Published article in magazine, \href{https://biblineuropsy.com/2016/04/19/les-yeux-brouilles/}{\color[HTML]{1976D2}{Neuroanatomie de la réalité : quand le réel n'est plus}}. 2016, Les yeux brouillés, 1, 48-55.
+- Featured on National TV, \href{https://www.youtube.com/watch?v=ihGs1V9kz4w}{\color[HTML]{1976D2}{The effect of violent images on the brain and body}}. 2015, Testé sous contrôle médical, France 4
+- Research Featured in Online journal, \href{(http://blog.francetvinfo.fr/actu-cine/2015/05/07/avengers-lere-dultron-en-3d-aussitot-vu-aussitot-oublie.html}{\color[HTML]{1976D2}{”Avengers, l'ère d’Ultron” en 3D : aussitôt vu, aussitôt oublié ?}} 2015, francetvinfos.fr
 
 \normalsize
 
@@ -709,7 +410,7 @@ Sperduti, M., **Makowski, D.**, & Piolino, P. (2016). [The protective role of lo
 
 <!-- \begin{center}\textit{2018}\end{center} -->
 
-**Co-organizer** (2021). *La recherche aux temps de la COVID*, `r link("1ère journée du COllaborative COgnitive Science", "https://sites.google.com/view/les-cocos/")`, 29 November, Online.
+**Co-organizer** (2021). *La recherche aux temps de la COVID*, \href{https://sites.google.com/view/les-cocos/}{\color[HTML]{1976D2}{1ère journée du COllaborative COgnitive Science}}, 29 November, Online.
 
 **Makowski, D.**, Sperduti, M., Nicolas, S. & Piolino, P. (2018). *Interindividual Determinants of Emotion Regulation through Fiction*. 2ème Congrès Francophone de TCC, 14-16 June, Geneva, Switzerland.
 
@@ -751,7 +452,7 @@ Sperduti, M., **Makowski, D.** & Piolino, P. (2016). *Does mindfulness enhance i
 
 <!-- \begin{center}\textit{2013}\end{center} -->
 
-**Makowski, D.**, & Rossi, S. (2013). `r link("\\textit{Le jugement esthétique chez l’enfant}", "https://www.youtube.com/watch?v=Hvs7t5G_dLM")`. Journées Neurosciences, Esthétique, et Complexité, 28 September, Paris, France.
+**Makowski, D.**, & Rossi, S. (2013). \href{https://www.youtube.com/watch?v=Hvs7t5G_dLM}{\color[HTML]{1976D2}{\textit{Le jugement esthétique chez l’enfant}}}. Journées Neurosciences, Esthétique, et Complexité, 28 September, Paris, France.
 
 
 \normalsize
@@ -762,7 +463,7 @@ Sperduti, M., **Makowski, D.** & Piolino, P. (2016). *Does mindfulness enhance i
 
 <!-- \begin{center}\textit{2021}\end{center} -->
 
-Lau, Z. J., Pham, T., Boyce, W. P., Chen, S. A., & **Makowski, D.** (2021). `r link("\\textit{A Parametric Framework to Generate Visual Illusions using Python}", "https://youtu.be/uptP_NxEHaM")`. 43rd European Conference on Visual Perception, 22-27 Aug. Online.
+Lau, Z. J., Pham, T., Boyce, W. P., Chen, S. A., & **Makowski, D.** (2021). \href{https://youtu.be/uptP_NxEHaM}{\color[HTML]{1976D2}{\textit{A Parametric Framework to Generate Visual Illusions using Python}}}. 43rd European Conference on Visual Perception, 22-27 Aug. Online.
 
 <!-- \begin{center}\textit{2016}\end{center} -->
 
