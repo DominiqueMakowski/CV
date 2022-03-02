@@ -11,7 +11,7 @@ twitter: Dom_Makowski
 github: DominiqueMakowski
 aboutme: |
   \RaggedRight Trained as neuropsychologist, I am currently a postdoc in Singapore researching aspects of reality bending (e.g., neuroscience of deception, perception of fake news, altered states of consciousness), the role of the body and emotions in cognition (e.g., emotion regulation and interoception), and methodology (statistics, programming, and neurophysiological techniques).
-date: February 2022
+date: March 2022
 headcolor: 1976D2
 output:
   vitae::awesomecv:
@@ -211,7 +211,7 @@ I fully endorse to the highest standards of open science, by sharing data and re
 \toprule
 \textit{n}-Publications \textit{(total)} & \textit{n}-1\textsuperscript{st} author & \textit{n}-2\textsuperscript{nd} author & \textit{n}-Senior author & H-index & Citations \textit{(total)}\\
 \midrule
-39 & 20 & 6 & 7 & 15 & 1701\\
+40 & 20 & 7 & 7 & 16 & 2129\\
 \bottomrule
 \end{tabular}
 \endgroup{}
