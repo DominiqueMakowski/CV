@@ -92,7 +92,7 @@ data <- rbind(tibble(
     "Thesis: Cognitive Behavioural Therapy for two Patients: One suffering from Motivation Disorder associated with Dysthymia and the other from Social Anxiety (supervised by Sophie Kindynis)"
   )
 ), tibble(
-  what = "Master of Science (MSc) - Neuropsychology and Cognitive Psychology",
+  what = "Master of Science (MSc) - Clinical Neuropsychology and Cognitive Psychology",
   when = "2012 - 14",
   with = "Université de Paris",
   where = "France",
@@ -138,9 +138,9 @@ data <- rbind(tibble(
   Institution = "Developmental Psychology Lab (LaPsyDé), Université de Paris",
   Where = "Paris, France",
   Activity = paste0(
-    "Data collection for a study ",
-    link("(Borst, 2016)", "http://psycnet.apa.org/journals/emo/13/5/811/"),
-    " on emotions and mental rotation (reference: ", link("Pr Grégoire Borst", "https://www.lapsyde.com/gregoire-borst"),
+    "Data collection for a study (",
+    link("Borst, 2016", "http://psycnet.apa.org/journals/emo/13/5/811/"),
+    ") on emotions and mental rotation (reference: ", link("Pr Grégoire Borst", "https://www.lapsyde.com/gregoire-borst"),
     ")."
   )
 ), tibble(
@@ -200,7 +200,14 @@ detailed_entries(data, Institution, Date, Position, Where, Activity, .protect = 
 
 
 ```{r ExperienceTeaching}
-data <- rbind(tibble(
+data <- rbind(
+  tibble(
+  Position = "Invited Lecturer (Programming and Data Science)",
+  Date = "2022",
+  Institution = "University of Zurich",
+  Where = "Zürich, Switzerland",
+  Activity = paste0("Online workshop (24 h; PhD students): Advanced Python programming for signal processing and data analysis. Reference: ", link("Dr Maike Krannich", "https://www.psychologie.uzh.ch/de/studium/doktorat/team.html"), ".")
+), tibble(
   Position = "Lecturer (Clinical Neuropsychology)",
   Date = "2017 - 18",
   Institution = "Université de Paris",
@@ -568,6 +575,10 @@ I have given academic lectures (total hours since 2014: **400**) on the followin
 - **Cognitive Psychology** (*48 hours; 3rd year level*):
     - Working memory
     - Mental imagery and categorisation
+<!-- - **Programming and Data Science** (*24 hours*):  -->
+<!--     - Python Programming -->
+<!--     - Signal Processing -->
+<!--     - Statistics -->
 - **Other** (*16 hours*): Internet; Research Ethics; Digital Rights
 
 \normalsize
@@ -584,6 +595,11 @@ I have performed several technical courses (typically in-lab training) on topics
 - How to ask and handle sensitive personal information about patients or participants
 
 \normalsize
+
+## Mentoring
+
+
+
 
 
 # Publications
@@ -661,10 +677,10 @@ Lüdecke, D., Waggoner, P., & **Makowski, D.** (2019). [insight: A unified inter
 
 \scriptsize
 
-Lee, H., Jacquot, A., **Makowski, D.**, Arcangeli, M., Dokic, J., Piolino, P., & Sperduti, M. (*under review*). [Beauty is in the eye of the beholder: Evidence from a common mnemonic advantage between aesthetics judgement and self-reference](https://dominiquemakowski.github.io/publication/lee2021beauty/lee2021beauty.pdf). *PsyArXiv*.
+Lee, H., Jacquot, A., **Makowski, D.**, Arcangeli, M., Dokic, J., Piolino, P., & Sperduti, M. (*under review*). [Beauty is in the eye of the beholder: Evidence from a common mnemonic advantage between aesthetics judgement and self-reference](https://www.researchgate.net/publication/344310434_Beauty_is_in_the_eye_of_the_beholder_Evidence_from_a_common_mnemonic_advantage_between_aesthetics_judgement_and_self-reference). *PsyArXiv*.
 
 <!-- TODO: fix page number -->
-Blondé, P., Sperduti, M., **Makowski, D.**, & Piolino, P. (2021). [Bored, distracted, and forgetful: The impact of mind wandering and boredom on memory encoding](https://journals.sagepub.com/doi/abs/10.1177/17470218211026301). *Quarterly Journal of Experimental Psychology*, 174702182110263. 
+Blondé, P., Sperduti, M., **Makowski, D.**, & Piolino, P. (2022). [Bored, distracted, and forgetful: The impact of mind wandering and boredom on memory encoding](https://journals.sagepub.com/doi/abs/10.1177/17470218211026301). *Quarterly Journal of Experimental Psychology, 75*(1), 53-69. 
 
 Blondé, P., **Makowski D.**, Sperduti, M., & Piolino, P. (2020). [In Medio Stat Virtus: intermediate levels of mind wandering improve episodic memory encoding in a virtual environment](https://dominiquemakowski.github.io/publication/blonde2020medio/blonde2020medio.pdf). *Psychological Research, 85*(4), 1613–1625.
 

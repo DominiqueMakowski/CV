@@ -11,7 +11,7 @@ twitter: Dom_Makowski
 github: DominiqueMakowski
 aboutme: |
   \RaggedRight Trained as neuropsychologist, I am currently a postdoc in Singapore researching aspects of reality bending (e.g., neuroscience of deception, perception of fake news, altered states of consciousness), the role of the body and emotions in cognition (e.g., emotion regulation and interoception), and methodology (statistics, programming, and neurophysiological techniques).
-date: March 2022
+date: April 2022
 headcolor: 1976D2
 output:
   vitae::awesomecv:
@@ -47,7 +47,7 @@ csl: C:/Users/domma/Documents/R/win-library/4.1/vitae/vitae.csl
 	\cventry{French Association for Cognitive Behavioural Therapy (AFTCC)}{Certified Psychotherapist - Cognitive Behavioural Therapy (CBT)}{France}{2014 - 17}{\begin{cvitems}
 \item Thesis: Cognitive Behavioural Therapy for two Patients: One suffering from Motivation Disorder associated with Dysthymia and the other from Social Anxiety (supervised by Sophie Kindynis)
 \end{cvitems}}
-	\cventry{Université de Paris}{Master of Science (MSc) - Neuropsychology and Cognitive Psychology}{France}{2012 - 14}{\begin{cvitems}
+	\cventry{Université de Paris}{Master of Science (MSc) - Clinical Neuropsychology and Cognitive Psychology}{France}{2012 - 14}{\begin{cvitems}
 \item Second year thesis: How the Study of Emotions in Schizophrenia enlight the Paradox of Fiction (supervised by \href{http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Pascale-Piolino}{\color[HTML]{1976D2}{Pr Pascale Piolino}})
 \item First year thesis: The Cognitive Development of the Aesthetic Judgement in Children and Adults (supervised by \href{https://www.researchgate.net/profile/Sandrine-Rossi}{\color[HTML]{1976D2}{Pr Sandrine Rossi}})
 \end{cvitems}}
@@ -64,7 +64,7 @@ csl: C:/Users/domma/Documents/R/win-library/4.1/vitae/vitae.csl
 \item First postdoc position, working on a project funded by the ministry of defence about the neurocognitive correlates of deception. Responsible for studies design and completion, data analysis, publications and co-supervision of one PhD student, two research assistants and several graduate and undergraduate students (reference: \href{https://www.clinicalbrain.org/author/annabel-chen/}{\color[HTML]{1976D2}{Pr Annabel Chen}}).
 \end{cvitems}}
 	\cventry{Developmental Psychology Lab (LaPsyDé), Université de Paris}{Research Assistant}{Paris, France}{2012}{\begin{cvitems}
-\item Data collection for a study \href{http://psycnet.apa.org/journals/emo/13/5/811/}{\color[HTML]{1976D2}{(Borst, 2016)}} on emotions and mental rotation (reference: \href{https://www.lapsyde.com/gregoire-borst}{\color[HTML]{1976D2}{Pr Grégoire Borst}}).
+\item Data collection for a study (\href{http://psycnet.apa.org/journals/emo/13/5/811/}{\color[HTML]{1976D2}{Borst, 2016}}) on emotions and mental rotation (reference: \href{https://www.lapsyde.com/gregoire-borst}{\color[HTML]{1976D2}{Pr Grégoire Borst}}).
 \end{cvitems}}
 	\cventry{Memory \& Cognition Lab (LMC), Université de Paris}{Research Assistant}{Paris, France}{2011}{\begin{cvitems}
 \item Experiment creation and data collection for a study on memory, salience and bizarreness effect (reference: \href{http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Serge-Nicolas}{\color[HTML]{1976D2}{Pr Serge Nicolas}}).
@@ -90,6 +90,9 @@ csl: C:/Users/domma/Documents/R/win-library/4.1/vitae/vitae.csl
 
 
 \begin{cventries}
+	\cventry{University of Zurich}{Invited Lecturer (Programming and Data Science)}{Zürich, Switzerland}{2022}{\begin{cvitems}
+\item Online workshop (24 h; PhD students): Advanced Python programming for signal processing and data analysis. Reference: \href{https://www.psychologie.uzh.ch/de/studium/doktorat/team.html}{\color[HTML]{1976D2}{Dr Maike Krannich}}.
+\end{cvitems}}
 	\cventry{Université de Paris}{Lecturer (Clinical Neuropsychology)}{Paris, France}{2017 - 18}{\begin{cvitems}
 \item Courses (192 h; bachelor \& master students): Neurology and psychiatry (main neurodegenerative, neurological and psychiatric disorders), assessment (examination, diagnostic, psychometry), rehabilitation and psychotherapy (CBT, mindfulness-based therapies, cognitive rehabilitation, practice supervision), general neuroscience and psychology (neuroanatomy, emotion regulation...). Reference: \href{http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Isabelle-Jambaque-Aubourg}{\color[HTML]{1976D2}{Pr Isabelle Jambaqué}}.
 \end{cvitems}}
@@ -269,6 +272,10 @@ I have given academic lectures (total hours since 2014: **400**) on the followin
 - **Cognitive Psychology** (*48 hours; 3rd year level*):
     - Working memory
     - Mental imagery and categorisation
+<!-- - **Programming and Data Science** (*24 hours*):  -->
+<!--     - Python Programming -->
+<!--     - Signal Processing -->
+<!--     - Statistics -->
 - **Other** (*16 hours*): Internet; Research Ethics; Digital Rights
 
 \normalsize
@@ -362,10 +369,10 @@ Lüdecke, D., Waggoner, P., & **Makowski, D.** (2019). [insight: A unified inter
 
 \scriptsize
 
-Lee, H., Jacquot, A., **Makowski, D.**, Arcangeli, M., Dokic, J., Piolino, P., & Sperduti, M. (*under review*). [Beauty is in the eye of the beholder: Evidence from a common mnemonic advantage between aesthetics judgement and self-reference](https://dominiquemakowski.github.io/publication/lee2021beauty/lee2021beauty.pdf). *PsyArXiv*.
+Lee, H., Jacquot, A., **Makowski, D.**, Arcangeli, M., Dokic, J., Piolino, P., & Sperduti, M. (*under review*). [Beauty is in the eye of the beholder: Evidence from a common mnemonic advantage between aesthetics judgement and self-reference](https://www.researchgate.net/publication/344310434_Beauty_is_in_the_eye_of_the_beholder_Evidence_from_a_common_mnemonic_advantage_between_aesthetics_judgement_and_self-reference). *PsyArXiv*.
 
 <!-- TODO: fix page number -->
-Blondé, P., Sperduti, M., **Makowski, D.**, & Piolino, P. (2021). [Bored, distracted, and forgetful: The impact of mind wandering and boredom on memory encoding](https://journals.sagepub.com/doi/abs/10.1177/17470218211026301). *Quarterly Journal of Experimental Psychology*, 174702182110263. 
+Blondé, P., Sperduti, M., **Makowski, D.**, & Piolino, P. (2022). [Bored, distracted, and forgetful: The impact of mind wandering and boredom on memory encoding](https://journals.sagepub.com/doi/abs/10.1177/17470218211026301). *Quarterly Journal of Experimental Psychology, 75*(1), 53-69. 
 
 Blondé, P., **Makowski D.**, Sperduti, M., & Piolino, P. (2020). [In Medio Stat Virtus: intermediate levels of mind wandering improve episodic memory encoding in a virtual environment](https://dominiquemakowski.github.io/publication/blonde2020medio/blonde2020medio.pdf). *Psychological Research, 85*(4), 1613–1625.
 
