@@ -11,7 +11,7 @@ twitter: Dom_Makowski
 github: DominiqueMakowski
 aboutme: |
   \RaggedRight Trained as neuropsychologist, I am currently a postdoc in Singapore researching aspects of reality bending (e.g., neuroscience of deception, perception of fake news, altered states of consciousness), the role of the body and emotions in cognition (e.g., emotion regulation and interoception), and methodology (statistics, programming, and neurophysiological techniques).
-date: April 2022
+date: May 2022
 headcolor: 1976D2
 output:
   vitae::awesomecv:
@@ -36,6 +36,13 @@ csl: C:/Users/domma/Documents/R/win-library/4.1/vitae/vitae.csl
 \end{cvitems}}
 \end{cventries}
 
+\footnotesize
+
+The NTU "presidential postdoc fellowship" is a competitive grant meant as an intermediate step between postdoc and faculty. While integrated within a larger lab (the [Clinical Brain Lab](https://www.clinicalbrain.org/), directed by Prof Annabel Chen), I am pursuing my own research track on the perception of reality, managing my team (3 research assistants, and several undergrad students) and research funding ($ 200k). I am involved in all the research and administrative aspects of the project (writing IRBs, project budgeting, experiment creations, data collection, analysis, manuscript writing, ...).
+
+On top of the mentoring and teaching done in the context of the lab, I am also involved in university lectures (e.g., statistics for NTU students), research-oriented workshops (for instance, I will be introducing our software *NeuroKit* at the OHBM conference this summer), and other trainings (I have been appointed by the University of Zurich to give a 3 days course on Python to their PhD students).
+
+\normalsize
 
 
 # Education
@@ -71,6 +78,27 @@ csl: C:/Users/domma/Documents/R/win-library/4.1/vitae/vitae.csl
 \end{cvitems}}
 \end{cventries}
 
+## Teaching
+
+
+\begin{cventries}
+	\cventry{University of Zurich}{Invited Lecturer (Programming and Data Science)}{Zürich, Switzerland}{2022}{\begin{cvitems}
+\item Online workshop (24 h; PhD students): Advanced Python programming for signal processing and data analysis. Reference: \href{https://www.psychologie.uzh.ch/de/studium/doktorat/team.html}{\color[HTML]{1976D2}{Dr Maike Krannich}}.
+\end{cvitems}}
+	\cventry{Université de Paris}{Assistant Lecturer (Clinical Neuropsychology)}{Paris, France}{2017 - 18}{\begin{cvitems}
+\item Courses (192 h; bachelor \& master students): Neurology and psychiatry (main neurodegenerative, neurological and psychiatric disorders), assessment (examination, diagnostic, psychometry), rehabilitation and psychotherapy (CBT, mindfulness-based therapies, cognitive rehabilitation, practice supervision), general neuroscience and psychology (neuroanatomy, emotion regulation...). Reference: \href{http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Isabelle-Jambaque-Aubourg}{\color[HTML]{1976D2}{Pr Isabelle Jambaqué}}.
+\end{cvitems}}
+	\cventry{Université de Paris}{Teaching Assistant (Differential Cognitive Psychology)}{Paris, France}{2015 - 17}{\begin{cvitems}
+\item Courses (144 h; 1st \& 2nd year students): Experimental methodology (assessment and related problems, scientific reasoning, psychometric properties of tests and questionnaires, statistics...) and introduction to concepts such as intelligence, personality and creativity. Reference: Dr Christophe Mouchiroud.
+\end{cvitems}}
+	\cventry{Université de Paris}{Teaching Assistant (Cognitive Psychology)}{Paris, France}{2014 - 16}{\begin{cvitems}
+\item Courses (48 h; 3rd year students): Models of working memory, mental imagery and categorisation. Reference: \href{https://lapea.recherche.parisdescartes.fr/membres-permanents/todd-lubart/}{\color[HTML]{1976D2}{Pr Todd Lubart}}.
+\end{cvitems}}
+	\cventry{Université de Paris}{Teaching Assistant (University Services)}{Paris, France}{2013}{\begin{cvitems}
+\item Courses (16 h; 1st year students): Introduction to the use of internet (internet security, anonymity, etc.) and on-line university services for first year students. Reference: Dr Christian Fondrat.
+\end{cvitems}}
+\end{cventries}
+
 
 ## Clinical
 
@@ -83,27 +111,6 @@ csl: C:/Users/domma/Documents/R/win-library/4.1/vitae/vitae.csl
 \end{cvitems}}
 	\cventry{Department of gerontology, La Porte Verte Hospital}{Assistant Neuropsychologist}{Versailles, France}{2012}{\begin{cvitems}
 \item Neuropsychology internship (96 h) under Sophie Fleury. Observation of assessment and diagnostic of memory related deficits such as neurodegenerative diseases, somatic ageing-related illnesses or depression.
-\end{cvitems}}
-\end{cventries}
-
-## Teaching
-
-
-\begin{cventries}
-	\cventry{University of Zurich}{Invited Lecturer (Programming and Data Science)}{Zürich, Switzerland}{2022}{\begin{cvitems}
-\item Online workshop (24 h; PhD students): Advanced Python programming for signal processing and data analysis. Reference: \href{https://www.psychologie.uzh.ch/de/studium/doktorat/team.html}{\color[HTML]{1976D2}{Dr Maike Krannich}}.
-\end{cvitems}}
-	\cventry{Université de Paris}{Lecturer (Clinical Neuropsychology)}{Paris, France}{2017 - 18}{\begin{cvitems}
-\item Courses (192 h; bachelor \& master students): Neurology and psychiatry (main neurodegenerative, neurological and psychiatric disorders), assessment (examination, diagnostic, psychometry), rehabilitation and psychotherapy (CBT, mindfulness-based therapies, cognitive rehabilitation, practice supervision), general neuroscience and psychology (neuroanatomy, emotion regulation...). Reference: \href{http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Isabelle-Jambaque-Aubourg}{\color[HTML]{1976D2}{Pr Isabelle Jambaqué}}.
-\end{cvitems}}
-	\cventry{Université de Paris}{Teaching Assistant (Differential Cognitive Psychology)}{Paris, France}{2015 - 17}{\begin{cvitems}
-\item Courses (144 h; 1st \& 2nd year students): Experimental methodology (assessment and related problems, scientific reasoning, psychometric properties of tests and questionnaires, statistics...) and introduction to concepts such as intelligence, personality and creativity. Reference: Dr Christophe Mouchiroud.
-\end{cvitems}}
-	\cventry{Université de Paris}{Teaching Assistant (Cognitive Psychology)}{Paris, France}{2014 - 16}{\begin{cvitems}
-\item Courses (48 h; 3rd year students): Models of working memory, mental imagery and categorisation. Reference: \href{https://lapea.recherche.parisdescartes.fr/membres-permanents/todd-lubart/}{\color[HTML]{1976D2}{Pr Todd Lubart}}.
-\end{cvitems}}
-	\cventry{Université de Paris}{Teaching Assistant (University Services)}{Paris, France}{2013}{\begin{cvitems}
-\item Courses (16 h; 1st year students): Introduction to the use of internet (internet security, anonymity, etc.) and on-line university services for first year students. Reference: Dr Christian Fondrat.
 \end{cvitems}}
 \end{cventries}
 
@@ -133,15 +140,15 @@ My PhD, on the effect of reality beliefs on emotion, attempted at integrate my t
 
 \small
 
-I have developed strong technical expertise with several tools (EEG, bodily signals, Virtual Reality) and methods. In particular, I employ advanced statistical procedures (Bayesian framework, predictive and structural modelling, machine/deep learning) to address the scientific challenges that I encounter. In parallel, I develop open-source software, such as the \href{https://github.com/easystats/easystats}{\color[HTML]{1976D2}{\textbf{easystats}}} collection of R packages; \href{https://github.com/neuropsychology/NeuroKit}{\color[HTML]{1976D2}{\textbf{NeuroKit}}}, a Python package for neurophysiological signal processing; \href{https://github.com/realitybending/Pyllusion}{\color[HTML]{1976D2}{\textbf{Pyllusion}}}, a framework to generate visual illusions; or \href{https://github.com/neuropsychology/Neuropsydia.py}{\color[HTML]{1976D2}{\textbf{Neuropsydia}}}, a software to create experiments. 
+I have developed strong technical expertise with several tools (EEG, bodily signals, Virtual Reality) and methods. In particular, I employ advanced statistical procedures (Bayesian framework, predictive and structural modelling, machine/deep learning) to address the scientific challenges that I encounter. In parallel, I develop open-source software, such as the \href{https://github.com/easystats/easystats}{\color[HTML]{1976D2}{\textbf{easystats}}} collection of R packages; \href{https://github.com/neuropsychology/NeuroKit}{\color[HTML]{1976D2}{\textbf{NeuroKit}}}, a Python package for neurophysiological signal processing; \href{https://github.com/realitybending/Pyllusion}{\color[HTML]{1976D2}{\textbf{Pyllusion}}}, a framework to generate visual illusions; or \href{https://github.com/neuropsychology/Neuropsydia.py}{\color[HTML]{1976D2}{\textbf{Neuropsydia}}}, a software to create experiments.
 
-Initially created to increase the efficiency and quality of my own research, some of these tools have become quite popular and are actively used by the scientific community (e.g., the *easystats* packages have been downloaded more than 5 million times since their creation about 3 years ago, and *NeuroKit* has become one of the most popular toolbox for multimodal physiology). 
+Initially created to increase the efficiency and quality of my own research, some of these tools have become quite popular and are actively used by the scientific community (e.g., the *easystats* packages have been downloaded more than 5 million times since their creation about 3 years ago, and *NeuroKit* has become one of the most popular toolbox for multimodal physiology).
 
 ## Open Science
 
-My interest in improving accessibility, widening the usage of advanced methods and best practices by means of open access tools and tutorials, and staying active in open-software communities (e.g., on \href{https://github.com/DominiqueMakowski}{\color[HTML]{1976D2}{\textbf{GitHub}}} by answer technical and methodological questions, is motivated by the fact that, coming myself from a different background (clinical neuropsychology) in which programming, computer science and advanced statistics are not taught, I realized how harnessing such powerful tools can improve one's research (and quality of life) at many levels. 
+My interest in improving accessibility, widening the usage of advanced methods and best practices by means of open access tools and tutorials, and staying active in open-software communities (e.g., on \href{https://github.com/DominiqueMakowski}{\color[HTML]{1976D2}{\textbf{GitHub}}} by answer technical and methodological questions, is motivated by the fact that, coming myself from a different background (clinical neuropsychology) in which programming, computer science and advanced statistics are not taught, I realized how harnessing such powerful tools can improve one's research (and quality of life) at many levels.
 
-I fully endorse to the highest standards of open science, by sharing data and reproducible scripts of my experiments (see this \href{https://github.com/RealityBending/TemplateResults}{\color[HTML]{1976D2}{\textbf{Supplementary Materials Template}}} that I created to facilitate the sharing of additional material). Naturally, my concrete engagement in open, honest and reproducible science, is accompanied by the highest standards in terms of methodological rigour and ethical responsibility.
+I fully endorse to the highest standards of open science, by sharing data and reproducible scripts of my experiments (see this \href{https://github.com/RealityBending/TemplateResults}{\color[HTML]{1976D2}{\textbf{Supplementary Materials Template}}} created to facilitate the sharing of additional material). Naturally, my concrete engagement in open, honest and reproducible science, is accompanied by the highest standards in terms of methodological rigour and ethical responsibility.
 
 
 
@@ -214,7 +221,7 @@ I fully endorse to the highest standards of open science, by sharing data and re
 \toprule
 \textit{n}-Publications \textit{(total)} & \textit{n}-1\textsuperscript{st} author & \textit{n}-2\textsuperscript{nd} author & \textit{n}-Senior author & H-index & Citations \textit{(total)}\\
 \midrule
-40 & 20 & 7 & 7 & 16 & 2129\\
+40 & 20 & 7 & 7 & 17 & 2481\\
 \bottomrule
 \end{tabular}
 \endgroup{}
@@ -226,8 +233,9 @@ I fully endorse to the highest standards of open science, by sharing data and re
 
 
 \begin{cventries}
-	\cventry{\href{https://fcl.ethz.ch/research/research-projects/NICE.html}{\color[HTML]{5D5D5D}{A Neuroscientific investigation of the Interaction between Crowdedness and Environment typology (NICE)}}}{co-PI: \href{https://researchgrant.gov.sg/Pages/GrantCallDetail.aspx?AXID=NRF2021-ITS008&CompanyCode=nrf}{\color[HTML]{333333}{Singapore National Research Foundation's Intra-CREATE Grant}}}{\$249,730}{2021 - 22}{}\vspace{-4.0mm}
-	\cventry{'That's Fake News': Modulating the Neurocognitive Processes Underlying the Belief in Deceptive Information}{PI: \href{https://www.ntu.edu.sg/research/research-careers/presidential-postdoctoral-fellowship-(ppf)}{\color[HTML]{333333}{NTU Presidential Postdoctoral Fellowship}}}{\$360,000}{2020 - 22}{}\vspace{-4.0mm}
+	\cventry{Cognitive, Neural and Social Factors involved in the Perception of Real vs. Fake Information}{\href{https://www.ntu.edu.sg/temasek-labs/research-focus/programme}{\color[HTML]{333333}{TL@NTU's Behavioural and Communication Science Programme (BCSP) Grant}} (co-PI)}{\$915,427}{2022 - 25}{}\vspace{-4.0mm}
+	\cventry{\href{https://fcl.ethz.ch/research/research-projects/NICE.html}{\color[HTML]{5D5D5D}{A Neuroscientific investigation of the Interaction between Crowdedness and Environment typology (NICE)}}}{\href{https://researchgrant.gov.sg/Pages/GrantCallDetail.aspx?AXID=NRF2021-ITS008&CompanyCode=nrf}{\color[HTML]{333333}{Singapore National Research Foundation's Intra-CREATE Grant}} (co-PI)}{\$249,730}{2021 - 22}{}\vspace{-4.0mm}
+	\cventry{'That's Fake News': Modulating the Neurocognitive Processes Underlying the Belief in Deceptive Information}{\href{https://www.ntu.edu.sg/research/research-careers/presidential-postdoctoral-fellowship-(ppf)}{\color[HTML]{333333}{NTU Presidential Postdoctoral Fellowship}} (PI)}{\$360,000}{2020 - 22}{}\vspace{-4.0mm}
 	\cventry{Obtained for \href{https://dominiquemakowski.github.io/publication/makowski2019phenomenal/}{\color[HTML]{1976D2}{Makowski et al. (2019)}}}{\href{https://www.psychonomic.org/page/2020BestArticleAwards}{\color[HTML]{333333}{Best Article Award (Psychonomic Society)}}}{\$1,000}{2020}{}\vspace{-4.0mm}
 	\cventry{Obtained for the bayestestR R package \href{https://joss.theoj.org/papers/10.21105/joss.01541}{\color[HTML]{1976D2}{(Makowski et al., 2019)}}}{\href{https://improvingpsych.org/mission/awards/}{\color[HTML]{333333}{Commendation (Society for the Improvement of Psychological Science - SIPS)}}}{N/A}{2020}{}\vspace{-4.0mm}
 	\cventry{Three years of PhD fully funded by the French Ministry of Research}{\href{https://improvingpsych.org/mission/awards/}{\color[HTML]{333333}{Ministerial PhD scholarship}}}{€80,000}{2014 - 17}{}\vspace{-4.0mm}
@@ -292,6 +300,13 @@ I have performed several technical courses (typically in-lab training) on topics
 - How to ask and handle sensitive personal information about patients or participants
 
 \normalsize
+
+<!-- ## Mentoring -->
+
+<!-- I have mentored more than 5 full-time research assistants.  -->
+
+<!-- I have also co-supervised bachelor and master students for their research projects.  -->
+
 
 
 # Publications
@@ -372,7 +387,7 @@ Lüdecke, D., Waggoner, P., & **Makowski, D.** (2019). [insight: A unified inter
 Lee, H., Jacquot, A., **Makowski, D.**, Arcangeli, M., Dokic, J., Piolino, P., & Sperduti, M. (*under review*). [Beauty is in the eye of the beholder: Evidence from a common mnemonic advantage between aesthetics judgement and self-reference](https://www.researchgate.net/publication/344310434_Beauty_is_in_the_eye_of_the_beholder_Evidence_from_a_common_mnemonic_advantage_between_aesthetics_judgement_and_self-reference). *PsyArXiv*.
 
 <!-- TODO: fix page number -->
-Blondé, P., Sperduti, M., **Makowski, D.**, & Piolino, P. (2022). [Bored, distracted, and forgetful: The impact of mind wandering and boredom on memory encoding](https://journals.sagepub.com/doi/abs/10.1177/17470218211026301). *Quarterly Journal of Experimental Psychology, 75*(1), 53-69. 
+Blondé, P., Sperduti, M., **Makowski, D.**, & Piolino, P. (2022). [Bored, distracted, and forgetful: The impact of mind wandering and boredom on memory encoding](https://journals.sagepub.com/doi/abs/10.1177/17470218211026301). *Quarterly Journal of Experimental Psychology, 75*(1), 53-69.
 
 Blondé, P., **Makowski D.**, Sperduti, M., & Piolino, P. (2020). [In Medio Stat Virtus: intermediate levels of mind wandering improve episodic memory encoding in a virtual environment](https://dominiquemakowski.github.io/publication/blonde2020medio/blonde2020medio.pdf). *Psychological Research, 85*(4), 1613–1625.
 
@@ -478,7 +493,7 @@ Lau, Z. J., Pham, T., Boyce, W. P., Chen, S. A., & **Makowski, D.** (2021). \hre
 
 Blondé, P., Sperduti, M., **Makowski, D.** \& Piolino, P. (2016). *Le rôle des réseaux attentionnels sur l’encodage en mémoire épisodique dans le cadre du vieillissement et de sa variabilité interindividuelle liée aux traits de pleine conscience*. Journée d’hivers de la Société de Neuropsychologie de Langue Française, 5 December, Paris, France.
 
-**Makowski, D.**, Sperduti, M. \& Piolino, P. (2016). 
+**Makowski, D.**, Sperduti, M. \& Piolino, P. (2016).
 *I know it’s not real... what does it change?* nCPN day, 16 September, Paris, France.
 
 <!-- \begin{center}\textit{2015}\end{center} -->
@@ -505,7 +520,7 @@ Sperduti, M., **Makowski, D.** \& Piolino, P. (2014). *The protective role of me
 
 # References
 
-\small 
+\small
 
 Do not hesitate to contact them of any inquiry.
 
