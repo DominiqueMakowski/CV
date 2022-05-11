@@ -311,6 +311,17 @@ I have performed several technical courses (typically in-lab training) on topics
 
 # Publications
 
+
+
+
+
+
+
+
+
+
+
+
 ## Reality Perception and Manipulation
 
 \scriptsize
@@ -517,6 +528,7 @@ Sperduti, M., **Makowski, D.** \& Piolino, P. (2014). *The protective role of me
 **Makowski, D.**, Sperduti, M., Arcangeli, M., Pelletier, J. \& Piolino, P. (2013). *QUID du paradoxe de l’émotion face à la fiction ? Nouvelles données physiologiques comparant la réponse émotionnelle à des scènes réelles ou fictionnelles*. Journées de l’IUPDP, 19 December, Boulogne-Billancourt, France.
 
 \normalsize
+
 
 # References
 

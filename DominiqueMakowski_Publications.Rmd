@@ -1,0 +1,59 @@
+---
+name: Dominique
+surname: Makowski
+profilepic: "./img/profile.png"
+position: "Research Fellow"
+qualifications: "PhD"
+address: "Nanyang Technological University, Singapore"
+# phone: +1 22 3333 4444
+www: dominiquemakowski.github.io
+email: "dom.makowski@gmail.com"
+twitter: Dom_Makowski
+github: DominiqueMakowski
+# linkedin: dominiquemakowski
+# orcid: "0000-0001-5375-9967"
+date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: "1976D2"
+output:
+  vitae::awesomecv:
+    page_total: true
+    keep_md: true
+editor_options:
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(dplyr)
+library(ggplot2)
+
+link <- function(txt, url, color = "1976D2") {
+  paste0("\\href{", url, "}{\\color[HTML]{", color, "}{", txt, "}}")
+}
+
+short <- FALSE
+```
+
+# Selected Publications
+
+\small
+
+**Makowski, D.**, Pham, T., Lau, Z. J., Brammer, J. C., Lespinasse, F., Pham, H., Schötzel, C., & Chen, S. A. (2021). [NeuroKit2: A Python Toolbox for Neurophysiological Signal Processing](https://dominiquemakowski.github.io/publication/makowski2021neurokit/makowski2021neurokit.pdf). *Behavior Research Methods*, 1-8.
+
+**Makowski, D.**, Sperduti, M., Pelletier, J., Blondé, P., La Corte, V., Arcangeli, M., Zalla, T., Lemaire, S., Dokic, J., Nicolas, S., & Piolino, P. (2019). [Phenomenal, Bodily and Brain Correlates of Fictional Reappraisal as an Implicit Emotion Regulation Strategy](https://dominiquemakowski.github.io/publication/makowski2019phenomenal/makowski2019phenomenal.pdf). *Cognitive, Affective, & Behavioral Neuroscience*, 19(4), 1-21.
+
+**Makowski, D.**, Sperduti, M., Blondé, P., Nicolas, S., & Piolino, P. (2019). [The heart of cognitive control: Cardiac phase modulates processing speed and inhibition](https://dominiquemakowski.github.io/publication/makowski2019heart/makowski2019heart.pdf). *Psychophysiology, 57*(3).
+
+**Makowski, D.**\*, Sperduti, M.\*, Nicolas, S. & Piolino, P. (2017). ["*Being there*" and remembering it: Presence improves Memory Encoding](https://dominiquemakowski.github.io/publication/makowski2017being/makowski2017being.pdf). *Consciousness & Cognition, 53*, 194–202.
+
+Sperduti, M.\*, **Makowski, D.**\*, Arcangeli, M., Wantzen, P., Zalla, T., Lemaire, S., Dokic, J., Pelletier, J. & Piolino, P. (2017). [The Distinctive Role of Executive Functions in Implicit Emotion Regulation](https://dominiquemakowski.github.io/publication/sperduti2017distinctive/sperduti2017distinctive.pdf). *Acta Psychologica, 173*, 13-20.
+
+**Makowski, D.**, Ben-Shachar, M., & Lüdecke, D. (2019). [bayestestR: Describing effects and their uncertainty, existence and significance within the Bayesian framework](https://joss.theoj.org/papers/10.21105/joss.01541). *Journal of Open Source Software, 4*(40), 1541.
+
+\normalsize
+
+# Publication List
+
+```{r, child=c('publications.Rmd')}
+```
