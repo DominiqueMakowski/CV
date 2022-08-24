@@ -70,7 +70,7 @@ detailed_entries(data, with, when, what, where, details, .protect = FALSE)
 
 The NTU "presidential postdoc fellowship" is a competitive grant meant as an intermediate step between postdoc and faculty. While integrated within a larger lab (the [Clinical Brain Lab](https://www.clinicalbrain.org/), directed by Prof Annabel Chen), I am pursuing my own research track on the perception of reality, managing my team (3 research assistants, and several undergrad students) and research funding ($ 200k). I am involved in all the research and administrative aspects of the project (writing IRBs, project budgeting, experiment creations, data collection, analysis, manuscript writing, ...).
 
-On top of the mentoring and teaching done in the context of the lab, I am also involved in university lectures (e.g., statistics for NTU students), research-oriented workshops (for instance, I will be introducing our software *NeuroKit* at the OHBM conference this summer), and other trainings (I have been appointed by the University of Zurich to give a 3 days course on Python to their PhD students).
+On top of the mentoring and teaching done in the context of the lab, I am also involved in university lectures (e.g., statistics for NTU students), research-oriented workshops (for instance, I have introduced our software *NeuroKit* at the OHBM conference this summer), and other courses (I have been recently appointed by the University of Zurich to give a 3 days course on Python to their PhD students).
 
 \normalsize
 
@@ -130,6 +130,15 @@ detailed_entries(data, with, when, what, where, details, .protect = FALSE)
 
 ```{r ExperienceResearch}
 data <- rbind(
+tibble(
+  Position = "Presidential Research Fellow",
+  Date = "2021 - 22",
+  Institution = "Nanyang Technological University (NTU)",
+  Where = "Singapore",
+  Activity = paste0(
+    "See \\textit{Current Position} above."
+  )
+),
 tibble(
   Position = "Research Fellow",
   Date = "2019 - 20",
@@ -583,7 +592,7 @@ detailed_entries(data, Details, Date, Position, Where, Activity, .protect = FALS
 \small
 
 
-I have given academic lectures (total hours since 2014: **400**) on the following topics:
+I have given academic lectures (total hours since 2014: **424**) on the following topics:
 
 - **Neuropsychology** (*192 hours; 2nd year, 3rd year and master level*)
     - Clinical Neuropsychology \scriptsize(Neuropsychological syndromes; Neuropsychological examination and diagnostic; Cognitive rehabilitation; Clinical practice supervision; Neuropsychology in psychiatry)\normalsize
@@ -594,10 +603,10 @@ I have given academic lectures (total hours since 2014: **400**) on the followin
 - **Cognitive Psychology** (*48 hours; 3rd year level*):
     - Working memory
     - Mental imagery and categorisation
-<!-- - **Programming and Data Science** (*24 hours*):  -->
-<!--     - Python Programming -->
-<!--     - Signal Processing -->
-<!--     - Statistics -->
+- **Programming and Data Science** (*24 hours*):
+   - Python Programming
+   - Signal Processing
+   - Statistics
 - **Other** (*16 hours*): Internet; Research Ethics; Digital Rights
 
 \normalsize

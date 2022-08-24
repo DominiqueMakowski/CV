@@ -31,7 +31,11 @@ Sperduti, M.\*, Arcangeli, M.\*, **Makowski, D.**, Wantzen, P., Zalla, T., Lemai
 
 \scriptsize
 
-Lau, Z. J.\*, Pham, T.\*, Chen, S. A., & **Makowski, D.** (*under review*). Brain Entropy, Fractal Dimensions and Predictability: A Review of Complexity Measures for EEG in Healthy and Neuropsychiatric Populations. *PsyArXiv*.
+Pham, T., Lau, Z. J., Chen, S. A., & **Makowski, D.** (*under review*). [Unveiling the Structure of Heart Rate Variability (HRV) Indices: A Data-driven Meta-clustering Approach](https://psyarxiv.com/mwa6x/). *PsyXarkiv*.
+
+Lau, Z. J.\*, Pham, T.\*, Chen, S. A., & **Makowski, D.** (2022). [Brain Entropy, Fractal Dimensions and Predictability: A Review of Complexity Measures for EEG in Healthy and Neuropsychiatric Populations](https://onlinelibrary.wiley.com/doi/abs/10.1111/ejn.15800). *European Journal of Neuroscience*.
+
+**Makowski, D.**, Te, A. S., Pham, T., Lau, Z. J., & Chen, S. H. (2022). [The Structure of Chaos: An Empirical Comparison of Fractal Physiology Complexity Indices Using Neurokit2](https://www.mdpi.com/1099-4300/24/8/1036). *Entropy, 24*(8), 1036.
 
 Pham, T., Lau, Z. J., Chen, S. H. A., & **Makowski, D.** (2021). [Heart Rate Variability in Psychology: A Review of HRV Indices and an Analysis Tutorial](https://www.mdpi.com/1424-8220/21/12/3998). *Sensors, 21*(12), 3998.
 

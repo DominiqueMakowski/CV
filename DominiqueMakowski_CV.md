@@ -11,7 +11,7 @@ twitter: Dom_Makowski
 github: DominiqueMakowski
 aboutme: |
   \RaggedRight Trained as neuropsychologist, I am currently a postdoc in Singapore researching aspects of reality bending (e.g., neuroscience of deception, perception of fake news, altered states of consciousness), the role of the body and emotions in cognition (e.g., emotion regulation and interoception), and methodology (statistics, programming, and neurophysiological techniques).
-date: May 2022
+date: August 2022
 headcolor: 1976D2
 output:
   vitae::awesomecv:
@@ -20,7 +20,7 @@ output:
 editor_options:
   chunk_output_type: console
 nocite: '@'
-csl: C:/Users/domma/Documents/R/win-library/4.1/vitae/vitae.csl
+csl: C:/Users/domma/AppData/Local/R/win-library/4.2/vitae/vitae.csl
 
 ---
 
@@ -40,7 +40,7 @@ csl: C:/Users/domma/Documents/R/win-library/4.1/vitae/vitae.csl
 
 The NTU "presidential postdoc fellowship" is a competitive grant meant as an intermediate step between postdoc and faculty. While integrated within a larger lab (the [Clinical Brain Lab](https://www.clinicalbrain.org/), directed by Prof Annabel Chen), I am pursuing my own research track on the perception of reality, managing my team (3 research assistants, and several undergrad students) and research funding ($ 200k). I am involved in all the research and administrative aspects of the project (writing IRBs, project budgeting, experiment creations, data collection, analysis, manuscript writing, ...).
 
-On top of the mentoring and teaching done in the context of the lab, I am also involved in university lectures (e.g., statistics for NTU students), research-oriented workshops (for instance, I will be introducing our software *NeuroKit* at the OHBM conference this summer), and other trainings (I have been appointed by the University of Zurich to give a 3 days course on Python to their PhD students).
+On top of the mentoring and teaching done in the context of the lab, I am also involved in university lectures (e.g., statistics for NTU students), research-oriented workshops (for instance, I have introduced our software *NeuroKit* at the OHBM conference this summer), and other courses (I have been recently appointed by the University of Zurich to give a 3 days course on Python to their PhD students).
 
 \normalsize
 
@@ -67,6 +67,9 @@ On top of the mentoring and teaching done in the context of the lab, I am also i
 ## Research
 
 \begin{cventries}
+	\cventry{Nanyang Technological University (NTU)}{Presidential Research Fellow}{Singapore}{2021 - 22}{\begin{cvitems}
+\item See \textit{Current Position} above.
+\end{cvitems}}
 	\cventry{Clinical Brain Lab, Nanyang Technological University (NTU)}{Research Fellow}{Singapore}{2019 - 20}{\begin{cvitems}
 \item First postdoc position, working on a project funded by the ministry of defence about the neurocognitive correlates of deception. Responsible for studies design and completion, data analysis, publications and co-supervision of one PhD student, two research assistants and several graduate and undergraduate students (reference: \href{https://www.clinicalbrain.org/author/annabel-chen/}{\color[HTML]{1976D2}{Pr Annabel Chen}}).
 \end{cvitems}}
@@ -221,7 +224,7 @@ I fully endorse to the highest standards of open science, by sharing data and re
 \toprule
 \textit{n}-Publications \textit{(total)} & \textit{n}-1\textsuperscript{st} author & \textit{n}-2\textsuperscript{nd} author & \textit{n}-Senior author & H-index & Citations \textit{(total)}\\
 \midrule
-40 & 20 & 7 & 7 & 17 & 2481\\
+40 & 20 & 7 & 7 & 17 & 3105\\
 \bottomrule
 \end{tabular}
 \endgroup{}
@@ -269,7 +272,7 @@ I fully endorse to the highest standards of open science, by sharing data and re
 \small
 
 
-I have given academic lectures (total hours since 2014: **400**) on the following topics:
+I have given academic lectures (total hours since 2014: **424**) on the following topics:
 
 - **Neuropsychology** (*192 hours; 2nd year, 3rd year and master level*)
     - Clinical Neuropsychology \scriptsize(Neuropsychological syndromes; Neuropsychological examination and diagnostic; Cognitive rehabilitation; Clinical practice supervision; Neuropsychology in psychiatry)\normalsize
@@ -280,10 +283,10 @@ I have given academic lectures (total hours since 2014: **400**) on the followin
 - **Cognitive Psychology** (*48 hours; 3rd year level*):
     - Working memory
     - Mental imagery and categorisation
-<!-- - **Programming and Data Science** (*24 hours*):  -->
-<!--     - Python Programming -->
-<!--     - Signal Processing -->
-<!--     - Statistics -->
+- **Programming and Data Science** (*24 hours*):
+   - Python Programming
+   - Signal Processing
+   - Statistics
 - **Other** (*16 hours*): Internet; Research Ethics; Digital Rights
 
 \normalsize
@@ -310,10 +313,6 @@ I have performed several technical courses (typically in-lab training) on topics
 
 
 # Publications
-
-
-
-
 
 
 
@@ -349,7 +348,11 @@ Sperduti, M.\*, Arcangeli, M.\*, **Makowski, D.**, Wantzen, P., Zalla, T., Lemai
 
 \scriptsize
 
-Lau, Z. J.\*, Pham, T.\*, Chen, S. A., & **Makowski, D.** (*under review*). Brain Entropy, Fractal Dimensions and Predictability: A Review of Complexity Measures for EEG in Healthy and Neuropsychiatric Populations. *PsyArXiv*.
+Pham, T., Lau, Z. J., Chen, S. A., & **Makowski, D.** (*under review*). [Unveiling the Structure of Heart Rate Variability (HRV) Indices: A Data-driven Meta-clustering Approach](https://psyarxiv.com/mwa6x/). *PsyXarkiv*.
+
+Lau, Z. J.\*, Pham, T.\*, Chen, S. A., & **Makowski, D.** (2022). [Brain Entropy, Fractal Dimensions and Predictability: A Review of Complexity Measures for EEG in Healthy and Neuropsychiatric Populations](https://onlinelibrary.wiley.com/doi/abs/10.1111/ejn.15800). *European Journal of Neuroscience*.
+
+**Makowski, D.**, Te, A. S., Pham, T., Lau, Z. J., & Chen, S. H. (2022). [The Structure of Chaos: An Empirical Comparison of Fractal Physiology Complexity Indices Using Neurokit2](https://www.mdpi.com/1099-4300/24/8/1036). *Entropy, 24*(8), 1036.
 
 Pham, T., Lau, Z. J., Chen, S. H. A., & **Makowski, D.** (2021). [Heart Rate Variability in Psychology: A Review of HRV Indices and an Analysis Tutorial](https://www.mdpi.com/1424-8220/21/12/3998). *Sensors, 21*(12), 3998.
 
