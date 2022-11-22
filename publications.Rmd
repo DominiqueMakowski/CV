@@ -180,6 +180,12 @@ Sperduti, M., **Makowski, D.** & Piolino, P. (2016). *Does mindfulness enhance i
 
 \tiny
 
+<!-- \begin{center}\textit{2022}\end{center} -->
+**Makowski, D.,** Lau, Z. J., Pham, T., Te, A. S., & Chen, S. A. (2022). *Fractal dimension of EEG activity is linked to distinct facets of resting‑state cognition*. 28th Annual Meeting of the Organization for Human Brain Mapping (OHBM), 19-23 June, Glasgow, Scotland.
+
+**Makowski, D.,** Lau, Z. J., Pham, T., Te, A. S., & Chen, S. A. (2022). *A Closer Look at Cardiac Contraction and the Effect of Cardiac Timing on Cognitive
+Control*. 28th Annual Meeting of the Organization for Human Brain Mapping (OHBM), 19-23 June, Glasgow, Scotland.
+
 <!-- \begin{center}\textit{2021}\end{center} -->
 
 Lau, Z. J., Pham, T., Boyce, W. P., Chen, S. A., & **Makowski, D.** (2021). `r link("\\textit{A Parametric Framework to Generate Visual Illusions using Python}", "https://youtu.be/uptP_NxEHaM")`. 43rd European Conference on Visual Perception, 22-27 Aug. Online.
