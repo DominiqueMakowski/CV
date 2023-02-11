@@ -13,7 +13,7 @@ github: DominiqueMakowski
 # linkedin: dominiquemakowski
 # orcid: "0000-0001-5375-9967"
 aboutme: |
-  \RaggedRight Trained as neuropsychologist, I am currently a postdoc in Singapore researching aspects of reality bending (e.g., neuroscience of deception, perception of fake news, altered states of consciousness), the role of the body and emotions in cognition (e.g., emotion regulation and interoception), and methodology (statistics, programming, and neurophysiological techniques).
+  \RaggedRight Trained as a neuropsychologist, I am currently a postdoc in Singapore researching aspects of reality bending (e.g., neuroscience of deception, perception of fake news, altered states of consciousness), the role of the body and emotions in cognition (e.g., emotion regulation and interoception), and methodology (statistics, programming, and neurophysiological techniques).
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: "1976D2"
 output:

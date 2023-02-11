@@ -78,12 +78,14 @@ create_graph <- function(data) {
     as.list()
 }
 
+
+
 # Get data --------------------------------
 
 # Scrap data from google scholar
 data <- get_coauthors("bg0BZ-QAAAAJ", n_deep = 2, sleep = 15)
 
-# Save so that can be re-used
+# Save data so that it can be re-used
 write.csv(data, "data/data_network.csv", row.names = FALSE)
 
 
