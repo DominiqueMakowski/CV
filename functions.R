@@ -40,11 +40,11 @@ get_stats <- function(data_scholar) {
 plot_impact <- function(data_scholar) {
   data <- data_scholar$scholar_data
 
-  data %>%
+  data |>
     dplyr::filter(Year >= 2014) %>%
     ggplot(aes(x = Year, y = Number)) +
     geom_bar(aes(alpha=Year), stat="identity") +
-    geom_line(aes(colour = Index), size = 2) +
+    geom_line(aes(colour = Index), linewidth = 2) +
     see::theme_modern() +
     ylab("") +
     scale_x_continuous(labels = as.character(data$Year), breaks = data$Year) +

@@ -2,18 +2,18 @@
 name: Dominique
 surname: Makowski
 profilepic: "./img/profile.png"
-position: "Research Fellow"
+position: "Lecturer in Psychology"
 qualifications: "PhD"
-address: "Nanyang Technological University, Singapore"
+address: "University of Sussex, Brighton, UK"
 # phone: +1 22 3333 4444
 www: dominiquemakowski.github.io
-email: "dom.makowski@gmail.com"
+email: "D.Makowski@sussex.ac.uk"
 twitter: Dom_Makowski
 github: DominiqueMakowski
 # linkedin: dominiquemakowski
 # orcid: "0000-0001-5375-9967"
 aboutme: |
-  \RaggedRight Trained as a neuropsychologist, I am currently a postdoc in Singapore researching aspects of reality bending (e.g., neuroscience of deception, perception of fake news, altered states of consciousness), the role of the body and emotions in cognition (e.g., emotion regulation and interoception), and methodology (statistics, programming, and neurophysiological techniques).
+  \RaggedRight Trained as a neuropsychologist, I am a lecturer at the University of Sussex researching aspects of reality bending (e.g., neuroscience of deception, perception of fake news, altered states of consciousness), the role of the body and emotions in cognition (e.g., emotion regulation and interoception), and methodology (statistics, programming, and neurophysiological techniques).
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: "1976D2"
 output:
@@ -37,40 +37,34 @@ link <- function(txt, url, color = "1976D2") {
 short <- FALSE
 ```
 
-# Current Position
+<!-- # Current Position -->
 
-```{r CurrentEmployment}
-data <- tibble(
-  what = "Presidential Postdoctoral Fellow",
-  when = "2020 - Present",
-  with = "Clinical Brain Lab, Nanyang Technological University (NTU)",
-  where = "Singapore",
-  details = c(
-    paste(
-      "The",
-      link("NTU Presidential Postdoc award", "https://www.ntu.edu.sg/research/research-careers/presidential-postdoctoral-fellowship-(ppf)"),
-      "funded two years of postdoc to develop my own research direction"
-    ),
-    paste(
-      "The team I lead (see ",
-       link("Reality Bending", "https://realitybending.github.io/"),
-      ") works on the neurocognitive and affective processes underlying the beliefs in fake vs. real stimuli (fake news, fiction, ...)"
-    ),
-    paste(
-      "Reference:",
-      link("Pr Annabel Chen", "https://www.clinicalbrain.org/author/annabel-chen/")
-    )
-  )
-)
+<!-- ```{r CurrentEmployment} -->
+<!-- data <- tibble( -->
+<!--   what = "Lecturer in Psychology", -->
+<!--   when = "2023 - Present", -->
+<!--   with = "University of Sussex", -->
+<!--   where = "UK", -->
+<!--   details = c( -->
+<!--     paste( -->
+<!--       "Full teaching service on courses such as Quantitative and Qualitative Methods." -->
+<!--     ), -->
+<!--     paste( -->
+<!--       "Head of the ", -->
+<!--        link("Reality Bending Lab", "https://realitybending.github.io/"), -->
+<!--       " (ReBeL) where we study reality perception (e.g., neuroscience of deception, perception of fake news, altered states of consciousness), the role of the body and emotions in cognition (e.g., emotion regulation and interoception), and methodology (statistics, programming, open source software and neurophysiological techniques)." -->
+<!--     ) -->
+<!--   ) -->
+<!-- ) -->
 
-detailed_entries(data, with, when, what, where, details, .protect = FALSE)
-```
+<!-- detailed_entries(data, with, when, what, where, details, .protect = FALSE) -->
+<!-- ``` -->
 
-\footnotesize
+<!-- \footnotesize -->
 
-The NTU "presidential postdoc fellowship" is a competitive grant meant as an intermediate step between postdoc and faculty. While integrated within a larger lab (the [Clinical Brain Lab](https://www.clinicalbrain.org/), directed by Prof Annabel Chen), I am pursuing my own research track on the perception of reality, managing my team (3 research assistants, and several undergrad students) and research funding ($ 200k). I am involved in all the research and administrative aspects of the project (writing IRBs, project budgeting, experiment creations, data collection, analysis, manuscript writing, ...).
+<!-- The NTU "presidential postdoc fellowship" is a competitive grant meant as an intermediate step between postdoc and faculty. While integrated within a larger lab (the [Clinical Brain Lab](https://www.clinicalbrain.org/), directed by Prof Annabel Chen), I am pursuing my own research track on the perception of reality, managing my team (3 research assistants, and several undergrad students) and research funding ($ 200k). I am involved in all the research and administrative aspects of the project (writing IRBs, project budgeting, experiment creations, data collection, analysis, manuscript writing, ...). -->
 
-On top of the mentoring and teaching done in the context of the lab, I am also involved in university lectures (e.g., statistics for NTU students), research-oriented workshops (for instance, I have introduced our software *NeuroKit* at the OHBM conference this summer), and other courses (I have been recently appointed by the University of Zurich to give a 3 days course on Python to their PhD students).
+<!-- On top of the mentoring and teaching done in the context of the lab, I am also involved in university lectures (e.g., statistics for NTU students), research-oriented workshops (for instance, I have introduced our software *NeuroKit* at the OHBM conference this summer), and other courses (I have been recently appointed by the University of Zurich to give a 3 days course on Python to their PhD students). -->
 
 \normalsize
 
@@ -131,12 +125,32 @@ detailed_entries(data, with, when, what, where, details, .protect = FALSE)
 ```{r ExperienceResearch}
 data <- rbind(
 tibble(
+  Position = "Lecturer (Assistant Professor)",
+  Date = "2023 - Present",
+  Institution = "School of Psychology, University of Sussex",
+  Where = "UK",
+  Activity = c(
+    paste(
+      "Full teaching service on courses such as Quantitative and Qualitative Methods."
+    ),
+    paste(
+      "Head of the ",
+       link("Reality Bending Lab", "https://realitybending.github.io/"),
+      " (ReBeL) where we study reality perception (e.g., neuroscience of deception, perception of fake news, altered states of consciousness), the role of the body and emotions in cognition (e.g., emotion regulation and interoception), and methodology (statistics, programming, open source software and neurophysiological techniques)."
+    )
+  )
+),
+tibble(
   Position = "Presidential Research Fellow",
   Date = "2021 - 22",
-  Institution = "Nanyang Technological University (NTU)",
+  Institution = "Clinical Brain Lab, Nanyang Technological University (NTU)",
   Where = "Singapore",
   Activity = paste0(
-    "See \\textit{Current Position} above."
+    'The NTU "presidential postdoc fellowship" is a competitive two-years grant meant as an intermediate step between postdoc and faculty. While integrated within a larger lab (the ',
+    link("Clinical Brain Lab", "https://www.clinicalbrain.org/"),
+    ', directed by ',
+    link("Pr Annabel Chen", "https://www.clinicalbrain.org/author/annabel-chen/"),
+    ', I am pursuing my own research track on the neurocognitive and affective processes underlying the beliefs in fake vs. real stimuli (fake news, fiction, ...), managing my team (3 research assistants, and several undergrad students) and research funding (\\$ 200k). I am involved in all the research and administrative aspects of the project (writing IRBs, project budgeting, experiment creations, data collection, analysis, manuscript writing, ...).'
   )
 ),
 tibble(
@@ -456,7 +470,9 @@ detailed_entries(data, with, when, what, where, why = details, .protect = FALSE)
 load("data/data_scholar.Rdata")
 source("https://raw.githubusercontent.com/DominiqueMakowski/CV/main/functions.R")
 
-plot_impact(data_scholar)
+p <- plot_impact(data_scholar)
+ggsave("img/scientific_impact.png", p, width=10, height=4)
+p
 ```
 
 
