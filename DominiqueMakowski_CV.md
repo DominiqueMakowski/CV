@@ -11,7 +11,7 @@ twitter: Dom_Makowski
 github: DominiqueMakowski
 aboutme: |
   \RaggedRight Trained as a neuropsychologist, I am a lecturer at the University of Sussex researching aspects of reality bending (e.g., neuroscience of deception, perception of fake news, altered states of consciousness), the role of the body and emotions in cognition (e.g., emotion regulation and interoception), and methodology (statistics, programming, and neurophysiological techniques).
-date: February 2023
+date: April 2024
 headcolor: 1976D2
 output:
   vitae::awesomecv:
@@ -19,8 +19,9 @@ output:
     keep_md: yes
 editor_options:
   chunk_output_type: console
+bibliography: {}
 nocite: '@'
-csl: C:/Users/domma/AppData/Local/R/win-library/4.2/vitae/vitae.csl
+csl: C:/Users/domma/AppData/Local/R/win-library/4.3/vitae/vitae.csl
 
 ---
 
@@ -71,7 +72,7 @@ csl: C:/Users/domma/AppData/Local/R/win-library/4.2/vitae/vitae.csl
 \item Second year thesis: How the Study of Emotions in Schizophrenia enlight the Paradox of Fiction (supervised by \href{http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Pascale-Piolino}{\color[HTML]{1976D2}{Pr Pascale Piolino}})
 \item First year thesis: The Cognitive Development of the Aesthetic Judgement in Children and Adults (supervised by \href{https://www.researchgate.net/profile/Sandrine-Rossi}{\color[HTML]{1976D2}{Pr Sandrine Rossi}})
 \end{cvitems}}
-	\cventry{Université de Paris}{Bachelor of Arts (BA) - Psychology}{France}{2009 - 12}{}\vspace{-4.0mm}
+	\cventry{Université de Paris}{Bachelor of Science (BSc) - Psychology}{France}{2009 - 12}{}\vspace{-4.0mm}
 \end{cventries}
 
 
@@ -81,7 +82,7 @@ csl: C:/Users/domma/AppData/Local/R/win-library/4.2/vitae/vitae.csl
 
 \begin{cventries}
 	\cventry{School of Psychology, University of Sussex}{Lecturer (Assistant Professor)}{UK}{2023 - Present}{\begin{cvitems}
-\item Full teaching service on courses such as Quantitative and Qualitative Methods.
+\item Full teaching service on courses such as Bayesian Statistics and Psychophysiology.
 \item Head of the  \href{https://realitybending.github.io/}{\color[HTML]{1976D2}{Reality Bending Lab}}  (ReBeL) where we study reality perception (e.g., neuroscience of deception, perception of fake news, altered states of consciousness), the role of the body and emotions in cognition (e.g., emotion regulation and interoception), and methodology (statistics, programming, open source software and neurophysiological techniques).
 \end{cvitems}}
 	\cventry{Clinical Brain Lab, Nanyang Technological University (NTU)}{Presidential Research Fellow}{Singapore}{2021 - 22}{\begin{cvitems}
@@ -391,6 +392,10 @@ Pham, T., Lau, Z. J., Chen, S. H. A., & **Makowski, D.** (2021). [Heart Rate Var
 
 \scriptsize
 
+Thériault, R., Ben-Shachar, M. S., Patil, I., Lüdecke, D., Wiernik, B. M., & **Makowski, D.** (2024). [Check your outliers! An introduction to identifying statistical outliers in R with easystats](https://link.springer.com/article/10.3758/s13428-024-02356-w). *Behavior Research Methods*, 1-11.
+
+Patil, I., **Makowski, D.**, Ben-Shachar, M. S., Wiernik, B. M., Bacher, E., & Lüdecke, D. (2022). [datawizard: An R Package for Easy Data Preparation and Statistical Transformations](https://joss.theoj.org/papers/10.21105/joss.04684). *Journal of Open Source Software, 7*(78), 4684.
+
 Lüdecke, D., Patil, I., Ben-Shachar, M., Wiernik, B., Waggoner, P., & **Makowski, D.** (2021). [see: An R Package for Visualizing Statistical Models](https://joss.theoj.org/papers/10.21105/joss.03393). *Journal of Open Source Software, 6*(64), 3393.
 
 Lüdecke, D., Ben-Shachar, M., Patil, I., Waggoner, P., & **Makowski, D.** (2021). [performance: An R Package for Assessment, Comparison and Testing of Statistical Models](https://joss.theoj.org/papers/10.21105/joss.03139). *Journal of Open Source Software, 6*(60), 3139.
@@ -407,7 +412,7 @@ Lüdecke, D., Ben-Shachar, M. S., Patil, I., & **Makowski, D.** (2020). [paramet
 
 Lüdecke, D., Waggoner, P., & **Makowski, D.** (2019). [insight: A unified interface to access information from model objects in R](https://joss.theoj.org/papers/10.21105/joss.01412). *Journal of Open Source Software*, 4(38), 1412.
 
-**Makowski, D** (2018). [The psycho Package: An Efficient and Publishing-Oriented Workflow for Psychological Science](https://dominiquemakowski.github.io/publication/makowski2018psycho/makowski2018psycho.pdf). *Journal of Open Source Software, 3*(22), 470.
+**Makowski, D.** (2018). [The psycho Package: An Efficient and Publishing-Oriented Workflow for Psychological Science](https://dominiquemakowski.github.io/publication/makowski2018psycho/makowski2018psycho.pdf). *Journal of Open Source Software, 3*(22), 470.
 
 \normalsize
 
@@ -415,9 +420,12 @@ Lüdecke, D., Waggoner, P., & **Makowski, D.** (2019). [insight: A unified inter
 
 \scriptsize
 
-Lee, H., Jacquot, A., **Makowski, D.**, Arcangeli, M., Dokic, J., Piolino, P., & Sperduti, M. (*under review*). [Beauty is in the eye of the beholder: Evidence from a common mnemonic advantage between aesthetics judgement and self-reference](https://www.researchgate.net/publication/344310434_Beauty_is_in_the_eye_of_the_beholder_Evidence_from_a_common_mnemonic_advantage_between_aesthetics_judgement_and_self-reference). *PsyArXiv*.
+Rose, L., Kovarski, K., Caetta, F., **Makowski, D.**, & Chokron, S. (2024). [Beyond empathy: Cognitive capabilities increase or curb altruism in middle childhood](https://doi.org/10.1016/j.jecp.2023.105810). *Journal of Experimental Child Psychology*, 239, 105810.
 
-<!-- TODO: fix page number -->
+Lee, H., Jacquot, A., **Makowski, D.**, Arcangeli, M., Dokic, J., Piolino, P., & Sperduti, M. (2023). [Beauty is in the eye of the beholder: Evidence from a common mnemonic advantage between aesthetics judgement and self-reference](https://dominiquemakowski.github.io/publication/lee2023beauty/lee2023beauty.pdf). *Psychology of Consciousness: Theory, Research, and Practice*.
+
+Kovarski, K., Dos Reis, J., Chevais, C., Hamel, A., **Makowski, D.**, & Sperduti, M. (2022). [Movie editing influences spectators' time perception](https://www.nature.com/articles/s41598-022-23992-2). *Scientific Reports, 12*(1), 20084.
+
 Blondé, P., Sperduti, M., **Makowski, D.**, & Piolino, P. (2022). [Bored, distracted, and forgetful: The impact of mind wandering and boredom on memory encoding](https://journals.sagepub.com/doi/abs/10.1177/17470218211026301). *Quarterly Journal of Experimental Psychology, 75*(1), 53-69.
 
 Blondé, P., **Makowski D.**, Sperduti, M., & Piolino, P. (2020). [In Medio Stat Virtus: intermediate levels of mind wandering improve episodic memory encoding in a virtual environment](https://dominiquemakowski.github.io/publication/blonde2020medio/blonde2020medio.pdf). *Psychological Research, 85*(4), 1613–1625.
@@ -439,7 +447,16 @@ Sperduti, M., **Makowski, D.**, & Piolino, P. (2016). [The protective role of lo
 
 \normalsize
 
+## Book Chapters
 
+\scriptsize
+
+Mavros, P., Olszewska-Guizzo, A., & **Makowski, D.** (2023). [Disentangling the Social from the Aesthetic: Neuropsychology for Urban Design](https://www.researchgate.net/publication/370953123_Disentangling_the_Social_from_the_Aesthetic_Neuropsychology_for_Urban_Design). In *Future Cities—City Futures: Emerging Urban Perspectives*. TU Delft OPEN Publishing.
+
+**Makowski, D.**, Chen, S. H. A., Larsen, R. R., Boyle, G. J., & Lilienfeld, S. O. (2023). [Clinical Neuropsychology in the Era of Neuroimaging](https://uk.sagepub.com/en-gb/eur/the-sage-handbook-of-clinical-neuropsychology/book270076). In *The SAGE Handbook of Clinical Neuropsychology*. SAGE Publications.
+
+
+\normalsize
 
 # Communications
 

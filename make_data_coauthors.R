@@ -55,26 +55,25 @@ get_coauthors <- function(id = "bg0BZ-QAAAAJ", n_deep = 1, sleep = 3, silent = F
 
 
 create_graph <- function(data) {
-  data %>%
-    tidygraph::as_tbl_graph(directed = FALSE) %>%
-    dplyr::filter(name != "") %>%
+  data |>
+    tidygraph::as_tbl_graph(directed = FALSE) |>
+    dplyr::filter(name != "") |>
     dplyr::mutate(
       closeness = tidygraph::centrality_closeness(normalized = TRUE),
-      degree = tidygraph::centrality_degree(normalized = TRUE),
-      betweeness = tidygraph::centrality_betweenness(normalized = TRUE)
-    ) %>%
-    tidygraph::activate(edges) %>%
+      degree = tidygraph::centrality_degree(normalized = TRUE)
+    ) |>
+    tidygraph::activate(edges) |>
     dplyr::mutate(
       importance = tidygraph::centrality_edge_betweenness(),
       group = as.factor(from)
-    ) %>%
-    tidygraph::activate(nodes) %>%
-    dplyr::filter(!name %in% c("Sort By Citations", "Sort By Year", "Sort By Title")) %>%
+    ) |>
+    tidygraph::activate(nodes) |>
+    dplyr::filter(!name %in% c("Sort By Citations", "Sort By Year", "Sort By Title")) |>
     dplyr::mutate(
       name = stringr::str_remove(name, ",.*"),
       # Other groupings: group_edge_betweenness(), group_walktrap(), group_spinglass(), group_louvain()
-      group = as.factor(tidygraph::group_optimal())
-    ) %>%
+      group = as.factor(tidygraph::group_edge_betweenness())
+    ) |>
     as.list()
 }
 
@@ -86,7 +85,10 @@ create_graph <- function(data) {
 data <- get_coauthors("bg0BZ-QAAAAJ", n_deep = 2, sleep = 15)
 
 # Save data so that it can be re-used
-write.csv(data, "data/data_network.csv", row.names = FALSE)
+data |>
+  filter(!coauthors %in% c("About Scholar", "Search Help")) |>
+  filter(!author %in% c("About Scholar", "Search Help")) |>
+  write.csv("data/data_network.csv", row.names = FALSE)
 
 
 
@@ -110,13 +112,14 @@ data3 <- data[(data$author %in% secondlevel & data$coauthors %in% secondlevel) |
 # Make plot --------------------------------
 
 # Plot
-data_graph <- create_graph(data3)
+data_graph <- create_graph(data=data3)
 
-p <- tidygraph::tbl_graph(nodes = data_graph$nodes, edges = data_graph$edges, directed = FALSE) %>%
+p <- tidygraph::tbl_graph(nodes = data_graph$nodes, edges = data_graph$edges, directed = FALSE) |>
   ggraph::ggraph(layout = "nicely") + # fr, kk, nicely, lgl, graphopt, dh
   ggraph::geom_edge_arc(aes(alpha = importance), show.legend = FALSE, strength = 0.1) +
   ggraph::geom_node_point(aes(size = degree, colour = group), show.legend = FALSE) +
   ggraph::geom_node_text(aes(label = name, size = degree), repel = TRUE, check_overlap = TRUE, show.legend = FALSE, max.overlaps = 20) +
+  # ggraph::geom_node_label(aes(label = name, size = degree), repel = TRUE, show.legend = FALSE) +
   ggraph::theme_graph() +
   scale_size_continuous(range = c(2, 6)) +
   scale_edge_alpha_continuous(range = c(0.1, 0.8)) +

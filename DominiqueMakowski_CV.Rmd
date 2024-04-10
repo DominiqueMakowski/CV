@@ -102,7 +102,7 @@ data <- rbind(tibble(
     paste0("First year thesis: The Cognitive Development of the Aesthetic Judgement in Children and Adults (supervised by ", link("Pr Sandrine Rossi", "https://www.researchgate.net/profile/Sandrine-Rossi"), ")")
   )
 ), tibble(
-  what = "Bachelor of Arts (BA) - Psychology",
+  what = "Bachelor of Science (BSc) - Psychology",
   when = "2009 - 12",
   with = "Université de Paris",
   where = "France",
@@ -131,7 +131,7 @@ tibble(
   Where = "UK",
   Activity = c(
     paste(
-      "Full teaching service on courses such as Quantitative and Qualitative Methods."
+      "Full teaching service on courses such as Bayesian Statistics and Psychophysiology."
     ),
     paste(
       "Head of the ",
