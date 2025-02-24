@@ -8,7 +8,15 @@ output: html_document
 
 \scriptsize
 
-**Makowski, D.**, Lau, Z. J., Pham, T., Ayache, J., Sperduti, M., Sumich, A., Heym, N. & Chen, S., A. (*under review*). Psychological Determinants of the Susceptibility to COVID-19 Fake News.
+**Makowski, D.**, Te, A. S., Neves, A., Kirk, S., Liang, N. Z., Mavros, P., & Chen, S. A. (2025). [Too beautiful to be fake: Attractive faces are less likely to be judged as artificially generated](https://doi.org/10.1016/j.actpsy.2024.104670). *Acta Psychologica*, 252, 104670.
+
+<!-- **Makowski, D.**, Lau, Z. J., Pham, T., Ayache, J., Sperduti, M., Sumich, A., Heym, N. & Chen, S., A. (*under review*). Psychological Determinants of the Susceptibility to COVID-19 Fake News. -->
+
+Dickinson, R., **Makowski, D.**, van Marwijk, H., & Ford, E. (2024). [Exploring the Role of News Outlets in the Rise of a Conspiracy Theory: Hydroxychloroquine in the Early Days of COVID-19](https://www.mdpi.com/2673-8112/4/12/132). *COVID, 4*(12), 1873-1896.
+
+**Makowski, D.**, Lau, Z. J., Pham, T., Te, A. S., Kirk, S., Liauw, C., & Chen, S. A. (2024). [The heart can lie: a preliminary investigation of the role of interoception and theory of mind in deception](https://link.springer.com/article/10.1007/s12144-024-06890-w). *Current Psychology*, 1-12.
+
+**Makowski, D.**, Te, A. S., Kirk, S., Liang, N. Z., & Chen, S. A. (2023). [A novel visual illusion paradigm provides evidence for a general factor of illusion sensitivity and personality correlates](https://doi.org/10.1038/s41598-023-33148-5). *Scientific Reports, 13*(1), 6594.
 
 **Makowski, D.**, Lau, Z. J., Pham, T., Boyce, W. P. \& Chen, S. A. (2021). [A Parametric Framework to Generate Visual Illusions using Python](https://dominiquemakowski.github.io/publication/makowski2021parametric/makowski2021parametric.pdf). *Perception*, 50(11), 950-965.
 
@@ -31,7 +39,7 @@ Sperduti, M.\*, Arcangeli, M.\*, **Makowski, D.**, Wantzen, P., Zalla, T., Lemai
 
 \scriptsize
 
-Pham, T., Lau, Z. J., Chen, S. A., & **Makowski, D.** (*under review*). [Unveiling the Structure of Heart Rate Variability (HRV) Indices: A Data-driven Meta-clustering Approach](https://psyarxiv.com/mwa6x/). *PsyXarkiv*.
+<!-- Pham, T., Lau, Z. J., Chen, S. A., & **Makowski, D.** (*under review*). [Unveiling the Structure of Heart Rate Variability (HRV) Indices: A Data-driven Meta-clustering Approach](https://psyarxiv.com/mwa6x/). *PsyXarkiv*. -->
 
 Lau, Z. J.\*, Pham, T.\*, Chen, S. A., & **Makowski, D.** (2022). [Brain Entropy, Fractal Dimensions and Predictability: A Review of Complexity Measures for EEG in Healthy and Neuropsychiatric Populations](https://onlinelibrary.wiley.com/doi/abs/10.1111/ejn.15800). *European Journal of Neuroscience, 56*(7), 5047-5069.
 
@@ -56,6 +64,8 @@ Pham, T., Lau, Z. J., Chen, S. H. A., & **Makowski, D.** (2021). [Heart Rate Var
 ## Statistics
 
 \scriptsize
+
+**Makowski, D.**, & Waggoner, P. D. (2023). [Where are we going with statistical computing? From mathematical statistics to collaborative data science](https://www.mdpi.com/2227-7390/11/8/1821). *Mathematics, 11*(8), 1821.
 
 Thériault, R., Ben-Shachar, M. S., Patil, I., Lüdecke, D., Wiernik, B. M., & **Makowski, D.** (2024). [Check your outliers! An introduction to identifying statistical outliers in R with easystats](https://link.springer.com/article/10.3758/s13428-024-02356-w). *Behavior Research Methods*, 1-11.
 
@@ -84,6 +94,10 @@ Lüdecke, D., Waggoner, P., & **Makowski, D.** (2019). [insight: A unified inter
 ## Miscellaneous
 
 \scriptsize
+
+Salgues, S., Jacquot, A., **Makowski, D.**, Tahar, C., Baekeland, J., Arcangeli, M., ... & Sperduti, M. (2024). [Self-reference and emotional reaction drive aesthetic judgment](https://www.nature.com/articles/s41598-024-68331-9). *Scientific Reports, 14*(1), 19699.
+
+Lee, H., Jacquot, A., **Makowski, D.**, Arcangeli, M., Dokic, J., Piolino, P., & Sperduti, M. (2024). [The beauty and the self: A common mnemonic advantage between aesthetic judgment and self-reference](https://doi.org/10.1037/cns0000345). *Psychology of Consciousness: Theory, Research, and Practice, 11*(1), 71.
 
 Rose, L., Kovarski, K., Caetta, F., **Makowski, D.**, & Chokron, S. (2024). [Beyond empathy: Cognitive capabilities increase or curb altruism in middle childhood](https://doi.org/10.1016/j.jecp.2023.105810). *Journal of Experimental Child Psychology*, 239, 105810.
 

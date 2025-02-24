@@ -13,7 +13,7 @@ github: DominiqueMakowski
 # linkedin: dominiquemakowski
 # orcid: "0000-0001-5375-9967"
 aboutme: |
-  \RaggedRight Trained as a neuropsychologist, I am a lecturer at the University of Sussex researching aspects of reality bending (e.g., neuroscience of deception, perception of fake news, altered states of consciousness), the role of the body and emotions in cognition (e.g., emotion regulation and interoception), and methodology (statistics, programming, and neurophysiological techniques).
+  \RaggedRight Trained as a neuropsychologist, I am an assistant professor at the University of Sussex researching aspects of reality bending (e.g., neuroscience of deception, perception of fake news, altered states of consciousness), the role of the body and emotions in cognition (e.g., emotion regulation and interoception), and methodology (statistics, programming, and neurophysiological techniques).
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: "1976D2"
 output:
@@ -57,7 +57,7 @@ short <- FALSE
 <!--   ) -->
 <!-- ) -->
 
-<!-- detailed_entries(data, with, when, what, where, details, .protect = FALSE) -->
+<!-- vitae::detailed_entries(data, with, when, what, where, details, .protect = FALSE) -->
 <!-- ``` -->
 
 <!-- \footnotesize -->
@@ -114,7 +114,7 @@ if (short) {
   data$details <- NA
 }
 
-detailed_entries(data, with, when, what, where, details, .protect = FALSE)
+vitae::detailed_entries(data, with, when, what, where, details, .protect = FALSE)
 ```
 
 
@@ -125,7 +125,7 @@ detailed_entries(data, with, when, what, where, details, .protect = FALSE)
 ```{r ExperienceResearch}
 data <- rbind(
 tibble(
-  Position = "Lecturer (Assistant Professor)",
+  Position = "Assistant Professor",
   Date = "2023 - Present",
   Institution = "School of Psychology, University of Sussex",
   Where = "UK",
@@ -196,7 +196,7 @@ if (short) {
 # Save for re-useability
 write.csv(data, "data/experience_research.csv", row.names = FALSE, fileEncoding = "UTF-8")
 
-detailed_entries(data, Institution, Date, Position, Where, Activity, .protect = FALSE)
+vitae::detailed_entries(data, Institution, Date, Position, Where, Activity, .protect = FALSE)
 ```
 
 ## Teaching
@@ -205,7 +205,13 @@ detailed_entries(data, Institution, Date, Position, Where, Activity, .protect = 
 ```{r ExperienceTeaching}
 data <- rbind(
   tibble(
-  Position = "Invited Lecturer (Programming and Data Science)",
+  Position = "Invited Instructor (Psychophysiology)",
+  Date = "2024",
+  Institution = "University of Basel",
+  Where = "Zürich, Switzerland",
+  Activity = paste0("Full-day workshop (8 h; PhD students): Recording, Analyzing and Using Physiological Signals in Psychology. Reference: ", link("Dr Dorothee Bentz", "https://psychologie.unibas.ch/de/personen/dorothee-bentz/"), ".")
+), tibble(
+  Position = "Invited Instructor (Programming and Data Science)",
   Date = "2022",
   Institution = "University of Zurich",
   Where = "Zürich, Switzerland",
@@ -215,32 +221,32 @@ data <- rbind(
   Date = "2017 - 18",
   Institution = "Université de Paris",
   Where = "Paris, France",
-  Activity = paste0("Courses (192 h; bachelor \\& master students): Neurology and psychiatry (main neurodegenerative, neurological and psychiatric disorders), assessment (examination, diagnostic, psychometry), rehabilitation and psychotherapy (CBT, mindfulness-based therapies, cognitive rehabilitation, practice supervision), general neuroscience and psychology (neuroanatomy, emotion regulation...). Reference: ", link("Pr Isabelle Jambaqué", "http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Isabelle-Jambaque-Aubourg"), ".")
-),tibble(
+  Activity = paste0("Modules (192 h; bachelor \\& master students): Neurology and psychiatry (main neurodegenerative, neurological and psychiatric disorders), assessment (examination, diagnostic, psychometry), rehabilitation and psychotherapy (CBT, mindfulness-based therapies, cognitive rehabilitation, practice supervision), general neuroscience and psychology (neuroanatomy, emotion regulation...). Reference: ", link("Pr Isabelle Jambaqué", "http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Isabelle-Jambaque-Aubourg"), ".")
+), tibble(
   Position = "Teaching Assistant (Differential Cognitive Psychology)",
   Date = "2015 - 17",
   Institution = "Université de Paris",
   Where = "Paris, France",
-  Activity = "Courses (144 h; 1st \\& 2nd year students): Experimental methodology (assessment and related problems, scientific reasoning, psychometric properties of tests and questionnaires, statistics...) and introduction to concepts such as intelligence, personality and creativity. Reference: Dr Christophe Mouchiroud."
-),tibble(
+  Activity = "Modules (144 h; 1st \\& 2nd year students): Experimental methodology (assessment and related problems, scientific reasoning, psychometric properties of tests and questionnaires, statistics...) and introduction to concepts such as intelligence, personality and creativity. Reference: Dr Christophe Mouchiroud."
+), tibble(
   Position = "Teaching Assistant (Cognitive Psychology)",
   Date = "2014 - 16",
   Institution = "Université de Paris",
   Where = "Paris, France",
-  Activity = paste0("Courses (48 h; 3rd year students): Models of working memory, mental imagery and categorisation. Reference: ", link("Pr Todd Lubart", "https://lapea.recherche.parisdescartes.fr/membres-permanents/todd-lubart/"), ".")
-),tibble(
-  Position = "Teaching Assistant (University Services)",
-  Date = "2013",
-  Institution = "Université de Paris",
-  Where = "Paris, France",
-  Activity = "Courses (16 h; 1st year students): Introduction to the use of internet (internet security, anonymity, etc.) and on-line university services for first year students. Reference: Dr Christian Fondrat."
+  Activity = paste0("Modules (48 h; 3rd year students): Models of working memory, mental imagery and categorisation. Reference: ", link("Pr Todd Lubart", "https://lapea.recherche.parisdescartes.fr/membres-permanents/todd-lubart/"), ".")
+# ), tibble(
+#   Position = "Teaching Assistant (University Services)",
+#   Date = "2013",
+#   Institution = "Université de Paris",
+#   Where = "Paris, France",
+#   Activity = "Modules (16 h; 1st year students): Introduction to the use of internet (internet security, anonymity, etc.) and on-line university services for first year students. Reference: Dr Christian Fondrat."
 ))
 
 
 # Save for re-useability
 write.csv(data, "data/experience_teaching.csv", row.names = FALSE, fileEncoding = "UTF-8")
 
-detailed_entries(data, Institution, Date, Position, Where, Activity, .protect = FALSE)
+vitae::detailed_entries(data, Institution, Date, Position, Where, Activity, .protect = FALSE)
 ```
 
 
@@ -271,7 +277,7 @@ data <- rbind(tibble(
 # Save for re-useability
 write.csv(data, "data/experience_clinical.csv", row.names = FALSE, fileEncoding = "UTF-8")
 
-detailed_entries(data, Institution, Date, Position, Where, Activity, .protect = FALSE)
+vitae::detailed_entries(data, Institution, Date, Position, Where, Activity, .protect = FALSE)
 ```
 
 
@@ -288,13 +294,13 @@ detailed_entries(data, Institution, Date, Position, Where, Activity, .protect = 
 
 \normalsize
 
-## Research
+<!-- ## Research -->
 
-\small
+<!-- \small -->
 
-My PhD, on the effect of reality beliefs on emotion, attempted at integrate my two core topics on interest: **reality bending** (manipulation and perception of reality) and **affective neuroscience** (the role of emotions, interoception, bodily signals in cognition). My first postdoc in Singapore led me to investigate a new layer of reality manipulation by working on a large project interested in the neurocognitive correlates of deception, funded by the Ministry of Defence. Over the years, I also had the opportunity of working on other topics, including **memory**, **cognitive control**, **mindfulness meditation** and **history of psychology**, providing me with a wide and multidisciplinary perspective and an international network of collaborations.
+<!-- My PhD, on the effect of reality beliefs on emotion, attempted at integrate my two core topics on interest: **reality bending** (manipulation and perception of reality) and **affective neuroscience** (the role of emotions, interoception, bodily signals in cognition). My first postdoc in Singapore led me to investigate a new layer of reality manipulation by working on a large project interested in the neurocognitive correlates of deception, funded by the Ministry of Defense. Over the years, I also had the opportunity of working on other topics, including **memory**, **cognitive control**, **mindfulness meditation** and **history of psychology**, providing me with a wide and multidisciplinary perspective and an international network of collaborations. -->
 
-\normalsize
+<!-- \normalsize -->
 
 ## Techniques and Methods
 
@@ -308,7 +314,7 @@ Initially created to increase the efficiency and quality of my own research, som
 
 My interest in improving accessibility, widening the usage of advanced methods and best practices by means of open access tools and tutorials, and staying active in open-software communities (e.g., on `r link("\\textbf{GitHub}", "https://github.com/DominiqueMakowski")` by answer technical and methodological questions, is motivated by the fact that, coming myself from a different background (clinical neuropsychology) in which programming, computer science and advanced statistics are not taught, I realized how harnessing such powerful tools can improve one's research (and quality of life) at many levels.
 
-I fully endorse to the highest standards of open science, by sharing data and reproducible scripts of my experiments (see this `r link("\\textbf{Supplementary Materials Template}", "https://github.com/RealityBending/TemplateResults")` created to facilitate the sharing of additional material). Naturally, my concrete engagement in open, honest and reproducible science, is accompanied by the highest standards in terms of methodological rigour and ethical responsibility.
+I fully endorse to the highest standards of open science, by sharing data and reproducible scripts of my experiments. Naturally, my concrete engagement in open, honest and reproducible science, is accompanied by the highest standards in terms of methodological rigour and ethical responsibility.
 
 
 
@@ -336,7 +342,7 @@ data <- rbind(tibble(
   details = NA
 ))
 
-detailed_entries(data, with, when, what, where, why = details, .protect = FALSE)
+vitae::detailed_entries(data, with, when, what, where, why = details, .protect = FALSE)
 ```
 
 
@@ -366,7 +372,7 @@ data <- rbind(tibble(
   details = NA
 ))
 
-detailed_entries(data, with, when, what, where, why = details, .protect = FALSE)
+vitae::detailed_entries(data, with, when, what, where, why = details, .protect = FALSE)
 ```
 
 ## Neuroimaging
@@ -402,7 +408,7 @@ data <- rbind(tibble(
   details = NA
 ))
 
-detailed_entries(data, with, when, what, where, why = details, .protect = FALSE)
+vitae::detailed_entries(data, with, when, what, where, why = details, .protect = FALSE)
 ```
 
 ## Statistics and Programming
@@ -438,7 +444,7 @@ data <- rbind(tibble(
   details = NA
 ))
 
-detailed_entries(data, with, when, what, where, why = details, .protect = FALSE)
+vitae::detailed_entries(data, with, when, what, where, why = details, .protect = FALSE)
 ```
 
 
@@ -453,7 +459,7 @@ data <- rbind(tibble(
   details = NA
 ))
 
-detailed_entries(data, with, when, what, where, why = details, .protect = FALSE)
+vitae::detailed_entries(data, with, when, what, where, why = details, .protect = FALSE)
 ```
 
 
@@ -468,7 +474,7 @@ detailed_entries(data, with, when, what, where, why = details, .protect = FALSE)
 
 ```{r ScientificImpactFigure, echo = FALSE, fig.height=3, fig.width=10, out.width="80%", fig.align="center"}
 load("data/data_scholar.Rdata")
-source("https://raw.githubusercontent.com/DominiqueMakowski/CV/main/functions.R")
+source("functions.R")
 
 p <- plot_impact(data_scholar)
 ggsave("img/scientific_impact.png", p, width=10, height=4)
@@ -496,10 +502,10 @@ get_stats(data_scholar) |>
 
 
 
-## Grants and Awards
+## Grants
 
 
-```{r GrantsAwards}
+```{r Grants}
 data <- rbind(
   tibble(
   Name = paste0(link("TL@NTU's Behavioural and Communication Science Programme (BCSP) Grant", "https://www.ntu.edu.sg/temasek-labs/research-focus/programme", color = "333333"), " (co-PI)"),
@@ -521,6 +527,46 @@ data <- rbind(
   Amount = "\\$360,000",
   Activity = NA
 ),tibble(
+  Name = link("Ministerial PhD scholarship", "https://improvingpsych.org/mission/awards/", color = "333333") ,
+  Details = "Three years of PhD fully funded by the French Ministry of Research",
+  Date = "2014 - 17",
+  Amount = "€80,000",
+  Activity = NA
+))
+
+vitae::detailed_entries(data, Details, Date, Name, Amount, Activity, .protect = FALSE)
+```
+
+## Awards
+
+
+```{r Awards}
+data <- rbind(
+  tibble(
+  Name = link("Sussex School of Psychology 2024 Award Winner", "https://www.linkedin.com/posts/dominiquemakowski_realitybendinglab-activity-7241790839134257152-wjR6?utm_source=share&utm_medium=member_desktop", color = "333333"),
+  Details = paste0("Outstanding Student Supervision"),
+  Date = "2024",
+  Amount = "N/A",
+  Activity = NA
+),tibble(
+  Name = link("Mission Award (Society for the Improvement of Psychological Science - SIPS)", "https://improvingpsych.org/mission/awards/", color = "333333"),
+  Details = paste0("Obtained for the ", link("NeuroKit", "https://en.wikipedia.org/wiki/NeuroKit", color = "5D5D5D"), " Python package"),
+  Date = "2024",
+  Amount = "N/A",
+  Activity = NA
+),tibble(
+  Name = link("University of Sussex Research Culture 2024 Awards Winner", "https://www.linkedin.com/posts/university-of-sussex-school-of-psychology_congratulations-to-the-5-winners-and-6-shortlisted-activity-7209487987682721793-d4qm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAAjTVisBfrVtfzPXFkBFwGtFJYejv2DfvSs", color = "333333"),
+  Details = paste0("For engagement in Open Science"),
+  Date = "2024",
+  Amount = "£1,000",
+  Activity = NA
+),tibble(
+  Name = link("Mission Award (Society for the Improvement of Psychological Science - SIPS)", "https://improvingpsych.org/mission/awards/", color = "333333"),
+  Details = paste0("Obtained for the ", link("easystats", "https://en.wikipedia.org/wiki/Easystats", color = "5D5D5D"), " collection of R packages"),
+  Date = "2023",
+  Amount = "N/A",
+  Activity = NA
+),tibble(
   Name = link("Best Article Award (Psychonomic Society)", "https://www.psychonomic.org/page/2020BestArticleAwards", color = "333333") ,
   Details = paste0("Obtained for ", link("Makowski et al. (2019)", "https://dominiquemakowski.github.io/publication/makowski2019phenomenal/")),
   Date = "2020",
@@ -532,17 +578,10 @@ data <- rbind(
   Date = "2020",
   Amount = "N/A",
   Activity = NA
-),tibble(
-  Name = link("Ministerial PhD scholarship", "https://improvingpsych.org/mission/awards/", color = "333333") ,
-  Details = "Three years of PhD fully funded by the French Ministry of Research",
-  Date = "2014 - 17",
-  Amount = "€80,000",
-  Activity = NA
 ))
 
-detailed_entries(data, Details, Date, Name, Amount, Activity, .protect = FALSE)
+vitae::detailed_entries(data, Details, Date, Name, Amount, Activity, .protect = FALSE)
 ```
-
 
 ## Editorial Responsibilities
 
@@ -569,7 +608,7 @@ data <- rbind(tibble(
 ))
 
 # brief_entries(data, Where, Date, Position, .protect = FALSE)
-detailed_entries(data, Where, Date, Position, Location, Activity, .protect = FALSE)
+vitae::detailed_entries(data, Where, Date, Position, Location, Activity, .protect = FALSE)
 ```
 
 ## Academic Responsibilities
@@ -595,10 +634,10 @@ data <- rbind(tibble(
   Activity = NA
 ))
 
-detailed_entries(data, Details, Date, Position, Where, Activity, .protect = FALSE)
+vitae::detailed_entries(data, Details, Date, Position, Where, Activity, .protect = FALSE)
 ```
 
-<!-- ## Collaborations -->
+
 
 # Teaching Record
 
@@ -610,37 +649,37 @@ detailed_entries(data, Details, Date, Position, Where, Activity, .protect = FALS
 
 I have given academic lectures (total hours since 2014: **424**) on the following topics:
 
+- **Bayesian Statistics**
+   - Bayesian framework
+   - Bayesian models with the *brms* R package
+- **Signal Processing**
+   - Bodily signals acquisition and preprocessing
+   - Heart rate 
+   - Electrodermal activity 
+- **Psychophysiology and Interoception**
+   - Embodied Cognition
+   - Interoceptive Models
+   - Psychophysiology
+   - Heart rate variability
 - **Neuropsychology** (*192 hours; 2nd year, 3rd year and master level*)
     - Clinical Neuropsychology \scriptsize(Neuropsychological syndromes; Neuropsychological examination and diagnostic; Cognitive rehabilitation; Clinical practice supervision; Neuropsychology in psychiatry)\normalsize
     - Cognitive Neuroscience \scriptsize(Neuroanatomy; Emotion Regulation; Mindfulness; Memory; Neuroimaging)\normalsize
 - **Differential Psychology** (*144 hours; 1st year level*)
     - Hands-on Lectures \scriptsize(Experimental Methodology; Scientific Reasoning; Psychometric properties of tests and questionnaires; Introductory Statistics)\normalsize
     - Theory \scriptsize(Intelligence; Personality; Creativity)\normalsize
-- **Cognitive Psychology** (*48 hours; 3rd year level*):
+- **Cognitive Psychology** (*48 hours; 3rd year level*)
     - Working memory
     - Mental imagery and categorisation
-- **Programming and Data Science** (*24 hours*):
+- **Programming for Psychologists** (*24 hours*)
    - Python Programming
-   - Signal Processing
-   - Statistics
+   - Experiment creation using Python
 - **Other** (*16 hours*): Internet; Research Ethics; Digital Rights
 
 \normalsize
 
-## Technical
 
-\small
 
-I have performed several technical courses (typically in-lab training) on topics like:
-
-- Statistics using R
-- Experiment creation using Python
-- How to acquire electrophysiological (EDA, ECG, EMG) signal using *BIOPAC* and *AcqKnowledge®*
-- How to ask and handle sensitive personal information about patients or participants
-
-\normalsize
-
-<!-- ## Mentoring -->
+<!-- ## Supervision -->
 
 <!-- I have mentored more than 5 full-time research assistants.  -->
 

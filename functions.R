@@ -41,13 +41,14 @@ plot_impact <- function(data_scholar) {
   data <- data_scholar$scholar_data
 
   data |>
-    dplyr::filter(Year >= 2014) %>%
+    dplyr::filter(Year >= 2014) |>
     ggplot(aes(x = Year, y = Number)) +
     geom_bar(aes(alpha=Year), stat="identity") +
     geom_line(aes(colour = Index), linewidth = 2) +
     see::theme_modern() +
     ylab("") +
-    scale_x_continuous(labels = as.character(data$Year), breaks = data$Year) +
+    scale_x_continuous(labels = paste0("'", substr(data$Year, 3, 4)),
+                       breaks = data$Year) +
     # scale_x_continuous(breaks = seq(min(stats$Year), max(stats$Year), by = 1)) +
     scale_color_manual(values = c("#2196F3", "#E91E63")) +
     facet_wrap(~Index, scales = "free", strip.position = "top") +
@@ -67,7 +68,7 @@ plot_impact <- function(data_scholar) {
 plot_citations_per_paper <- function(data_scholar) {
   data <- data_scholar$scholar_data
 
-  data_scholar[["scholar_publications"]]  %>%
+  data_scholar[["scholar_publications"]]  |>
     ggplot(aes(x = Publication, y = cites, label = Journal)) +
     geom_bar(aes(fill=Publication), stat="identity") +
     # geom_text(angle=90, y=1, hjust = 0) +

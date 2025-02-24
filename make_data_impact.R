@@ -13,27 +13,36 @@ data_scholar <- list()
 data_scholar[["date"]] <- format(Sys.time(), "%d %B %Y")
 data_scholar[["scholar_stats"]] <- scholar::get_profile("bg0BZ-QAAAAJ")
 data_scholar[["scholar_history"]] <- scholar::get_citation_history("bg0BZ-QAAAAJ")
-data_scholar[["scholar_publications"]] <-  scholar::get_publications("bg0BZ-QAAAAJ", flush = TRUE) |>
-  mutate(author = scholar::get_complete_authors("bg0BZ-QAAAAJ", pubid))
 
 
-data_scholar[["scholar_data"]] <-  data_scholar[["scholar_publications"]]  %>%
-  dplyr::filter(year > 1950) %>%
-  dplyr::group_by(year) %>%
+data_scholar[["scholar_publications"]] <- scholar::get_publications("bg0BZ-QAAAAJ", flush = TRUE)
+authors <- c()
+for(p in data_scholar[["scholar_publications"]]$pubid) {
+  authors <- c(authors, scholar::get_complete_authors("bg0BZ-QAAAAJ", p, delay = 0.4))
+}
+data_scholar[["scholar_publications"]]$author <- authors
+
+
+
+
+
+data_scholar[["scholar_data"]] <-  data_scholar[["scholar_publications"]]  |>
+  dplyr::filter(year > 1950) |>
+  dplyr::group_by(year) |>
   dplyr::summarise(
     Publications = n(),
     # Citations = sum(cites)
-  ) %>%
+  ) |>
   dplyr::mutate(
     Publications = cumsum(Publications)
     # Citations = cumsum(Citations)
-  ) %>%
-  dplyr::rename(Year = year) %>%
-  tidyr::gather(Index, Number, -Year) %>%
-  dplyr::mutate(Index = forcats::fct_rev(Index)) %>%
-  rbind(data_scholar[["scholar_history"]] %>%
+  ) |>
+  dplyr::rename(Year = year) |>
+  tidyr::gather(Index, Number, -Year) |>
+  dplyr::mutate(Index = forcats::fct_rev(Index)) |>
+  rbind(data_scholar[["scholar_history"]] |>
           dplyr::rename(Number = cites,
-                        Year = year) %>%
+                        Year = year) |>
           mutate(Index = "Citations",
                  Number = cumsum(Number)))
 
@@ -41,7 +50,7 @@ data_scholar[["scholar_data"]] <-  data_scholar[["scholar_publications"]]  %>%
 
 
 # Publications individual
-data <- data_scholar[["scholar_publications"]] %>%
+data <- data_scholar[["scholar_publications"]] |>
   mutate(Authors = paste0(lapply(stringr::str_split(author, " "), `[[`, 2)),
          Authors = stringr::str_to_title(stringr::str_remove_all(Authors, ",")),
          Publication = paste0(Authors, " (", year),
@@ -60,9 +69,9 @@ for(i in 1:nrow(data)){
   data$Publication[i] <- paste0(pub, suffix[j])
 }
 
-data_scholar[["scholar_publications"]] <- data %>%
+data_scholar[["scholar_publications"]] <- data |>
   mutate(Publication = paste0(Publication, ")"),
-         Publication = fct_reorder(Publication, cites, .desc = TRUE)) %>%
+         Publication = fct_reorder(Publication, cites, .desc = TRUE)) |>
   filter(Publication != "Makowski (2013)")
 
 
@@ -71,7 +80,7 @@ save(data_scholar, file="data/data_scholar.Rdata")
 
 
 
-# p2 <- data_scholar$scholar_publications %>%
+# p2 <- data_scholar$scholar_publications |>
 #   ggplot(aes(x = cites)) +
 #   geom_histogram(bins = 30) +
 #   geom_density(aes(y = 3 * stat(count)), bw="SJ") +
