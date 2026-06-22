@@ -53,7 +53,6 @@ get_coauthors <- function(id = "bg0BZ-QAAAAJ", n_deep = 1, sleep = 3, silent = F
 }
 
 
-
 create_graph <- function(data) {
   data |>
     tidygraph::as_tbl_graph(directed = FALSE) |>
@@ -78,7 +77,6 @@ create_graph <- function(data) {
 }
 
 
-
 # Get data --------------------------------
 
 # Scrap data from google scholar
@@ -89,7 +87,6 @@ data |>
   filter(!coauthors %in% c("About Scholar", "Search Help")) |>
   filter(!author %in% c("About Scholar", "Search Help")) |>
   write.csv("data/data_network.csv", row.names = FALSE)
-
 
 
 # Process data ------------------------------------------------------------
@@ -108,11 +105,14 @@ secondlevel <- unique(c(data2$author, data2$coauthors))
 data3 <- data[(data$author %in% secondlevel & data$coauthors %in% secondlevel) |
   (data$author %in% secondlevel & data$coauthors %in% secondlevel), ]
 
+# Graph data
+data_graph <- create_graph(data = data3)
+# Save to REBEL website for interactive display
+jsonlite::write_json(data_graph, "C:/Users/domma/Dropbox/RealityBendingLab/RealityBending.github.io/WIP/collaborations/data_graph.json")
 
 # Make plot --------------------------------
 
 # Plot
-data_graph <- create_graph(data=data3)
 
 p <- tidygraph::tbl_graph(nodes = data_graph$nodes, edges = data_graph$edges, directed = FALSE) |>
   ggraph::ggraph(layout = "nicely") + # fr, kk, nicely, lgl, graphopt, dh
