@@ -112,7 +112,7 @@ Lüdecke, D., Waggoner, P., & **Makowski, D.** (2019). [insight: A unified inter
 
 Geller, J., Gomez, P., Buchanan, E., & **Makowski, D.** (2025). [A distributional response time analysis of the perceptual disfluency effect](https://doi.org/10.5334/joc.469). *Journal of Cognition, 8*(1), 60.
 
-<!-- Rinaldi, L. J., Agbude, R., Andermane, N., **Makowski, D.**, Forster, S., Simner, J., & Ward, J. (2026). [Attention and physiological responses to task-irrelevant sounds in misophonia](https://doi.org/10.1080/13803395.2026.2633236). *Journal of Clinical and Experimental Neuropsychology, 48*(3), 266-280. -->
+Rinaldi, L. J., Agbude, R., Andermane, N., **Makowski, D.**, Forster, S., Simner, J., & Ward, J. (2026). [Attention and physiological responses to task-irrelevant sounds in misophonia](https://doi.org/10.1080/13803395.2026.2633236). *Journal of Clinical and Experimental Neuropsychology, 48*(3), 266-280.
 
 Salgues, S., Jacquot, A., **Makowski, D.**, Tahar, C., Baekeland, J., Arcangeli, M., ... & Sperduti, M. (2024). [Self-reference and emotional reaction drive aesthetic judgment](https://www.nature.com/articles/s41598-024-68331-9). *Scientific Reports, 14*(1), 19699.
 
@@ -124,11 +124,11 @@ Lee, H., Jacquot, A., **Makowski, D.**, Arcangeli, M., Dokic, J., Piolino, P., &
 
 Kovarski, K., Dos Reis, J., Chevais, C., Hamel, A., **Makowski, D.**, & Sperduti, M. (2022). [Movie editing influences spectators' time perception](https://www.nature.com/articles/s41598-022-23992-2). *Scientific Reports, 12*(1), 20084.
 
-<!-- Blondé, P., Sperduti, M., **Makowski, D.**, & Piolino, P. (2022). [Bored, distracted, and forgetful: The impact of mind wandering and boredom on memory encoding](https://journals.sagepub.com/doi/abs/10.1177/17470218211026301). *Quarterly Journal of Experimental Psychology, 75*(1), 53-69. -->
+Blondé, P., Sperduti, M., **Makowski, D.**, & Piolino, P. (2022). [Bored, distracted, and forgetful: The impact of mind wandering and boredom on memory encoding](https://journals.sagepub.com/doi/abs/10.1177/17470218211026301). *Quarterly Journal of Experimental Psychology, 75*(1), 53-69.
 
 Blondé, P., **Makowski D.**, Sperduti, M., & Piolino, P. (2020). [In Medio Stat Virtus: intermediate levels of mind wandering improve episodic memory encoding in a virtual environment](https://dominiquemakowski.github.io/publication/blonde2020medio/blonde2020medio.pdf). *Psychological Research, 85*(4), 1613–1625.
 
-<!-- Girardeau, J. C., Blondé, P., **Makowski D.**, Abram, M., Piolino, P., & Sperduti, M. (2020). [The impact of state and dispositional mindfulness on prospective memory: A virtual reality study](https://dominiquemakowski.github.io/publication/girardeau2020impact/girardeau2020impact.pdf). *Consciousness and Cognition, 81*, 102920. -->
+Girardeau, J. C., Blondé, P., **Makowski D.**, Abram, M., Piolino, P., & Sperduti, M. (2020). [The impact of state and dispositional mindfulness on prospective memory: A virtual reality study](https://dominiquemakowski.github.io/publication/girardeau2020impact/girardeau2020impact.pdf). *Consciousness and Cognition, 81*, 102920.
 
 **Makowski, D.**, Dutriaux, L. (2017). [Neuropsydia.py: A Python Module for Creating Experiments, Tasks and Questionnaires](https://joss.theoj.org/papers/10.21105/joss.00259), *Journal of Open Source Software, 2*(19), 259.
 
@@ -171,76 +171,76 @@ Mavros, P., Olszewska-Guizzo, A., & **Makowski, D.** (2023). [Disentangling the 
 \normalsize
 
 
-## Talks
+<!-- ## Talks -->
 
-\tiny
-
-
-**Co-organizer** (2021). *La recherche aux temps de la COVID*, `r link("1ère journée du COllaborative COgnitive Science", "https://sites.google.com/view/les-cocos/")`, 29 November, Online.
-
-**Makowski, D.**, Sperduti, M., Nicolas, S. & Piolino, P. (2018). *Interindividual Determinants of Emotion Regulation through Fiction*. 2ème Congrès Francophone de TCC, 14-16 June, Geneva, Switzerland.
-
-**Makowski, D.** (2018, *invited*). *How Reality can Modulate Memory and Emotions*. CRPCPO's monthly seminar, 23 March, Amiens, France.
-
-**Makowski, D.**, Sperduti, M., Nicolas, S. & Piolino, P. (2018). *Engagement in Fiction as an Altered State of Consciousness*. 6th Mind, Brain & Body Symposium, 15-16 March, Berlin, Germany.
-
-**Makowski, D.**, Sperduti, M., Nicolas, S. & Piolino, P. (2017). *Vers la thérapie neurocognitive ? L’apport des neurosciences affectives dans la TCC*. 45ème congrès de l’AFTCC, 14-16 December, Paris, France.
-
-Sperduti, M., **Makowski, D.** & Piolino, P. (2017). *The Role of Self-Relevance and Interindividual Variability in Executive Functions in Implicit Emotion Regulation*. International Society for the Study of Interindividual Differences (ISSID), 24-28 July, Warsaw, Poland.
-
-**Makowski, D.**, Sperduti, M. & Piolino, P. (2017). *The Distinctive Effect of Emotion Regulation andMindfulness on Attentional Capture*. 1ère Journée Scientifique des Jeunes Chercheurs du Centre de Recherches sur la Cognition et l’Apprentissage, 8 June, Poitiers, France.
-
-**Makowski, D.**, Sperduti, M. & Piolino, P. (2016).*”Being there” and Remembering it: Presence en-hances Encoding in Memory*. International Congress On Memory (ICOM), 17-22 July, Budapest, Hungary.
-
-**Makowski, D.**, Sperduti, M. & Piolino, P. (2016). *The Sense of Reality as a feature of proto-Consciousness, its Alteration and Generation induced by Fictional Worlds*. Literary States of Consciousness, 2 June, Paris, France.
-
-**Makowski, D.**, Sperduti, M. & Piolino, P. (2016). *Does Mindfulness ability differently affect Implicit and Explicit Emotion Regulation?* 2nd International Conference on Mindfulness (ICM), 11-15 May, Roma, Italy.
-
-Sperduti, M., **Makowski, D.** & Piolino, P. (2016). *Does mindfulness enhance interoception? Dissociation between different interoceptive abilities*. 2nd International Conference on Mindfulness, 11-15 May, Roma, Italy.
-
-**Makowski, D.**, Sperduti, M. & Piolino, P. (2015). *Bon et Mauvais Régulateurs Emotionnels: Un Rôle Spécifique de l’Inhibition ?* 56è Congrès National de la Société Française de Psychologie (SFP), 2-4 September, Strasbourg, France.
-
-**Makowski, D.**, Sperduti, M., Pelletier, J. & Piolino, P. (2015). *Régulation émotionnelle et Self Control : De la recherche Fondamentale à l’Application Clinique*. 1er Congrès Francophone de TCC, 27-29 May, Lyon, France.
-
-**Makowski, D.**, Sperduti, M., Arcangeli, M., Pelletier, J. & Piolino, P. (2014). *From Philosophy to the Rehabilitation of Psychiatric Patients: Fiction/Reality, Emotion et Cognitive Control*. Journée d’hiver de l’IUPDP, 19 December, Boulogne-Billancourt, France.
-
-**Makowski, D.**, Sperduti, M. & Piolino, P. (2014). *L’émotion face à la fiction : l’étude de patients schizophrènes éclaire le paradoxe de la fiction*. 27 June, Fête de la Recherche, Boulogne-Billancourt,France.
-
-**Makowski, D.**, & Rossi, S. (2013). `r link("\\textit{Le jugement esthétique chez l’enfant}", "https://www.youtube.com/watch?v=Hvs7t5G_dLM")`. Journées Neurosciences, Esthétique, et Complexité, 28 September, Paris, France.
+<!-- \tiny -->
 
 
-\normalsize
+<!-- **Co-organizer** (2021). *La recherche aux temps de la COVID*, `r link("1ère journée du COllaborative COgnitive Science", "https://sites.google.com/view/les-cocos/")`, 29 November, Online. -->
 
-## Posters
+<!-- **Makowski, D.**, Sperduti, M., Nicolas, S. & Piolino, P. (2018). *Interindividual Determinants of Emotion Regulation through Fiction*. 2ème Congrès Francophone de TCC, 14-16 June, Geneva, Switzerland. -->
 
-\tiny
+<!-- **Makowski, D.** (2018, *invited*). *How Reality can Modulate Memory and Emotions*. CRPCPO's monthly seminar, 23 March, Amiens, France. -->
 
-**Makowski, D.,** Lau, Z. J., Pham, T., Te, A. S., & Chen, S. A. (2022). *Fractal dimension of EEG activity is linked to distinct facets of resting‑state cognition*. 28th Annual Meeting of the Organization for Human Brain Mapping (OHBM), 19-23 June, Glasgow, Scotland.
+<!-- **Makowski, D.**, Sperduti, M., Nicolas, S. & Piolino, P. (2018). *Engagement in Fiction as an Altered State of Consciousness*. 6th Mind, Brain & Body Symposium, 15-16 March, Berlin, Germany. -->
 
-**Makowski, D.,** Lau, Z. J., Pham, T., Te, A. S., & Chen, S. A. (2022). *A Closer Look at Cardiac Contraction and the Effect of Cardiac Timing on Cognitive Control*. 28th Annual Meeting of the Organization for Human Brain Mapping (OHBM), 19-23 June, Glasgow, Scotland.
+<!-- **Makowski, D.**, Sperduti, M., Nicolas, S. & Piolino, P. (2017). *Vers la thérapie neurocognitive ? L’apport des neurosciences affectives dans la TCC*. 45ème congrès de l’AFTCC, 14-16 December, Paris, France. -->
+
+<!-- Sperduti, M., **Makowski, D.** & Piolino, P. (2017). *The Role of Self-Relevance and Interindividual Variability in Executive Functions in Implicit Emotion Regulation*. International Society for the Study of Interindividual Differences (ISSID), 24-28 July, Warsaw, Poland. -->
+
+<!-- **Makowski, D.**, Sperduti, M. & Piolino, P. (2017). *The Distinctive Effect of Emotion Regulation andMindfulness on Attentional Capture*. 1ère Journée Scientifique des Jeunes Chercheurs du Centre de Recherches sur la Cognition et l’Apprentissage, 8 June, Poitiers, France. -->
+
+<!-- **Makowski, D.**, Sperduti, M. & Piolino, P. (2016).*”Being there” and Remembering it: Presence en-hances Encoding in Memory*. International Congress On Memory (ICOM), 17-22 July, Budapest, Hungary. -->
+
+<!-- **Makowski, D.**, Sperduti, M. & Piolino, P. (2016). *The Sense of Reality as a feature of proto-Consciousness, its Alteration and Generation induced by Fictional Worlds*. Literary States of Consciousness, 2 June, Paris, France. -->
+
+<!-- **Makowski, D.**, Sperduti, M. & Piolino, P. (2016). *Does Mindfulness ability differently affect Implicit and Explicit Emotion Regulation?* 2nd International Conference on Mindfulness (ICM), 11-15 May, Roma, Italy. -->
+
+<!-- Sperduti, M., **Makowski, D.** & Piolino, P. (2016). *Does mindfulness enhance interoception? Dissociation between different interoceptive abilities*. 2nd International Conference on Mindfulness, 11-15 May, Roma, Italy. -->
+
+<!-- **Makowski, D.**, Sperduti, M. & Piolino, P. (2015). *Bon et Mauvais Régulateurs Emotionnels: Un Rôle Spécifique de l’Inhibition ?* 56è Congrès National de la Société Française de Psychologie (SFP), 2-4 September, Strasbourg, France. -->
+
+<!-- **Makowski, D.**, Sperduti, M., Pelletier, J. & Piolino, P. (2015). *Régulation émotionnelle et Self Control : De la recherche Fondamentale à l’Application Clinique*. 1er Congrès Francophone de TCC, 27-29 May, Lyon, France. -->
+
+<!-- **Makowski, D.**, Sperduti, M., Arcangeli, M., Pelletier, J. & Piolino, P. (2014). *From Philosophy to the Rehabilitation of Psychiatric Patients: Fiction/Reality, Emotion et Cognitive Control*. Journée d’hiver de l’IUPDP, 19 December, Boulogne-Billancourt, France. -->
+
+<!-- **Makowski, D.**, Sperduti, M. & Piolino, P. (2014). *L’émotion face à la fiction : l’étude de patients schizophrènes éclaire le paradoxe de la fiction*. 27 June, Fête de la Recherche, Boulogne-Billancourt,France. -->
+
+<!-- **Makowski, D.**, & Rossi, S. (2013). `r link("\\textit{Le jugement esthétique chez l’enfant}", "https://www.youtube.com/watch?v=Hvs7t5G_dLM")`. Journées Neurosciences, Esthétique, et Complexité, 28 September, Paris, France. -->
 
 
-Lau, Z. J., Pham, T., Boyce, W. P., Chen, S. A., & **Makowski, D.** (2021). `r link("\\textit{A Parametric Framework to Generate Visual Illusions using Python}", "https://youtu.be/uptP_NxEHaM")`. 43rd European Conference on Visual Perception, 22-27 Aug. Online.
+<!-- \normalsize -->
 
-**Makowski, D.**, Sperduti, M. \& Piolino, P. (2016). *Régulation Emotionnelle, pleine-conscience et bien-être : Interactions et implication dans les troubles de l’humeur*. Journée d’hivers de la Société de Neuropsychologie de Langue Française, 5 December, Paris, France.
+<!-- ## Posters -->
 
-Blondé, P., Sperduti, M., **Makowski, D.** \& Piolino, P. (2016). *Le rôle des réseaux attentionnels sur l’encodage en mémoire épisodique dans le cadre du vieillissement et de sa variabilité interindividuelle liée aux traits de pleine conscience*. Journée d’hivers de la Société de Neuropsychologie de Langue Française, 5 December, Paris, France.
+<!-- \tiny -->
 
-**Makowski, D.**, Sperduti, M. \& Piolino, P. (2016).
-*I know it’s not real... what does it change?* nCPN day, 16 September, Paris, France.
+<!-- **Makowski, D.,** Lau, Z. J., Pham, T., Te, A. S., & Chen, S. A. (2022). *Fractal dimension of EEG activity is linked to distinct facets of resting‑state cognition*. 28th Annual Meeting of the Organization for Human Brain Mapping (OHBM), 19-23 June, Glasgow, Scotland. -->
 
-**Makowski, D.**, Sperduti, M. \& Piolino, P. (2015). *"J’avais l’impression d’y être" : Sentiment de présence et encodage en mémoire autobiographique*. Journée d’hiver de la Société de Neuropsychologie de Langue Française, 5 December, Paris, France.
+<!-- **Makowski, D.,** Lau, Z. J., Pham, T., Te, A. S., & Chen, S. A. (2022). *A Closer Look at Cardiac Contraction and the Effect of Cardiac Timing on Cognitive Control*. 28th Annual Meeting of the Organization for Human Brain Mapping (OHBM), 19-23 June, Glasgow, Scotland. -->
 
-Sperduti, M., **Makowski, D.** \& Piolino, P. (2015). *Interaction entre systèmes attentionnels et encodage en mémoire épisodique*. Journée d’hivers de la Société de Neuropsychologie de Langue Française, 5 December, Paris, France.
 
-**Makowski, D.**, Sperduti, M., Arcangeli, M., Pelletier, J. \& Piolino, P. (2015). *I know it’s not real... what does it change?* 12e colloque de la Société des Neurosciences, 19-22 May, Montpellier, France.
+<!-- Lau, Z. J., Pham, T., Boyce, W. P., Chen, S. A., & **Makowski, D.** (2021). `r link("\\textit{A Parametric Framework to Generate Visual Illusions using Python}", "https://youtu.be/uptP_NxEHaM")`. 43rd European Conference on Visual Perception, 22-27 Aug. Online. -->
 
-**Makowski, D.**, Sperduti, M., Arcangeli, M., Pelletier, J. \& Piolino, P. (2014) *Emotion Regulation by fiction is related to cognitive inhibition.* Journée d’hiver de la Société de Neuropsychologie de Langue Française, 5 December, Paris, France.
+<!-- **Makowski, D.**, Sperduti, M. \& Piolino, P. (2016). *Régulation Emotionnelle, pleine-conscience et bien-être : Interactions et implication dans les troubles de l’humeur*. Journée d’hivers de la Société de Neuropsychologie de Langue Française, 5 December, Paris, France. -->
 
-Sperduti, M., **Makowski, D.**, Vialatte, F. \& Piolino, P. (2014). *The decline of Autobiographical Memory in aging, inhibition and the cingulate cortex: an activation and resting state fMRI study.* Journées d’Etudes du Vieillissement, 15-16 September, Caen, France.
+<!-- Blondé, P., Sperduti, M., **Makowski, D.** \& Piolino, P. (2016). *Le rôle des réseaux attentionnels sur l’encodage en mémoire épisodique dans le cadre du vieillissement et de sa variabilité interindividuelle liée aux traits de pleine conscience*. Journée d’hivers de la Société de Neuropsychologie de Langue Française, 5 December, Paris, France. -->
 
-Sperduti, M., **Makowski, D.** \& Piolino, P. (2014). *The protective role of meditation on the cognitive decline in aging: a cross-sectional study*. Journées d’Etudes du Vieillissement, 15-16 September, Caen, France.
+<!-- **Makowski, D.**, Sperduti, M. \& Piolino, P. (2016). -->
+<!-- *I know it’s not real... what does it change?* nCPN day, 16 September, Paris, France. -->
 
-**Makowski, D.**, Sperduti, M., Arcangeli, M., Pelletier, J. \& Piolino, P. (2013). *QUID du paradoxe de l’émotion face à la fiction ? Nouvelles données physiologiques comparant la réponse émotionnelle à des scènes réelles ou fictionnelles*. Journées de l’IUPDP, 19 December, Boulogne-Billancourt, France.
+<!-- **Makowski, D.**, Sperduti, M. \& Piolino, P. (2015). *"J’avais l’impression d’y être" : Sentiment de présence et encodage en mémoire autobiographique*. Journée d’hiver de la Société de Neuropsychologie de Langue Française, 5 December, Paris, France. -->
 
-\normalsize
+<!-- Sperduti, M., **Makowski, D.** \& Piolino, P. (2015). *Interaction entre systèmes attentionnels et encodage en mémoire épisodique*. Journée d’hivers de la Société de Neuropsychologie de Langue Française, 5 December, Paris, France. -->
+
+<!-- **Makowski, D.**, Sperduti, M., Arcangeli, M., Pelletier, J. \& Piolino, P. (2015). *I know it’s not real... what does it change?* 12e colloque de la Société des Neurosciences, 19-22 May, Montpellier, France. -->
+
+<!-- **Makowski, D.**, Sperduti, M., Arcangeli, M., Pelletier, J. \& Piolino, P. (2014) *Emotion Regulation by fiction is related to cognitive inhibition.* Journée d’hiver de la Société de Neuropsychologie de Langue Française, 5 December, Paris, France. -->
+
+<!-- Sperduti, M., **Makowski, D.**, Vialatte, F. \& Piolino, P. (2014). *The decline of Autobiographical Memory in aging, inhibition and the cingulate cortex: an activation and resting state fMRI study.* Journées d’Etudes du Vieillissement, 15-16 September, Caen, France. -->
+
+<!-- Sperduti, M., **Makowski, D.** \& Piolino, P. (2014). *The protective role of meditation on the cognitive decline in aging: a cross-sectional study*. Journées d’Etudes du Vieillissement, 15-16 September, Caen, France. -->
+
+<!-- **Makowski, D.**, Sperduti, M., Arcangeli, M., Pelletier, J. \& Piolino, P. (2013). *QUID du paradoxe de l’émotion face à la fiction ? Nouvelles données physiologiques comparant la réponse émotionnelle à des scènes réelles ou fictionnelles*. Journées de l’IUPDP, 19 December, Boulogne-Billancourt, France. -->
+
+<!-- \normalsize -->

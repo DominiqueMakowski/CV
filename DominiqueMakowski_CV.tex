@@ -1,0 +1,928 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt,a4paper,]{awesome-cv}
+
+% Configure page margins with geometry
+\usepackage{geometry}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\definecolor{awesome}{HTML}{1976D2}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\photo{./img/profile.png}
+\name{Dominique}{Makowski}
+
+\position{Assistant Professor in Psychology}
+\address{University of Sussex, Brighton, UK}
+
+\email{\href{mailto:D.Makowski@sussex.ac.uk}{\nolinkurl{D.Makowski@sussex.ac.uk}}}
+\homepage{dominiquemakowski.github.io}
+\github{DominiqueMakowski}
+\twitter{Dom\_Makowski}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+\quote{\RaggedRight Trained as a clinical neuropsychologist, I am
+currently an assistant professor at the University of Sussex researching
+aspects of reality bending (e.g., illusions, beliefs of reality,
+neuroscience of deception, fake news, altered states of consciousness),
+the role of the body and emotions in cognition (e.g., emotion regulation
+and interoception), and methodology (statistics, programming, and
+neurophysiological techniques).}
+
+\usepackage{booktabs}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+\definecolor{cvlinkcolor}{HTML}{1976D2}
+\hypersetup{colorlinks=true, urlcolor=cvlinkcolor, linkcolor=cvlinkcolor}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+
+% Pandoc CSL macros
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {August 2026}
+    {Dominique Makowski~~~·~~~Curriculum Vitae}
+  {\thepage~ of \pageref{LastPage}~}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\normalsize
+
+\section{Education}\label{education}
+
+\begin{cventries}
+    \cventry{Université de Paris}{Doctor of Philosophy (PhD) - Psychology}{France}{2014 - 18}{\begin{cvitems}
+\item Thesis: Cognitive Neuropsychology of Implicit Emotion Regulation through Fictional Reappraisal (supervised by \href{http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Serge-Nicolas}{\color[HTML]{1976D2}{Pr Serge Nicolas}} \& \href{http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Pascale-Piolino}{\color[HTML]{1976D2}{Pr Pascale Piolino}})
+\end{cvitems}}
+    \cventry{French Association for Cognitive Behavioural Therapy (AFTCC)}{Certified Psychotherapist - Cognitive Behavioural Therapy (CBT)}{France}{2014 - 17}{\begin{cvitems}
+\item Thesis: Cognitive Behavioural Therapy for two Patients: One suffering from Motivation Disorder associated with Dysthymia and the other from Social Anxiety (supervised by Sophie Kindynis)
+\end{cvitems}}
+    \cventry{Université de Paris}{Master of Science (MSc) - Clinical Neuropsychology and Cognitive Psychology}{France}{2012 - 14}{\begin{cvitems}
+\item Second year thesis: How the Study of Emotions in Schizophrenia enlight the Paradox of Fiction (supervised by \href{http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Pascale-Piolino}{\color[HTML]{1976D2}{Pr Pascale Piolino}})
+\item First year thesis: The Cognitive Development of the Aesthetic Judgement in Children and Adults (supervised by \href{https://www.researchgate.net/profile/Sandrine-Rossi}{\color[HTML]{1976D2}{Pr Sandrine Rossi}})
+\end{cvitems}}
+    \cventry{Université de Paris}{Bachelor of Science (BSc) - Psychology}{France}{2009 - 12}{}\vspace{-4.0mm}
+\end{cventries}
+
+\section{Experience}\label{experience}
+
+\subsection{Research}\label{research}
+
+\begin{cventries}
+    \cventry{School of Psychology, University of Sussex}{Assistant Professor (Current Position)}{UK}{2023 - Present}{\begin{cvitems}
+\item Full teaching service on courses including Bayesian Statistics and Psychophysiology.
+\item Head of the  \href{https://realitybending.github.io/}{\color[HTML]{1976D2}{Reality Bending Lab}}  (ReBeL) where we study reality perception (e.g., neuroscience of deception, perception of fake news, altered states of consciousness), the role of the body and emotions in cognition (e.g., emotion regulation and interoception), and methodology (statistics, programming, open source software and neurophysiological techniques).
+\end{cvitems}}
+    \cventry{Clinical Brain Lab, Nanyang Technological University (NTU)}{Presidential Research Fellow}{Singapore}{2021 - 22}{\begin{cvitems}
+\item The NTU "presidential postdoc fellowship" is a competitive two-years grant meant as an intermediate step between postdoc and faculty. While integrated within a larger lab (the \href{https://www.clinicalbrain.org/}{\color[HTML]{1976D2}{Clinical Brain Lab}}, directed by \href{https://www.clinicalbrain.org/author/annabel-chen/}{\color[HTML]{1976D2}{Pr Annabel Chen}}, I am pursuing my own research track on the neurocognitive and affective processes underlying the beliefs in fake vs. real stimuli (fake news, fiction, ...), managing my team (3 research assistants, and several undergrad students) and research funding (\$ 200k).
+\end{cvitems}}
+    \cventry{Clinical Brain Lab, Nanyang Technological University (NTU)}{Research Fellow}{Singapore}{2019 - 20}{\begin{cvitems}
+\item First postdoc position, working on a project funded by the ministry of defence about the neurocognitive correlates of deception. Responsible for studies design and completion, data analysis, publications and co-supervision of one PhD student, two research assistants and several graduate and undergraduate students (reference: \href{https://www.clinicalbrain.org/author/annabel-chen/}{\color[HTML]{1976D2}{Pr Annabel Chen}}).
+\end{cvitems}}
+    \cventry{Developmental Psychology Lab (LaPsyDé), Université de Paris}{Research Assistant}{Paris, France}{2012}{\begin{cvitems}
+\item Data collection for a study (\href{http://psycnet.apa.org/journals/emo/13/5/811/}{\color[HTML]{1976D2}{Borst, 2016}}) on emotions and mental rotation (reference: \href{https://www.lapsyde.com/gregoire-borst}{\color[HTML]{1976D2}{Pr Grégoire Borst}}).
+\end{cvitems}}
+    \cventry{Memory \& Cognition Lab (LMC), Université de Paris}{Research Assistant}{Paris, France}{2011}{\begin{cvitems}
+\item Experiment creation and data collection for a study on memory, salience and bizarreness effect (reference: \href{http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Serge-Nicolas}{\color[HTML]{1976D2}{Pr Serge Nicolas}}).
+\end{cvitems}}
+\end{cventries}
+
+\subsection{Teaching}\label{teaching}
+
+\begin{cventries}
+    \cventry{University of Basel}{Invited Instructor (Psychophysiology)}{Zürich, Switzerland}{2024}{\begin{cvitems}
+\item Full-day workshop (8 h; PhD students): Recording, Analyzing and Using Physiological Signals in Psychology. Reference: \href{https://psychologie.unibas.ch/de/personen/dorothee-bentz/}{\color[HTML]{1976D2}{Dr Dorothee Bentz}}.
+\end{cvitems}}
+    \cventry{University of Zurich}{Invited Instructor (Programming and Data Science)}{Zürich, Switzerland}{2022}{\begin{cvitems}
+\item Online workshop (24 h; PhD students): Advanced Python programming for signal processing and data analysis. Reference: \href{https://www.psychologie.uzh.ch/de/studium/doktorat/team.html}{\color[HTML]{1976D2}{Dr Maike Krannich}}.
+\end{cvitems}}
+    \cventry{Université de Paris}{Assistant Lecturer (Clinical Neuropsychology)}{Paris, France}{2017 - 18}{\begin{cvitems}
+\item Modules (192 h; bachelor \& master students): Neurology and psychiatry (main neurodegenerative, neurological and psychiatric disorders), assessment (examination, diagnostic, psychometry), rehabilitation and psychotherapy (CBT, mindfulness-based therapies, cognitive rehabilitation, practice supervision), general neuroscience and psychology (neuroanatomy, emotion regulation...). Reference: \href{http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Isabelle-Jambaque-Aubourg}{\color[HTML]{1976D2}{Pr Isabelle Jambaqué}}.
+\end{cvitems}}
+    \cventry{Université de Paris}{Teaching Assistant (Differential Cognitive Psychology)}{Paris, France}{2015 - 17}{\begin{cvitems}
+\item Modules (144 h; 1st \& 2nd year students): Experimental methodology (assessment and related problems, scientific reasoning, psychometric properties of tests and questionnaires, statistics...) and introduction to concepts such as intelligence, personality and creativity. Reference: Dr Christophe Mouchiroud.
+\end{cvitems}}
+    \cventry{Université de Paris}{Teaching Assistant (Cognitive Psychology)}{Paris, France}{2014 - 16}{\begin{cvitems}
+\item Modules (48 h; 3rd year students): Models of working memory, mental imagery and categorisation. Reference: \href{https://lapea.recherche.parisdescartes.fr/membres-permanents/todd-lubart/}{\color[HTML]{1976D2}{Pr Todd Lubart}}.
+\end{cvitems}}
+\end{cventries}
+
+\subsection{Clinical}\label{clinical}
+
+\begin{cventries}
+    \cventry{Department of adult psychiatry, Pitié-Salpêtrière Hospital}{Assistant Neuropsychologist}{Paris, France}{2013 - 14}{\begin{cvitems}
+\item Neuropsychology internship (512 h) under \href{https://fr.linkedin.com/in/hatif-severine-032596157}{\color[HTML]{1976D2}{Dr Séverine Hatif}}. Assessment and diagnostic of psychiatric or neurological illnesses among adults, as well as development and application of cognitive rehabilitation programs.
+\end{cvitems}}
+    \cventry{Department of geriatric psychiatry, Sainte-Anne Hospital}{Assistant Neuropsychologist}{Paris, France}{2012 - 13}{\begin{cvitems}
+\item Neuropsychology internship (304 h) under Emmanuel Guiliano. Assessment and diagnostic of psychiatric and neurological illnesses among an elderly population.
+\end{cvitems}}
+    \cventry{Department of gerontology, La Porte Verte Hospital}{Assistant Neuropsychologist}{Versailles, France}{2012}{\begin{cvitems}
+\item Neuropsychology internship (96 h) under Sophie Fleury. Observation of assessment and diagnostic of memory related deficits such as neurodegenerative diseases, somatic ageing-related illnesses or depression.
+\end{cvitems}}
+\end{cventries}
+
+\section{Software and Tools}\label{software-and-tools}
+
+\small
+
+I develop and maintain open-source software and measurement tools used
+across psychological and neuroscientific research.
+
+\normalsize
+
+\begin{table}[H]
+\centering
+\scriptsize
+\begin{tabular}{p{0.085\linewidth} p{0.39\linewidth} p{0.11\linewidth} p{0.365\linewidth}}
+\multicolumn{2}{c}{\textbf{Software}} & \multicolumn{2}{c}{\textbf{Measure}} \\
+\cmidrule(lr){1-2} \cmidrule(lr){3-4}
+\href{https://github.com/easystats/easystats}{\textbf{easystats}} & R packages for accessible statistical modelling (bayestestR, parameters, performance, modelbased, ...) & \href{https://doi.org/10.1038/s41598-023-33148-5}{\textbf{Illusion Game}} & Parametric visual illusion task measuring illusion sensitivity \\
+\href{https://github.com/neuropsychology/NeuroKit}{\textbf{NeuroKit}} & Python toolbox for neurophysiological signal processing & \href{https://link.springer.com/article/10.1007/s12144-021-01760-1}{\textbf{Lie Scale}} & Self-report measure of lying styles and attitudes \\
+\href{https://github.com/realitybending/Pyllusion}{\textbf{Pyllusion}} & Python framework to generate visual illusions & \href{https://osf.io/preprints/psyarxiv/8qrht}{\textbf{MINT Scale}} & Multimodal interoception questionnaire \\
+\href{https://github.com/neuropsychology/Neuropsydia.py}{\textbf{Neuropsydia}} & Python package for creating experiments (defunct) &  &  \\
+\end{tabular}
+\end{table}
+
+\newpage
+
+\section{Skills}\label{skills}
+
+\subsection{Language}\label{language}
+
+\begin{flushleft}\includegraphics{DominiqueMakowski_CV_files/figure-latex/Language-1} \end{flushleft}
+
+\subsection{Techniques}\label{techniques}
+
+\small
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Bayesian Statistics}: Predictive and structural modelling
+  within a Bayesian framework (Stan, brms), including custom
+  distributional families and computational cognitive models.
+\item
+  \textbf{Psychophysiology \& EEG}: Acquisition, preprocessing and
+  analysis of EEG and physiological signals (ECG, EDA, HRV).
+\item
+  \textbf{Computational Modelling}: Application of ML/deep learning and
+  computational modelling to psychological and neuroscientific data.
+\item
+  \textbf{Open Science}: Strong commitment to reproducible research
+  practices, open data/code sharing, and sustained contribution to
+  open-source software communities.
+\end{itemize}
+
+\normalsize
+
+\section{Additional Training}\label{additional-training}
+
+\subsection{Teaching}\label{teaching-1}
+
+\begin{cventries}
+    \cventry{Collaborative Institutional Training Initiative (ethics and scientific integrity in research)}{CITI Certification}{Online}{2019}{}\vspace{-4.0mm}
+    \cventry{Université of Paris (40h training in pedagogy and innovative teaching)}{Academic Teaching Certificate}{France}{2017}{}\vspace{-4.0mm}
+\end{cventries}
+
+\subsection{Clinical}\label{clinical-1}
+
+\begin{cventries}
+    \cventry{National Guild of Hypnotists (100h - Note that although trained and qualified, I do not endorse hypnosis)}{Certified Hypnotherapist}{Singapore}{2019}{}\vspace{-4.0mm}
+    \cventry{Institute for psychiatry, Sainte-Anne Hospital (16h master class)}{Mindfulness based on Compassion and Insight (MBCI)}{France}{2016}{}\vspace{-4.0mm}
+    \cventry{Université de Paris (16h - level 1)}{First Aid Certificate}{France}{2016}{}\vspace{-4.0mm}
+\end{cventries}
+
+\subsection{Neuroimaging}\label{neuroimaging}
+
+\begin{cventries}
+    \cventry{Neurocourses UK (32h)}{Structural, Functional and Radiological Neuroanatomy}{Online}{2020}{}\vspace{-4.0mm}
+    \cventry{National Institute of Nuclear Sciences \& Techniques - INSTN (32h)}{MRI Connectivity Analysis}{Marseille, France}{2015}{}\vspace{-4.0mm}
+    \cventry{Sainte-Anne Hospital (32h)}{fMRI : Preprocessing and Analysis}{Paris, France}{2014 - 15}{}\vspace{-4.0mm}
+    \cventry{École Supérieure de Physique et de Chimie Industrielle - ESPCI (24h)}{Signal Processing Theory and Application for EEG}{Paris, France}{2014}{}\vspace{-4.0mm}
+\end{cventries}
+
+\subsection{Statistics and
+Programming}\label{statistics-and-programming}
+
+\begin{cventries}
+    \cventry{University of Nottingham (24h)}{Creating Online Experiments in PsychoPy and Pavlovia}{Online}{2020}{}\vspace{-4.0mm}
+    \cventry{Telecom ParisTech (16h)}{Scientific Programming with Python and Software Engineering Best Practices}{Paris, France}{2016}{}\vspace{-4.0mm}
+    \cventry{University of Nottingham (24h)}{P4N: Python for Neuroscience (and Psychology)}{Nottingham, UK}{2016}{}\vspace{-4.0mm}
+    \cventry{École Supérieure de Physique et de Chimie Industrielle - ESPCI (16h)}{Machine Learning and Brain-to-Computer Interfaces}{Paris, France}{2014}{}\vspace{-4.0mm}
+\end{cventries}
+
+\subsection{Miscellaneous}\label{miscellaneous}
+
+\begin{cventries}
+    \cventry{École du Louvre (74h)}{History of Arts}{Paris, France}{2017-- 18}{}\vspace{-4.0mm}
+\end{cventries}
+
+\section{Research Track Record}\label{research-track-record}
+
+\subsection{Scientific Impact}\label{scientific-impact}
+
+\begin{center}\includegraphics[width=0.8\linewidth]{DominiqueMakowski_CV_files/figure-latex/ScientificImpactFigure-1} \end{center}
+
+\begin{table}[!h]
+\centering\begingroup\fontsize{8}{10}\selectfont
+
+\begin{tabular}{rrrrrr}
+\toprule
+\textit{n}-Publications \textit{(total)} & \textit{n}-1\textsuperscript{st} author & \textit{n}-2\textsuperscript{nd} author & \textit{n}-Senior author & H-index & Citations \textit{(total)}\\
+\midrule
+67 & 29 & 12 & 11 & 27 & 19693\\
+\bottomrule
+\end{tabular}
+\endgroup{}
+\end{table}
+
+\subsection{Grants}\label{grants}
+
+\begin{cventries}
+    \cventry{Consciousness Registered Reports: Illusion Sensitivity and Phenomenological
+Control}{\href{https://www.cos.io/blog/funding-consciousness-research}{\color[HTML]{333333}{Centre for Open Science: Funding Consciousness Research with Registered Reports}} (PI)}{2024 - 26}{\$28,163}{}\vspace{-4.0mm}
+    \cventry{Cognitive, Neural and Social Factors involved in the Perception of Real vs. Fake Information}{\href{https://www.ntu.edu.sg/temasek-labs/research-focus/programme}{\color[HTML]{333333}{TL@NTU's Behavioural and Communication Science Programme (BCSP) Grant}} (co-PI)}{2022 - 25}{\$915,427}{}\vspace{-4.0mm}
+    \cventry{\href{https://fcl.ethz.ch/research/research-projects/NICE.html}{\color[HTML]{5D5D5D}{A Neuroscientific investigation of the Interaction between Crowdedness and Environment typology (NICE)}}}{\href{https://researchgrant.gov.sg/Pages/GrantCallDetail.aspx?AXID=NRF2021-ITS008&CompanyCode=nrf}{\color[HTML]{333333}{Singapore National Research Foundation's Intra-CREATE Grant}} (co-PI)}{2021 - 22}{\$249,730}{}\vspace{-4.0mm}
+    \cventry{'That's Fake News': Modulating the Neurocognitive Processes Underlying the Belief in Deceptive Information}{\href{https://www.ntu.edu.sg/research/research-careers/presidential-postdoctoral-fellowship-(ppf)}{\color[HTML]{333333}{NTU Presidential Postdoctoral Fellowship}} (PI)}{2020 - 22}{\$360,000}{}\vspace{-4.0mm}
+\end{cventries}
+
+\subsection{Awards}\label{awards}
+
+\begin{cventries}
+    \cventry{Outstanding Student Supervision}{\href{https://www.linkedin.com/posts/dominiquemakowski_realitybendinglab-activity-7241790839134257152-wjR6?utm_source=share&utm_medium=member_desktop}{\color[HTML]{333333}{Sussex School of Psychology 2024 Award Winner}}}{2024}{}{}\vspace{-4.0mm}
+    \cventry{Obtained for the \href{https://en.wikipedia.org/wiki/NeuroKit}{\color[HTML]{5D5D5D}{NeuroKit}} Python package}{\href{https://improvingpsych.org/mission/awards/}{\color[HTML]{333333}{Mission Award (Society for the Improvement of Psychological Science - SIPS)}}}{2024}{}{}\vspace{-4.0mm}
+    \cventry{For engagement in Open Science}{\href{https://www.linkedin.com/posts/university-of-sussex-school-of-psychology_congratulations-to-the-5-winners-and-6-shortlisted-activity-7209487987682721793-d4qm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAAjTVisBfrVtfzPXFkBFwGtFJYejv2DfvSs}{\color[HTML]{333333}{University of Sussex Research Culture 2024 Awards Winner}}}{2024}{£1,000}{}\vspace{-4.0mm}
+    \cventry{Obtained for the \href{https://en.wikipedia.org/wiki/Easystats}{\color[HTML]{5D5D5D}{easystats}} collection of R packages}{\href{https://improvingpsych.org/mission/awards/}{\color[HTML]{333333}{Mission Award (Society for the Improvement of Psychological Science - SIPS)}}}{2023}{}{}\vspace{-4.0mm}
+    \cventry{Obtained for \href{https://dominiquemakowski.github.io/publication/makowski2019phenomenal/}{\color[HTML]{1976D2}{Makowski et al. (2019)}}}{\href{https://www.psychonomic.org/page/2020BestArticleAwards}{\color[HTML]{333333}{Best Article Award (Psychonomic Society)}}}{2020}{\$1,000}{}\vspace{-4.0mm}
+    \cventry{Obtained for the bayestestR R package \href{https://joss.theoj.org/papers/10.21105/joss.01541}{\color[HTML]{1976D2}{(Makowski et al., 2019)}}}{\href{https://improvingpsych.org/mission/awards/}{\color[HTML]{333333}{Commendation (Society for the Improvement of Psychological Science - SIPS)}}}{2020}{}{}\vspace{-4.0mm}
+\end{cventries}
+
+\subsection{Student Awards}\label{student-awards}
+
+\small
+
+My students are also consistently winning awards for their work in my
+lab.
+
+\normalsize
+
+\begin{cventries}
+    \cventry{Awarded to Emma Benn (3rd year dissertation)}{SAGE Publications Prize for Outstanding Application of Statistical Methods}{2026}{}{}\vspace{-4.0mm}
+    \cventry{ Scholarship awarded to Oliver Collins}{Junior Research Assistant (JRA)}{2026}{}{}\vspace{-4.0mm}
+    \cventry{Scholarship awarded to Eva Mala}{SoCoBio Summer Internship}{2025}{}{}\vspace{-4.0mm}
+    \cventry{Awarded to Sam Marine (3rd year dissertation) for highest project mark}{Sussex Partnership NHS Foundation Trust Prize}{2025}{}{}\vspace{-4.0mm}
+    \cventry{Awarded to Rob Dickinson (PhD student)}{Adam Weiler Impact Award}{2024}{}{}\vspace{-4.0mm}
+    \cventry{Scholarship awarded to Gregory Heaney}{SoCoBio Summer Internship}{2024}{}{}\vspace{-4.0mm}
+    \cventry{Scholarship awarded to Jing Xu}{Junior Research Assistant (JRA)}{2023}{}{}\vspace{-4.0mm}
+    \cventry{Scholarship awarded to Auz Moore}{Junior Research Assistant (JRA)}{2023}{}{}\vspace{-4.0mm}
+\end{cventries}
+
+\subsection{Editorial
+Responsibilities}\label{editorial-responsibilities}
+
+\begin{cventries}
+    \cventry{\href{https://www.frontiersin.org/journals/all/sections/quantitative-psychology-and-measurement}{\color[HTML]{333333}{Frontiers in Psychology: \textit{Quantitative Psychology and Measurement}}}}{Associate Editor}{}{2020 - 2024}{}\vspace{-4.0mm}
+    \cventry{\href{https://joss.theoj.org/}{\color[HTML]{333333}{Journal of Open Source Software}}}{Regular Reviewer}{}{2018 - present}{}\vspace{-4.0mm}
+    \cventry{Biological Psychiatry, Personality and Individual Differences, Scientific Reports, Acta Psychologica, ...}{Reviewer}{}{2017 - present}{}\vspace{-4.0mm}
+\end{cventries}
+
+\subsection{Academic Responsibilities}\label{academic-responsibilities}
+
+\begin{cventries}
+    \cventry{Representation of the PhD students at the university level}{Elected Representative}{ED261-3CH doctoral school}{2016 - 18}{}\vspace{-4.0mm}
+    \cventry{Organization of seminars, local conferences and social events}{Community Manager}{Memory \& Cognition Lab}{2014 - 15}{}\vspace{-4.0mm}
+    \cventry{Organization of social events for students}{Active Member}{Student Association (BDE)}{2009 - 12}{}\vspace{-4.0mm}
+\end{cventries}
+
+\section{Teaching Record}\label{teaching-record}
+
+\subsection{Academic}\label{academic}
+
+\small
+
+I have given academic lectures (total hours since 2014: \textbf{424}) on
+the following topics:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Bayesian Statistics}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Bayesian framework
+  \item
+    Bayesian models with the \emph{brms} R package
+  \end{itemize}
+\item
+  \textbf{Signal Processing}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Bodily signals acquisition and preprocessing
+  \item
+    Heart rate
+  \item
+    Electrodermal activity
+  \end{itemize}
+\item
+  \textbf{Psychophysiology and Interoception}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Embodied Cognition
+  \item
+    Interoceptive Models
+  \item
+    Psychophysiology
+  \item
+    Heart rate variability
+  \end{itemize}
+\item
+  \textbf{Neuropsychology} (\emph{192 hours; 2nd year, 3rd year and
+  master level})
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Clinical Neuropsychology \scriptsize(Neuropsychological syndromes;
+    Neuropsychological examination and diagnostic; Cognitive
+    rehabilitation; Clinical practice supervision; Neuropsychology in
+    psychiatry)\normalsize
+  \item
+    Cognitive Neuroscience \scriptsize(Neuroanatomy; Emotion Regulation;
+    Mindfulness; Memory; Neuroimaging)\normalsize
+  \end{itemize}
+\item
+  \textbf{Differential Psychology} (\emph{144 hours; 1st year level})
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Hands-on Lectures \scriptsize(Experimental Methodology; Scientific
+    Reasoning; Psychometric properties of tests and questionnaires;
+    Introductory Statistics)\normalsize
+  \item
+    Theory \scriptsize(Intelligence; Personality; Creativity)\normalsize
+  \end{itemize}
+\item
+  \textbf{Cognitive Psychology} (\emph{48 hours; 3rd year level})
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Working memory
+  \item
+    Mental imagery and categorisation
+  \end{itemize}
+\item
+  \textbf{Programming for Psychologists} (\emph{24 hours})
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Python Programming
+  \item
+    Experiment creation using Python
+  \end{itemize}
+\item
+  \textbf{Other} (\emph{16 hours}): Internet; Research Ethics; Digital
+  Rights
+\end{itemize}
+
+\normalsize
+
+\subsection{Supervision}\label{supervision}
+
+I have mentored more than 7 full-time research assistants.
+
+I have also co-supervised bachelor and master students for their
+research projects.
+
+\section{Publications}\label{publications}
+
+\subsection{Reality Perception and
+Manipulation}\label{reality-perception-and-manipulation}
+
+\scriptsize
+
+\textbf{Makowski, D.}, \& Neves, A. (\emph{under review}).
+\href{https://osf.io/placeholder}{Testing the relationship between
+phenomenological control and illusion sensitivity}. \emph{PsyArXiv}.
+(Stage 2 Registered Report)
+
+\textbf{Makowski, D.}, Te, A. S., Neves, A., Kirk, S., Liang, N. Z.,
+Mavros, P., \& Chen, S. A. (2025).
+\href{https://doi.org/10.1016/j.actpsy.2024.104670}{Too beautiful to be
+fake: Attractive faces are less likely to be judged as artificially
+generated}. \emph{Acta Psychologica}, 252, 104670.
+
+Dickinson, R., \textbf{Makowski, D.}, van Marwijk, H., \& Ford, E.
+(2025).
+\href{https://doi.org/10.1371/journal.pone.0317592}{Interventions for
+combating COVID-19 misinformation: A systematic realist review}.
+\emph{PLOS One, 20}(4), e0317592.
+
+Dickinson, R., \textbf{Makowski, D.}, van Marwijk, H., \& Ford, E.
+(2024). \href{https://www.mdpi.com/2673-8112/4/12/132}{Exploring the
+Role of News Outlets in the Rise of a Conspiracy Theory:
+Hydroxychloroquine in the Early Days of COVID-19}. \emph{COVID, 4}(12),
+1873-1896.
+
+\textbf{Makowski, D.}, Lau, Z. J., Pham, T., Te, A. S., Kirk, S., Liauw,
+C., \& Chen, S. A. (2024).
+\href{https://link.springer.com/article/10.1007/s12144-024-06890-w}{The
+heart can lie: a preliminary investigation of the role of interoception
+and theory of mind in deception}. \emph{Current Psychology}, 1-12.
+
+\textbf{Makowski, D.}, Te, A. S., Kirk, S., Liang, N. Z., \& Chen, S. A.
+(2023). \href{https://doi.org/10.1038/s41598-023-33148-5}{A novel visual
+illusion paradigm provides evidence for a general factor of illusion
+sensitivity and personality correlates}. \emph{Scientific Reports,
+13}(1), 6594.
+
+\textbf{Makowski, D.}, Lau, Z. J., Pham, T., Boyce, W. P. \& Chen, S. A.
+(2021).
+\href{https://dominiquemakowski.github.io/publication/makowski2021parametric/makowski2021parametric.pdf}{A
+Parametric Framework to Generate Visual Illusions using Python}.
+\emph{Perception}, 50(11), 950-965.
+
+\textbf{Makowski, D.}, Pham, T., Lau, Z. J., Raine, A., \& Chen, S. H.
+(2021).
+\href{https://dominiquemakowski.github.io/publication/makowski2021structure/makowski2021structure.pdf}{The
+Structure of Deception: Validation of the Lying Profile Questionnaire}.
+\emph{Current Psychology}, 1-16.
+
+\textbf{Makowski, D.}, Sperduti, M., Pelletier, J., Blondé, P., La
+Corte, V., Arcangeli, M., Zalla, T., Lemaire, S., Dokic, J., Nicolas,
+S., \& Piolino, P. (2019).
+\href{https://dominiquemakowski.github.io/publication/makowski2019phenomenal/makowski2019phenomenal.pdf}{Phenomenal,
+Bodily and Brain Correlates of Fictional Reappraisal as an Implicit
+Emotion Regulation Strategy}. \emph{Cognitive, Affective, \& Behavioral
+Neuroscience}, 19(4), 1-21.
+
+\textbf{Makowski, D.}*, Sperduti, M.*, Nicolas, S. \& Piolino, P.
+(2017).
+\href{https://dominiquemakowski.github.io/publication/makowski2017being/makowski2017being.pdf}{``\emph{Being
+there}'' and remembering it: Presence improves Memory Encoding}.
+\emph{Consciousness \& Cognition, 53}, 194--202.
+
+Sperduti, M.*, \textbf{Makowski, D.}*, Arcangeli, M., Wantzen, P.,
+Zalla, T., Lemaire, S., Dokic, J., Pelletier, J. \& Piolino, P. (2017).
+\href{https://dominiquemakowski.github.io/publication/sperduti2017distinctive/sperduti2017distinctive.pdf}{The
+Distinctive Role of Executive Functions in Implicit Emotion Regulation}.
+\emph{Acta Psychologica, 173}, 13-20.
+
+Tuena, C., Serino, S., Gaston-Bellegarde, A., Orriols, E.,
+\textbf{Makowski, D.}, Riva, G. \& Piolino, P. (2017).
+\href{https://dominiquemakowski.github.io/publication/tuena2017virtual/tuena2017virtual.pdf}{How
+Virtual Embodiment Affects Episodic Memory Functioning: a
+Proof-of-Concept Study}, \emph{Annual Review of Cybertherapy and
+Telemedicine}, 15, 93-107.
+
+Sperduti, M.*, Arcangeli, M.*, \textbf{Makowski, D.}, Wantzen, P.,
+Zalla, T., Lemaire, S., Dokic, J., Pelletier, J. \& Piolino, P. (2016).
+\href{https://dominiquemakowski.github.io/publication/sperduti2016paradox/sperduti2016paradox.pdf}{The
+paradox of fiction: Emotional response toward fiction and the modulatory
+role of self-relevance}. \emph{Acta psychologica}, 165, 53-59.
+
+\normalsize
+
+\subsection{Interoception, Emotion Regulation,
+Neurophysiology}\label{interoception-emotion-regulation-neurophysiology}
+
+\scriptsize
+
+\textbf{Makowski, D.}, Neves, A., Benn, E., \& Poerio, G. (\emph{under
+review}). \href{https://doi.org/10.31234/osf.io/placeholder}{The Mint
+Scale: A fresh validation of the multimodal interoception questionnaire
+and comparison to the MAIA, BPQ and IAS}. \emph{PsyArXiv}.
+
+Pham, T., Johnco, C. J., Lau, Z. J., \textbf{Makowski, D.}*, \& Forbes,
+M. K.* (2025). \href{https://doi.org/10.1111/psyp.70164}{Which heart
+rate variability (HRV) indices should I use for psychophysiological
+research? A data-driven approach to identifying clusters of HRV
+indices}. \emph{Psychophysiology, 62}(10), e70164. (*co-last authors)
+
+Lau, Z. J.*, Pham, T.*, Chen, S. A., \& \textbf{Makowski, D.} (2022).
+\href{https://onlinelibrary.wiley.com/doi/abs/10.1111/ejn.15800}{Brain
+Entropy, Fractal Dimensions and Predictability: A Review of Complexity
+Measures for EEG in Healthy and Neuropsychiatric Populations}.
+\emph{European Journal of Neuroscience, 56}(7), 5047-5069.
+
+\textbf{Makowski, D.}, Te, A. S., Pham, T., Lau, Z. J., \& Chen, S. H.
+(2022). \href{https://www.mdpi.com/1099-4300/24/8/1036}{The Structure of
+Chaos: An Empirical Comparison of Fractal Physiology Complexity Indices
+Using Neurokit2}. \emph{Entropy, 24}(8), 1036.
+
+Pham, T., Lau, Z. J., Chen, S. H. A., \& \textbf{Makowski, D.} (2021).
+\href{https://www.mdpi.com/1424-8220/21/12/3998}{Heart Rate Variability
+in Psychology: A Review of HRV Indices and an Analysis Tutorial}.
+\emph{Sensors, 21}(12), 3998.
+
+\textbf{Makowski, D.}, Pham, T., Lau, Z. J., Brammer, J. C., Lespinasse,
+F., Pham, H., Schötzel, C., \& Chen, S. A. (2021).
+\href{https://dominiquemakowski.github.io/publication/makowski2021neurokit/makowski2021neurokit.pdf}{NeuroKit2:
+A Python Toolbox for Neurophysiological Signal Processing}.
+\emph{Behavior Research Methods}, 1-8.
+
+\textbf{Makowski, D.}, Sperduti, M., Blondé, P., Nicolas, S., \&
+Piolino, P. (2019).
+\href{https://dominiquemakowski.github.io/publication/makowski2019heart/makowski2019heart.pdf}{The
+heart of cognitive control: Cardiac phase modulates processing speed and
+inhibition}. \emph{Psychophysiology, 57}(3).
+
+\textbf{Makowski, D.}, Sperduti, M., Lavallée, S., Nicolas, S., \&
+Piolino, P. (2019).
+\href{https://dominiquemakowski.github.io/publication/makowski2019adaptation/makowski2019adaptation.pdf}{Adaptation
+and Validation of a Short French Version of the Affective Style
+Questionnaire}. \emph{International Journal of Cognitive Therapy,
+13}(2), 146--158.
+
+\textbf{Makowski, D.}*, Sperduti, M.*, Lavallée, S., Nicolas, S. \&
+Piolino, P. (2019).
+\href{https://dominiquemakowski.github.io/publication/makowski2019dispositional/makowski2019dispositional.pdf}{Dispositional
+mindfulness attenuates the emotional attentional blink}.
+\emph{Consciousness \& Cognition, 67}, 16--25.
+
+\textbf{Makowski, D.}, Sperduti, M., Blanchet, S., Nicolas, S. \&
+Piolino, P. (2015).
+\href{https://dominiquemakowski.github.io/publication/makowski2015emotion/makowski2015emotion.pdf}{Régulation
+Emotionnelle face au Déclin Cognitif dans le Vieillissement : Un Faux
+Paradoxe ? \textbar{} Emotion regulation and the cognitive decline in
+aging: beyond the paradox}. \emph{Gériatrie et Psychologie
+Neuropsychiatrie du Vieillissement}, 13(3), 301-8.
+
+\normalsize
+
+\subsection{Statistics}\label{statistics}
+
+\scriptsize
+
+\textbf{Makowski, D.}, Neves, A., \& Field, A. P. (\emph{under review}).
+\href{https://osf.io/preprints/psyarxiv/placeholder}{Introducing the
+Choice-Confidence (CHOCO) model for bimodal data from subjective
+ratings: Application to the effect of attractiveness on reality beliefs
+about AI-generated faces}. \emph{PsyArXiv}.
+
+Lüdecke, D., Makowski, A. C., Klein, J., \& \textbf{Makowski, D.}
+(\emph{in press}). Choosing informative priors in Bayesian regression
+models: A simulation study and tutorial using Stan and R.
+\emph{Frontiers in Psychology}.
+
+Fernandez, K., \textbf{Makowski, D.}, \& Fisher, C. (2025).
+\href{https://doi.org/10.21105/jcon.00193}{SequentialSamplingModels.jl:
+Simulating and evaluating cognitive models of response times in Julia}.
+\emph{JuliaCon Proceedings, 1}(1), 193.
+
+\textbf{Makowski, D.}, \& Waggoner, P. D. (2023).
+\href{https://www.mdpi.com/2227-7390/11/8/1821}{Where are we going with
+statistical computing? From mathematical statistics to collaborative
+data science}. \emph{Mathematics, 11}(8), 1821.
+
+Thériault, R., Ben-Shachar, M. S., Patil, I., Lüdecke, D., Wiernik, B.
+M., \& \textbf{Makowski, D.} (2024).
+\href{https://link.springer.com/article/10.3758/s13428-024-02356-w}{Check
+your outliers! An introduction to identifying statistical outliers in R
+with easystats}. \emph{Behavior Research Methods}, 1-11.
+
+\textbf{Makowski, D.}, Ben-Shachar, M. S., Wiernik, B. M., Patil, I.,
+Thériault, R., \& Lüdecke, D. (2025).
+\href{https://doi.org/10.21105/joss.07969}{modelbased: An R package to
+make the most out of your statistical models through marginal means,
+marginal effects, and model predictions}. \emph{Journal of Open Source
+Software, 10}(109), 7969.
+
+Patil, I., \textbf{Makowski, D.}, Ben-Shachar, M. S., Wiernik, B. M.,
+Bacher, E., \& Lüdecke, D. (2022).
+\href{https://joss.theoj.org/papers/10.21105/joss.04684}{datawizard: An
+R Package for Easy Data Preparation and Statistical Transformations}.
+\emph{Journal of Open Source Software, 7}(78), 4684.
+
+Lüdecke, D., Patil, I., Ben-Shachar, M., Wiernik, B., Waggoner, P., \&
+\textbf{Makowski, D.} (2021).
+\href{https://joss.theoj.org/papers/10.21105/joss.03393}{see: An R
+Package for Visualizing Statistical Models}. \emph{Journal of Open
+Source Software, 6}(64), 3393.
+
+Lüdecke, D., Ben-Shachar, M., Patil, I., Waggoner, P., \&
+\textbf{Makowski, D.} (2021).
+\href{https://joss.theoj.org/papers/10.21105/joss.03139}{performance: An
+R Package for Assessment, Comparison and Testing of Statistical Models}.
+\emph{Journal of Open Source Software, 6}(60), 3139.
+
+Ben-Shachar, M. S., Lüdecke, D., \& \textbf{Makowski, D.} (2020).
+\href{https://joss.theoj.org/papers/10.21105/joss.02815}{effectsize:
+Estimation of Effect Size Indices and Standardized Parameters}.
+\emph{Journal of Open Source Software, 5}(56), 2815.
+
+Lüdecke, D., Ben-Shachar, M. S., Patil, I., \& \textbf{Makowski, D.}
+(2020).
+\href{https://joss.theoj.org/papers/10.21105/joss.02445}{parameters:
+Extracting, Computing and Exploring the Parameters of Statistical Models
+using R}. \emph{Journal of Open Source Software, 5}(53), 2445.
+
+\textbf{Makowski, D.}, Ben-Shachar, M. S., Patil, I., \& Lüdecke, D.
+(2020). \href{https://joss.theoj.org/papers/10.21105/joss.02306}{Methods
+and Algorithms for Correlation Analysis in R}. \emph{Journal of Open
+Source Software, 5}(51), 2306.
+
+\textbf{Makowski, D.}, Ben-Shachar, M. S., Chen, S. H., \& Lüdecke, D.
+(2019).
+\href{https://dominiquemakowski.github.io/publication/makowski2019indices/makowski2019indices.pdf}{Indices
+of Effect Existence and Significance in the Bayesian Framework}.
+\emph{Frontiers in Psychology, 10}.
+
+\textbf{Makowski, D.}, Ben-Shachar, M., \& Lüdecke, D. (2019).
+\href{https://joss.theoj.org/papers/10.21105/joss.01541}{bayestestR:
+Describing effects and their uncertainty, existence and significance
+within the Bayesian framework}. \emph{Journal of Open Source Software,
+4}(40), 1541.
+
+Lüdecke, D., Waggoner, P., \& \textbf{Makowski, D.} (2019).
+\href{https://joss.theoj.org/papers/10.21105/joss.01412}{insight: A
+unified interface to access information from model objects in R}.
+\emph{Journal of Open Source Software}, 4(38), 1412.
+
+\textbf{Makowski, D.} (2018).
+\href{https://dominiquemakowski.github.io/publication/makowski2018psycho/makowski2018psycho.pdf}{The
+psycho Package: An Efficient and Publishing-Oriented Workflow for
+Psychological Science}. \emph{Journal of Open Source Software, 3}(22),
+470.
+
+\normalsize
+
+\subsection{Miscellaneous}\label{miscellaneous-1}
+
+\scriptsize
+
+Geller, J., Gomez, P., Buchanan, E., \& \textbf{Makowski, D.} (2025).
+\href{https://doi.org/10.5334/joc.469}{A distributional response time
+analysis of the perceptual disfluency effect}. \emph{Journal of
+Cognition, 8}(1), 60.
+
+Rinaldi, L. J., Agbude, R., Andermane, N., \textbf{Makowski, D.},
+Forster, S., Simner, J., \& Ward, J. (2026).
+\href{https://doi.org/10.1080/13803395.2026.2633236}{Attention and
+physiological responses to task-irrelevant sounds in misophonia}.
+\emph{Journal of Clinical and Experimental Neuropsychology, 48}(3),
+266-280.
+
+Salgues, S., Jacquot, A., \textbf{Makowski, D.}, Tahar, C., Baekeland,
+J., Arcangeli, M., \ldots{} \& Sperduti, M. (2024).
+\href{https://www.nature.com/articles/s41598-024-68331-9}{Self-reference
+and emotional reaction drive aesthetic judgment}. \emph{Scientific
+Reports, 14}(1), 19699.
+
+Lee, H., Jacquot, A., \textbf{Makowski, D.}, Arcangeli, M., Dokic, J.,
+Piolino, P., \& Sperduti, M. (2024).
+\href{https://doi.org/10.1037/cns0000345}{The beauty and the self: A
+common mnemonic advantage between aesthetic judgment and
+self-reference}. \emph{Psychology of Consciousness: Theory, Research,
+and Practice, 11}(1), 71.
+
+Rose, L., Kovarski, K., Caetta, F., \textbf{Makowski, D.}, \& Chokron,
+S. (2024). \href{https://doi.org/10.1016/j.jecp.2023.105810}{Beyond
+empathy: Cognitive capabilities increase or curb altruism in middle
+childhood}. \emph{Journal of Experimental Child Psychology}, 239,
+105810.
+
+Lee, H., Jacquot, A., \textbf{Makowski, D.}, Arcangeli, M., Dokic, J.,
+Piolino, P., \& Sperduti, M. (2023).
+\href{https://dominiquemakowski.github.io/publication/lee2023beauty/lee2023beauty.pdf}{Beauty
+is in the eye of the beholder: Evidence from a common mnemonic advantage
+between aesthetics judgement and self-reference}. \emph{Psychology of
+Consciousness: Theory, Research, and Practice}.
+
+Kovarski, K., Dos Reis, J., Chevais, C., Hamel, A., \textbf{Makowski,
+D.}, \& Sperduti, M. (2022).
+\href{https://www.nature.com/articles/s41598-022-23992-2}{Movie editing
+influences spectators' time perception}. \emph{Scientific Reports,
+12}(1), 20084.
+
+Blondé, P., Sperduti, M., \textbf{Makowski, D.}, \& Piolino, P. (2022).
+\href{https://journals.sagepub.com/doi/abs/10.1177/17470218211026301}{Bored,
+distracted, and forgetful: The impact of mind wandering and boredom on
+memory encoding}. \emph{Quarterly Journal of Experimental Psychology,
+75}(1), 53-69.
+
+Blondé, P., \textbf{Makowski D.}, Sperduti, M., \& Piolino, P. (2020).
+\href{https://dominiquemakowski.github.io/publication/blonde2020medio/blonde2020medio.pdf}{In
+Medio Stat Virtus: intermediate levels of mind wandering improve
+episodic memory encoding in a virtual environment}. \emph{Psychological
+Research, 85}(4), 1613--1625.
+
+Girardeau, J. C., Blondé, P., \textbf{Makowski D.}, Abram, M., Piolino,
+P., \& Sperduti, M. (2020).
+\href{https://dominiquemakowski.github.io/publication/girardeau2020impact/girardeau2020impact.pdf}{The
+impact of state and dispositional mindfulness on prospective memory: A
+virtual reality study}. \emph{Consciousness and Cognition, 81}, 102920.
+
+\textbf{Makowski, D.}, Dutriaux, L. (2017).
+\href{https://joss.theoj.org/papers/10.21105/joss.00259}{Neuropsydia.py:
+A Python Module for Creating Experiments, Tasks and Questionnaires},
+\emph{Journal of Open Source Software, 2}(19), 259.
+
+Sperduti, M., Armougum, A., \textbf{Makowski, D.}, \& Piolino, P.
+(2017).
+\href{https://dominiquemakowski.github.io/publication/sperduti2017interaction/sperduti2017interaction.pdf}{Interaction
+between attentional systems and episodic memory encoding: the impact of
+conflict on binding of information}, \emph{Experimental Brain Research},
+235(12), 3553-3560.
+
+Nicolas, S., \& \textbf{Makowski, D}. (2017).
+\href{https://dominiquemakowski.github.io/publication/nicolas2017centenaire/nicolas2017centenaire.pdf}{Centenaire
+Ribot (I). La réception de l'oeuvre de Théodule Ribot chez l'éditeur
+Ladrange (1870-1873)}. \emph{Bulletin de Psychologie}, 70(3), 163-178.
+
+Sperduti, M., \textbf{Makowski, D.}, Blondé, P. \& Piolino, P. (2017).
+\href{https://dominiquemakowski.github.io/publication/sperduti2017meditation/sperduti2017meditation.pdf}{Meditation
+and successful aging: can meditative practices counteract age-related
+cognitive decline?}, \emph{Gériatrie et Psychologie Neuropsychiatrie du
+Vieillissement}, 15(2), 205-13.
+
+Nicolas, S., \& \textbf{Makowski, D}. (2016).
+\href{https://dominiquemakowski.github.io/publication/nicolas2016can/nicolas2016can.pdf}{Can
+mental fatigue be measured by Weber's compass? Alfred Binet's answer on
+the value of aesthesiometry (tactile sensitivity) as an objective
+measure of mental fatigue}. \emph{European Yearbook of the History of
+Psychology}, 2, 11-46.
+
+Sperduti, M., \textbf{Makowski, D.}, \& Piolino, P. (2016).
+\href{https://dominiquemakowski.github.io/publication/sperduti2016protective/sperduti2016protective.pdf}{The
+protective role of long-term meditation on the decline of the executive
+component of attention in aging: a preliminary cross-sectional study}.
+\emph{Aging, Neuropsychology, and Cognition}, 23(6), 691-702.
+
+\normalsize
+
+\subsection{Book Chapters}\label{book-chapters}
+
+\scriptsize
+
+Mavros, P., Olszewska-Guizzo, A., \& \textbf{Makowski, D.} (2023).
+\href{https://www.researchgate.net/publication/370953123_Disentangling_the_Social_from_the_Aesthetic_Neuropsychology_for_Urban_Design}{Disentangling
+the Social from the Aesthetic: Neuropsychology for Urban Design}. In
+\emph{Future Cities---City Futures: Emerging Urban Perspectives}. TU
+Delft OPEN Publishing.
+
+\textbf{Makowski, D.}, Chen, S. H. A., Larsen, R. R., Boyle, G. J., \&
+Lilienfeld, S. O. (2023).
+\href{https://uk.sagepub.com/en-gb/eur/the-sage-handbook-of-clinical-neuropsychology/book270076}{Clinical
+Neuropsychology in the Era of Neuroimaging}. In \emph{The SAGE Handbook
+of Clinical Neuropsychology}. SAGE Publications.
+
+\normalsize
+
+\section{Communications}\label{communications}
+
+\subsection{General Audience / Media
+Coverage}\label{general-audience-media-coverage}
+
+\footnotesize
+
+\begin{itemize}
+\tightlist
+\item
+  Invited on the ``Learning Bayesian Statistics'' Podcast,
+  \href{https://www.learnbayesstats.com/episode/55-neuropsychology-illusions-bending-reality-dominique-makowski}{\color[HTML]{1976D2}{\#55 Neuropsychology, Illusions \& Bending Reality, with Dominique Makowski}}.
+  01 Feb 2022, learnbayesstats.com
+\item
+  Speaker at the Pint of Science,
+  \href{https://pintofscience.com/}{\color[HTML]{1976D2}{Back to the Matrix : pilule bleue ou rouge ?}}.
+  16 May 2018, Paris, France.
+\item
+  Invited to participate in a Public Debate,
+  \href{https://facts2017.u-bordeaux.fr/FESTIVAL/Programme/Agenda-2017/Rencards-du-savoir-Les-illusions-sensorielles.html}{\color[HTML]{1976D2}{Art \& science discussion on sensory illusions}}.
+  24 November 2017, Bordeaux, France.
+\item
+  Published article in magazine,
+  \href{https://biblineuropsy.com/2016/04/19/les-yeux-brouilles/}{\color[HTML]{1976D2}{Neuroanatomie de la réalité : quand le réel n'est plus}}.
+  2016, Les yeux brouillés, 1, 48-55.
+\item
+  Featured on National TV,
+  \href{https://www.youtube.com/watch?v=ihGs1V9kz4w}{\color[HTML]{1976D2}{The effect of violent images on the brain and body}}.
+  2015, Testé sous contrôle médical, France 4
+\item
+  Research Featured in Online journal,
+  \href{(http://blog.francetvinfo.fr/actu-cine/2015/05/07/avengers-lere-dultron-en-3d-aussitot-vu-aussitot-oublie.html}{\color[HTML]{1976D2}{”Avengers, l'ère d’Ultron” en 3D : aussitôt vu, aussitôt oublié ?}}
+  2015, francetvinfos.fr
+\end{itemize}
+
+\normalsize
+
+\section{References}\label{references}
+
+\small
+
+Do not hesitate to contact them of any inquiry.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Pr Annabel Chen} (Postdoc supervisor):
+  \href{mailto:AnnabelChen@ntu.edu.sg}{\nolinkurl{AnnabelChen@ntu.edu.sg}}
+\item
+  \textbf{Dr Marco Sperduti} (PhD mentor):
+  \href{mailto:marco.sperduti@parisdescartes.fr}{\nolinkurl{marco.sperduti@parisdescartes.fr}}
+\item
+  \textbf{Pr Pascale Piolino} (PhD cosupervisor):
+  \href{mailto:pascale.piolino@parisdescartes.fr}{\nolinkurl{pascale.piolino@parisdescartes.fr}}
+\item
+  \textbf{Pr Serge Nicolas} (PhD cosupervisor):
+  \href{mailto:serge.nicolas@parisdescartes.fr}{\nolinkurl{serge.nicolas@parisdescartes.fr}}
+\end{itemize}
+
+\normalsize
+
+
+\label{LastPage}~
+\end{document}

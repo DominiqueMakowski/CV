@@ -22,6 +22,10 @@ output:
     keep_md: true
 editor_options:
   chunk_output_type: console
+header-includes:
+  - \definecolor{cvlinkcolor}{HTML}{1976D2}
+  - \hypersetup{colorlinks=true, urlcolor=cvlinkcolor, linkcolor=cvlinkcolor}
+  - \usepackage{float}
 ---
 
 ```{r setup, include=FALSE}
@@ -75,6 +79,7 @@ data <- rbind(tibble(
   when = "2014 - 18",
   with = "Université de Paris",
   where = "France",
+  # details = NA
   details = paste0(
     "Thesis: Cognitive Neuropsychology of Implicit Emotion Regulation through Fictional Reappraisal (supervised by ",
     link("Pr Serge Nicolas", "http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Serge-Nicolas"),
@@ -87,6 +92,7 @@ data <- rbind(tibble(
   when = "2014 - 17",
   with = "French Association for Cognitive Behavioural Therapy (AFTCC)",
   where = "France",
+  # details = NA
   details = c(
     "Thesis: Cognitive Behavioural Therapy for two Patients: One suffering from Motivation Disorder associated with Dysthymia and the other from Social Anxiety (supervised by Sophie Kindynis)"
   )
@@ -132,8 +138,7 @@ tibble(
        link("Reality Bending Lab", "https://realitybending.github.io/"),
       " (ReBeL) where we study reality perception (e.g., neuroscience of deception, perception of fake news, altered states of consciousness), the role of the body and emotions in cognition (e.g., emotion regulation and interoception), and methodology (statistics, programming, open source software and neurophysiological techniques)."
     )
-  )
-),
+  )),
 tibble(
   Position = "Presidential Research Fellow",
   Date = "2021 - 22",
@@ -145,8 +150,7 @@ tibble(
     ', directed by ',
     link("Pr Annabel Chen", "https://www.clinicalbrain.org/author/annabel-chen/"),
     ', I am pursuing my own research track on the neurocognitive and affective processes underlying the beliefs in fake vs. real stimuli (fake news, fiction, ...), managing my team (3 research assistants, and several undergrad students) and research funding (\\$ 200k).'
-  )
-),
+  )),
 tibble(
   Position = "Research Fellow",
   Date = "2019 - 20",
@@ -156,7 +160,7 @@ tibble(
     "First postdoc position, working on a project funded by the ministry of defence about the neurocognitive correlates of deception. Responsible for studies design and completion, data analysis, publications and co-supervision of one PhD student, two research assistants and several graduate and undergraduate students (reference: ",
     link("Pr Annabel Chen", "https://www.clinicalbrain.org/author/annabel-chen/"),
     ")."
-  )), 
+  )),
 tibble(
   Position = "Research Assistant",
   Date = "2012",
@@ -167,8 +171,7 @@ tibble(
     link("Borst, 2016", "http://psycnet.apa.org/journals/emo/13/5/811/"),
     ") on emotions and mental rotation (reference: ", link("Pr Grégoire Borst", "https://www.lapsyde.com/gregoire-borst"),
     ")."
-  )
-),
+  )),
 tibble(
   Position = "Research Assistant",
   Date = "2011",
@@ -286,40 +289,185 @@ vitae::detailed_entries(data, Institution, Date, Position, Where, Activity, .pro
 ```
 
 
+# Software and Tools
+
+\small
+
+I develop and maintain open-source software and measurement tools used across psychological and neuroscientific research.
+
+\normalsize
+
+
+```{r SoftwareTools, echo=FALSE, results='asis'}
+df <- rbind(
+  data.frame(
+    Name = "\\href{https://github.com/easystats/easystats}{\\textbf{easystats}}", 
+    Type = "Software", 
+    Description = "R packages for accessible statistical modelling (bayestestR, parameters, performance, modelbased, ...)"
+  ),
+  data.frame(
+    Name = "\\href{https://github.com/neuropsychology/NeuroKit}{\\textbf{NeuroKit}}", 
+    Type = "Software", 
+    Description = "Python toolbox for neurophysiological signal processing"
+  ),
+  data.frame(
+    Name = "\\href{https://github.com/realitybending/Pyllusion}{\\textbf{Pyllusion}}", 
+    Type = "Software", 
+    Description = "Python framework to generate visual illusions"
+  ),
+  data.frame(
+    Name = "\\href{https://github.com/neuropsychology/Neuropsydia.py}{\\textbf{Neuropsydia}}", 
+    Type = "Software", 
+    Description = "Python package for creating experiments (defunct)"
+  ),
+    data.frame(
+    Name = "\\href{https://doi.org/10.1038/s41598-023-33148-5}{\\textbf{Illusion Game}}", 
+    Type = "Measure", 
+    Description = "Parametric visual illusion task measuring illusion sensitivity"
+  ),
+  data.frame(
+    Name = "\\href{https://link.springer.com/article/10.1007/s12144-021-01760-1}{\\textbf{Lie Scale}}", 
+    Type = "Measure", 
+    Description = "Self-report measure of lying styles and attitudes"
+  ),
+  data.frame(
+    Name = "\\href{https://osf.io/preprints/psyarxiv/8qrht}{\\textbf{MINT Scale}}", 
+    Type = "Measure", 
+    Description = "Multimodal interoception questionnaire"
+  )
+)
+
+# 1. Subset the dataframe by Type
+soft_df <- df[df$Type == "Software", ]
+quest_df <- df[df$Type == "Measure", ]
+
+# 2. Find the max rows needed to ensure we don't drop data
+max_rows <- max(nrow(soft_df), nrow(quest_df))
+
+# 3. Extract columns and pad the shorter list with empty strings
+soft_names <- c(soft_df$Name, rep("", max_rows - nrow(soft_df)))
+soft_desc  <- c(soft_df$Description, rep("", max_rows - nrow(soft_df)))
+
+quest_names <- c(quest_df$Name, rep("", max_rows - nrow(quest_df)))
+quest_desc  <- c(quest_df$Description, rep("", max_rows - nrow(quest_df)))
+
+# 4. Combine into exactly 4 columns
+rows <- paste(soft_names, soft_desc, quest_names, quest_desc, sep = " & ")
+body <- paste(rows, collapse = " \\\\\n")
+
+# 5. Output the LaTeX
+cat(
+  "\\begin{table}[H]\n",
+  "\\centering\n",
+  "\\scriptsize\n",
+  "\\begin{tabular}{p{0.085\\linewidth} p{0.39\\linewidth} p{0.11\\linewidth} p{0.365\\linewidth}}\n",
+  # "\\toprule\n",
+  "\\multicolumn{2}{c}{\\textbf{Software}} & \\multicolumn{2}{c}{\\textbf{Measure}} \\\\\n",
+  "\\cmidrule(lr){1-2} \\cmidrule(lr){3-4}\n",
+  body, " \\\\\n",
+  # "\\bottomrule\n",
+  "\\end{tabular}\n",
+  "\\end{table}\n",
+  sep = ""
+)
+```
+
+\newpage
+
 # Skills
 
 ## Language
 
+```{r Language, message=FALSE, warning=FALSE, fig.align="left", fig.height=1.25*0.8, fig.width=4*0.7, dpi=300}
+library(ggplot2)
+library(patchwork)
+
+## ---- Flags, drawn on a standardized 3x2 canvas ----
+
+flag_stripes_vertical <- function(colors) {
+  n <- length(colors); w <- 3 / n
+  df <- data.frame(xmin = (0:(n-1)) * w, xmax = (1:n) * w,
+                    ymin = 0, ymax = 2, fill = colors)
+  ggplot(df) +
+    geom_rect(aes(xmin=xmin, xmax=xmax, ymin=ymin, ymax=ymax, fill=fill),
+              color = "grey70", linewidth = 0.2) +
+    scale_fill_identity() +
+    coord_fixed(xlim = c(0,3), ylim = c(0,2), expand = FALSE)
+}
+
+flag_stripes_horizontal <- function(colors) {
+  n <- length(colors); h <- 2 / n
+  df <- data.frame(ymin = (0:(n-1)) * h, ymax = (1:n) * h,
+                    xmin = 0, xmax = 3, fill = colors)
+  ggplot(df) +
+    geom_rect(aes(xmin=xmin, xmax=xmax, ymin=ymin, ymax=ymax, fill=fill),
+              color = "grey70", linewidth = 0.2) +
+    scale_fill_identity() +
+    coord_fixed(xlim = c(0,3), ylim = c(0,2), expand = FALSE)
+}
+
+flag_france  <- function() flag_stripes_vertical(c("#0055A4", "#FFFFFF", "#EF4135"))
+flag_italy   <- function() flag_stripes_vertical(c("#009246", "#FFFFFF", "#CE2B37"))
+flag_poland  <- function() flag_stripes_horizontal(c("#DC143C", "#FFFFFF"))  # red bottom, white top
+
+flag_uk <- function() {
+  ggplot() +
+    geom_rect(aes(xmin=0, xmax=3, ymin=0, ymax=2), fill = "#00247D") +
+    geom_polygon(aes(x=c(0,0.4,3,3,2.6,0), y=c(2,2,0.32,0,0,1.68)), fill = "white") +
+    geom_polygon(aes(x=c(0,0.4,3,3,2.6,0), y=c(0,0,1.68,2,2,0.32)), fill = "white") +
+    geom_polygon(aes(x=c(0,0.2,3,3,2.8,0), y=c(2,2,0.16,0,0,1.84)), fill = "#CF142B") +
+    geom_polygon(aes(x=c(0,0.2,3,3,2.8,0), y=c(0,0,1.84,2,2,0.16)), fill = "#CF142B") +
+    geom_rect(aes(xmin=1.3, xmax=1.7, ymin=0, ymax=2), fill = "white") +
+    geom_rect(aes(xmin=0, xmax=3, ymin=0.75, ymax=1.25), fill = "white") +
+    geom_rect(aes(xmin=1.42, xmax=1.58, ymin=0, ymax=2), fill = "#CF142B") +
+    geom_rect(aes(xmin=0, xmax=3, ymin=0.87, ymax=1.13), fill = "#CF142B") +
+    coord_fixed(xlim = c(0,3), ylim = c(0,2), expand = FALSE)
+}
+
+## ---- Panel: flag + border, title above, level below ----
+
+flag_panel <- function(flag_plot, language, level_label) {
+  flag_plot +
+    geom_rect(aes(xmin=0, xmax=3, ymin=0, ymax=2), fill = NA,
+              color = "grey60", linewidth = 0.3) +
+    labs(title = language, caption = level_label) +
+    theme_void() +
+    theme(
+      plot.title   = element_text(hjust = 0.5, size = 9, face = "bold", margin = margin(b = 6)),
+      plot.caption = element_text(hjust = 0.5, size = 8, color = "grey40", margin = margin(t = 6)),
+      plot.margin  = margin(4, 6, 4, 6)
+    )
+}
+
+## ---- Assemble ----
+
+langs <- list(
+  list(language="French",  level="Native",        flag=flag_france()),
+  list(language="Polish",  level="Native",        flag=flag_poland()),
+  list(language="English", level="Fluent",        flag=flag_uk()),
+  list(language="Italian", level="B1 (learning)", flag=flag_italy())
+)
+
+plots <- lapply(langs, function(l) flag_panel(l$flag, l$language, l$level))
+
+p_languages <- wrap_plots(plots, nrow = 1)
+# ggsave("img/languages.png", p_languages, width = 8, height = 1.8,
+#        dpi = 300, bg = "transparent")
+p_languages
+```
+
+
+## Techniques
+
 \small
 
-- **French**: Native
-- **Polish**: Native
-- **English**: Fluent
-- **Italian**: B1 level (currently learning)
+- **Bayesian Statistics**: Predictive and structural modelling within a Bayesian framework (Stan, brms), including custom distributional families and computational cognitive models.
+- **Psychophysiology \& EEG**: Acquisition, preprocessing and analysis of EEG and physiological signals (ECG, EDA, HRV).
+- **Computational Modelling**: Application of ML/deep learning and computational modelling to psychological and neuroscientific data.
+- **Open Science**: Strong commitment to reproducible research practices, open data/code sharing, and sustained contribution to open-source software communities.
 
 \normalsize
 
-<!-- ## Research -->
-
-<!-- \small -->
-
-<!-- My PhD, on the effect of reality beliefs on emotion, attempted at integrate my two core topics on interest: **reality bending** (manipulation and perception of reality) and **affective neuroscience** (the role of emotions, interoception, bodily signals in cognition). My first postdoc in Singapore led me to investigate a new layer of reality manipulation by working on a large project interested in the neurocognitive correlates of deception, funded by the Ministry of Defense. Over the years, I also had the opportunity of working on other topics, including **memory**, **cognitive control**, **mindfulness meditation** and **history of psychology**, providing me with a wide and multidisciplinary perspective and an international network of collaborations. -->
-
-<!-- \normalsize -->
-
-## Techniques and Methods
-
-\small
-
-I have developed strong technical expertise with several tools (EEG, psychophysiological signals) and methods. In particular, I employ advanced statistical procedures (Bayesian frameworks, predictive and structural modelling, machine/deep learning and computational modeling) to address the scientific challenges that I encounter. In parallel, I develop open-source software, such as the `r link("\\textbf{easystats}", "https://github.com/easystats/easystats")` collection of R packages; `r link("\\textbf{NeuroKit}", "https://github.com/neuropsychology/NeuroKit")`, a Python package for neurophysiological signal processing; `r link("\\textbf{Pyllusion}", "https://github.com/realitybending/Pyllusion")`, a framework to generate visual illusions; or `r link("\\textbf{Neuropsydia}", "https://github.com/neuropsychology/Neuropsydia.py")`, a software to create experiments.
-
-Initially created to increase the efficiency and quality of my own research, some of these tools have become quite popular and are actively used by the scientific community (e.g., the *easystats* packages have been downloaded more than 40 million times since their creation, and *NeuroKit* has become one of the most popular toolbox for multimodal physiology).
-
-## Open Science
-
-My interest in improving accessibility, widening the usage of advanced methods and best practices by means of open access tools and tutorials, and staying active in open-software communities (e.g., on `r link("\\textbf{GitHub}", "https://github.com/DominiqueMakowski")` by answer technical and methodological questions, is motivated by the fact that, coming myself from a different background (clinical neuropsychology) in which programming, computer science and advanced statistics are not taught, I realized how harnessing such powerful tools can improve one's research (and quality of life) at many levels.
-
-I fully endorse to the highest standards of open science, by sharing data and reproducible scripts of my experiments. Naturally, my concrete engagement in open, honest and reproducible science, is accompanied by the highest standards in terms of methodological rigour and ethical responsibility.
 
 
 
@@ -533,15 +681,15 @@ Control",
   Date = "2020 - 22",
   Amount = "\\$360,000",
   Activity = NA
-),tibble(
-  Name = link("Ministerial PhD scholarship", "https://improvingpsych.org/mission/awards/", color = "333333") ,
-  Details = "Three years of PhD fully funded by the French Ministry of Research",
-  Date = "2014 - 17",
-  Amount = "€80,000",
-  Activity = NA
+# ),tibble(
+#   Name = link("Ministerial PhD scholarship", "https://improvingpsych.org/mission/awards/", color = "333333") ,
+#   Details = "Three years of PhD fully funded by the French Ministry of Research",
+#   Date = "2014 - 17",
+#   Amount = "€80,000",
+#   Activity = NA
 ))
 
-vitae::detailed_entries(data, Details, Date, Name, Amount, Activity, .protect = FALSE)
+vitae::detailed_entries(data, Details, Amount, Name, Date, Activity, .protect = FALSE)
 ```
 
 ## Awards
@@ -553,13 +701,13 @@ data <- rbind(
   Name = link("Sussex School of Psychology 2024 Award Winner", "https://www.linkedin.com/posts/dominiquemakowski_realitybendinglab-activity-7241790839134257152-wjR6?utm_source=share&utm_medium=member_desktop", color = "333333"),
   Details = paste0("Outstanding Student Supervision"),
   Date = "2024",
-  Amount = "N/A",
+  Amount = NA,
   Activity = NA
 ),tibble(
   Name = link("Mission Award (Society for the Improvement of Psychological Science - SIPS)", "https://improvingpsych.org/mission/awards/", color = "333333"),
   Details = paste0("Obtained for the ", link("NeuroKit", "https://en.wikipedia.org/wiki/NeuroKit", color = "5D5D5D"), " Python package"),
   Date = "2024",
-  Amount = "N/A",
+  Amount = NA,
   Activity = NA
 ),tibble(
   Name = link("University of Sussex Research Culture 2024 Awards Winner", "https://www.linkedin.com/posts/university-of-sussex-school-of-psychology_congratulations-to-the-5-winners-and-6-shortlisted-activity-7209487987682721793-d4qm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAAjTVisBfrVtfzPXFkBFwGtFJYejv2DfvSs", color = "333333"),
@@ -571,7 +719,7 @@ data <- rbind(
   Name = link("Mission Award (Society for the Improvement of Psychological Science - SIPS)", "https://improvingpsych.org/mission/awards/", color = "333333"),
   Details = paste0("Obtained for the ", link("easystats", "https://en.wikipedia.org/wiki/Easystats", color = "5D5D5D"), " collection of R packages"),
   Date = "2023",
-  Amount = "N/A",
+  Amount = NA,
   Activity = NA
 ),tibble(
   Name = link("Best Article Award (Psychonomic Society)", "https://www.psychonomic.org/page/2020BestArticleAwards", color = "333333") ,
@@ -583,15 +731,78 @@ data <- rbind(
   Name = link("Commendation (Society for the Improvement of Psychological Science - SIPS)", "https://improvingpsych.org/mission/awards/", color = "333333") ,
   Details = paste0("Obtained for the bayestestR R package ", link("(Makowski et al., 2019)", "https://joss.theoj.org/papers/10.21105/joss.01541")),
   Date = "2020",
-  Amount = "N/A",
+  Amount = NA,
   Activity = NA
 ))
 
-vitae::detailed_entries(data, Details, Date, Name, Amount, Activity, .protect = FALSE)
+vitae::detailed_entries(data, Details, Amount, Name, Date, Activity, .protect = FALSE)
+```
+
+## Student Awards
+
+\small
+
+My students are also consistently winning awards for their work in my lab.
+
+\normalsize
+
+```{r StudentAwards}
+data <- rbind(
+  tibble(
+    Name = "SAGE Publications Prize for Outstanding Application of Statistical Methods",
+    Details = "Awarded to Emma Benn (3rd year dissertation)",
+    Date = "2026",
+    Amount = NA,
+    Activity = NA
+  ), tibble(
+    Name = "Junior Research Assistant (JRA)",
+    Details = " Scholarship awarded to Oliver Collins",
+    Date = "2026",
+    Amount = NA,
+    Activity = NA
+  ), tibble(
+    Name = "SoCoBio Summer Internship",
+    Details = "Scholarship awarded to Eva Mala",
+    Date = "2025",
+    Amount = NA,
+    Activity = NA
+  ), tibble(
+    Name = "Sussex Partnership NHS Foundation Trust Prize",
+    Details = "Awarded to Sam Marine (3rd year dissertation) for highest project mark",
+    Date = "2025",
+    Amount = NA,
+    Activity = NA
+  ), tibble(
+    Name = "Adam Weiler Impact Award",
+    Details = "Awarded to Rob Dickinson (PhD student)",
+    Date = "2024",
+    Amount = NA,
+    Activity = NA
+  ), tibble(
+    Name = "SoCoBio Summer Internship",
+    Details = "Scholarship awarded to Gregory Heaney",
+    Date = "2024",
+    Amount = NA,
+    Activity = NA
+  ), tibble(
+    Name = "Junior Research Assistant (JRA)",
+    Details = "Scholarship awarded to Jing Xu",
+    Date = "2023",
+    Amount = NA,
+    Activity = NA
+  ), tibble(
+    Name = "Junior Research Assistant (JRA)",
+    Details = "Scholarship awarded to Auz Moore",
+    Date = "2023",
+    Amount = NA,
+    Activity = NA
+  )
+)
+
+vitae::detailed_entries(data, Details, Amount, Name, Date, Activity, .protect = FALSE)
 ```
 
 ## Editorial Responsibilities
-
 
 ```{r EditorialResponsabilities}
 data <- rbind(tibble(
@@ -686,11 +897,11 @@ I have given academic lectures (total hours since 2014: **424**) on the followin
 
 
 
-<!-- ## Supervision -->
+## Supervision
 
-<!-- I have mentored more than 5 full-time research assistants.  -->
+I have mentored more than 7 full-time research assistants.
 
-<!-- I have also co-supervised bachelor and master students for their research projects.  -->
+I have also co-supervised bachelor and master students for their research projects.
 
 
 
