@@ -26,6 +26,8 @@ header-includes:
   - \definecolor{cvlinkcolor}{HTML}{1976D2}
   - \hypersetup{colorlinks=true, urlcolor=cvlinkcolor, linkcolor=cvlinkcolor}
   - \usepackage{float}
+  - \newcommand*{\subsubsectionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\itshape\color{graytext}{#1}}}
+  - \renewcommand{\subsubsection}[1]{\par\vspace{\acvSectionContentTopSkip}\vspace{-1.5mm}\subsubsectionstyle{#1}\phantomsection}
 ---
 
 ```{r setup, include=FALSE}
@@ -137,6 +139,9 @@ tibble(
       "Head of the ",
        link("Reality Bending Lab", "https://realitybending.github.io/"),
       " (ReBeL) where we study reality perception (e.g., neuroscience of deception, perception of fake news, altered states of consciousness), the role of the body and emotions in cognition (e.g., emotion regulation and interoception), and methodology (statistics, programming, open source software and neurophysiological techniques)."
+    ),
+    paste(
+      "School-level leadership responsibilities, including research ethics, the research participation scheme and postgraduate programme development."
     )
   )),
 tibble(
@@ -195,36 +200,24 @@ vitae::detailed_entries(data, Institution, Date, Position, Where, Activity, .pro
 ```{r ExperienceTeaching}
 data <- rbind(
   tibble(
-#   Position = "Module convenor (Bayesian Statistics)",
-#   Date = "2024 - Present",
-#   Institution = "University of Sussex",
-#   Where = "Brighton, UK",
-#   Activity = "I designed and teach the Bayesian Statistics module (Master and PhD level)."
-# ),tibble(
-#   Position = "Module teacher (Statistics)",
-#   Date = "2023 - Present",
-#   Institution = "University of Sussex",
-#   Where = "Brighton, UK",
-#   Activity = "I teach lectures and practicals on statistics with R (Bachelor and Master level)."
-# ),tibble(
-#   Position = "Module teacher (Psychophysiology)",
-#   Date = "2023 - Present",
-#   Institution = "University of Sussex",
-#   Where = "Brighton, UK",
-#   Activity = "I teach lectures on Psychophysiology and Interoception in Cognitive Neuroscience modules (Bachelor and Master level)."
-# ),tibble(
-  Position = "Invited Instructor (Psychophysiology)",
-  Date = "2024",
-  Institution = "University of Basel",
-  Where = "Zürich, Switzerland",
-  Activity = paste0("Full-day workshop (8 h; PhD students): Recording, Analyzing and Using Physiological Signals in Psychology. Reference: ", link("Dr Dorothee Bentz", "https://psychologie.unibas.ch/de/personen/dorothee-bentz/"), ".")
-), tibble(
-  Position = "Invited Instructor (Programming and Data Science)",
-  Date = "2022",
-  Institution = "University of Zurich",
-  Where = "Zürich, Switzerland",
-  Activity = paste0("Online workshop (24 h; PhD students): Advanced Python programming for signal processing and data analysis. Reference: ", link("Dr Maike Krannich", "https://www.psychologie.uzh.ch/de/studium/doktorat/team.html"), ".")
-), tibble(
+  Position = "Module convenor (Bayesian Statistics)",
+  Date = "2024 - Present",
+  Institution = "University of Sussex",
+  Where = "Brighton, UK",
+  Activity = "I teach the Bayesian framework and Bayesian modelling with brms (Master and PhD level)."
+),tibble(
+  Position = "Module teacher (Statistics)",
+  Date = "2023 - Present",
+  Institution = "University of Sussex",
+  Where = "Brighton, UK",
+  Activity = "I teach lectures and practicals on statistics with R (Bachelor and Master level)."
+),tibble(
+  Position = "Module teacher (Psychophysiology)",
+  Date = "2023 - Present",
+  Institution = "University of Sussex",
+  Where = "Brighton, UK",
+  Activity = "I teach lectures on Psychophysiology and Interoception in Cognitive Neuroscience modules (Bachelor and Master level)."
+),tibble(
   Position = "Assistant Lecturer (Clinical Neuropsychology)",
   Date = "2017 - 18",
   Institution = "Université de Paris",
@@ -253,6 +246,77 @@ data <- rbind(
 
 # Save for re-useability
 write.csv(data, "data/experience_teaching.csv", row.names = FALSE, fileEncoding = "UTF-8")
+
+vitae::detailed_entries(data, Institution, Date, Position, Where, Activity, .protect = FALSE)
+```
+
+
+## Consultancy and Knowledge Exchange
+
+### Instructor
+
+```{r ConsultancyInstructor}
+data <- rbind(
+tibble(
+  Position = "Contracted Instructor",
+  Date = "2026",
+  Institution = "South East Doctoral Training Arc (SEDarc)",
+  Where = "UK",
+  Activity = "Recording of a re-usable \\textit{Introduction to GitHub} lecture for PhD students across the SEDarc partnership of six UK universities."
+),tibble(
+  Position = "Invited Instructor (Psychophysiology)",
+  Date = "2024",
+  Institution = "University of Basel",
+  Where = "Basel, Switzerland",
+  Activity = paste0("Full-day workshop (8 h; PhD students): Recording, Analyzing and Using Physiological Signals in Psychology. Reference: ", link("Dr Dorothee Bentz", "https://psychologie.unibas.ch/de/personen/dorothee-bentz/"), ".")
+),tibble(
+  Position = "Invited Instructor (Bayesian Statistics)",
+  Date = "2024",
+  Institution = "Université de Paris",
+  Where = "Paris, France",
+  Activity = "Workshop on Bayesian statistics for the members of a research lab."
+),tibble(
+  Position = "Invited Instructor (Programming and Data Science)",
+  Date = "2022",
+  Institution = "University of Zurich",
+  Where = "Zürich, Switzerland",
+  Activity = paste0("Online workshop (24 h; PhD students): Advanced Python programming for signal processing and data analysis. Reference: ", link("Dr Maike Krannich", "https://www.psychologie.uzh.ch/de/studium/doktorat/team.html"), ".")
+),tibble(
+  Position = "Invited Instructor (Mixed Models)",
+  Date = "2021",
+  Institution = "Nanyang Technological University (NTU)",
+  Where = "Singapore",
+  Activity = "Workshop on mixed models in R."
+)
+)
+
+vitae::detailed_entries(data, Institution, Date, Position, Where, Activity, .protect = FALSE)
+```
+
+### Developer
+
+```{r ConsultancyDeveloper}
+data <- tibble(
+  Position = "Contracted Developer",
+  Date = "2026",
+  Institution = "Institute for Advanced Consciousness Studies",
+  Where = NA,
+  Activity = "Development of hyperscanning capabilities for an open-source portable EEG software."
+)
+
+vitae::detailed_entries(data, Institution, Date, Position, Where, Activity, .protect = FALSE)
+```
+
+### Contract Research
+
+```{r ConsultancyResearch}
+data <- tibble(
+  Position = "Contract Research",
+  Date = "2026",
+  Institution = "Fragrance industry (client confidential)",
+  Where = NA,
+  Activity = "Contract research on the relationship between smells and emotions."
+)
 
 vitae::detailed_entries(data, Institution, Date, Position, Where, Activity, .protect = FALSE)
 ```
@@ -301,38 +365,43 @@ I develop and maintain open-source software and measurement tools used across ps
 ```{r SoftwareTools, echo=FALSE, results='asis'}
 df <- rbind(
   data.frame(
-    Name = "\\href{https://github.com/easystats/easystats}{\\textbf{easystats}}", 
-    Type = "Software", 
+    Name = "\\href{https://github.com/easystats/easystats}{\\textbf{easystats}}",
+    Type = "Software",
     Description = "R packages for accessible statistical modelling (bayestestR, parameters, performance, modelbased, ...)"
   ),
   data.frame(
-    Name = "\\href{https://github.com/neuropsychology/NeuroKit}{\\textbf{NeuroKit}}", 
-    Type = "Software", 
+    Name = "\\href{https://github.com/neuropsychology/NeuroKit}{\\textbf{NeuroKit}}",
+    Type = "Software",
     Description = "Python toolbox for neurophysiological signal processing"
   ),
   data.frame(
-    Name = "\\href{https://github.com/realitybending/Pyllusion}{\\textbf{Pyllusion}}", 
-    Type = "Software", 
+    Name = "\\href{https://github.com/realitybending/Pyllusion}{\\textbf{Pyllusion}}",
+    Type = "Software",
     Description = "Python framework to generate visual illusions"
   ),
   data.frame(
-    Name = "\\href{https://github.com/neuropsychology/Neuropsydia.py}{\\textbf{Neuropsydia}}", 
-    Type = "Software", 
-    Description = "Python package for creating experiments (defunct)"
+    Name = "\\href{https://github.com/DominiqueMakowski/cogmod}{\\textbf{cogmod}}",
+    Type = "Software",
+    Description = "R package for Bayesian cognitive models of decision-making tasks"
+  ),
+  data.frame(
+    Name = "\\href{https://github.com/neuropsychology/Neuropsydia.py}{\\textbf{Neuropsydia}}",
+    Type = "Software",
+    Description = "Python package for creating experiments"
   ),
     data.frame(
-    Name = "\\href{https://doi.org/10.1038/s41598-023-33148-5}{\\textbf{Illusion Game}}", 
-    Type = "Measure", 
+    Name = "\\href{https://doi.org/10.1038/s41598-023-33148-5}{\\textbf{Illusion Game}}",
+    Type = "Measure",
     Description = "Parametric visual illusion task measuring illusion sensitivity"
   ),
   data.frame(
-    Name = "\\href{https://link.springer.com/article/10.1007/s12144-021-01760-1}{\\textbf{Lie Scale}}", 
-    Type = "Measure", 
+    Name = "\\href{https://link.springer.com/article/10.1007/s12144-021-01760-1}{\\textbf{Lie Scale}}",
+    Type = "Measure",
     Description = "Self-report measure of lying styles and attitudes"
   ),
   data.frame(
-    Name = "\\href{https://osf.io/preprints/psyarxiv/8qrht}{\\textbf{MINT Scale}}", 
-    Type = "Measure", 
+    Name = "\\href{https://osf.io/preprints/psyarxiv/8qrht}{\\textbf{MINT Scale}}",
+    Type = "Measure",
     Description = "Multimodal interoception questionnaire"
   )
 )
@@ -829,34 +898,6 @@ data <- rbind(tibble(
 vitae::detailed_entries(data, Where, Date, Position, Location, Activity, .protect = FALSE)
 ```
 
-## Academic Responsibilities
-
-```{r AcademicResponsabilities}
-data <- rbind(tibble(
-  Position = "Elected Representative",
-  Details = "Representation of the PhD students at the university level",
-  Where = "ED261-3CH doctoral school",
-  Date = "2016 - 18",
-  Activity = NA
-),tibble(
-  Position = "Community Manager",
-  Details = "Organization of seminars, local conferences and social events",
-  Where = "Memory \\& Cognition Lab",
-  Date = "2014 - 15",
-  Activity = NA
-),tibble(
-  Position = "Active Member",
-  Details = "Organization of social events for students",
-  Where = "Student Association (BDE)",
-  Date = "2009 - 12",
-  Activity = NA
-))
-
-vitae::detailed_entries(data, Details, Date, Position, Where, Activity, .protect = FALSE)
-```
-
-
-
 # Teaching Record
 
 
@@ -891,10 +932,19 @@ I have given academic lectures (total hours since 2014: **424**) on the followin
 - **Programming for Psychologists** (*24 hours*)
    - Python Programming
    - Experiment creation using Python
+- **Open Science and Research Tools** (*MRes level workshops*)
+   - Version control and collaboration with Git and GitHub
+   - Agentic coding tools for research
 - **Other** (*16 hours*): Internet; Research Ethics; Digital Rights
 
 \normalsize
 
+
+
+## Curriculum Development
+
+- **MSc Advanced Computational Psychology** (*2026 - Present*). Development of a new postgraduate programme at the University of Sussex, covering its curriculum structure, module content and learning outcomes.
+- **Bayesian Statistics** (*2024 - Present*). Designed a new module from scratch, taught at Master and PhD level.
 
 
 ## Supervision
@@ -902,6 +952,119 @@ I have given academic lectures (total hours since 2014: **424**) on the followin
 I have mentored more than 7 full-time research assistants.
 
 I have also co-supervised bachelor and master students for their research projects.
+
+
+
+# Service and Leadership
+
+
+## Institutional Service
+
+```{r InstitutionalService}
+data <- rbind(tibble(
+  Position = "Academic Lead, Research Participation Scheme (SONA)",
+  Where = "School of Psychology, University of Sussex",
+  Date = "2025 - Present",
+  Details = NA,
+  Activity = c(
+    paste(
+      "Redesigned the credit allocation and study approval rules of the School's research participation scheme to make it fairer and more transparent for both students and researchers."
+    ),
+    paste(
+      "Trialled changes aimed at increasing the educational value of participation for students while simultaneously improving data quality, including measures to address low-effort responding."
+    )
+  )
+),tibble(
+  Position = "Programme Developer, MSc Advanced Computational Psychology",
+  Where = "School of Psychology, University of Sussex",
+  Date = "2026 - Present",
+  Details = NA,
+  Activity = paste(
+    "Development of a new postgraduate programme, including its curriculum structure, module content and learning outcomes."
+  )
+),tibble(
+  Position = "Member, Cross-Schools Research Ethics Committee (C-REC)",
+  Where = "University of Sussex",
+  Date = "2023 - Present",
+  Details = NA,
+  Activity = NA
+))
+
+vitae::detailed_entries(data, Position, Date, Where, Details, Activity, .protect = FALSE)
+```
+
+
+## Open Science and Research Culture
+
+```{r OpenScience}
+data <- rbind(tibble(
+  Position = "Organizer, MORSE Seminar Series",
+  Where = link("Centre for Open Science and Research Reform", "https://www.sussex.ac.uk/research/centres/centre-for-open-science-and-research-reform/"),
+  Date = "2024 - Present",
+  Details = "University of Sussex",
+  Activity = paste(
+    "Member of the Centre, where I convene MORSE (Methods for Open and Reproducible Science), a seminar series on openness, reproducibility and replicability in psychological science."
+  )
+),tibble(
+  Position = "Open Science Champion (invited debate)",
+  Where = "British Neuroscience Association (BNA) Members' Meeting",
+  Date = "2024",
+  Details = NA,
+  Activity = paste0(
+    "Invited to argue the open science position in the meeting's interactive debate, ",
+    "\\textit{A cultural revolution in sustainable neuroscience is needed more than a cultural revolution in open neuroscience now}, ",
+    "alongside Dr Charlotte Rae (Sustainability Champion) and Hannah Hope (Wellcome)."
+  )
+))
+
+vitae::detailed_entries(data, Position, Date, Where, Details, Activity, .protect = FALSE)
+```
+
+
+## Conference Organization
+
+```{r ConferenceOrganization}
+data <- tibble(
+  Position = "Co-organizer, \\textit{Artificial Emotion} Symposium",
+  Where = "ESCAN 2026, Sapienza University, Rome, Italy",
+  Date = "2026",
+  Details = NA,
+  Activity = paste0(
+    "\\textit{Artificial Emotion: Affective Responses and Interaction with Artificial Intelligence}: a four-talk symposium ",
+    "on affective, physiological and neural responses to artificial intelligence, co-organised with Marco Sperduti ",
+    "(Università di Roma Tor Vergata) for the meeting of the European Society for Cognitive and Affective Neuroscience."
+  )
+)
+
+vitae::detailed_entries(data, Position, Date, Where, Details, Activity, .protect = FALSE)
+```
+
+
+## Earlier Service
+
+```{r EarlierService}
+data <- rbind(tibble(
+  Position = "Elected Representative",
+  Details = "Representation of the PhD students at the university level",
+  Where = "ED261-3CH doctoral school",
+  Date = "2016 - 18",
+  Activity = NA
+),tibble(
+  Position = "Community Manager",
+  Details = "Organization of seminars, local conferences and social events",
+  Where = "Memory \\& Cognition Lab",
+  Date = "2014 - 15",
+  Activity = NA
+),tibble(
+  Position = "Active Member",
+  Details = "Organization of social events for students",
+  Where = "Student Association (BDE)",
+  Date = "2009 - 12",
+  Activity = NA
+))
+
+vitae::detailed_entries(data, Position, Date, Where, Details, Activity, .protect = FALSE)
+```
 
 
 

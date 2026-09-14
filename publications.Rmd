@@ -8,7 +8,9 @@ output: html_document
 
 \scriptsize
 
-**Makowski, D.**, & Neves, A. (*under review*). [Testing the relationship between phenomenological control and illusion sensitivity](https://osf.io/placeholder). *PsyArXiv*. (Stage 2 Registered Report)
+**Makowski, D.**, & Neves, A. (*under review*). [Testing the relationship between phenomenological control and illusion sensitivity](https://osf.io/preprints/psyarxiv/873th). *PsyArXiv*. (Stage 2 Registered Report)
+
+Dickinson, R., **Makowski, D.**, van Marwijk, H., & Ford, E. (*under review*). [Bad News: Testing gamified inoculation against misinformation](https://osf.io/preprints/psyarxiv/7xgbt). *PsyArXiv*.
 
 **Makowski, D.**, Te, A. S., Neves, A., Kirk, S., Liang, N. Z., Mavros, P., & Chen, S. A. (2025). [Too beautiful to be fake: Attractive faces are less likely to be judged as artificially generated](https://doi.org/10.1016/j.actpsy.2024.104670). *Acta Psychologica*, 252, 104670.
 
@@ -43,10 +45,18 @@ Sperduti, M.\*, Arcangeli, M.\*, **Makowski, D.**, Wantzen, P., Zalla, T., Lemai
 
 \scriptsize
 
-**Makowski, D.**, Neves, A., Benn, E., & Poerio, G. (*under review*). [The Mint Scale: A fresh validation of the multimodal interoception questionnaire and comparison to the MAIA, BPQ and IAS](https://doi.org/10.31234/osf.io/placeholder). *PsyArXiv*.
+**Makowski, D.**, Neves, A., Benn, E., Bennett, M., & Poerio, G. (*under review*). [The Mint Scale: A fresh validation of the multimodal interoception questionnaire and comparison to the MAIA, BPQ and IAS](https://osf.io/preprints/psyarxiv/8qrht). *PsyArXiv*.
+
+Neves, A., Pfaff, M., Scharte, R. E., Nogueira-Arjona, R., Poerio, G., & **Makowski, D.** (*under review*). [Mega-analysis of the Interoceptive Accuracy Scale (IAS) structure and its dispositional correlates](https://osf.io/preprints/psyarxiv/2mpqd). *PsyArXiv*.
+
+Scharte, R. E., Greenwood, K., Romero Sanchiz, P., Neves, A., **Makowski, D.**, & Nogueira-Arjona, R. (*under review*). [Interoception and substance use: A systematic review and meta-analysis](https://osf.io/preprints/psyarxiv/gzv78). *PsyArXiv*.
+
+**Makowski, D.** (*under review*). [Towards an active inference personality framework: The Deep-Self Predictive Cascade model](https://osf.io/preprints/psyarxiv/9pequ). *PsyArXiv*.
 
 
 Pham, T., Johnco, C. J., Lau, Z. J., **Makowski, D.**\*, & Forbes, M. K.\* (2025). [Which heart rate variability (HRV) indices should I use for psychophysiological research? A data-driven approach to identifying clusters of HRV indices](https://doi.org/10.1111/psyp.70164). *Psychophysiology, 62*(10), e70164. (\*co-last authors)
+
+**Makowski, D.**, Te, A. S., Neves, A., & Chen, S. H. A. (2025). [Measuring depression and anxiety with 4 items? Adaptation of the PHQ-4 to increase its sensitivity to subclinical variability](https://doi.org/10.1525/collabra.143431). *Collabra: Psychology, 11*(1), 143431.
 
 Lau, Z. J.\*, Pham, T.\*, Chen, S. A., & **Makowski, D.** (2022). [Brain Entropy, Fractal Dimensions and Predictability: A Review of Complexity Measures for EEG in Healthy and Neuropsychiatric Populations](https://onlinelibrary.wiley.com/doi/abs/10.1111/ejn.15800). *European Journal of Neuroscience, 56*(7), 5047-5069.
 
@@ -72,11 +82,15 @@ Pham, T., Lau, Z. J., Chen, S. H. A., & **Makowski, D.** (2021). [Heart Rate Var
 
 \scriptsize
 
-**Makowski, D.**, Neves, A., & Field, A. P. (*under review*). [Introducing the Choice-Confidence (CHOCO) model for bimodal data from subjective ratings: Application to the effect of attractiveness on reality beliefs about AI-generated faces](https://osf.io/preprints/psyarxiv/placeholder). *PsyArXiv*.
+**Makowski, D.**, Neves, A., & Field, A. P. (*under review*). [Introducing the Choice-Confidence (CHOCO) model for bimodal data from subjective ratings: Application to the effect of attractiveness on reality beliefs about AI-generated faces](https://osf.io/preprints/psyarxiv/z68v3). *PsyArXiv*.
 
-Lüdecke, D., Makowski, A. C., Klein, J., & **Makowski, D.** (*in press*). Choosing informative priors in Bayesian regression models: A simulation study and tutorial using Stan and R. *Frontiers in Psychology*.
+**Makowski, D.** (*under review*). [The cogmod R package: Easy-to-use Bayesian cognitive models for reaction times, choices and subjective ratings, with applications to computational neuropsychology](https://osf.io/preprints/psyarxiv/5h62c). *PsyArXiv*.
 
-Fernandez, K., **Makowski, D.**, & Fisher, C. (2025). [SequentialSamplingModels.jl: Simulating and evaluating cognitive models of response times in Julia](https://doi.org/10.21105/jcon.00193). *JuliaCon Proceedings, 1*(1), 193.
+Geller, J., Angele, B., & **Makowski, D.** (*under review*). [This is not the ex-Gaussian model you are looking for: On the default parameterization of Bayesian ex-Gaussian models in brms](https://osf.io/preprints/psyarxiv/kdcxa). *PsyArXiv*.
+
+Lüdecke, D., Makowski, A. C., Klein, J., Ben-Shachar, M. S., & **Makowski, D.** (2026). [Choosing informative priors in Bayesian regression models: A simulation study and tutorial using Stan and R](https://doi.org/10.3389/fpsyg.2026.1856582). *Frontiers in Psychology, 17*, 1856582.
+
+Fernandez, K., **Makowski, D.**, & Fisher, C. (2025). [SequentialSamplingModels.jl: Simulating and evaluating cognitive models of response times in Julia](https://doi.org/10.21105/jcon.00186). *JuliaCon Proceedings, 7*(78), 186.
 
 **Makowski, D.**, & Waggoner, P. D. (2023). [Where are we going with statistical computing? From mathematical statistics to collaborative data science](https://www.mdpi.com/2227-7390/11/8/1821). *Mathematics, 11*(8), 1821.
 
