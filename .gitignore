@@ -39,3 +39,6 @@ vignettes/*.pdf
 .Renviron
 nul
 RG_MostCited_TrackRecord.docx
+
+# Local agent notes
+AGENTS.md

@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.9.15)  15 SEP 2026 21:01
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.9.15)  15 SEP 2026 10:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**DominiqueMakowski_CV.tex
-(./DominiqueMakowski_CV.tex
+**DominiqueMakowski_CV_new.tex
+(./DominiqueMakowski_CV_new.tex
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-08-10>
 (./awesome-cv.cls
@@ -864,8 +864,8 @@ Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 )
 LaTeX Font Info:    Font shape `TU/SourceSans3(0)/m/n' will be
 (Font)              scaled to size 10.95pt on input line 123.
-(./DominiqueMakowski_CV.aux)
-\openout1 = `DominiqueMakowski_CV.aux'.
+(./DominiqueMakowski_CV_new.aux)
+\openout1 = `DominiqueMakowski_CV_new.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 123.
 LaTeX Font Info:    ... okay on input line 123.
@@ -956,9 +956,9 @@ LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 123.
 Package hyperref Info: Link coloring ON on input line 123.
-(./DominiqueMakowski_CV.out) (./DominiqueMakowski_CV.out)
+(./DominiqueMakowski_CV_new.out) (./DominiqueMakowski_CV_new.out)
 \@outlinefile=\write4
-\openout4 = `DominiqueMakowski_CV.out'.
+\openout4 = `DominiqueMakowski_CV_new.out'.
 
 \headertextwidth=\skip102
 \headerphotowidth=\skip103
@@ -1080,58 +1080,57 @@ Overfull \hbox (22.11426pt too wide) in paragraph at lines 273--282
  []
 
 [3]
-File: DominiqueMakowski_CV_files/figure-latex/Language-1.png Graphic file (type bmp)
-<DominiqueMakowski_CV_files/figure-latex/Language-1.png>
+File: DominiqueMakowski_CV_new_files/figure-latex/Language-1.png Graphic file (type bmp)
+<DominiqueMakowski_CV_new_files/figure-latex/Language-1.png>
 LaTeX Font Info:    Font shape `TU/SourceSans3(0)/b/n' will be
 (Font)              scaled to size 10.0pt on input line 299.
 [4]
-File: DominiqueMakowski_CV_files/figure-latex/ScientificImpactFigure-1.png Graphic file (type bmp)
-<DominiqueMakowski_CV_files/figure-latex/ScientificImpactFigure-1.png>
+File: DominiqueMakowski_CV_new_files/figure-latex/ScientificImpactFigure-1.png Graphic file (type bmp)
+<DominiqueMakowski_CV_new_files/figure-latex/ScientificImpactFigure-1.png>
 LaTeX Font Info:    Font shape `TU/SourceSans3(0)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 373.
+(Font)              scaled to size 8.0pt on input line 370.
 LaTeX Font Info:    Font shape `TU/SourceSans3(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 373.
+(Font)              scaled to size 6.0pt on input line 370.
 [5]
 
 LaTeX Font Warning: Font shape `TU/SourceSans3(1)/m/scit' undefined
-(Font)              using `TU/SourceSans3(1)/m/it' instead on input line 427.
+(Font)              using `TU/SourceSans3(1)/m/it' instead on input line 424.
 
 LaTeX Font Info:    Font shape `TU/SourceSans3(1)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 427.
+(Font)              scaled to size 8.0pt on input line 424.
 LaTeX Font Info:    Font shape `TU/SourceSans3(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 451.
+(Font)              scaled to size 10.0pt on input line 448.
 LaTeX Font Info:    Font shape `TU/SourceSans3(0)/b/n' will be
-(Font)              scaled to size 10.95pt on input line 491.
+(Font)              scaled to size 10.95pt on input line 488.
 [6]
 LaTeX Font Info:    Font shape `TU/SourceSans3(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 549.
+(Font)              scaled to size 10.95pt on input line 546.
 
-Overfull \hbox (0.3913pt too wide) in paragraph at lines 548--553
+Overfull \hbox (0.3913pt too wide) in paragraph at lines 545--550
 []\TU/SourceSans3(0)/b/n/10.95 MSc Advanced Computational Psychology \TU/SourceSans3(0)/m/n/10.95 (\TU/SourceSans3(0)/m/it/10.95 2026 - Present\TU/SourceSans3(0)/m/n/10.95 ). Development of a new postgraduate programme
  []
 
 LaTeX Font Info:    Font shape `TU/SourceSans3(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 582.
-[7]
+(Font)              scaled to size 9.0pt on input line 579.
 
 LaTeX Font Warning: Font shape `TU/SourceSans3(1)/m/scit' undefined
-(Font)              using `TU/SourceSans3(1)/m/it' instead on input line 621.
+(Font)              using `TU/SourceSans3(1)/m/it' instead on input line 618.
 
-[8] [9] [10] [11] (./DominiqueMakowski_CV.aux)
+[7] [8] [9] [10] (./DominiqueMakowski_CV_new.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-08-10>
  ***********
-Package rerunfilecheck Info: File `DominiqueMakowski_CV.out' has not changed.
+Package rerunfilecheck Info: File `DominiqueMakowski_CV_new.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  35091 strings out of 469707
- 720916 string characters out of 5464440
- 1307202 words of memory out of 5000000
+ 721140 string characters out of 5464440
+ 1307221 words of memory out of 5000000
  63482 multiletter control sequences out of 15000+600000
  633966 words of font info for 160 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 131i,15n,136p,661b,812s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 131i,15n,136p,665b,812s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on DominiqueMakowski_CV.pdf (11 pages).
+Output written on DominiqueMakowski_CV_new.pdf (10 pages).

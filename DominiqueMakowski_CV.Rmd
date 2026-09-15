@@ -6,14 +6,14 @@ position: "Assistant Professor in Psychology"
 qualifications: "PhD"
 address: "University of Sussex, Brighton, UK"
 # phone: +1 22 3333 4444
-www: dominiquemakowski.github.io
+www: realitybendinglab.com
 email: "D.Makowski@sussex.ac.uk"
 twitter: Dom_Makowski
 github: DominiqueMakowski
 # linkedin: dominiquemakowski
 # orcid: "0000-0001-5375-9967"
 aboutme: |
-  \RaggedRight Trained as a clinical neuropsychologist, I am currently an assistant professor at the University of Sussex researching aspects of reality bending (e.g., illusions, beliefs of reality, neuroscience of deception, fake news, altered states of consciousness), the role of the body and emotions in cognition (e.g., emotion regulation and interoception), and methodology (statistics, programming, and neurophysiological techniques).
+  \RaggedRight Trained as a clinical neuropsychologist and CBT psychotherapist, I am an assistant professor at the University of Sussex, where I head the [Reality Bending Lab](https://realitybendinglab.com). We study aspects of reality bending (e.g., illusions, beliefs of reality, neuroscience of deception, fake news, altered states of consciousness), the role of the body and emotions in cognition (e.g., emotion regulation and interoception), and methodology (statistics, programming, and neurophysiological techniques). I am also strongly committed to open science, developing open-source software (e.g., easystats, NeuroKit) to make advanced methods more accessible.
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: "1976D2"
 output:
@@ -26,9 +26,20 @@ header-includes:
   - \definecolor{cvlinkcolor}{HTML}{1976D2}
   - \hypersetup{colorlinks=true, urlcolor=cvlinkcolor, linkcolor=cvlinkcolor}
   - \usepackage{float}
+  - \usepackage{graphicx}
+  - \newlength{\cvlogoheight}\setlength{\cvlogoheight}{8.75mm}
+  - \newlength{\cvlogowidth}\setlength{\cvlogowidth}{9mm}
+  - \newlength{\cvlogogap}\setlength{\cvlogogap}{2mm}
+  - \newcommand*{\cvlogo}[1]{\raisebox{\dimexpr\fontcharht\font`X-0.5\cvlogoheight\relax}[0pt][0pt]{\parbox[c][\cvlogoheight][c]{\cvlogowidth}{\centering\ifempty{#1}{}{\IfFileExists{#1}{\includegraphics[height=\cvlogoheight,width=\cvlogowidth,keepaspectratio]{#1}}{}}}}\hspace{\cvlogogap}}
+  - \newcommand*{\cvlogoindent}{\hspace*{\dimexpr\cvlogowidth+\cvlogogap\relax}}
   - \newcommand*{\subsubsectionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\itshape\color{graytext}{#1}}}
   - \renewcommand{\subsubsection}[1]{\par\vspace{\acvSectionContentTopSkip}\vspace{-1.5mm}\subsubsectionstyle{#1}\phantomsection}
 ---
+
+
+<!-- NOTES -->
+<!-- ----- -->
+<!-- - The content is meant to be exhaustive, but items can be commented out (e.g., to tailor a CV to an application, or to create short versions etc.) to remove them from the rendered version. -->
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
@@ -38,6 +49,18 @@ library(ggplot2)
 
 link <- function(txt, url, color = "1976D2") {
   paste0("\\href{", url, "}{\\color[HTML]{", color, "}{", txt, "}}")
+}
+
+# Prefix the title line (`what`) of each entry with its logo, looked up in
+# img/logos/, and indent the institution line (`with`) by the same amount so
+# that the logo spans both header lines of the entry. Entries with no logo (or
+# whose file is missing) keep an empty but reserved slot, so that names stay
+# aligned within a section.
+add_logos <- function(data, files) {
+  files <- ifelse(is.na(files) | files == "", "", paste0("img/logos/", files))
+  data$what <- paste0("\\cvlogo{", files, "}", data$what)
+  data$with <- paste0("\\cvlogoindent{}", data$with)
+  data
 }
 ```
 
@@ -81,40 +104,56 @@ data <- rbind(tibble(
   when = "2014 - 18",
   with = "Université de Paris",
   where = "France",
-  # details = NA
-  details = paste0(
-    "Thesis: Cognitive Neuropsychology of Implicit Emotion Regulation through Fictional Reappraisal (supervised by ",
-    link("Pr Serge Nicolas", "http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Serge-Nicolas"),
-    " \\& ",
-    link("Pr Pascale Piolino", "http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Pascale-Piolino"),
-    ")"
-  )
+  logo = "universite-paris.pdf",
+  details = NA
+  # details = paste0(
+  #   "Thesis: Cognitive Neuropsychology of Implicit Emotion Regulation through Fictional Reappraisal (supervised by ",
+  #   link("Pr Serge Nicolas", "http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Serge-Nicolas"),
+  #   " \\& ",
+  #   link("Pr Pascale Piolino", "http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Pascale-Piolino"),
+  #   ")"
+  # )
 ), tibble(
   what = "Certified Psychotherapist - Cognitive Behavioural Therapy (CBT)",
   when = "2014 - 17",
   with = "French Association for Cognitive Behavioural Therapy (AFTCC)",
   where = "France",
-  # details = NA
-  details = c(
-    "Thesis: Cognitive Behavioural Therapy for two Patients: One suffering from Motivation Disorder associated with Dysthymia and the other from Social Anxiety (supervised by Sophie Kindynis)"
-  )
-), tibble(
-  what = "Master of Science (MSc) - Clinical Neuropsychology and Cognitive Psychology",
-  when = "2012 - 14",
-  with = "Université de Paris",
-  where = "France",
-  # details = NA
-  details = c(
-    paste0("Second year thesis: How the Study of Emotions in Schizophrenia enlight the Paradox of Fiction (supervised by ", link("Pr Pascale Piolino", "http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Pascale-Piolino"), ")"),
-    paste0("First year thesis: The Cognitive Development of the Aesthetic Judgement in Children and Adults (supervised by ", link("Pr Sandrine Rossi", "https://www.researchgate.net/profile/Sandrine-Rossi"), ")")
-  )
-), tibble(
-  what = "Bachelor of Science (BSc) - Psychology",
-  when = "2009 - 12",
-  with = "Université de Paris",
-  where = "France",
+  logo = "aftcc.pdf",
   details = NA
-))
+  # details = c(
+  #   "Thesis: Cognitive Behavioural Therapy for two Patients: One suffering from Motivation Disorder associated with Dysthymia and the other from Social Anxiety (supervised by Sophie Kindynis)"
+  # )
+# Compact version of BSc + MSc:
+), tibble(
+  what = "BSc, MSc - Clinical Neuropsychology and Cognitive Psychology",
+  when = "2009 - 14",
+  with = "Université de Paris",
+  where = "France",
+  logo = "universite-paris.pdf",
+  details = NA
+)
+# ), tibble(
+#   what = "Master of Science (MSc) - Clinical Neuropsychology and Cognitive Psychology",
+#   when = "2012 - 14",
+#   with = "Université de Paris",
+#   where = "France",
+#   logo = "universite-paris.pdf",
+#   # details = NA
+#   details = c(
+#     paste0("Second year thesis: How the Study of Emotions in Schizophrenia enlight the Paradox of Fiction (supervised by ", link("Pr Pascale Piolino", "http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Pascale-Piolino"), ")"),
+#     paste0("First year thesis: The Cognitive Development of the Aesthetic Judgement in Children and Adults (supervised by ", link("Pr Sandrine Rossi", "https://www.researchgate.net/profile/Sandrine-Rossi"), ")")
+#   )
+# ), tibble(
+#   what = "Bachelor of Science (BSc) - Psychology",
+#   when = "2009 - 12",
+#   with = "Université de Paris",
+#   where = "France",
+#   logo = "universite-paris.pdf",
+#   details = NA
+# )
+)
+
+data <- add_logos(data, data$logo)
 
 vitae::detailed_entries(data, with, when, what, where, details, .protect = FALSE)
 ```
@@ -276,6 +315,12 @@ tibble(
   Where = "Paris, France",
   Activity = "Workshop on Bayesian statistics for the members of a research lab."
 ),tibble(
+  Position = "Invited Instructor (Educational Course)",
+  Date = "2023",
+  Institution = "Organization for Human Brain Mapping (OHBM)",
+  Where = "Montréal, Canada",
+  Activity = "OHBM 2023 Educational Course: \\textit{Physiological Signals Provide Insights into Cognition}."
+),tibble(
   Position = "Invited Instructor (Programming and Data Science)",
   Date = "2022",
   Institution = "University of Zurich",
@@ -310,12 +355,20 @@ vitae::detailed_entries(data, Institution, Date, Position, Where, Activity, .pro
 ### Contract Research
 
 ```{r ConsultancyResearch}
-data <- tibble(
+data <- rbind(
+tibble(
+  Position = "Scientific Advisor",
+  Date = "2025 - Present",
+  Institution = "AI startup (client confidential)",
+  Where = "Singapore",
+  Activity = "Scientific advising on an applied project on deception detection."
+),tibble(
   Position = "Contract Research",
   Date = "2026",
   Institution = "Fragrance industry (client confidential)",
   Where = NA,
   Activity = "Contract research on the relationship between smells and emotions."
+)
 )
 
 vitae::detailed_entries(data, Institution, Date, Position, Where, Activity, .protect = FALSE)
@@ -546,10 +599,22 @@ p_languages
 
 ```{r TrainingTeaching}
 data <- rbind(tibble(
+  what = "Fellow of the Higher Education Academy (FHEA)",
+  when = "2025",
+  with = "Advance HE (attainment against the Professional Standards Framework for teaching and learning support in higher education; Associate Fellow, AFHEA, in 2024)",
+  where = "UK",
+  details = NA
+), tibble(
   what = "CITI Certification",
-  when = "2019",
-  with = "Collaborative Institutional Training Initiative (ethics and scientific integrity in research)",
+  when = "2019, 2022",
+  with = "Collaborative Institutional Training Initiative (ethics and scientific integrity in research; basic course and refresher)",
   where = "Online",
+  details = NA
+), tibble(
+  what = "Research Integrity Certification",
+  when = "2019",
+  with = "Nanyang Technological University (Epigeum research integrity course, social \\& behavioural sciences track)",
+  where = "Singapore",
   details = NA
 ), tibble(
   what = "Academic Teaching Certificate",
@@ -575,8 +640,8 @@ data <- rbind(tibble(
   details = NA
 ), tibble(
   what = "Mindfulness based on Compassion and Insight (MBCI)",
-  when = "2016",
-  with = "Institute for psychiatry, Sainte-Anne Hospital (16h master class)",
+  when = "2015",
+  with = "Institute for psychiatry, Sainte-Anne Hospital (15h master class)",
   instructor = "Pr Pascal Delamillieure",
   where = "France",
   details = NA
@@ -597,7 +662,7 @@ vitae::detailed_entries(data, with, when, what, where, why = details, .protect =
 ```{r TrainingNeuroimaging}
 data <- rbind(tibble(
   what = "Structural, Functional and Radiological Neuroanatomy",
-  when = "2020",
+  when = "2020 - 21",
   with = "Neurocourses UK (32h)",
   where = "Online",
   instructor = "Dr Paul Johns",
@@ -608,6 +673,13 @@ data <- rbind(tibble(
   with = "National Institute of Nuclear Sciences \\& Techniques - INSTN (32h)",
   where = "Marseille, France",
   instructor = "Dr Jorge L. Armony",
+  details = NA
+), tibble(
+  what = "Functional MRI",
+  when = "2015",
+  with = "National Institute of Nuclear Sciences \\& Techniques - INSTN (28h)",
+  where = "Saclay, France",
+  instructor = "Vivienne Fardeau",
   details = NA
 ), tibble(
   what = "fMRI : Preprocessing and Analysis",
@@ -651,6 +723,13 @@ data <- rbind(tibble(
   with = "University of Nottingham (24h)",
   where = "Nottingham, UK",
   instructor = "Dr Jon Peirce",
+  details = NA
+), tibble(
+  what = "Statistics and R for the Life Sciences (PH525.1x)",
+  when = "2015",
+  with = "HarvardX, Harvard University (verified certificate, via edX)",
+  where = "Online",
+  instructor = "Pr Rafael A. Irizarry",
   details = NA
 ), tibble(
   what = "Machine Learning and Brain-to-Computer Interfaces",
@@ -773,7 +852,7 @@ data <- rbind(
   Amount = NA,
   Activity = NA
 ),tibble(
-  Name = link("Mission Award (Society for the Improvement of Psychological Science - SIPS)", "https://improvingpsych.org/mission/awards/", color = "333333"),
+  Name = link("Commendation (Society for the Improvement of Psychological Science - SIPS)", "https://improvingpsych.org/mission/awards/", color = "333333"),
   Details = paste0("Obtained for the ", link("NeuroKit", "https://en.wikipedia.org/wiki/NeuroKit", color = "5D5D5D"), " Python package"),
   Date = "2024",
   Amount = NA,
@@ -875,6 +954,12 @@ vitae::detailed_entries(data, Details, Amount, Name, Date, Activity, .protect = 
 
 ```{r EditorialResponsabilities}
 data <- rbind(tibble(
+  Position = "Statistical Editor",
+  Where = link("Royal Society Open Science", "https://royalsocietypublishing.org/journal/rsos", color = "333333"),
+  Date = "2025 - present",
+  Location = NA,
+  Activity = NA
+),tibble(
   Position = "Associate Editor",
   Where = link("Frontiers in Psychology: \\textit{Quantitative Psychology and Measurement}", "https://www.frontiersin.org/journals/all/sections/quantitative-psychology-and-measurement", color = "333333"),
   Date = "2020 - 2024",
@@ -949,9 +1034,14 @@ I have given academic lectures (total hours since 2014: **424**) on the followin
 
 ## Supervision
 
-I have mentored more than 7 full-time research assistants.
+- **Research staff:** mentored more than 7 full-time research assistants, several of whom moved on to funded PhD positions.
+- **Doctoral students:** PhD co-supervision since 2019 (NTU, Singapore) and PhD supervision at Sussex (2023 - Present).
+- **Dissertation and placement students:** each year at Sussex I supervise around 9 undergraduate dissertation students, 3 master's dissertation students and 2 placement students working full time in the lab, as well as funded summer interns (Junior Research Associate and SoCoBio schemes). See *Student Awards* above.
 
-I have also co-supervised bachelor and master students for their research projects.
+## Examining
+
+- **Internal examiner for four PhD theses** at the University of Sussex (2024 - Present), on consciousness science, interoception and quantitative methods \footnotesize (candidates supervised by Pr Anil Seth, Pr Hugo Critchley and Pr Andy Field)\normalsize.  <!-- CHECK dates -->
+- Examiner and moderator for undergraduate and master's dissertations (2023 - Present).
 
 
 
