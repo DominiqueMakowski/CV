@@ -1,0 +1,11 @@
+project:
+  title: "Dominique Makowski - CV"
+  output-dir: .
+
+format:
+  typst:
+    template-partials:
+      - typst-template.typ
+      - typst-show.typ
+    font-paths: [fonts]
+    keep-typ: true

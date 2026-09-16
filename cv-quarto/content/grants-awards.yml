@@ -1,0 +1,98 @@
+# Grants and awards, as two columns of cards: `kind: grant` on the left,
+# `kind: award` on the right. Both are reverse chronological.
+#
+# Fields: name (the work the money paid for, or the award), reach (the figure in
+# the corner - the amount for a grant, the year for an award), meta (funder,
+# scheme, role and dates, small caps under the name), description (what an award
+# was for), url, kind.
+#
+# A grant is named for its project, not its scheme: "Behavioural and
+# Communication Science Programme" tells a reader nothing about the research, and
+# the scheme belongs with the funder on the line underneath. Project names here
+# are the heads of the full titles, which are in PROFILE.md.
+#
+# Amounts are approximate sterling equivalents, rounded to the nearest thousand.
+# All four grants were awarded in US dollars; PROFILE.md > Grants holds the
+# awarded figures. The rate used is 0.716, which is the one ORCID records for the
+# Centre for Open Science award - USD 28,163 entered there as GBP 20,175 - so the
+# four sit on a single documented basis rather than on four different days'
+# rates. They are approximations and should not be quoted as exact.
+#
+#   Centre for Open Science          USD  28,163
+#   Temasek Laboratories, NTU        USD 915,427
+#   Singapore NRF                    USD 249,730
+#   NTU Presidential Fellowship      USD 360,000  (whole award, salary included;
+#                                                  the research budget within it
+#                                                  was roughly USD 200,000)
+
+- name: "Illusion Sensitivity and Phenomenological Control"
+  kind: grant
+  url: "https://www.cos.io/blog/funding-consciousness-research"
+  reach: "£20,000"
+  meta: >-
+    Centre for Open Science · Registered Reports in Consciousness Research ·
+    PI · 2024 - 26
+
+- name: "Perception of Real vs. Fake Information"
+  kind: grant
+  reach: "£655,000"
+  meta: >-
+    Temasek Laboratories, NTU · Behavioural and Communication Science
+    Programme · co-PI · 2022 - 25
+
+- name: "Crowdedness and Environment Typology (NICE)"
+  kind: grant
+  reach: "£179,000"
+  meta: >-
+    Singapore National Research Foundation · Intra-CREATE Grant · co-PI ·
+    2021 - 22
+
+- name: "\"That's Fake News\": Belief in Deceptive Information"
+  kind: grant
+  reach: "£258,000"
+  meta: >-
+    Nanyang Technological University · Presidential Postdoctoral Fellowship ·
+    PI · 2020 - 22
+
+- name: "SIPS Commendation"
+  kind: award
+  url: "https://improvingpsych.org/mission/awards/"
+  reach: "2024"
+  meta: "Society for the Improvement of Psychological Science"
+  description: "For the NeuroKit Python package."
+
+- name: "Openness in Research Award"
+  kind: award
+  reach: "2024"
+  meta: "University of Sussex Research Culture Awards"
+  description: >-
+    For building software that makes open research accessible, and for running
+    fully transparent studies.
+
+- name: "School of Psychology Award"
+  kind: award
+  reach: "2024"
+  meta: "University of Sussex"
+  description: "For outstanding student supervision."
+
+- name: "Mission Award"
+  kind: award
+  url: "https://improvingpsych.org/mission/awards/"
+  reach: "2023"
+  meta: "Society for the Improvement of Psychological Science"
+  description: "For the easystats collection of R packages."
+
+- name: "Best Article Award"
+  kind: award
+  url: "https://www.psychonomic.org/page/2020BestArticleAwards"
+  reach: "2020"
+  meta: "Psychonomic Society"
+  description: >-
+    For the fictional reappraisal paper, the main output of the PhD.
+
+- name: "SIPS Commendation"
+  kind: award
+  url: "https://improvingpsych.org/mission/awards/"
+  reach: "2020"
+  meta: "Society for the Improvement of Psychological Science"
+  description: "For the bayestestR R package."

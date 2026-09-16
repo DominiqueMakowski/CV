@@ -15,7 +15,7 @@ Resolve and delete each line once settled.
 
 ### Facts to confirm
 
-None outstanding.
+None.
 
 ### Corrections to make on external profiles
 
@@ -157,20 +157,20 @@ details.
 
 - **Type:** Postdoctoral fellowship
 - **Dates:** Jan 2021 - Dec 2022
-- **Institution:** Nanyang Technological University (NTU)
+- **Institution:** School of Social Sciences, Nanyang Technological University (NTU)
 - **Location:** Singapore
 - **Details:**
   - Second postdoctoral position.
   - Exact boundaries: the fellowship ran from December 2020 to January 2023, as recorded on LinkedIn and ORCID. The span above is tidied so that it abuts the first postdoc and the Sussex post.
   - The NTU Presidential Postdoctoral Fellowship is a competitive two-year grant meant as an intermediate step between postdoc and faculty ("senior" postdoctoral position).
-  - Own research track on the neurocognitive and affective processes underlying the beliefs in fake vs. real stimuli (fake news, fiction, ...), while integrated within a larger lab (the Clinical Brain Lab, https://www.clinicalbrain.org/, directed by Pr Annabel Chen, https://www.clinicalbrain.org/author/annabel-chen/).
+  - Own research track on the neurocognitive and affective processes underlying the beliefs in fake vs. real stimuli (fake news, fiction, ...), while integrated within a larger team (the Clinical Brain Lab, https://www.clinicalbrain.org/, directed by Pr Annabel Chen, https://www.clinicalbrain.org/author/annabel-chen/).
   - Managed own team (3 research assistants and several undergraduate students) and a research budget of roughly USD 200,000. The fellowship award was larger, USD 360,000, because it covered salary as well; see [Grants](#grants).
 
 ### Research Fellow
 
 - **Type:** Postdoctoral fellowship
 - **Dates:** Jan 2019 - Dec 2020
-- **Institution:** Clinical Brain Lab, Nanyang Technological University (NTU)
+- **Institution:** School of Social Sciences, Nanyang Technological University (NTU)
 - **Location:** Singapore
 - **Details:**
   - First postdoctoral position, working on a project funded by the Singapore Ministry of Defence about the neurocognitive correlates of deception.
@@ -505,6 +505,7 @@ in [Education](#education) and [Titles and Licenses](#titles-and-licenses).
 
 ### PhD Internal Examiner
 
+- Romy Beauté (University of Sussex, 2026): candidate of Pr Anil Seth.
 - Sam Wray (University of Sussex, 2026): candidate of Pr Hugo Critchley; thesis on heartbeat evoked potentials.
 - Martina Sladekova (University of Sussex, 2024): candidate of Pr Andy Field; thesis on quantitative methods.
 - Frederico Micheli (University of Sussex, 2024): candidate of Pr Anil Seth; thesis on consciousness science.

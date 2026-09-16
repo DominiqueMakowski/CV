@@ -1,0 +1,79 @@
+# Bibliometrics, drawn as a plot of publications and citations per year.
+#
+# Unlike the other content files this one is a mapping, not a list:
+#
+#   figure   the plot drawn from `history`, relative to the project root.
+#   totals   the headline counts, used to label the panels. They are given
+#            rather than summed: Scholar reports two publications without a
+#            year, and citations only from 2019, so the columns do not add up
+#            to them.
+#   history  one row per year: year, publications, citations. Any of the two
+#            counts may be missing.
+#   notes    what the plot cannot say, as bullets under it.
+#   source   where the numbers come from and when. Required - validate.py
+#            rejects the file without it, because an undated citation count is
+#            exactly what a reader is entitled to be suspicious of.
+#
+# Refresh with `Rscript tools/refresh_scholar.R` (needs R and the scholar
+# package), then `python tools/make_impact.py` to redraw. The build redraws it
+# too, so the plot never drifts from the numbers here.
+#
+# Refresh from PROFILE.md > Impact, and move the snapshot date with them.
+
+figure: "img/impact.svg"
+
+totals:
+  publications: 67
+  citations: 19693
+
+history:
+  - year: 2015
+    publications: 1
+  - year: 2016
+    publications: 3
+  - year: 2017
+    publications: 7
+  - year: 2018
+    publications: 2
+  - year: 2019
+    publications: 8
+    citations: 115
+  - year: 2020
+    publications: 6
+    citations: 397
+  - year: 2021
+    publications: 7
+    citations: 1233
+  - year: 2022
+    publications: 4
+    citations: 2089
+  - year: 2023
+    publications: 5
+    citations: 3129
+  - year: 2024
+    publications: 9
+    citations: 3909
+  - year: 2025
+    publications: 12
+    citations: 5442
+  # Part-year: the snapshot was taken in June. Drawn faded, and labelled.
+  - year: 2026
+    publications: 1
+    citations: 3128
+
+partial-year: 2026
+
+notes:
+  - >-
+    Most cited researcher in the School of Psychology, University of Sussex,
+    since 2024.
+  - >-
+    _h_-index 27, i10-index 38; 40 of 67 publications as first (29) or
+    senior (11) author.
+  - >-
+    Three contributions have their own Wikipedia article: the
+    [probability of direction](https://en.wikipedia.org/wiki/Probability_of_direction)
+    (pd), [easystats](https://en.wikipedia.org/wiki/Easystats) and
+    [NeuroKit](https://en.wikipedia.org/wiki/NeuroKit).
+
+source: "Google Scholar, June 2026"

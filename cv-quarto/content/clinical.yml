@@ -1,0 +1,36 @@
+# Clinical practice: the placements behind the clinical qualifications listed
+# under Education. One list item per placement, newest first; entry fields as in
+# experience.yml.
+#
+# Hours are those recorded in PROFILE.md > Clinical Activity and total 980 h.
+# No logos: only one of the three hospitals has a mark in img/logos/, and one
+# crest beside two blank slots reads as an omission rather than a design.
+
+- title: "Assistant Neuropsychologist"
+  location: "Paris, France"
+  org: "Department of Adult Psychiatry, Pitié-Salpêtrière Hospital (AP-HP)"
+  date: "2013 - 14"
+  details:
+    - >-
+      Professional placement (580 h): neuropsychological assessment and
+      diagnosis of inpatients with mood disorders, psychosis and attention
+      deficit hyperactivity disorder, and cognitive remediation.
+
+- title: "Assistant Neuropsychologist"
+  location: "Paris, France"
+  org: "Department of Geriatric Psychiatry, Sainte-Anne Hospital"
+  date: "2012 - 13"
+  details:
+    - >-
+      Professional placement (304 h): assessment and diagnosis of complex
+      presentations combining psychiatric disorders with early dementia in
+      older adults.
+
+- title: "Assistant Neuropsychologist"
+  location: "Versailles, France"
+  org: "Department of Gerontology, La Porte Verte Hospital"
+  date: "2012"
+  details:
+    - >-
+      Observation placement (96 h): assessment of memory deficits in
+      neurodegenerative disease, somatic ageing-related illness and depression.
