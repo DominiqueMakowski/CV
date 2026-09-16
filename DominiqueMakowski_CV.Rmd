@@ -13,7 +13,7 @@ github: DominiqueMakowski
 # linkedin: dominiquemakowski
 # orcid: "0000-0001-5375-9967"
 aboutme: |
-  \RaggedRight Trained as a clinical neuropsychologist and CBT psychotherapist, I am an assistant professor at the University of Sussex, where I head the [Reality Bending Lab](https://realitybendinglab.com). We study aspects of reality bending (e.g., illusions, beliefs of reality, neuroscience of deception, fake news, altered states of consciousness), the role of the body and emotions in cognition (e.g., emotion regulation and interoception), and methodology (statistics, programming, and neurophysiological techniques). I am also strongly committed to open science, developing open-source software (e.g., easystats, NeuroKit) to make advanced methods more accessible.
+  \RaggedRight Trained as a clinical neuropsychologist and CBT psychotherapist, I am an assistant professor at the University of Sussex, where I head the [Reality Bending Lab](https://realitybendinglab.com). My research has three strands. **Reality and its distortions**: visual illusions, deception and lie detection, misinformation and fake news, beliefs about AI-generated content, fiction, and altered states of consciousness.  **The body in cognition**: how interoception, physiological states and emotion regulation shape what we take to be real. **Methods:** Bayesian statistics, computational models and psychophysiology, as well as the development of new software, measures and paradigms, released as open source (easystats, NeuroKit, cogmod) to support open and rigorous science.
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: "1976D2"
 output:
@@ -37,10 +37,6 @@ header-includes:
 ---
 
 
-<!-- NOTES -->
-<!-- ----- -->
-<!-- - The content is meant to be exhaustive, but items can be commented out (e.g., to tailor a CV to an application, or to create short versions etc.) to remove them from the rendered version. -->
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(vitae)
@@ -51,50 +47,70 @@ link <- function(txt, url, color = "1976D2") {
   paste0("\\href{", url, "}{\\color[HTML]{", color, "}{", txt, "}}")
 }
 
-# Prefix the title line (`what`) of each entry with its logo, looked up in
-# img/logos/, and indent the institution line (`with`) by the same amount so
-# that the logo spans both header lines of the entry. Entries with no logo (or
+# Prefix the title line of each entry with its logo, looked up in img/logos/,
+# and indent the institution line by the same amount so that the logo spans
+# both header lines of the entry. `title`/`org` name the columns holding those
+# two lines (they differ between sections, e.g. Position/Institution). Entries with no logo (or
 # whose file is missing) keep an empty but reserved slot, so that names stay
 # aligned within a section.
-add_logos <- function(data, files) {
+add_logos <- function(data, files, title = "what", org = "with") {
   files <- ifelse(is.na(files) | files == "", "", paste0("img/logos/", files))
-  data$what <- paste0("\\cvlogo{", files, "}", data$what)
-  data$with <- paste0("\\cvlogoindent{}", data$with)
+  data[[title]] <- paste0("\\cvlogo{", files, "}", data[[title]])
+  data[[org]] <- paste0("\\cvlogoindent{}", data[[org]])
   data
 }
 ```
 
-<!-- # Current Position -->
-
-<!-- ```{r CurrentEmployment} -->
-<!-- data <- tibble( -->
-<!--   what = "Lecturer in Psychology", -->
-<!--   when = "2023 - Present", -->
-<!--   with = "University of Sussex", -->
-<!--   where = "UK", -->
-<!--   details = c( -->
-<!--     paste( -->
-<!--       "Full teaching service on courses such as Quantitative and Qualitative Methods." -->
-<!--     ), -->
-<!--     paste( -->
-<!--       "Head of the ", -->
-<!--        link("Reality Bending Lab", "https://realitybending.github.io/"), -->
-<!--       " (ReBeL) where we study reality perception (e.g., neuroscience of deception, perception of fake news, altered states of consciousness), the role of the body and emotions in cognition (e.g., emotion regulation and interoception), and methodology (statistics, programming, open source software and neurophysiological techniques)." -->
-<!--     ) -->
-<!--   ) -->
-<!-- ) -->
-
-<!-- vitae::detailed_entries(data, with, when, what, where, details, .protect = FALSE) -->
-<!-- ``` -->
-
-<!-- \footnotesize -->
-
-<!-- The NTU "presidential postdoc fellowship" is a competitive grant meant as an intermediate step between postdoc and faculty. While integrated within a larger lab (the [Clinical Brain Lab](https://www.clinicalbrain.org/), directed by Prof Annabel Chen), I am pursuing my own research track on the perception of reality, managing my team (3 research assistants, and several undergrad students) and research funding ($ 200k). I am involved in all the research and administrative aspects of the project (writing IRBs, project budgeting, experiment creations, data collection, analysis, manuscript writing, ...). -->
-
-<!-- On top of the mentoring and teaching done in the context of the lab, I am also involved in university lectures (e.g., statistics for NTU students), research-oriented workshops (for instance, I have introduced our software *NeuroKit* at the OHBM conference this summer), and other courses (I have been recently appointed by the University of Zurich to give a 3 days course on Python to their PhD students). -->
 
 \normalsize
 
+# Experience
+
+
+```{r ExperienceResearch}
+data <- rbind(
+tibble(
+  Position = "Assistant Professor (Current Position)",
+  Date = "2023 - Present",
+  Institution = "School of Psychology, University of Sussex",
+  Where = "UK",
+  logo = "sussex.pdf",
+  Activity = c(
+    paste(
+      "Full teaching service on courses including Bayesian Statistics and Psychophysiology."
+    ),
+    paste(
+      "Head of the ", link("Reality Bending Lab", "https://realitybending.github.io/"), "."
+    ),
+    paste(
+      "School-level leadership responsibilities, including research ethics, the research participation scheme and postgraduate programme development."
+    )
+  )),
+tibble(
+  Position = "Research Fellow",
+  Date = "2019 - 22",
+  Institution = "Clinical Brain Lab, Nanyang Technological University (NTU)",
+  Where = "Singapore",
+  logo = "ntu.pdf",
+  Activity = c(
+    paste0(
+      'In 2021, I got awarded the NTU "presidential postdoc fellowship", a competitive two-years grant meant as an intermediate step between postdoc and faculty. While integrated within a larger lab (the ',
+      link("Clinical Brain Lab", "https://www.clinicalbrain.org/"),
+      ', directed by ',
+      link("Pr Annabel Chen", "https://www.clinicalbrain.org/author/annabel-chen/"),
+      ', I started my own research track on the neurocognitive and affective processes underlying beliefs about reality, managing my team (3 research assistants) and grant funding.'
+    ),
+  paste0(
+    "In 2019, started my first research fellow position, working on a project funded by the ministry of defence about the neurocognitive correlates of deception. Reference: ",
+    link("Pr Annabel Chen", "https://www.clinicalbrain.org/author/annabel-chen/"),
+    "."
+  ))
+))
+
+data <- add_logos(data, data$logo, title = "Position", org = "Institution")
+
+vitae::detailed_entries(data, Institution, Date, Position, Where, Activity, .protect = FALSE)
+```
 
 # Education
 
@@ -102,7 +118,7 @@ add_logos <- function(data, files) {
 data <- rbind(tibble(
   what = "Doctor of Philosophy (PhD) - Psychology",
   when = "2014 - 18",
-  with = "Université de Paris",
+  with = "Université Paris Cité",
   where = "France",
   logo = "universite-paris.pdf",
   details = NA
@@ -127,7 +143,7 @@ data <- rbind(tibble(
 ), tibble(
   what = "BSc, MSc - Clinical Neuropsychology and Cognitive Psychology",
   when = "2009 - 14",
-  with = "Université de Paris",
+  with = "Université Paris Cité",
   where = "France",
   logo = "universite-paris.pdf",
   details = NA
@@ -135,7 +151,7 @@ data <- rbind(tibble(
 # ), tibble(
 #   what = "Master of Science (MSc) - Clinical Neuropsychology and Cognitive Psychology",
 #   when = "2012 - 14",
-#   with = "Université de Paris",
+#   with = "Université Paris Cité",
 #   where = "France",
 #   logo = "universite-paris.pdf",
 #   # details = NA
@@ -146,7 +162,7 @@ data <- rbind(tibble(
 # ), tibble(
 #   what = "Bachelor of Science (BSc) - Psychology",
 #   when = "2009 - 12",
-#   with = "Université de Paris",
+#   with = "Université Paris Cité",
 #   where = "France",
 #   logo = "universite-paris.pdf",
 #   details = NA
@@ -158,83 +174,9 @@ data <- add_logos(data, data$logo)
 vitae::detailed_entries(data, with, when, what, where, details, .protect = FALSE)
 ```
 
+<!-- FROM THE BELOW ONWARDS: TO REVISE -->
 
-# Experience
-
-## Research
-
-```{r ExperienceResearch}
-data <- rbind(
-tibble(
-  Position = "Assistant Professor (Current Position)",
-  Date = "2023 - Present",
-  Institution = "School of Psychology, University of Sussex",
-  Where = "UK",
-  Activity = c(
-    paste(
-      "Full teaching service on courses including Bayesian Statistics and Psychophysiology."
-    ),
-    paste(
-      "Head of the ",
-       link("Reality Bending Lab", "https://realitybending.github.io/"),
-      " (ReBeL) where we study reality perception (e.g., neuroscience of deception, perception of fake news, altered states of consciousness), the role of the body and emotions in cognition (e.g., emotion regulation and interoception), and methodology (statistics, programming, open source software and neurophysiological techniques)."
-    ),
-    paste(
-      "School-level leadership responsibilities, including research ethics, the research participation scheme and postgraduate programme development."
-    )
-  )),
-tibble(
-  Position = "Presidential Research Fellow",
-  Date = "2021 - 22",
-  Institution = "Clinical Brain Lab, Nanyang Technological University (NTU)",
-  Where = "Singapore",
-  Activity = paste0(
-    'The NTU "presidential postdoc fellowship" is a competitive two-years grant meant as an intermediate step between postdoc and faculty. While integrated within a larger lab (the ',
-    link("Clinical Brain Lab", "https://www.clinicalbrain.org/"),
-    ', directed by ',
-    link("Pr Annabel Chen", "https://www.clinicalbrain.org/author/annabel-chen/"),
-    ', I am pursuing my own research track on the neurocognitive and affective processes underlying the beliefs in fake vs. real stimuli (fake news, fiction, ...), managing my team (3 research assistants, and several undergrad students) and research funding (\\$ 200k).'
-  )),
-tibble(
-  Position = "Research Fellow",
-  Date = "2019 - 20",
-  Institution = "Clinical Brain Lab, Nanyang Technological University (NTU)",
-  Where = "Singapore",
-  Activity = paste0(
-    "First postdoc position, working on a project funded by the ministry of defence about the neurocognitive correlates of deception. Responsible for studies design and completion, data analysis, publications and co-supervision of one PhD student, two research assistants and several graduate and undergraduate students (reference: ",
-    link("Pr Annabel Chen", "https://www.clinicalbrain.org/author/annabel-chen/"),
-    ")."
-  )),
-tibble(
-  Position = "Research Assistant",
-  Date = "2012",
-  Institution = "Developmental Psychology Lab (LaPsyDé), Université de Paris",
-  Where = "Paris, France",
-  Activity = paste0(
-    "Data collection for a study (",
-    link("Borst, 2016", "http://psycnet.apa.org/journals/emo/13/5/811/"),
-    ") on emotions and mental rotation (reference: ", link("Pr Grégoire Borst", "https://www.lapsyde.com/gregoire-borst"),
-    ")."
-  )),
-tibble(
-  Position = "Research Assistant",
-  Date = "2011",
-  Institution = "Memory \\& Cognition Lab (LMC), Université de Paris",
-  Where = "Paris, France",
-  Activity = paste0(
-    "Experiment creation and data collection for a study on memory, salience and bizarreness effect (reference: ",
-    link("Pr Serge Nicolas", "http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Serge-Nicolas"),
-    ")."
-  ))
-)
-
-# Save for re-useability
-write.csv(data, "data/experience_research.csv", row.names = FALSE, fileEncoding = "UTF-8")
-
-vitae::detailed_entries(data, Institution, Date, Position, Where, Activity, .protect = FALSE)
-```
-
-## Teaching
+# Teaching
 
 ```{r ExperienceTeaching}
 data <- rbind(
@@ -259,25 +201,25 @@ data <- rbind(
 ),tibble(
   Position = "Assistant Lecturer (Clinical Neuropsychology)",
   Date = "2017 - 18",
-  Institution = "Université de Paris",
+  Institution = "Université Paris Cité",
   Where = "Paris, France",
   Activity = paste0("Modules (192 h; bachelor \\& master students): Neurology and psychiatry (main neurodegenerative, neurological and psychiatric disorders), assessment (examination, diagnostic, psychometry), rehabilitation and psychotherapy (CBT, mindfulness-based therapies, cognitive rehabilitation, practice supervision), general neuroscience and psychology (neuroanatomy, emotion regulation...). Reference: ", link("Pr Isabelle Jambaqué", "http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Isabelle-Jambaque-Aubourg"), ".")
 ), tibble(
   Position = "Teaching Assistant (Differential Cognitive Psychology)",
   Date = "2015 - 17",
-  Institution = "Université de Paris",
+  Institution = "Université Paris Cité",
   Where = "Paris, France",
   Activity = "Modules (144 h; 1st \\& 2nd year students): Experimental methodology (assessment and related problems, scientific reasoning, psychometric properties of tests and questionnaires, statistics...) and introduction to concepts such as intelligence, personality and creativity. Reference: Dr Christophe Mouchiroud."
 ), tibble(
   Position = "Teaching Assistant (Cognitive Psychology)",
   Date = "2014 - 16",
-  Institution = "Université de Paris",
+  Institution = "Université Paris Cité",
   Where = "Paris, France",
   Activity = paste0("Modules (48 h; 3rd year students): Models of working memory, mental imagery and categorisation. Reference: ", link("Pr Todd Lubart", "https://lapea.recherche.parisdescartes.fr/membres-permanents/todd-lubart/"), ".")
 # ), tibble(
 #   Position = "Teaching Assistant (University Services)",
 #   Date = "2013",
-#   Institution = "Université de Paris",
+#   Institution = "Université Paris Cité",
 #   Where = "Paris, France",
 #   Activity = "Modules (16 h; 1st year students): Introduction to the use of internet (internet security, anonymity, etc.) and on-line university services for first year students. Reference: Dr Christian Fondrat."
 ))
@@ -311,7 +253,7 @@ tibble(
 ),tibble(
   Position = "Invited Instructor (Bayesian Statistics)",
   Date = "2024",
-  Institution = "Université de Paris",
+  Institution = "Université Paris Cité",
   Where = "Paris, France",
   Activity = "Workshop on Bayesian statistics for the members of a research lab."
 ),tibble(
@@ -648,7 +590,7 @@ data <- rbind(tibble(
 ), tibble(
   what = "First Aid Certificate",
   when = "2016",
-  with = "Université de Paris (16h - level 1)",
+  with = "Université Paris Cité (16h - level 1)",
   where = "France",
   instructor = NA,
   details = NA

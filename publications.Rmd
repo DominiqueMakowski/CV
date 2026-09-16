@@ -175,12 +175,13 @@ Mavros, P., Olszewska-Guizzo, A., & **Makowski, D.** (2023). [Disentangling the 
 
 \footnotesize
 
+- Research featured in online journal, `r link("Attractiveness shapes beliefs about whether faces are real or AI-generated, study finds", "https://www.psypost.org/attractiveness-shapes-beliefs-about-whether-faces-are-real-or-ai-generated-study-finds/")`. 07 July 2025, psypost.org
 - Invited on the "Learning Bayesian Statistics" Podcast, `r link("\\#55 Neuropsychology, Illusions \\& Bending Reality, with Dominique Makowski", "https://www.learnbayesstats.com/episode/55-neuropsychology-illusions-bending-reality-dominique-makowski")`. 01 Feb 2022, learnbayesstats.com
 - Speaker at the Pint of Science, `r link("Back to the Matrix : pilule bleue ou rouge ?", "https://pintofscience.com/")`. 16 May 2018, Paris, France.
 - Invited to participate in a Public Debate, `r link("Art \\& science discussion on sensory illusions", "https://facts2017.u-bordeaux.fr/FESTIVAL/Programme/Agenda-2017/Rencards-du-savoir-Les-illusions-sensorielles.html")`. 24 November 2017, Bordeaux, France.
 - Published article in magazine, `r link("Neuroanatomie de la réalité : quand le réel n'est plus", "https://biblineuropsy.com/2016/04/19/les-yeux-brouilles/")`. 2016, Les yeux brouillés, 1, 48-55.
 - Featured on National TV, `r link("The effect of violent images on the brain and body", "https://www.youtube.com/watch?v=ihGs1V9kz4w")`. 2015, Testé sous contrôle médical, France 4
-- Research Featured in Online journal, `r link("”Avengers, l'ère d’Ultron” en 3D : aussitôt vu, aussitôt oublié ?", "(http://blog.francetvinfo.fr/actu-cine/2015/05/07/avengers-lere-dultron-en-3d-aussitot-vu-aussitot-oublie.html")` 2015, francetvinfos.fr
+- Research Featured in Online journal, `r link("”Avengers, l'ère d’Ultron” en 3D : aussitôt vu, aussitôt oublié ?", "http://blog.francetvinfo.fr/actu-cine/2015/05/07/avengers-lere-dultron-en-3d-aussitot-vu-aussitot-oublie.html")` 2015, francetvinfos.fr
 
 \normalsize
 
