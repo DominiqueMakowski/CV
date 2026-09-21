@@ -260,6 +260,18 @@ footer { margin-top: 4rem; padding-top: 1rem; border-top: 1px solid var(--rule);
   .stats { grid-template-columns: 1fr; }
   .stats > * { grid-column: 1; }
 }
+.pubs h3 { font-family: Roboto, system-ui, sans-serif; font-weight: 600;
+  font-size: .78rem; line-height: 1.2; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--accent); margin: 1.1rem 0 .35rem; }
+.publist { list-style: none; margin: 0; padding: 0; }
+.pub { display: flex; gap: .6rem; margin: 0 0 .45rem; font-size: .82rem;
+  line-height: 1.45; color: var(--body); }
+.pub-year { flex: 0 0 4.2rem; color: var(--gray); font-style: italic;
+  font-size: .78rem; padding-top: .07rem; }
+.pub.highlight .pub-year::before { content: "\2022 "; color: var(--accent); }
+.pub-note { color: var(--light); font-style: italic; }
+@media (max-width: 640px) { .pub { display: block; } .pub-year { display: block; } }
+
 """
 
 
@@ -399,6 +411,42 @@ def card_html(t: dict, logo_dir: str | None) -> str:
 PROJECTS_HEADING = "Science Adjacent Projects"
 
 
+def render_publications(themes: list[dict]) -> str:
+    """The publication list: a subheading per theme, then the citations.
+
+    Fed from the same generated file as the PDF, so the two cannot disagree
+    about what is published. The year leads each entry here rather than sitting
+    in a right-hand gutter as it does on the page: a web page has no fixed
+    column to put it in, and leading with it keeps the list scannable.
+    """
+    out = []
+    for theme in themes:
+        items = []
+        for e in theme.get("entries") or ():
+            title = to_html(e.get("title", ""))
+            if e.get("url"):
+                title = (
+                    f'<a href="{html.escape(e["url"], quote=True)}">{title}</a>'
+                )
+            note = (
+                f' <span class="pub-note">({to_html(e["note"])})</span>'
+                if e.get("note")
+                else ""
+            )
+            mark = " highlight" if e.get("highlight") else ""
+            items.append(
+                f'<li class="pub{mark}">'
+                f'<span class="pub-year">{html.escape(str(e.get("year", "")))}</span> '
+                f'<span class="pub-cite">{to_html(e.get("authors", ""))} '
+                f"{title}. {to_html(e.get('venue', ''))}.{note}</span></li>"
+            )
+        out.append(
+            f"<section class=\"pubs\"><h3>{html.escape(theme.get('name', ''))}</h3>"
+            f'<ul class="publist">{"".join(items)}</ul></section>'
+        )
+    return "".join(out)
+
+
 def render_projects(items: list[dict]) -> str:
     """The side projects: one label across the page, then the cards in a row."""
     cards = "".join(card_html(t, "img/projects") for t in items)
@@ -493,6 +541,10 @@ def build() -> str:
 
         if kind == "projects":
             body.append(render_projects(entries))
+            continue
+
+        if kind == "publications":
+            body.append(render_publications(entries))
             continue
 
         if kind in CARD_HEADINGS:

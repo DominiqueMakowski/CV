@@ -208,3 +208,23 @@ Long bullets are easiest to read as folded scalars:
 ```
 
 Quotation marks are curled automatically, so type `"like this"`.
+
+## Two files that are not like the others
+
+`publications.yml` carries no content at all, only cite keys. The citations live
+in `../../publications.bib`, at the repo root beside `PROFILE.md`, because they
+are ground truth rather than a rendering choice and other projects draw on them.
+This file says which theme each key sits in, in what order, what is highlighted
+and what is deliberately withheld. `tools/build_publications.py` merges the two
+into `_publications.generated.yml`, which is what `cv.qmd` actually renders.
+
+Never edit `_publications.generated.yml`: every build overwrites it. A key that
+matches nothing in the bibliography, and a bibliography entry that no theme
+claims, both fail `tools/validate.py` — so a new paper cannot be added to the
+bibliography and quietly left off the CV.
+
+`training.yml` is rendered by `cv-topics`, the same renderer as
+`teaching-areas.yml`, because the shape is identical: rows banded by a group,
+each with a short label and a line of provenance. The one oddity is that its
+`level` column holds a year rather than a level. Reusing the renderer is why the
+section needed no new code, no new validation and no new HTML.

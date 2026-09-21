@@ -974,3 +974,98 @@
 
   doc
 }
+
+// --- publications -----------------------------------------------------------
+
+// The publication list, as themed blocks. Fed from
+// content/_publications.generated.yml, which tools/build_publications.py writes
+// from ../publications.bib and content/publications.yml - facts and editorial
+// decisions respectively. Nothing about a citation is decided here: the
+// authors, title and venue arrive already formatted, because which name is
+// bold and where the ampersand goes is bibliographic convention rather than
+// layout.
+//
+// Indented into the same text column as every other section, so the page keeps
+// one left edge. The year sits in the same right-hand gutter the entries use
+// for their dates, which is what lets a reader scan the list by date without
+// reading it.
+#let cv-publication(entry, highlight-colour: accent) = block(
+  breakable: false,
+  width: 100%,
+  above: 7pt,
+  below: 0pt,
+)[
+  #grid(
+    columns: (1fr, meta-width),
+    column-gutter: meta-gap,
+    align: (left, right),
+    {
+      set par(justify: false, leading: 0.45em)
+      // The marker sits in the gutter rather than in the text, so a highlighted
+      // entry lines up with the others instead of being pushed right.
+      place(
+        dx: -9pt,
+        dy: 2.5pt,
+        if entry.at("highlight", default: false) {
+          circle(radius: 1.6pt, fill: highlight-colour)
+        },
+      )
+      let title = md(entry.at("title", default: ""))
+      // Assembled in code rather than in a markup block: a line break inside
+      // markup is a space, which would put one before every full stop.
+      text(
+        size: 8pt,
+        weight: "light",
+        fill: text-body,
+        {
+          // The author list arrives already punctuated: it normally ends in an
+          // initial's full stop, and build_publications.py adds one when it
+          // does not.
+          md(entry.at("authors", default: ""))
+          " "
+          if entry.at("url", default: none) != none {
+            link(entry.url, text(fill: accent, title))
+          } else { title }
+          ". "
+          md(entry.at("venue", default: ""))
+          "."
+          if entry.at("note", default: none) != none {
+            text(fill: text-light, style: "italic", { " (" + entry.note + ")" })
+          }
+        },
+      )
+    },
+    text(size: 8pt, weight: "light", style: "italic", fill: text-gray)[
+      #entry.at("year", default: "")
+    ],
+  )
+]
+
+#let cv-publications(themes) = {
+  for (i, theme) in themes.enumerate() {
+    block(breakable: false, width: 100%, above: if i == 0 { 10pt } else { 14pt }, below: 0pt)[
+      #grid(
+        columns: (logo-slot, 1fr),
+        [],
+        text(
+          size: 9pt,
+          weight: "bold",
+          fill: accent,
+          font: head-font,
+          smallcaps(md(theme.name)),
+        ),
+      )
+    ]
+    block(width: 100%, above: 2pt, below: 0pt)[
+      #grid(
+        columns: (logo-slot, 1fr),
+        [],
+        {
+          for e in theme.at("entries", default: ()) {
+            cv-publication(e)
+          }
+        },
+      )
+    ]
+  }
+}

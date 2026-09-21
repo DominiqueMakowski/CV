@@ -39,6 +39,13 @@ render() {
 echo "==> img/impact.svg"
 python tools/make_impact.py || exit 1
 
+# Rebuilt before validation for the same reason as the plot above: the
+# generated file is what both the PDF and the HTML read, and regenerating it
+# here means the .bib and the curation file cannot drift out of the CV without
+# the build saying so.
+echo "==> content/_publications.generated.yml"
+python tools/build_publications.py || exit 1
+
 echo "==> validating content"
 python tools/validate.py || exit 1
 

@@ -1,0 +1,140 @@
+# Additional training: short courses, workshops, master classes and
+# certifications taken outside the degree track. The degrees themselves are
+# education.yml, and the credentials they confer are in PROFILE.md > Titles and
+# Licenses.
+#
+# Source: PROFILE.md > Training, which holds all nineteen with their exact
+# dates, instructors, credential IDs and expiry. This file is the compressed
+# reading of it: fifteen rows covering all nineteen, since several rows merge
+# two closely related courses (the two fMRI courses, the two EEG ones, the two
+# Python ones, CITI with Epigeum). Nothing is dropped - a merged row names both
+# institutions and both durations.
+#
+# Rendered by `cv-topics`, the same renderer as teaching-areas.yml, because the
+# shape is identical - rows banded by a group, each with a short label and a
+# line of provenance. Reusing it means this section needs no new renderer, no
+# new validation and no new HTML, which for a list this plain is the whole
+# argument. The columns are read as:
+#
+#   group   the domain, which opens a labelled band.
+#   area    what the training was.
+#   level   when. (A year rather than a level, which is the one place the
+#           borrowed renderer's field names do not describe what is in them.)
+#   topics  the institution, and what the training actually covered.
+#   where   the small provenance line: duration, place, and any caveat that
+#           belongs on a CV - a lapsed certificate says so here.
+
+lead: >-
+  Nineteen short courses, master classes and certifications outside the degree
+  track, from 2014 on. Grouped by domain, newest first. The neuroimaging and
+  programming blocks are where the methods came from; the teaching block is the
+  formal side of a teaching record that runs to 2013.
+
+areas:
+  - group: "Teaching and Research Integrity"
+    area: "Fellow of the Higher Education Academy (FHEA)"
+    level: "2025"
+    topics: >-
+      Advance HE. Attainment against the UK Professional Standards Framework
+      for teaching and learning support in higher education.
+    where: "Associate Fellow (AFHEA) in 2024 · United Kingdom"
+
+  - group: "Teaching and Research Integrity"
+    area: "Research ethics and integrity"
+    level: "2019 - 2022"
+    topics: >-
+      Collaborative Institutional Training Initiative (CITI), social and
+      behavioural research track; and the Epigeum research integrity
+      programme at Nanyang Technological University.
+    where: "CITI basic 2019, refresher 2022, since lapsed · Epigeum 2019, Singapore"
+
+  - group: "Teaching and Research Integrity"
+    area: "Academic Teaching Certificate"
+    level: "2017"
+    topics: "Université Paris Cité. Pedagogy and innovative teaching."
+    where: "40 h · Paris, France"
+
+  - group: "Clinical"
+    area: "Certified Hypnotherapist"
+    level: "2019"
+    topics: >-
+      National Guild of Hypnotists, with four further Banyan Hypnosis Center
+      certifications awarded alongside it. Taken for the academic interest in
+      phenomenological control rather than for clinical practice.
+    where: "100 h · Singapore · credential ID 69222"
+
+  - group: "Clinical"
+    area: "First Aid Certificate"
+    level: "2016"
+    topics: "Université Paris Cité."
+    where: "16 h · Paris, France"
+
+  - group: "Clinical"
+    area: "Mindfulness based on Compassion and Insight (MBCI)"
+    level: "2015"
+    topics: >-
+      Sainte-Anne Hospital, Institute for Psychiatry and Neurosciences of Paris.
+      Master class on mindfulness- and compassion-based therapy: the model,
+      practice, emotion regulation systems, acceptance and compassion.
+    where: "15 h over two days · Paris, France"
+
+  - group: "Neuroimaging and Psychophysiology"
+    area: "Structural, functional and radiological neuroanatomy"
+    level: "2020 - 2021"
+    topics: "Neurocourses UK."
+    where: "32 h · United Kingdom"
+
+  - group: "Neuroimaging and Psychophysiology"
+    area: "Magnetic resonance imaging (MRI): connectivity analysis"
+    level: "2015"
+    topics: "National Institute of Nuclear Sciences and Technology (INSTN)."
+    where: "32 h · France"
+
+  - group: "Neuroimaging and Psychophysiology"
+    area: "Functional magnetic resonance imaging (fMRI)"
+    level: "2014 - 2015"
+    topics: >-
+      National Institute of Nuclear Sciences and Technology (INSTN), and a
+      preprocessing and analysis course at Sainte-Anne Hospital.
+    where: "28 h and 32 h · France"
+
+  - group: "Neuroimaging and Psychophysiology"
+    area: "Electroencephalography (EEG)"
+    level: "2014 - 2015"
+    topics: >-
+      Doctoral School "Cognition, Comportements, Conduites Humaines"; and
+      signal processing theory and application for EEG at ESPCI Paris.
+    where: "4 h and 24 h · Paris, France"
+
+  - group: "Statistics and Programming"
+    area: "Creating online experiments in PsychoPy and Pavlovia"
+    level: "2020"
+    topics: "University of Nottingham."
+    where: "24 h over three days · United Kingdom"
+
+  - group: "Statistics and Programming"
+    area: "Python for neuroscience and scientific programming"
+    level: "2016"
+    topics: >-
+      P4N (Python for Neuroscience and Psychology) at the University of
+      Nottingham, and scientific programming with Python and software
+      engineering best practices at Telecom ParisTech.
+    where: "24 h and 16 h · United Kingdom and France"
+
+  - group: "Statistics and Programming"
+    area: "Statistics and R for the Life Sciences (PH525.1x)"
+    level: "2015"
+    topics: "HarvardX, Harvard University, via edX."
+    where: "Online"
+
+  - group: "Statistics and Programming"
+    area: "Machine learning and brain-to-computer interfaces"
+    level: "2014"
+    topics: "École Supérieure de Physique et de Chimie Industrielles (ESPCI Paris)."
+    where: "16 h · Paris, France"
+
+  - group: "Miscellaneous"
+    area: "History of Arts"
+    level: "2017 - 2018"
+    topics: "École du Louvre."
+    where: "74 h · Paris, France"

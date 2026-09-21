@@ -1,9 +1,9 @@
 # cv — Quarto + Typst
 
-The CV. Quarto + Typst, replacing the R Markdown + `vitae` + LaTeX pipeline now
-archived in `../old_cv/`. Every section of the old Rmd is ported except the
-publication list and the additional-training list, which are still produced from
-`../old_cv/DominiqueMakowski_CV.Rmd`.
+The CV. Quarto + Typst, replacing the R Markdown + `vitae` + LaTeX pipeline that
+used to live in `../old_cv/`. Every section of the old Rmd is ported, including
+the publication list and the additional training, so nothing here depends on
+that folder; it is kept only in git history.
 
 ## Build
 
@@ -41,6 +41,10 @@ which happens on this machine *after* the PDF is already written.
 | `_quarto.yml` | Project-level format options, so `quarto render` needs no flags. |
 | `build.sh` | Builds everything, in the right order. |
 | `tools/validate.py` | Content checks. Run before every build. |
+| `content/publications.yml` | Which theme each publication sits in, and what is hidden or highlighted. The citations themselves are `../publications.bib`. |
+| `content/_publications.generated.yml` | Built from those two. Never edited by hand. |
+| `tools/build_publications.py` | Merges the bibliography with the curation, and formats the citations. |
+| `tools/bibtex.py` | A small BibTeX reader, so the build keeps needing nothing but Quarto, Typst and Python. |
 | `tools/build_html.py` | The web version. |
 | `tools/cvdata.py` | Shared loading, so the tools cannot disagree about the content. |
 | `fonts/` | Roboto, Source Sans 3, FontAwesome — vendored so the build is self-contained. |
@@ -90,8 +94,8 @@ Quarto 1.8.25 bundles **Typst 0.13**, not 0.14. Two consequences:
    no longer a real constraint: `img/logos/*.svg` are the original vector
    sources copied from the lab website
    (`RealityBending.github.io/people/dominique-makowski/assets/`), so they are
-   cleaner than the `../old_cv/img/logos/*.pdf` the LaTeX build used, not a
-   lossy conversion of them. `sussex-brighton.svg` is the variant with
+   cleaner than the PDFs the LaTeX build used, not a lossy conversion of them.
+   `sussex-brighton.svg` is the variant with
    "Brighton" under the wordmark, unused for now.
 
 2. **No tagged PDF or PDF/UA-1.** Those are 0.14 features, and they were a

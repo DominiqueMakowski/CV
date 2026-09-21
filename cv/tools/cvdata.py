@@ -44,6 +44,13 @@ CARD_KINDS = {
 LANG_KEYS = {"name", "level", "logo", "kind"}
 LANG_KINDS = ("spoken", "code")
 
+# Keys one theme of a `cv-publications` section may carry, and one rendered
+# citation within it. Both belong to content/_publications.generated.yml, which
+# tools/build_publications.py writes - nothing hand-edits them, but validating
+# them still catches a formatter change that quietly drops a field.
+PUB_THEME_KEYS = {"name", "entries"}
+PUB_KEYS = {"authors", "title", "venue", "year", "url", "note", "highlight"}
+
 # Keys one row of a `cv-topics` section may carry.
 TOPIC_KEYS = {"group", "area", "level", "topics", "where"}
 
@@ -86,7 +93,8 @@ def front_matter(path: str | None = None) -> dict:
 SECTION_RE = re.compile(
     r"^\#\s+(?P<heading>.+?)\s*$"
     r"|cv-(?P<kind>entries|tools|stats|awards|roles|topics|service"
-    r'|engagement|talks|languages|projects)\(\s*yaml\(\s*"(?P<path>[^"]+)"\s*\)',
+    r"|engagement|talks|languages|projects|publications)"
+    r'\(\s*yaml\(\s*"(?P<path>[^"]+)"\s*\)',
     re.MULTILINE,
 )
 

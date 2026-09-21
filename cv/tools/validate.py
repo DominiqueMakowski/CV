@@ -13,6 +13,7 @@ Exits non-zero if anything is wrong, so it can gate a build or a commit hook.
 from __future__ import annotations
 
 import os
+import subprocess
 import sys
 
 from cvdata import (
@@ -25,6 +26,8 @@ from cvdata import (
     LANGS,
     LINK_RE,
     LOGOS,
+    PUB_KEYS,
+    PUB_THEME_KEYS,
     ROOT,
     STAT_KEYS,
     STATS_KEYS,
@@ -285,6 +288,59 @@ def check_stats(where: str, data) -> None:
             check_markup(f"{where} [note {i}]", n)
 
 
+def check_publications(where: str, themes) -> None:
+    """The generated publication list, and the two files it comes from.
+
+    The generated file is rebuilt before every render, so what this really
+    guards is the pair behind it: that every cite key resolves, that no entry in
+    publications.bib is silently absent from the CV, and that the formatter is
+    still emitting the fields the template reads. build_publications.py reports
+    the first two itself and exits non-zero; running it from here means a plain
+    `validate.py` catches them too, rather than only a full build.
+    """
+    if not isinstance(themes, list):
+        err(where, "top level must be a list of themes")
+        return
+    if not themes:
+        err(where, "no themes - did build_publications.py run?")
+    for i, theme in enumerate(themes, 1):
+        label = theme.get("name") if isinstance(theme, dict) else None
+        at = f"{where} > {label or f'theme {i}'}"
+        if not isinstance(theme, dict):
+            err(at, "theme must be a mapping")
+            continue
+        for k in set(theme) - PUB_THEME_KEYS:
+            err(at, f"unknown key {k!r}")
+        if not theme.get("name"):
+            err(at, "theme has no name")
+        entries = theme.get("entries") or []
+        if not entries:
+            err(at, "theme has no entries")
+        for e in entries:
+            cite = (e.get("title") or "?")[:40] if isinstance(e, dict) else "?"
+            at2 = f"{at} > {cite}"
+            if not isinstance(e, dict):
+                err(at2, "entry must be a mapping")
+                continue
+            for k in set(e) - PUB_KEYS:
+                err(at2, f"unknown key {k!r}")
+            for k in ("authors", "title", "venue", "year"):
+                if not e.get(k):
+                    err(at2, f"missing {k}")
+
+    # Re-run the generator in check mode: it is the thing that knows whether
+    # publications.bib and content/publications.yml still agree.
+    proc = subprocess.run(
+        [sys.executable, os.path.join(ROOT, "tools", "build_publications.py")],
+        capture_output=True,
+        text=True,
+    )
+    if proc.returncode:
+        for line in proc.stderr.splitlines():
+            if line.strip():
+                err("publications.bib / content/publications.yml", line.replace("ERROR ", ""))
+
+
 def main() -> int:
     found = sections()
     if not found:
@@ -301,6 +357,10 @@ def main() -> int:
 
         if kind == "topics":
             check_topics(relpath, load(relpath))
+            continue
+
+        if kind == "publications":
+            check_publications(relpath, load(relpath))
             continue
 
         entries = load_entries(relpath)
@@ -327,7 +387,16 @@ def main() -> int:
             print(f"  - {p}", file=sys.stderr)
         return 1
 
-    n = sum(len(load_entries(p)) for _, p, k in found if k not in ("stats", "topics"))
+    # A publications file is a list of themes, so counting it like the others
+    # would report 5 where the CV shows sixty-odd citations.
+    n = 0
+    for _, relpath, k in found:
+        if k in ("stats", "topics"):
+            continue
+        if k == "publications":
+            n += sum(len(t.get("entries") or ()) for t in load_entries(relpath))
+        else:
+            n += len(load_entries(relpath))
     print(f"OK - {n} entries across {len(found)} section(s)")
     return 0
 

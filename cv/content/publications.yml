@@ -1,0 +1,125 @@
+# Publications, as themed lists. This file holds DECISIONS, not facts: which
+# theme a paper argues for, what order the themes run in, and whether the CV
+# shows a given entry at all. The facts - authors, titles, venues, DOIs - are in
+# ../../publications.bib and are referenced here only by cite key.
+#
+# That split is the same one the repo runs on a level up (PROFILE.md holds the
+# record, content/*.yml holds the argument), and it exists because a theme is an
+# editorial judgement that no database can supply, while a page range is a fact
+# that prose has no business restating.
+#
+# Keys must exist in the .bib; `python tools/validate.py` fails on a key that
+# does not, and on a .bib entry that no theme claims - so a new publication
+# cannot be added to the bibliography and silently left off the CV.
+#
+# Fields:
+#
+#   themes       ordered; each renders as a subheading.
+#     name       the subheading.
+#     keys       cite keys, in the order they should appear. Entries with no
+#                year in the .bib (under review) sort to the top of their theme
+#                whatever order they are given in.
+#   hidden       cite keys present in the .bib but deliberately off the CV.
+#                Listed here rather than deleted, so the reason survives and the
+#                entry can be switched back on for a tailored version. This is
+#                the YAML equivalent of the commented-out blocks in the old Rmd.
+#   highlight    cite keys to mark with a dot in the margin. Used sparingly:
+#                these are the papers the CV is making an argument with.
+
+themes:
+  - name: "Reality Perception and Manipulation"
+    keys:
+      - makowski_illusionsensitivity
+      - dickinson_badnews
+      - makowski2025beautiful
+      - dickinson2025interventions
+      - dickinson2024exploring
+      - makowski2024heart
+      - makowski2023illusion
+      - makowski2021parametric
+      - makowski2021structure
+      - makowski2019phenomenal
+      - makowski2017being
+      - sperduti2017distinctive
+      - tuena2017virtual
+      - sperduti2016paradox
+
+  - name: "Interoception, Emotion Regulation, Neurophysiology"
+    keys:
+      - makowski_mintscale
+      - neves_iasmega
+      - scharte_interoception
+      - makowski_deepself
+      - pham2025hrv
+      - makowski2025phq4
+      - lau2022brain
+      - makowski2022chaos
+      - pham2021hrv
+      - makowski2021neurokit
+      - makowski2019heart
+      - makowski2019adaptation
+      - makowski2019dispositional
+      - makowski2015emotion
+
+  - name: "Statistics"
+    keys:
+      - makowski_choco
+      - makowski_cogmod
+      - geller_exgaussian
+      - ludecke2026priors
+      - fernandez2025ssm
+      - makowski2025modelbased
+      - theriault2024outliers
+      - makowski2023statistical
+      - patil2022datawizard
+      - ludecke2021see
+      - ludecke2021performance
+      - benshachar2020effectsize
+      - ludecke2020parameters
+      - makowski2020correlation
+      - makowski2019indices
+      - makowski2019bayestestr
+      - ludecke2019insight
+      - makowski2018psycho
+
+  - name: "Miscellaneous"
+    keys:
+      - rinaldi2026misophonia
+      - geller2025disfluency
+      - salgues2024self
+      - lee2024beauty
+      - rose2024beyond
+      - lee2023beauty
+      - kovarski2022movie
+      - blonde2022bored
+      - blonde2020medio
+      - girardeau2020impact
+      - makowski2017neuropsydia
+      - sperduti2017interaction
+      - nicolas2017centenaire
+      - sperduti2017meditation
+      - nicolas2016can
+      - sperduti2016protective
+
+  - name: "Book Chapters"
+    keys:
+      - mavros2023disentangling
+      - makowski2023clinical
+
+# Off the CV, with the reason. Carried over from the commented-out block in
+# old_cv/publications.Rmd.
+hidden:
+  - key: makowski_covidfakenews
+    why: >-
+      Was commented out of the old CV's publication list. It has sat under
+      review a long time and has no preprint link, so it reads as vapour on a
+      CV even though the work is real.
+
+# The papers the CV is arguing with: the award-winning PhD paper, the two
+# software papers that carry the citation counts, and the illusion paradigm the
+# current grant builds on.
+highlight:
+  - makowski2019phenomenal
+  - makowski2021neurokit
+  - ludecke2021performance
+  - makowski2023illusion

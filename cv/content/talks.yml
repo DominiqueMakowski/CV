@@ -7,9 +7,11 @@
 # a tenth of that on purpose.
 #
 # The two counts below are smaller than those totals because they count only
-# what he presented himself: they drop the two symposia (their own card) and
-# the co-authored contributions presented by Sperduti, Blonde, Lau,
-# Osborn-Moar and Neves. 13 talks and 12 posters is what survives. A count on a CV is a
+# what he presented himself: they drop the two symposia listed there (the
+# symposia card also carries the NTU one, which PROFILE.md files under
+# Conference Organization) and the co-authored contributions presented by
+# Sperduti, Blonde, Lau, Osborn-Moar and Neves. 13 talks and 12 posters is
+# what survives. A count on a CV is a
 # claim about the person holding it, so it is the conservative reading, and
 # PROFILE.md shows the working.
 #
@@ -17,7 +19,7 @@
 # all: PROFILE.md keeps them under its own "Submitted but Not Presented"
 # heading, and nothing from there may be counted here.
 #
-# A full chronological list of fifty presentations would run a page and a
+# A full chronological list of forty-nine presentations would run a page and a
 # half and would be read as one undifferentiated block, in which the eleven
 # French student posters of 2013-2016 sit at the same weight as a chaired
 # international symposium. The individual cards are therefore the talks that
@@ -34,11 +36,12 @@
 
 - name: "Reality as an Embodied Process"
   kind: invited
-  reach: "2025"
-  meta: "Nanyang Technological University, Singapore"
+  reach: "2 talks"
+  meta: "NTU · SUTD · Singapore · 2025"
   description: >-
-    Departmental research seminar on the role of the body in higher cognition,
-    and on the tools - measures, paradigms and software - built to study it.
+    On beliefs of reality and unreality, from faces to erotic content, and a
+    general anti-AI bias: at the _Truth in the Machine_ symposium he
+    co-organised at NTU, and two days later at SUTD's Human-Centred AI seminar.
 
 - name: "Good Tools Breed Good Science"
   kind: invited
@@ -50,13 +53,12 @@
 
 - name: "easystats and NeuroKit"
   kind: invited
-  reach: "4 talks"
-  meta: "OHBM · Sussex · Brighton · 2023 - 2026"
+  reach: "3 talks"
+  meta: "OHBM · Sussex · 2023 - 2026"
   description: >-
-    Invited software talks and demonstrations, including _Get Sh\*t Done in R
-    with easystats_ at EARL Brighton, NeuroKit at an OHBM satellite event on
-    research software, and the past, present and future of easystats for the
-    Centre for Open Science and Research Reform.
+    Invited software talks and demonstrations: NeuroKit at an OHBM satellite
+    event on research software, and easystats at Open Research Sussex and for
+    the Centre for Open Science and Research Reform.
 
 - name: "The Lying Brain"
   kind: invited
@@ -66,14 +68,15 @@
     On the neuroscientific approaches to deception, and the case for treating it
     as a multidimensional phenomenon rather than a signal to be detected.
 
-- name: "Symposia Chaired"
+- name: "Symposia Organised"
   kind: conference
   reach: "2024 - 26"
-  meta: "AISC, Rome · ESCAN, Rome"
+  meta: "AISC, Rome · NTU, Singapore · ESCAN, Rome"
   description: >-
-    _The Value of Reality in the Post-Truth Era_ and _Artificial Emotion_: two
-    international symposia on how beliefs about artificiality shape affective
-    and neural responses, convened with collaborators in Rome.
+    _The Value of Reality in the Post-Truth Era_, _Truth in the Machine_ and
+    _Artificial Emotion_: three international symposia on how beliefs about
+    artificiality shape affective and neural responses, convened with
+    collaborators in Rome and Singapore.
 
 - name: "Conference Talks"
   kind: conference

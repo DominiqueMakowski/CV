@@ -15,13 +15,10 @@ Resolve and delete each line once settled.
 
 ### Facts to confirm
 
-- **AISC 2024 symposium** - the chaired symposium was moved here from ASSC 2025
-  after a mix-up, so its title and date came from the wrong venue. Check "The
-  Value of Reality in the Post-Truth Era: Consequences of AI-Authorship on
-  Cognitive and Affective Phenomenology" and the September 2024 date against
-  the AISC programme.
-- **ASSC 2025, Crete** - Ana Neves presented a poster on joint work; the title
-  is not recorded. Ask her, or check the ASSC 2025 programme.
+- **NTU talk title, 14 July 2025** - the "Truth in the Machine" poster lists
+  speakers but no talk titles. The deck in the archive folder is titled
+  "Reality as an Embodied Process", so that is what is recorded; the title
+  announced in the programme may have differed.
 
 ### Corrections to make on external profiles
 
@@ -128,7 +125,7 @@ and the rest of the service go in different places.
 | Role/title | Organization | Department | Year | URL |
 | --- | --- | --- | --- | --- |
 | School of Psychology Award - Outstanding Student Supervision | University of Sussex | School of Psychology | 2024 | https://www.linkedin.com/posts/dominiquemakowski_realitybendinglab-activity-7241790839134257152-wjR6 |
-| Openness in Research Award - Research Culture Awards | University of Sussex | | 2024 | |
+| Openness in Research Award - Research Culture Awards | University of Sussex | | 2024 | https://www.sussex.ac.uk/staff/research/research-culture/research-culture-awards |
 | Commendation - NeuroKit Python package | Society for the Improvement of Psychological Science | | 2024 | https://improvingpsych.org/mission/awards/ |
 | Mission Award - easystats R packages | Society for the Improvement of Psychological Science | | 2023 | https://improvingpsych.org/mission/awards/ |
 | Best Article Award | Psychonomic Society | | 2020 | https://www.psychonomic.org/page/2020BestArticleAwards |
@@ -184,6 +181,7 @@ section, which is populated automatically and needs nothing typed.
 | Convenor, MORSE Seminar Series | University of Sussex | Centre for Open Science and Research Reform | 2024-present |
 | Open Science Champion, Members' Meeting debate | British Neuroscience Association | | 2024 |
 | Symposium Co-organizer - Artificial Emotion | European Society for Cognitive and Affective Neuroscience | | 2026 |
+| Symposium Co-organizer - Truth in the Machine | Nanyang Technological University | School of Social Sciences | 2025 |
 | Symposium Chair - The Value of Reality in the Post-Truth Era | Italian Association for Cognitive Sciences | | 2024 |
 | Elected PhD Representative, ED261-3CH doctoral school | Universite Paris Cite | | 2016-2018 |
 | Community Manager, Memory and Cognition Lab | Universite Paris Cite | | 2014-2015 |
@@ -495,6 +493,20 @@ in [Education](#education) and [Titles and Licenses](#titles-and-licenses).
 - **Details:**
   - Version control and collaboration with Git and GitHub.
 
+### Agentic Programming
+
+- **Capacity:** Workshop teacher
+- **Dates:** 2026
+- **Institution:** University of Sussex
+- **Location:** Brighton, United Kingdom
+- **Level:** Lab members (PhD students, research assistants and dissertation students in the Reality Bending Lab)
+- **Status:** In preparation as of 21 September 2026; not yet delivered.
+- **Details:**
+  - Subtitled "Letting AI write and run your code". On using coding agents for research work: what an agent is and how it differs from autocomplete or a chat assistant, GitHub as the prerequisite that makes agent-written changes reviewable and reversible, working directories and projects, `AGENTS.md` as the way to give an agent standing instructions about a repository, the agentic workflow cycle, and the one-task-one-session discipline.
+  - Surveys the landscape (terminal agents, IDE-based agents, in-editor assistants) and works hands-on in Claude Code.
+  - Deck: https://dominiquemakowski.github.io/teaching/AgenticProgramming/. Slidev source in the `DominiqueMakowski/teaching` repository (https://github.com/DominiqueMakowski/teaching) under `AgenticProgramming/`; working copy at `C:\Users\domma\Dropbox\ENSEIGNEMENT\teaching\AgenticProgramming`.
+  - Listed on the CV under Teaching, in the Open Science and Research Tools group of `cv/content/teaching-areas.yml`.
+
 ### Neuroscience
 
 - **Capacity:** Assistant Lecturer (Attaché Temporaire d'Enseignement et de Recherche, ATER)
@@ -776,6 +788,7 @@ Supervision.
 - **Details:**: 
   - Co-PI with Pr Annabel Chen
   - Technically PI but listed as co-PI because I was a postdoctoral researcher at the time.
+  - The last grant held in Singapore before the move to Sussex (Annabel Chen then inherited the PI-ship). It closed with the "Truth in the Machine" symposium at NTU on 14 July 2025, co-organised with Annabel Chen; see [Conference Organization](#conference-organization).
   - ORCID records the funder as Temasek Laboratories, National University of Singapore. That is not an error to fix on this end: TL@NTU is not one of the organizations ORCID offers, so the NUS entry was picked as the closest available.
 
 ### A Neuroscientific Investigation of the Interaction between Crowdedness and Environment Typology (NICE)
@@ -818,7 +831,7 @@ Supervision.
 
 - Sussex School of Psychology Award (2024), for Outstanding Student Supervision. https://www.linkedin.com/posts/dominiquemakowski_realitybendinglab-activity-7241790839134257152-wjR6
 - Commendation, Society for the Improvement of Psychological Science (SIPS) (2024), for the NeuroKit Python package. https://improvingpsych.org/mission/awards/
-- Openness in Research Award, University of Sussex Research Culture Awards (2024). GBP 1,000, presented by Pr Seb Oliver, Deputy Pro-Vice-Chancellor for Research. Awarded for "Make reproducible science accessible! Building software to facilitate open research and lead by example with fully transparent studies", recognising both the open-source tools (easystats, NeuroKit) and the fully transparent studies coming out of the lab. The University published an interview about the award afterwards; it is recorded under [Impact](#impact).
+- Openness in Research Award, University of Sussex Research Culture Awards (2024). GBP 1,000, presented by Pr Seb Oliver, Deputy Pro-Vice-Chancellor for Research. Awarded for "Make reproducible science accessible! Building software to facilitate open research and lead by example with fully transparent studies", recognising both the open-source tools (easystats, NeuroKit) and the fully transparent studies coming out of the lab. The University published an interview about the award afterwards; it is recorded under [Impact](#impact). The awards themselves are described at https://www.sussex.ac.uk/staff/research/research-culture/research-culture-awards (staff pages; no public per-winner listing, so this is the scheme rather than the citation).
 - Mission Award, Society for the Improvement of Psychological Science (SIPS) (2023), for the easystats collection of R packages. https://improvingpsych.org/mission/awards/
 - Best Article Award, Psychonomic Society (2020), for Makowski, D., Sperduti, M., Pelletier, J., Blondé, P., La Corte, V., Arcangeli, M., Zalla, T., Lemaire, S., Dokic, J., Nicolas, S., & Piolino, P. (2019), "Phenomenal, bodily and brain correlates of fictional reappraisal as an implicit emotion regulation strategy", Cognitive, Affective, & Behavioral Neuroscience, 19(4), 877-897 (the main PhD paper). USD 1,000. https://www.psychonomic.org/page/2020BestArticleAwards
 - Commendation, Society for the Improvement of Psychological Science (SIPS) (2020), for the bayestestR R package (Makowski et al., 2019). https://joss.theoj.org/papers/10.21105/joss.01541
@@ -876,18 +889,12 @@ are expected to go out of date.
   - **Recognition:** Mission Award, Society for the Improvement of Psychological
     Science (SIPS) (2023), for the easystats collection. Commendation, SIPS
     (2020), for the bayestestR package. See [Awards](#awards).
-  - **Publications:**
-    - Makowski, D., Ben-Shachar, M. S., Wiernik, B. M., Patil, I., Thériault, R., & Lüdecke, D. (2025). modelbased: An R package to make the most out of your statistical models through marginal means, marginal effects, and model predictions. Journal of Open Source Software, 10(109), 7969. https://doi.org/10.21105/joss.07969
-    - Thériault, R., Ben-Shachar, M. S., Patil, I., Lüdecke, D., Wiernik, B. M., & Makowski, D. (2024). Check your outliers! An introduction to identifying statistical outliers in R with easystats. Behavior Research Methods. https://doi.org/10.3758/s13428-024-02356-w
-    - Patil, I., Makowski, D., Ben-Shachar, M. S., Wiernik, B. M., Bacher, E., & Lüdecke, D. (2022). datawizard: An R package for easy data preparation and statistical transformations. Journal of Open Source Software, 7(78), 4684. https://doi.org/10.21105/joss.04684
-    - Lüdecke, D., Patil, I., Ben-Shachar, M. S., Wiernik, B. M., Waggoner, P., & Makowski, D. (2021). see: An R package for visualizing statistical models. Journal of Open Source Software, 6(64), 3393. https://doi.org/10.21105/joss.03393
-    - Lüdecke, D., Ben-Shachar, M. S., Patil, I., Waggoner, P., & Makowski, D. (2021). performance: An R package for assessment, comparison and testing of statistical models. Journal of Open Source Software, 6(60), 3139. https://doi.org/10.21105/joss.03139
-    - Ben-Shachar, M. S., Lüdecke, D., & Makowski, D. (2020). effectsize: Estimation of effect size indices and standardized parameters. Journal of Open Source Software, 5(56), 2815. https://doi.org/10.21105/joss.02815
-    - Lüdecke, D., Ben-Shachar, M. S., Patil, I., & Makowski, D. (2020). parameters: Extracting, computing and exploring the parameters of statistical models using R. Journal of Open Source Software, 5(53), 2445. https://doi.org/10.21105/joss.02445
-    - Makowski, D., Ben-Shachar, M. S., Patil, I., & Lüdecke, D. (2020). Methods and algorithms for correlation analysis in R. Journal of Open Source Software, 5(51), 2306. https://doi.org/10.21105/joss.02306
-    - Makowski, D., Ben-Shachar, M. S., & Lüdecke, D. (2019). bayestestR: Describing effects and their uncertainty, existence and significance within the Bayesian framework. Journal of Open Source Software, 4(40), 1541. https://doi.org/10.21105/joss.01541
-    - Lüdecke, D., Waggoner, P., & Makowski, D. (2019). insight: A unified interface to access information from model objects in R. Journal of Open Source Software, 4(38), 1412. https://doi.org/10.21105/joss.01412
-    - Makowski, D., Ben-Shachar, M. S., Chen, S. H. A., & Lüdecke, D. (2019). Indices of effect existence and significance in the Bayesian framework. Frontiers in Psychology, 10, 2767. https://doi.org/10.3389/fpsyg.2019.02767
+  - **Publications:** cite keys in [publications.bib](publications.bib),
+    which holds the full citations:
+    `makowski2025modelbased`, `theriault2024outliers`, `patil2022datawizard`,
+    `ludecke2021see`, `ludecke2021performance`, `benshachar2020effectsize`,
+    `ludecke2020parameters`, `makowski2020correlation`,
+    `makowski2019bayestestr`, `ludecke2019insight`, `makowski2019indices`.
 
 - **NeuroKit**
   - **Description:** Python toolbox for neurophysiological signal processing,
@@ -911,12 +918,10 @@ are expected to go out of date.
   - **Recognition:** Commendation, Society for the Improvement of Psychological
     Science (SIPS) (2024), for the NeuroKit Python package. See
     [Awards](#awards).
-  - **Publications:**
-    - Makowski, D., Pham, T., Lau, Z. J., Brammer, J. C., Lespinasse, F., Pham, H., Schötzel, C., & Chen, S. H. A. (2021). NeuroKit2: A Python toolbox for neurophysiological signal processing. Behavior Research Methods, 53(4), 1689-1696. https://doi.org/10.3758/s13428-020-01516-y
-    - Pham, T., Johnco, C. J., Lau, Z. J., Makowski, D., & Forbes, M. K. (2025). Which heart rate variability (HRV) indices should I use for psychophysiological research? A data-driven approach to identifying clusters of HRV indices. Psychophysiology, 62(10), e70164. https://doi.org/10.1111/psyp.70164 (Makowski and Forbes are co-last authors.)
-    - Makowski, D., Te, A. S., Pham, T., Lau, Z. J., & Chen, S. H. A. (2022). The structure of chaos: An empirical comparison of fractal physiology complexity indices using NeuroKit2. Entropy, 24(8), 1036. https://doi.org/10.3390/e24081036
-    - Lau, Z. J., Pham, T., Chen, S. H. A., & Makowski, D. (2022). Brain entropy, fractal dimensions and predictability: A review of complexity measures for EEG in healthy and neuropsychiatric populations. European Journal of Neuroscience, 56(7), 5047-5069. https://doi.org/10.1111/ejn.15800
-    - Pham, T., Lau, Z. J., Chen, S. H. A., & Makowski, D. (2021). Heart rate variability in psychology: A review of HRV indices and an analysis tutorial. Sensors, 21(12), 3998. https://doi.org/10.3390/s21123998
+  - **Publications:** cite keys in [publications.bib](publications.bib),
+    which holds the full citations:
+    `makowski2021neurokit`, `pham2025hrv`, `makowski2022chaos`,
+    `lau2022brain`, `pham2021hrv`.
 
 - **Pyllusion**
   - **Description:** Python framework to generate visual illusions parametrically.
@@ -936,9 +941,9 @@ are expected to go out of date.
   - **Reach:** 82 GitHub stars (2026-09-15). Provides the stimuli for the Illusion
     Game (see [Measures](#measures)) and for the illusion sensitivity work funded
     by the Centre for Open Science (see [Grants](#grants)).
-  - **Publications:**
-    - Makowski, D., Lau, Z. J., Pham, T., Boyce, W. P., & Chen, S. H. A. (2021). A parametric framework to generate visual illusions using Python. Perception, 50(11), 950-965. https://doi.org/10.1177/03010066211057347
-    - Makowski, D., Te, A. S., Kirk, S., Liang, N. Z., & Chen, S. H. A. (2023). A novel visual illusion paradigm provides evidence for a general factor of illusion sensitivity and personality correlates. Scientific Reports, 13(1), 6594. https://doi.org/10.1038/s41598-023-33148-5
+  - **Publications:** cite keys in [publications.bib](publications.bib),
+    which holds the full citations:
+    `makowski2021parametric`, `makowski2023illusion`.
 
 - **cogmod**
   - **Description:** R package providing easy-to-use Bayesian cognitive models for
@@ -955,10 +960,9 @@ are expected to go out of date.
   - **Role:** Sole author and maintainer.
   - **Repository:** https://github.com/DominiqueMakowski/cogmod
   - **Documentation:** https://dominiquemakowski.github.io/cogmod/
-  - **Publications:**
-    - Makowski, D. (under review). The cogmod R package: Easy-to-use Bayesian cognitive models for reaction times, choices and subjective ratings, with applications to computational neuropsychology. PsyArXiv. https://osf.io/preprints/psyarxiv/5h62c
-    - Makowski, D., Neves, A., & Field, A. P. (under review). Introducing the Choice-Confidence (CHOCO) model for bimodal data from subjective ratings: Application to the effect of attractiveness on reality beliefs about AI-generated faces. PsyArXiv. https://osf.io/preprints/psyarxiv/z68v3
-    - Geller, J., Angele, B., & Makowski, D. (under review). This is not the ex-Gaussian model you are looking for: On the default parameterization of Bayesian ex-Gaussian models in brms. PsyArXiv. https://osf.io/preprints/psyarxiv/kdcxa
+  - **Publications:** cite keys in [publications.bib](publications.bib),
+    which holds the full citations:
+    `makowski_cogmod`, `makowski_choco`, `geller_exgaussian`.
 
 - **SequentialSamplingModels.jl**
   - **Description:** Julia package implementing sequential sampling (evidence
@@ -969,8 +973,9 @@ are expected to go out of date.
   - **Role:** Core contributor, and second author of the JuliaCon Proceedings
     paper describing the package. The package is led by Christopher Fisher.
   - **Repository:** https://github.com/itsdfish/SequentialSamplingModels.jl
-  - **Publications:**
-    - Fernandez, K., Makowski, D., & Fisher, C. (2025). SequentialSamplingModels.jl: Simulating and evaluating cognitive models of response times in Julia. JuliaCon Proceedings.
+  - **Publications:** cite keys in [publications.bib](publications.bib),
+    which holds the full citations:
+    `fernandez2025ssm`.
 
 - **OpenMuse**
   - **Description:** Python application to record, stream and visualize signals
@@ -1014,8 +1019,9 @@ are expected to go out of date.
     statistical functionality migrated into the easystats packages. Kept on CRAN
     and GitHub, reduced to the single-case and psychometric helpers, for
     reproducibility of the studies that used it.
-  - **Publications:**
-    - Makowski, D. (2018). The psycho package: An efficient and publishing-oriented workflow for psychological science. Journal of Open Source Software, 3(22), 470. https://doi.org/10.21105/joss.00470
+  - **Publications:** cite keys in [publications.bib](publications.bib),
+    which holds the full citations:
+    `makowski2018psycho`.
 
 - **Patient Assessment App**
   - **Description:** Web application (R Shiny) for the neuropsychological
@@ -1047,8 +1053,9 @@ are expected to go out of date.
   - **Reach:** 64 GitHub stars (2026-09-15).
   - **Status:** No longer actively developed; last release 1.0.6 (2019). Kept
     available for reproducibility of the studies that used it.
-  - **Publications:**
-    - Makowski, D., & Dutriaux, L. (2017). Neuropsydia.py: A Python module for creating experiments, tasks and questionnaires. Journal of Open Source Software, 2(19), 259. https://doi.org/10.21105/joss.00259
+  - **Publications:** cite keys in [publications.bib](publications.bib),
+    which holds the full citations:
+    `makowski2017neuropsydia`.
 
 - **Reality Bending Lab website (realitybendinglab.com)**
   - **Description:** The lab's website, written and maintained by me. Plain HTML,
@@ -1080,6 +1087,72 @@ priors framework, fictional reappraisal, the Choice-Confidence (CHOCO) model and
 Cypher's Complex. Two of them have reached Wikipedia; those articles are
 recorded under [Impact](#impact).
 
+
+---
+
+## Publications
+
+**The list itself is not here. It is `publications.bib`, in the root of this
+repo, beside this file.**
+
+That is the one place this file delegates, and it is deliberate. Everything else
+recorded here exists nowhere else in structured form - no database holds a
+teaching load, a service role, or the fact that a 2016 abstract was never
+presented, which is the whole reason this file exists. Publications are the
+opposite: every one has a DOI, and a record of them already sits in ORCID, in
+Scholar and in Crossref. What does *not* exist anywhere is the curation - which
+theme a paper argues for, which are worth marking, which co-authorship was
+shared - and that is what is kept, in `cv/content/publications.yml`.
+
+The second reason is that a `.bib` can be checked and a paragraph cannot. Page
+ranges, volume numbers and DOIs rot silently in prose. Held as fields, they can
+be validated, and `cv/tools/validate.py` does: a cite key that resolves to
+nothing, or an entry in the bibliography that no theme claims, fails the build
+rather than quietly vanishing from the CV.
+
+### How it fits together
+
+| File | Holds |
+| --- | --- |
+| `publications.bib` | The facts: authors, title, venue, year, DOI. Ground truth, like this file. |
+| `cv/content/publications.yml` | The decisions: theme, order, what is highlighted, what is hidden and why. |
+| `cv/content/_publications.generated.yml` | Generated from the two by `cv/tools/build_publications.py`. Never edited. |
+
+Adding a publication is two edits: the entry in `publications.bib`, then its
+cite key under a theme in `cv/content/publications.yml`. Leaving out the second
+is an error, not an omission - the build says so.
+
+### Conventions
+
+- **Cite keys** are `<firstauthor><year><word>`, matching the convention the
+  publication URLs on dominiquemakowski.github.io already use, so a key is
+  usually guessable from a link. Work with no year yet uses
+  `<firstauthor>_<word>`.
+- **Shared authorship** is `equal = {1,2}` plus `equalnote`, by author position.
+  It renders as the asterisks the printed CV has always used.
+- **Under review** is `status = {under review}` and no `year`, which is what
+  sorts those entries to the top of their theme.
+- **Software papers are publications**, and are not restated under
+  [Software and Tools](#software-and-tools): that section names the cite keys
+  belonging to each package instead, so a citation has one home.
+- **Media coverage, podcasts and public talks are not publications.** They are
+  [Media and Public Engagement](#media-and-public-engagement).
+
+### Shape of the record
+
+- **65 entries** in the bibliography: 64 on the CV, 1 deliberately withheld with
+  its reason recorded in `cv/content/publications.yml`.
+- **Five themes**: Reality Perception and Manipulation; Interoception, Emotion
+  Regulation, Neurophysiology; Statistics; Miscellaneous; Book Chapters. They
+  are the argument the CV makes about the work, not a classification scheme, and
+  they are worth revisiting for a tailored version rather than treated as fixed.
+- **Author position** across the whole record is under
+  [Bibliometrics](#bibliometrics), which counts Scholar's 67 rather than this
+  file's 65; Scholar lists versions and items this bibliography does not.
+- **Prizes attached to particular papers** are recorded on the entry itself, in
+  its `note`, and again under [Awards](#awards): `makowski2019phenomenal` took
+  the Psychonomic Society Best Article Award, `makowski2019bayestestr` and
+  `makowski2021neurokit` the two SIPS commendations.
 
 ---
 
@@ -1179,10 +1252,10 @@ kick-offs and reading groups are in the archive but not on this list.
 
 - **easystats: Past, Present and Future**. Centre for Open Science and Research Reform, University of Sussex, May 2026. `2026_05_SussexOpenScienceCentre_Easystats`
 - **Good Tools Breed Good Science**. BrainHack, Singapore, May 2026. On how the available tools shape the science that gets done. `2026_05_BrainHack_Singapore`
-- **Reality as an Embodied Process**. Nanyang Technological University, Singapore, July 2025. `2025_07_Singapore`
+- **The Anti-AI Bias and its Impact on Emotions, Perceived Attractiveness, and Sexual Arousal**. HASS Human-Centred AI Seminar, Humanities, Arts and Social Sciences, Singapore University of Technology and Design (SUTD), Singapore, 16 July 2025. Organized by and invited by Ryutaro Uchiyama (https://ryu.sg/), SUTD. A two-talk seminar shared with Marco Sperduti (Università di Roma Tor Vergata), who spoke on self-relevance and aesthetic judgement of AI-generated artworks. The talk covered the same material as the NTU one two days earlier under a different title; the deck itself (`Makowski_Ryu.pptx`) still carries the NTU title on its first slide. `2025_07_Singapore`
+- **Reality as an Embodied Process**. "Truth in the Machine" Symposium, Nanyang Technological University, Singapore, 14 July 2025. Given inside the symposium he co-organised with Annabel Chen as the closing event of the Temasek Laboratories fake-news grant; see [Conference Organization](#conference-organization). Title taken from the deck (`Makowski.pptx`): the poster gives no talk titles. `2025_07_Singapore`
 - **NeuroKit: A Python Package for Physiological Signals Processing**. Satellite event on research software, Organization for Human Brain Mapping (OHBM), June 2025, online. Invited directly rather than through an abstract submission, which is why it is here and not under conference talks. `2025_06_25_OHBM`
 - **From Academia to Data Science**. Postdoctoral researcher development event, University of Sussex, March 2025. `2025_03_SussexPostdocsDataScience`
-- **Get Sh\*t Done in R with easystats**. EARL / DataCove, Brighton, 3 September 2024. A tour of easystats' most useful features: automated effect size interpretation, model reporting, and model and test assumption checks. `2024_09_03_EARLDataCove_Brighton`
 - **Assumption-Checking Rather Than (Just) Testing**. MORSE (Methods for Open and Reproducible Science) seminar, University of Sussex, 22 March 2024. A discussion of Shatz (2023), opened by a commentary on common misconceptions about assumption checks and how to guide students through them, with an R demonstration. `2024_03_22_SussexMORSE`
 - **Easy Statistics in R with easystats, and Easy Physiological Processing in Python with NeuroKit**. Open Research Sussex, University of Sussex, 27 June 2023. The archive folder is misnamed with the July date. `2023_07_27_OpenResearchSussex`
 - **Urban Psychology: A Neuropsychological Approach? Beauty, Urban Design and Neuroscience**. NeuroLandscape, 24 May 2022, online. `2022_05_24_NeuroLandscape`
@@ -1215,11 +1288,11 @@ kick-offs and reading groups are in the archive but not on this list.
 
 Conference organisation without a talk of one's own:
 
-- Co-organizer (2021). *La recherche aux temps de la COVID*, 1ère journée du COllaborative COgnitive Science, 29 November, online. https://sites.google.com/view/les-cocos/
+- Co-organizer (2021). *La recherche aux temps de la COVID*, 1ère journée du COllaborative COgnitive Science (COCOS), 29 November, online. The group itself is under [Service and Leadership](#service-and-leadership). https://sites.google.com/view/les-cocos/
 
 ### Posters
 
-- Neves, A. & **Makowski, D.** (2025). Association for the Scientific Study of Consciousness (ASSC), Crete, Greece, July 2025. Presented by Ana Neves, PhD student in the lab; title not yet recorded. `2025_07_ASSC_Crete`
+- Neves, A. & **Makowski, D.** (2025). *Do We Find AI-Generated Images Less Emotional? The Impact of Reality Beliefs on Affective Responses*. Association for the Scientific Study of Consciousness (ASSC), Crete, Greece, July 2025. Presented by Ana Neves, PhD student in the lab. `2025_07_ASSC_Crete`
 - **Unicity through Complexity**. EEG attractors of neurotypical and neuroatypical individuals, shown in the Neuroscience x Art track under the "Neurodiversity" theme. Organization for Human Brain Mapping (OHBM), Montreal, Canada, July 2023. An artwork rather than a poster proper. `2023_07_OHBM`
 - **Makowski, D.**, Te, A. S. & Chen, S. H. A. (2023). *NeuroKit2: An Open-Source Python Software to Analyse Physiological Data*. Organization for Human Brain Mapping (OHBM), Montreal, Canada, July 2023. `2023_07_OHBM`
 - **Makowski, D.**, Lau, Z. J., Pham, T., Te, A. S., & Chen, S. A. (2022). *Fractal Dimension of EEG Activity is Linked to Distinct Facets of Resting-State Cognition*. 28th Annual Meeting of the Organization for Human Brain Mapping (OHBM), 19-23 June, Glasgow, Scotland.
@@ -1246,6 +1319,7 @@ delivered in the end. None of these is a presentation and none is counted as
 one; they are here so that the abstracts sitting in the archive are not
 mistaken for talks and added back.
 
+- **Get Sh\*t Done in R with easystats**. EARL / DataCove, Brighton, 3 September 2024. Proposed as a tour of easystats' most useful features - automated effect size interpretation, model reporting, and model and test assumption checks - but not accepted. `2024_09_03_EARLDataCove_Brighton`
 - **Makowski, D.**, Sperduti, M., Nicolas, S. & Piolino, P. (2018). *Breaking the Assumption of Reality: Implications for Emotions and Consciousness*. Association for the Scientific Study of Consciousness (ASSC), June 2018. Abstract only; not presented. `2018_06_26_ASSC`
 - **Makowski, D.**, Sperduti, M. & Piolino, P. (2018). *Interindividual Determinants of Implicit Emotion Regulation*. Consortium of European Research on Emotion (CERE), April 2018. Abstract only; not presented. `2018_04_04_CERE`
 - **Neurosciences de la régulation émotionnelle : quel futur pour la psychothérapie ?** Congrès de l'Encéphale, Paris, 24 January 2018. Abstract only; not presented. `2018_01_24_Encephale`
@@ -1289,6 +1363,7 @@ See also the *Breaking Barriers to Reproducibility* interview under
 ### Open Science and Research Culture
 
 - Organizer, MORSE Seminar Series, Centre for Open Science and Research Reform, University of Sussex (2024-present). Member of the Centre, where I convene MORSE (Methods for Open and Reproducible Science), a seminar series on openness, reproducibility and replicability in psychological science. https://www.sussex.ac.uk/research/centres/centre-for-open-science-and-research-reform/
+- Co-founder, COllaborative COgnitive Science (COCOS) (2021-present). An informal group of researchers working on meta-science and slow science - research culture, the pace and incentives of academic work, and what collaboration between labs can look like outside the usual structures. Its first event, *La recherche aux temps de la COVID*, is under [Conference Organization](#conference-organization). https://sites.google.com/view/les-cocos/
 - Open Science Champion, British Neuroscience Association (BNA) Members' Meeting (2024). Invited to argue the open science position in the meeting's interactive debate, "A cultural revolution in sustainable neuroscience is needed more than a cultural revolution in open neuroscience now", alongside Dr Charlotte Rae (Sustainability Champion) and Hannah Hope (Wellcome).
 - Author of the Reality Bending Lab's public-facing writing (2019-present).
   Around forty posts on the lab website (https://realitybendinglab.com/news/),
@@ -1300,6 +1375,7 @@ See also the *Breaking Barriers to Reproducibility* interview under
 
 ### Conference Organization
 
+- Co-organizer, "Truth in the Machine" Symposium, Nanyang Technological University, Singapore (14 July 2025). One-day symposium (9:00-16:30, seminar room 1-1, ABN-01A-CF2, NTU) co-organised with Pr Annabel Chen (President's Chair Professor in Psychology, School of Social Sciences, CoHASS, NTU), who hosted it. Convened as the closing event of the Temasek Laboratories grant on the perception of real vs. fake information, the last grant held in Singapore before the move to Sussex; see [Grants](#grants). Bridging philosophy, psychology and neuroscience on how humans process and respond to misinformation and AI-generated content. Invited speakers: Aldert Vrij and Sharon Leal (University of Portsmouth), Marco Sperduti (Università di Roma Tor Vergata), Nadia Brashier (University of California, San Diego), Dominique Makowski (University of Sussex), Zhong Miao (Tianjin Normal University) and Wilson Lim (University College London). His own talk in it, "Reality as an Embodied Process", is under [Talks and Media](#talks-and-media). Poster: `2025_07_Singapore/poster_ntu.jpg`.
 - Chair, "The Value of Reality in the Post-Truth Era" Symposium, AISC 2024, Rome, Italy (2024). "The Value of Reality in the Post-Truth Era: Consequences of AI-Authorship on Cognitive and Affective Phenomenology", chaired with Dr Marco Sperduti (Universita di Roma Tor Vergata) and Dr Marco Viola (Universita Roma Tre) for the meeting of the Italian Association for Cognitive Sciences (AISC).
 - Co-organizer, "Artificial Emotion" Symposium, ESCAN 2026, Sapienza University, Rome, Italy (2026). "Artificial Emotion: Affective Responses and Interaction with Artificial Intelligence", a four-talk symposium on affective, physiological and neural responses to artificial intelligence, co-organised with Dr Marco Sperduti (Universita di Roma Tor Vergata) for the meeting of the European Society for Cognitive and Affective Neuroscience (ESCAN).
 
@@ -1532,3 +1608,37 @@ track. Grouped by `Domain`, newest first within each domain.
   - A card game built around visual illusions, growing out of the lab's work on
     illusion sensitivity (see the Illusion Game under [Measures](#measures) and
     Pyllusion under [Software](#software)).
+
+---
+
+## References
+
+People who can be approached for a reference, and what each of them can speak
+to. Listed newest relationship first. Emails are the ones they use
+professionally and were current when recorded; check a University address still
+resolves before putting it on an application, and ask the person before naming
+them on a specific one.
+
+- **Pr Andy Field** — line manager, University of Sussex (2023-present).
+  Andy.Field@sussex.ac.uk. Professor of Quantitative Methods in the School of
+  Psychology (https://profiles.sussex.ac.uk/p9846-andy-field). Can speak to the
+  current post: teaching service, the Bayesian Statistics module, school-level
+  responsibilities and performance in role. Also a co-author on the CHOCO model
+  paper and the supervisor of one of the PhD candidates I examined internally
+  (see [Supervision](#supervision)).
+- **Pr Annabel Chen** — postdoc supervisor, Nanyang Technological University
+  (2019-2022). AnnabelChen@ntu.edu.sg. Director of the Clinical Brain Lab
+  (https://www.clinicalbrain.org/author/annabel-chen/). Covers both NTU
+  positions under [Positions](#positions): the Research Fellow post on the
+  Ministry of Defence deception project and the Presidential Research
+  Fellowship, including team and budget management.
+- **Dr Marco Sperduti** — PhD mentor, Université Paris Cité.
+  marco.sperduti@parisdescartes.fr. Now at Università di Roma Tor Vergata.
+  Day-to-day mentor through the PhD and a frequent co-author since; the closest
+  witness to the fiction and emotion-regulation work.
+- **Pr Pascale Piolino** — PhD co-supervisor, Université Paris Cité.
+  pascale.piolino@parisdescartes.fr. Supervised the doctorate (see
+  [Education](#education)).
+- **Pr Serge Nicolas** — PhD co-supervisor, Université Paris Cité.
+  serge.nicolas@parisdescartes.fr. Supervised the doctorate, and co-author on
+  the history-of-psychology papers.
