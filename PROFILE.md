@@ -1217,7 +1217,8 @@ literature.
 
 ## Talks and Media
 
-Conference presentations, invited talks, seminars and media appearances.
+Conference presentations, invited talks, seminars, science blogging and media
+appearances.
 
 Two sources feed this section, and neither is complete on its own. The local
 `Conferences` archive (one folder per event, 2013 to present; path in
@@ -1326,13 +1327,36 @@ mistaken for talks and added back.
 - **Makowski, D.**, Sperduti, M. & Piolino, P. (2016). *"Being There" and Remembering It: Presence Enhances Encoding in Autobiographical Memory*. European Workshop on Imagery and Cognition (EWIC), June 2016. Abstract only; not presented. The companion talk of the same title was given at ICOM 2016. `2016_06_06_EWIC`
 - **Makowski, D.**, Dutriaux, L., Sperduti, M. & Piolino, P. (2015). *NEUROPSYDIA : un outil ouvert, évolutif et moderne facilitant la pratique de la neuropsychologie*. Journée d'hiver de la Société de Neuropsychologie de Langue Française (SNLF), 4 December, Paris, France. Submitted to both the 2015 and the 2016 editions; shown only in 2016. `2015_12_04_SNLF`
 
+### Science Blogging
+
+#### La bibliothèque du Neuropsychologue
+
+- **Role:** Founder, webmaster and sole author
+- **Dates:** May 2014 - April 2019 (last post 14 April 2019; the site is still online)
+- **Language:** French
+- **Link:** https://biblineuropsy.com/ (WordPress.com, site ID 68980584; posts signed `dmakowski`)
+- **Premise:** Subtitled "Pour les amateurs d'ouvrages et de cerveaux". It began as a way to share a private hobby - collecting old psychology and medicine books (see [Side Projects](#collecting-old-psychology-and-medicine-books)) - and the "Livres anciens" category is what is left of that original purpose: seven posts on holdings from the collection, including Elliotson's *Human Physiology* (1840), Piéron's *Vocabulaire de la Psychologie*, Brant's *La Nef des fous*, and mid-century volumes on how psychology was taught in France from 1952 to 1967. It broadened quickly into reviews of current neuroscience books - the "Qui suis-je ?" page states that problem, that the relevant books are numerous, bulky and expensive, so people buy none rather than risk the wrong one - and then into philosophy, history of psychology, aesthetics and professional commentary.
+- **Output:** 54 posts. Heaviest in 2014 (35 posts), then 6 in 2015, 10 in 2016, and one a year in 2017, 2018 and 2019. Filed under 17 categories, the largest being Reflexion (18), Culture G (12), Drolatique (11), Neurosciences fondamentales (11), Psychopathologie (9) and Neurologie (8).
+- **Reach:** **69,300 views from 52,200 visitors**, all-time, plus 36 likes and 23 comments. Source: the WordPress.com stats dashboard for the site, range 1 January 2013 to 21 September 2026 (the blog opened in May 2014, so this is its whole life). 43 email subscribers, from the WordPress.com public API on the same date.
+- **Traffic shape:** Two things stand out, and the second is the more unusual.
+  - **2018 was by far the biggest year**, at roughly 17,500 views - about a quarter of the site's entire traffic in a single year, and more than double any other. That is the year of *Neuropsychologue ou Psychologue spécialisé en neuropsychologie ?* (6 March 2018), which is also the most commented post on the site. One post on a live professional controversy outdrew five years of book reviews.
+  - **The blog kept being read for seven years after it stopped publishing.** The last post is April 2019, yet 2020 through 2025 each still drew several thousand views a year, declining gently rather than falling off, and 2026 had reached roughly 1,800 by 21 September. Well over half the all-time traffic arrived after publication ceased - the posts continued to be found, presumably through search.
+  - Ramp-up for completeness: negligible in 2014, around 1,500 in 2015, 3,500 in 2016, 7,000 in 2017, then the 2018 peak, about 9,000 in 2019 and a slow decline from roughly 7,800 in 2020 to 2,800 in 2025.
+  - The two totals are read straight off the dashboard and are exact. **The per-year figures are estimated off the bar chart** and are good to roughly the nearest 500; re-read them from the dashboard if any of them ever needs to be quoted precisely.
+- **Posts worth knowing about:**
+  - *Neuropsychologue ou Psychologue spécialisé en neuropsychologie ?* (6 March 2018), the most discussed post on the site (8 comments), arguing for "neuropsychologist" as a professional title in France. https://biblineuropsy.com/2018/03/06/neuropsychologue-ou-psychologue-specialise-en-neuropsychologie/
+  - *Après le Brexit, le Frexit, le Neuropsychoxit ? De l'avenir des neuropsychologues en France* (14 April 2019), its sequel and the last post: on the deadlock over a French ordre des psychologues, and on raising the qualification from master's to doctoral level. https://biblineuropsy.com/2019/04/14/apres-le-brexit-le-frexit-le-neuropsychoxit-de-lavenir-des-neuropsychologues-en-france/
+  - *Qu'est ce que la neuropsychologie ?* (9 September 2014), the reference piece the later professional posts build on. https://biblineuropsy.com/2014/09/09/quest-ce-que-la-neuropsychologie/
+- **Notes:**
+  - Pr Serge Nicolas, PhD co-supervisor and expert in the history of psychology, left a public comment on the "Qui suis-je ?" page on 25 September 2014 encouraging the work.
+
 ### Media and Public Engagement
 
 - Research featured in online journal, *Attractiveness shapes beliefs about whether faces are real or AI-generated, study finds*. 7 July 2025, psypost.org. https://www.psypost.org/attractiveness-shapes-beliefs-about-whether-faces-are-real-or-ai-generated-study-finds/
 - Invited on the *Learning Bayesian Statistics* podcast, episode #55, *Neuropsychology, Illusions & Bending Reality, with Dominique Makowski*. Published 1 February 2022, recorded November 2021. https://www.learnbayesstats.com/episode/55-neuropsychology-illusions-bending-reality-dominique-makowski `2021_11_24_LearnBayesPodcast`
 - Speaker at Pint of Science, *Back to the Matrix : pilule bleue ou rouge ?* 16 May 2018, Paris, France. https://pintofscience.com/ `2018_05_14_PoS`
 - Invited to a public art and science debate on sensory illusions, Rencards du Savoir, FACTS festival, 24 November 2017, Bordeaux, France. https://facts2017.u-bordeaux.fr/FESTIVAL/Programme/Agenda-2017/Rencards-du-savoir-Les-illusions-sensorielles.html `2017_11_28_FACTS` (the archive folder is dated 28 November; the date above is the one previously recorded)
-- Published article in magazine, *Neuroanatomie de la réalité : quand le réel n'est plus*. 2016, Les yeux brouillés, 1, 48-55. https://biblineuropsy.com/2016/04/19/les-yeux-brouilles/
+- Published article in magazine, *Neuroanatomie de la réalité : quand le réel n'est plus*. 2016, Les Yeux Brouillés, 1, 48-55. One of my first pieces of popular-science writing, and the earliest published statement of what became the reality-perception research line. *Les Yeux Brouillés* was a Bordeaux magazine founded by Marie Penavayre and Romain Quesnoy to mix art, science and philosophy; volume 1 gathered writers, philosophers, artists and scientists on dream, illusion and the real. Announced on the blog, which summarises the argument: https://biblineuropsy.com/2016/04/19/les-yeux-brouilles/ (see [Science Blogging](#science-blogging)).
 - Featured on national television, on the effect of violent images on the brain and body. 2015, Testé sous contrôle médical, France 4. https://www.youtube.com/watch?v=ihGs1V9kz4w
 - Research featured in online journal, *"Avengers, l'ère d'Ultron" en 3D : aussitôt vu, aussitôt oublié ?* 2015, francetvinfo.fr. http://blog.francetvinfo.fr/actu-cine/2015/05/07/avengers-lere-dultron-en-3d-aussitot-vu-aussitot-oublie.html
 
@@ -1592,6 +1616,15 @@ track. Grouped by `Domain`, newest first within each domain.
   - A form of art involving the subject's own physiological activity. The subject undergoes a mental experience while their heart or brain activity is recorded (electrocardiography, ECG, or electroencephalography, EEG); the signal is then embedded as a trajectory in multidimensional state space and its attractor is plotted as the artwork. The image is therefore a property of that person's physiological state rather than of the artist, who "is merely but a facilitator, a tool".
 - **Exhibitions:**
   - Brain Art Exhibition, "The Multifaceted Brain: Adaptation and Diversity", 29th Annual Meeting of the Organization for Human Brain Mapping (OHBM), 22-26 July 2023, Montreal, Canada. Selected for exhibition in the "written text or still image" category. See https://ohbm-brainart.github.io/exhibit/exhibit2023.html and https://sites.google.com/view/brainart-exhibit-2023
+
+### Collecting Old Psychology and Medicine Books
+
+- **Type:** Hobby
+- **Description:**
+  - A standing interest in antiquarian and out-of-print psychology and medicine books, predating the blog: sharing the collection is what *La bibliothèque du Neuropsychologue* was set up to do (see [Science Blogging](#science-blogging)), and its "Livres anciens" category is the surviving record of that.
+  - Holdings written up there include Elliotson's *Human Physiology* (1840), Henri Piéron's *Vocabulaire de la Psychologie*, Sebastian Brant's *La Nef des fous*, *Éléments de Psychologie de l'Homme et de l'enfant*, and mid-century volumes on the teaching of psychology in France between 1952 and 1967.
+  - The same interest shows up in the research record as the history-of-psychology papers written with Pr Serge Nicolas on Théodule Ribot and on Alfred Binet's aesthesiometry (see [Publications](#publications)).
+- **Not on file:** the size of the collection, how it is catalogued, and which pieces are the notable ones. Only the seven books blogged about are recorded anywhere.
 
 ### Music
 
