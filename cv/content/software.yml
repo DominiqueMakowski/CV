@@ -1,0 +1,88 @@
+# Software on the left, the measures and paradigms on the right, as two columns
+# of cards. `kind` is "software" by default, or "measure" for the second column.
+#
+# Fields: name, url, logo (file in img/tools/, drawn in a 30pt square), meta
+# (language, role and dates, small caps under the name), reach (the headline
+# figure, accent, right of the name), description.
+#
+# Keep a description to about four lines in its column - roughly 145 characters.
+# The mark beside it is 46pt wide and that comes out of the same column, so
+# there is less room here than the width of the page suggests.
+# Reach figures are dated snapshots from PROFILE.md (2026-09-15) and go stale.
+# One figure per item: a row of three numbers reads as padding, and only the
+# largest is remembered.
+#
+# Not listed, and in PROFILE.md if they are ever wanted back: OpenMuse (87
+# stars), psycho (190k downloads, the origin of easystats),
+# SequentialSamplingModels.jl, Neuropsydia, the Patient Assessment App.
+
+- name: "easystats"
+  url: "https://easystats.github.io/easystats/"
+  logo: "easystats.png"
+  meta: "R · Co-founder · 2019 - Present"
+  reach: "41.2M downloads"
+  description: >-
+      Ten R packages for the post-processing of statistical models: parameters,
+      effect sizes, diagnostics, Bayesian indices, marginal effects, reporting.
+      *Used in over 10,000 publications*. *SIPS Mission Award* (2023).
+
+- name: "NeuroKit"
+  url: "https://neuropsychology.github.io/NeuroKit/"
+  logo: "neurokit.png"
+  meta: "Python · Creator · 2017 - Present"
+  reach: "130k downloads/month"
+  description: >-
+      Most popular Python package for signal processing (ECG, PPG, EDA, ...), from peak detection
+      to heart rate variability and complexity indices. *2,355 stars* and dozens
+      of contributors. *SIPS Commendation* (2024).
+
+- name: "Pyllusion"
+  url: "https://realitybending.github.io/Pyllusion/"
+  logo: "pyllusion.png"
+  meta: "Python · Creator · 2020 - Present"
+  reach: "82 stars"
+  description: >-
+      Generates visual illusions parametrically, separating illusion strength
+      from the objective difference between the targets, so that sensitivity can
+      be measured continuously.
+
+- name: "cogmod"
+  url: "https://dominiquemakowski.github.io/cogmod/"
+  logo: "cogmod.png"
+  meta: "R · Creator · 2025 - Present"
+  reach: "22 stars"
+  description: >-
+      Bayesian models of cognitive tasks - drift diffusion,
+      linear ballistic accumulator, racing diffusion - as custom brms families.
+
+- name: "Illusion Game"
+  kind: measure
+  url: "https://doi.org/10.1038/s41598-023-33148-5"
+  logo: "illusiongame.png"
+  meta: "Scientific Reports · 2023"
+  description: >-
+      Parametric task measuring visual illusion sensitivity as a continuous
+      trait, with evidence for a general factor.
+
+- name: "LIE Scale"
+  kind: measure
+  url: "https://doi.org/10.1007/s12144-021-01760-1"
+  logo: "lie.png"
+  meta: "Current Psychology · 2021"
+  description: >-
+      16-item measure of lying styles and attitudes: ability, frequency,
+      negativity and contextuality.
+
+- name: "MINT Scale"
+  kind: measure
+  url: "https://doi.org/10.31234/osf.io/8qrht_v1"
+  logo: "mint.png"
+  meta: "PsyArXiv preprint"
+  description: >-
+      Multimodal interoception questionnaire, across cardiac, respiratory,
+      gastric and other bodily channels.
+
+# WIP
+# - name: "DoggoNogo"
+#   kind: measure
+#   meta: "In development"

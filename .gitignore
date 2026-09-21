@@ -12,10 +12,10 @@
 *-Ex.R
 
 # Output files from R CMD build
-/*.tar.gz
+old_cv/*.tar.gz
 
 # Output files from R CMD check
-/*.Rcheck/
+old_cv/*.Rcheck/
 
 # RStudio files
 .Rproj.user/
@@ -29,7 +29,7 @@ vignettes/*.pdf
 
 # knitr and R markdown default cache directories
 *_cache/
-/cache/
+old_cv/cache/
 
 # Temporary files created by R markdown
 *.utf8.md
@@ -38,7 +38,7 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 nul
-RG_MostCited_TrackRecord.docx
+supporting/RG_MostCited_TrackRecord.docx
 
 # Local agent notes
 AGENTS.md

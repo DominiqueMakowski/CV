@@ -1,0 +1,83 @@
+# Service, as two columns of cards: what is run for the School and the
+# University on the left (`kind: leadership`), the journals on the right
+# (`kind: editorial`).
+#
+# Card fields, as in grants-awards.yml and software.yml.
+#
+# Deliberately institutional. The outward-facing work - the "Artificial
+# Emotion" symposium at ESCAN 2026, the British Neuroscience Association Open
+# Science Champion debate (2024), the lab blog, the media appearances and the
+# consultancy - is in engagement.yml, so that this section answers one
+# question: what does he run.
+#
+# Both columns name the post and put what it is held over in `meta`:
+# "Academic Lead" over the participation scheme, "Statistical Editor" over the
+# journal. The column is a list of posts, and a reader scanning the bold line
+# wants to know what he *is*, not what exists.
+#
+# The order is by what each post amounts to - built, reformed, convened, sat on
+# - rather than by date, and the committee seat comes last as the one line that
+# is a membership rather than a piece of work.
+#
+# The programme post keeps only its name and place here. The curriculum work is
+# a card in teaching-roles.yml, and saying it twice at length made the CV look
+# like it was counting one thing as two.
+#
+# Open-ended dates are written "2025 - Present" rather than "2025 -", as the
+# experience entries and the teaching provenance lines have always been: the
+# bare dash is a typographic convention that a reader has to know, and half a
+# range reads as a typo in a column where other cards carry a closed one.
+
+- name: "Programme Developer"
+  kind: leadership
+  reach: "2026 - Present"
+  meta: "MSc Advanced Computational Psychology · University of Sussex"
+
+- name: "Academic Lead"
+  kind: leadership
+  reach: "2025 - Present"
+  meta: "Research Participation Scheme · School of Psychology, Sussex"
+  description: >-
+    *Redesigned the credit allocation and study approval rules* to be fairer and
+    more transparent, and trialled changes that raise the educational value of
+    taking part while improving data quality.
+
+- name: "Seminar Organiser"
+  kind: leadership
+  url: "https://www.sussex.ac.uk/research/centres/centre-for-open-science-and-research-reform/"
+  reach: "2024 - Present"
+  meta: "MORSE · Centre for Open Science and Research Reform, Sussex"
+  description: >-
+    *Methods for Open and Reproducible Science*: a seminar series on openness
+    and reproducibility in psychological science. Member of the Centre.
+
+- name: "Committee Member"
+  kind: leadership
+  reach: "2023 - Present"
+  meta: "Cross-Schools Research Ethics Committee · University of Sussex"
+
+- name: "Statistical Editor"
+  kind: editorial
+  url: "https://royalsocietypublishing.org/journal/rsos"
+  reach: "2025 - Present"
+  meta: "Royal Society Open Science"
+
+- name: "Associate Editor"
+  kind: editorial
+  reach: "2020 - 24"
+  meta: "Frontiers in Psychology · Quantitative Psychology and Measurement"
+
+- name: "Regular Reviewer"
+  kind: editorial
+  url: "https://joss.theoj.org/"
+  reach: "2018 - Present"
+  meta: "Journal of Open Source Software"
+
+- name: "Reviewer"
+  kind: editorial
+  reach: "2017 - Present"
+  meta: "Nature Human Behaviour · Biological Psychiatry · Scientific Reports"
+  description: >-
+    Also Acta Psychologica, Journal of Experimental Psychology: Human Perception
+    and Performance, Neuropsychologia, Personality and Individual Differences
+    and others.

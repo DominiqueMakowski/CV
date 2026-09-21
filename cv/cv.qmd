@@ -1,0 +1,141 @@
+---
+name: Dominique
+surname: Makowski
+position: "Assistant Professor in Psychology"
+address: "University of Sussex, Brighton, UK"
+profilepic: "img/profile.jpg"
+email: "D.Makowski@sussex.ac.uk"
+www: "realitybendinglab.com"
+github: "DominiqueMakowski"
+# orcid: "0000-0001-5375-9967"
+scholar: "bg0BZ-QAAAAJ"
+aboutme: |
+  Trained as a clinical neuropsychologist and CBT psychotherapist, I am an
+  assistant professor at the University of Sussex, where I head the
+  [Reality Bending Lab](https://realitybendinglab.com). My research has three
+  strands. **Reality and its distortions**: beliefs about AI-generated content, 
+  visual illusions, deception, misinformation and fake news, 
+  fiction, and altered states of consciousness. **The body in cognition**: how
+  interoception, physiological states and emotion regulation shape what we take
+  to be real. **Methods:** Bayesian statistics, computational models and
+  psychophysiology, as well as the development of new software, measures and
+  paradigms, released as open source (easystats, NeuroKit, cogmod) to support
+  open and rigorous science.
+keywords:
+  - curriculum vitae
+  - psychology
+  - cognitive neuroscience
+  - Bayesian statistics
+  - psychophysiology
+  - open source software
+date: last-modified
+date-format: "MMMM YYYY"
+format:
+  typst:
+    template-partials:
+      - typst-template.typ
+      - typst-show.typ
+    font-paths: [fonts]
+    keep-typ: true
+---
+
+# Experience
+
+```{=typst}
+#cv-entries(yaml("content/experience.yml"))
+```
+
+# Education
+
+```{=typst}
+#cv-entries(
+  yaml("content/education.yml"),
+  size: 26pt,
+  logo-h: 24pt,
+  logo-y: horizon,
+)
+```
+
+# Clinical Practice
+
+```{=typst}
+// Drawn a little under the full gutter width: these entries carry one short
+// bullet each, and at 44pt the tall Salpetriere lockup is deeper than its own
+// text, which opens a gap under the first entry that the others do not have.
+#cv-entries(yaml("content/clinical.yml"), size: 34pt)
+```
+
+# Languages
+
+```{=typst}
+// Here, out of order, because it is the one section short enough to close a
+// page: the clinical entries above it leave about 85pt under them, and the
+// strip is drawn to fit that (see `lang-slot` in typst-template.typ). Read
+// bottom-up it is a footer to the first page rather than a section competing
+// with the grants overleaf.
+//
+// The fit has a few points of slack, no more. Add a line to anything above it
+// and the strip moves to the top of page 2 on its own, which is the signal to
+// either trim above it or move this block back before Research Impact.
+#cv-languages(yaml("content/languages.yml"))
+```
+
+# Teaching
+
+```{=typst}
+#cv-topics(yaml("content/teaching-areas.yml"))
+```
+
+```{=typst}
+#cv-roles(yaml("content/teaching-roles.yml"))
+```
+
+# Software and Tools
+
+```{=typst}
+#cv-tools(yaml("content/software.yml"))
+```
+
+# Service and Leadership
+
+```{=typst}
+#cv-service(yaml("content/service.yml"))
+```
+
+# Grants and Awards
+
+```{=typst}
+#cv-awards(yaml("content/grants-awards.yml"))
+```
+
+# Engagement and Knowledge Exchange
+
+```{=typst}
+#cv-engagement(yaml("content/engagement.yml"))
+```
+
+```{=typst}
+// The side projects close the section rather than opening one of their own: a
+// heading of their own said "and now, his hobbies", and they are the same
+// thing the two columns above them are - the work shown to people who are not
+// being examined on it - only made rather than written.
+#cv-projects(yaml("content/projects.yml"))
+```
+
+# Talks and Presentations
+
+```{=typst}
+// After Engagement rather than after Grants and Awards, which is where it
+// reads more naturally. Card sections move whole rather than splitting, so
+// putting Talks earlier bumped Engagement to the next page and left a third of
+// a page blank behind it. Here the slack falls at the end of the document,
+// which is where it already was.
+#cv-talks(yaml("content/talks.yml"))
+```
+
+# Research Impact
+
+```{=typst}
+#cv-stats(yaml("content/impact.yml"))
+```
+

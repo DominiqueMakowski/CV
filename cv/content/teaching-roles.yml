@@ -1,0 +1,82 @@
+# The teaching roles that are not topics: what is designed and convened on the
+# left (`kind: convening`), who is supervised and examined on the right
+# (`kind: supervision`). Card fields, as in grants-awards.yml and software.yml.
+#
+# The left column runs down the scale of what was built - a programme, then a
+# module, then the workshops - rather than by date, because that is the order
+# the question is asked in.
+#
+# The MSc Advanced Computational Psychology programme is curriculum design, so
+# it leads here; service.yml keeps a short card for the institutional side of
+# the same work rather than the detail.
+#
+# The FHEA is a sentence in the lead paragraph of teaching-areas.yml rather
+# than a card. A qualification is one line of fact, and given a card the size
+# of a convened module it read as the equal of one.
+
+- name: "MSc Programme development"
+  kind: convening
+  reach: "2026"
+  meta: "University of Sussex"
+  description: >-
+      Lead on designing a new postgraduate programme: *MSc Advanced Computational Psychology* with its curriculum
+      structure, module content and learning outcomes.
+
+- name: "Module design"
+  kind: convening
+  reach: "2024"
+  meta: "University of Sussex"
+  description: >-
+      Created *Bayesian Statistics* as a new master's module (also attended by PhDs). Student's evaluation highlight it as one of the most engaging modules.
+
+- name: "Invited teaching"
+  kind: convening
+  reach: "2021 - 25"
+  meta: "Basel · Zurich · Paris · Singapore · OHBM"
+  description: >-
+      I am regularly invited to deliver specific upskilling trainings for Staff or PhDs, with workshops on physiological techniques, programming or statistics.
+
+# The right column leads with the count rather than the dates, as the grant and
+# software cards lead with the money and the downloads: how many students is
+# what the column is asked, and the years are worth a line of `meta` but not
+# the corner. The counts are the ones in ../PROFILE.md > Supervision, and the
+# student prizes are its Awards > Student Awards.
+
+- name: "Doctoral supervision and examining"
+  kind: supervision
+  reach: "4 examined"
+  meta: ""
+  description: >-
+      *Two PhD students* supervised at Sussex, one graduated. *Internal examiner* for four Sussex PhD theses, on consciousness
+      science, interoception and quantitative methods.
+
+- name: "Dissertation and placement students"
+  kind: supervision
+  reach: "12 a year"
+  meta: ""
+  description: >-
+      Supervising nine undergraduate and three master's dissertations a year, two full-time
+      placement students, and funded summer interns.
+
+# The prizes were a sentence inside the card above, at four since 2025. They
+# are their own card at the full count instead: it is the one line in the
+# column that is not self-reported - somebody else judged the work - and
+# buried in a list of numbers it read as one more of them. Counts and names
+# are ../PROFILE.md > Awards > Student Awards.
+
+- name: "Student prizes and scholarships"
+  kind: supervision
+  reach: "8 since 2023"
+  meta: ""
+  description: >-
+      Supervised students have won a *SAGE prize for outstanding application of statistical
+      methods*, a Sussex Partnership NHS Trust prize for the highest project mark, an Adam
+      Weiler PhD Impact Award, and five JRA and SoCoBio summer scholarships.
+
+# - name: "Research staff"
+#   kind: supervision
+#   reach: "7+ staff"
+#   meta: ""
+#   description: >-
+#       More than seven full-time research assistants, *several of whom went on to
+#       funded PhD positions*.

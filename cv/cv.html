@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dominique Makowski - Curriculum Vitae</title>
+<meta name="description" content="Trained as a clinical neuropsychologist and CBT psychotherapist, I am an assistant professor at the University of Sussex, where I head the Reality Bending Lab. My research has three strands. Reality and its distortions: beliefs about AI-generated content, visual illusions, deception, misinformation ">
+<meta name="author" content="Dominique Makowski">
+<meta name="keywords" content="curriculum vitae, psychology, cognitive neuroscience, Bayesian statistics, psychophysiology, open source software">
+<meta property="og:title" content="Dominique Makowski - Curriculum Vitae">
+<meta property="og:type" content="profile">
+<meta property="og:description" content="Trained as a clinical neuropsychologist and CBT psychotherapist, I am an assistant professor at the University of Sussex, where I head the Reality Bending Lab. My research has three strands. Reality and its distortions: beliefs about AI-generated content, visual illusions, deception, misinformation ">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --accent: #1976d2; --dark: #333; --body: #414141;
+  --gray: #5d5d5d; --light: #999; --rule: #e2e2e2; --bg: #fff;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --dark: #f0f0f0; --body: #d8d8d8; --gray: #b0b0b0; --light: #8a8a8a;
+    --rule: #3a3a3a; --bg: #16181c; --accent: #6ab3ff;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--body);
+  font-family: "Source Sans 3", system-ui, -apple-system, sans-serif;
+  font-size: 17px; line-height: 1.55;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap { max-width: 46rem; margin: 0 auto; padding: 3rem 16px 5rem; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+header { display: flex; gap: 1.75rem; align-items: flex-start; margin-bottom: 2.5rem; }
+header img {
+  width: 132px; height: 132px; border-radius: 50%; object-fit: cover;
+  flex-shrink: 0; border: 1px solid var(--rule);
+}
+h1 {
+  font-family: Roboto, system-ui, sans-serif; font-weight: 300;
+  font-size: clamp(2rem, 7vw, 3rem); margin: 0; color: var(--gray);
+  line-height: 1.05; letter-spacing: -0.01em;
+}
+h1 strong { font-weight: 700; color: var(--dark); }
+.where { color: var(--light); font-style: italic; font-size: .95rem; margin: .3rem 0 0; }
+.contacts { margin: .6rem 0 0; font-size: .9rem; display: flex; flex-wrap: wrap; gap: .35rem 1rem; }
+.about { font-style: italic; margin: 1.1rem 0 0; }
+
+h2 {
+  font-size: 1.5rem; font-weight: 700; color: var(--dark);
+  margin: 2.75rem 0 .5rem; display: flex; align-items: center; gap: .75rem;
+}
+h2 .t { white-space: nowrap; }
+h2 .lead { color: var(--accent); }
+h2::after { content: ""; flex: 1; height: 1px; background: var(--rule); }
+
+.entry { display: grid; grid-template-columns: 3.2rem 1fr; gap: 0 1.1rem; margin-top: 1.6rem; }
+.entry .logo { display: flex; align-items: flex-start; justify-content: center; padding-top: .15rem; }
+.entry .logo img { width: 100%; height: auto; }
+.entry .head { min-width: 0; }
+.line { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; }
+.title { font-weight: 700; color: var(--dark); }
+/* An entry with more to say on hover. The dotted rule is the only hint a
+   reader gets that there is something there, so it is not optional. */
+.title[title] { text-decoration: underline dotted var(--light); text-underline-offset: .2em; cursor: help; }
+.loc { color: var(--accent); font-style: italic; font-size: .9rem; white-space: nowrap; }
+.org { color: var(--gray); font-variant: small-caps; letter-spacing: .03em; font-size: .95rem; }
+.date { color: var(--gray); font-style: italic; font-size: .85rem; white-space: nowrap; }
+.entry ul { grid-column: 2; margin: .5rem 0 0; padding-left: 1.1rem; }
+.entry li { margin: .2rem 0; }
+
+/* Two labelled columns of short cards, used by Grants and Awards and by
+   Software and Tools. The mark column only exists where a section has marks;
+   a card with no mark yet still reserves it, so one placeholder does not step
+   the whole column left. */
+.cards { display: grid; grid-template-columns: 1fr 1fr; gap: 0 2rem; align-items: start; }
+.cards > section > h3 {
+  font-size: .8rem; font-weight: 400; color: var(--light);
+  font-variant: small-caps; letter-spacing: .06em;
+  margin: 1.4rem 0 0; padding-bottom: .3rem; border-bottom: 1px solid var(--rule);
+}
+.card { margin-top: 1.1rem; }
+.cards.marks .card { display: grid; grid-template-columns: 2.6rem 1fr; gap: 0 .7rem; }
+.card .mark { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; }
+.card .mark img { max-width: 100%; max-height: 100%; }
+/* A picture, not a mark: drawn larger, and framed so that a white-ground image
+   has an edge against the page. */
+.cards.pictures .card { grid-template-columns: 3.8rem 1fr; }
+/* One band across the page rather than two labelled columns. */
+.projects { grid-template-columns: 1fr; }
+.projects .row {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 2rem; margin-top: .9rem;
+}
+@media (max-width: 640px) { .projects .row { grid-template-columns: 1fr; } }
+.cards.pictures .mark img {
+  border: 1px solid var(--rule); border-radius: 3px;
+}
+.card .line { align-items: baseline; gap: .6rem; }
+.card .name { font-weight: 700; color: var(--dark); }
+/* The name is a link but is not painted like one: with a figure in the accent
+   colour on the same line, two blues compete and neither reads. */
+.card .name a { color: inherit; }
+.card .reach { color: var(--accent); font-size: .78rem; font-weight: 700; white-space: nowrap; }
+.card .meta {
+  color: var(--gray); font-variant: small-caps; letter-spacing: .03em;
+  font-size: .8rem; margin: .1rem 0 0;
+}
+.card p.desc { margin: .3rem 0 0; font-size: .87rem; color: var(--gray); }
+@media (max-width: 640px) { .cards { grid-template-columns: 1fr; } }
+
+/* Teaching areas: what, at what level, and the topics inside it. Three columns
+   so the level reads as a rail down the section rather than as prose. */
+.intro { font-style: italic; margin: .8rem 0 0; }
+.topics { display: grid; grid-template-columns: 9.5rem 4.25rem 1fr; gap: .9rem 1rem; margin-top: 1rem; }
+.topics > h3 {
+  grid-column: 1 / -1; font-size: .8rem; font-weight: 400; color: var(--light);
+  font-variant: small-caps; letter-spacing: .06em;
+  margin: .8rem 0 0; padding-bottom: .3rem; border-bottom: 1px solid var(--rule);
+}
+.topics > h3:first-child { margin-top: .3rem; }
+.topics .area { font-weight: 700; color: var(--dark); }
+.topics .level {
+  color: var(--accent); font-weight: 700; font-variant: small-caps;
+  letter-spacing: .04em; font-size: .8rem;
+}
+.topics .what { color: var(--gray); font-size: .92rem; }
+/* Where and when it was taught. Corroboration rather than content, so it is
+   small - but present, because an unsourced list of what somebody can teach is
+   only a claim. */
+.topics .where {
+  display: block; margin-top: .15rem; color: var(--light);
+  font-variant: small-caps; letter-spacing: .05em; font-size: .78rem;
+}
+@media (max-width: 640px) {
+  .topics { grid-template-columns: 1fr; gap: .1rem; }
+  .topics > h3 { margin-top: 1.4rem; }
+  .topics .what { margin-bottom: .9rem; }
+}
+
+/* Languages: one row of tiles, with a wide gap where the groups meet. The
+   groups carried labels once; a flag says "spoken" and the R and Python marks
+   say what they are, so the gap is left to mark the break instead. The tiles
+   are weighted by how many each group holds, so a tile is the same width
+   throughout - four flags squeezed into half the page beside two logos at
+   twice the size would say something about the two that is not meant.
+   Marks are sized by height, never by width, so each keeps its proportions. */
+.langs { display: flex; flex-wrap: wrap; gap: 1rem 5.5rem; align-items: flex-start; }
+.tiles { --mark: 1.5rem; display: flex; gap: .6rem; margin-top: .9rem; }
+/* A flag is a solid block of colour and a logo is an outline, so the logos are
+   drawn a little taller; at the same height they read as the smaller of the
+   two. The slot is one height for both, so the names below line up. */
+.tiles.code { --mark: 1.7rem; }
+.tile { flex: 1 1 0; min-width: 0; text-align: center; }
+.tile .mark { height: 1.8rem; display: flex; align-items: center; justify-content: center; }
+/* Height, not max-height: a mark shorter than the slot would otherwise be left
+   at its own size, and the row would come out ragged. */
+.tile .mark img { height: var(--mark); width: auto; max-width: 100%; object-fit: contain; }
+.tile .name { font-weight: 700; color: var(--dark); margin: .45rem 0 0; }
+/* Set like an entry's date - italic, light, grey - rather than in the small
+   caps a card's meta line uses: at this size small caps hold the eye as long
+   as the name above does, and six tiles of that read as twelve things. */
+.tile .level {
+  color: var(--gray); font-style: italic; font-weight: 300;
+  font-size: .85rem; margin: .15rem 0 0;
+}
+
+/* The bibliometrics plot. Its own SVG is transparent and drawn in mid grey and
+   the accent, so it sits on either the light or the dark page without a second
+   copy. */
+.stats { display: grid; grid-template-columns: 3.2rem 1fr; gap: 0 1.1rem; margin-top: 1.2rem; }
+.stats > * { grid-column: 2; }
+.stats .plot { width: 100%; height: auto; }
+.stats ul { margin: 1rem 0 0; padding-left: 1.1rem; }
+.stats li { margin: .2rem 0; }
+.stats .source {
+  margin: .6rem 0 0; color: var(--light);
+  font-variant: small-caps; letter-spacing: .06em; font-size: .75rem;
+}
+
+footer { margin-top: 4rem; padding-top: 1rem; border-top: 1px solid var(--rule);
+  color: var(--light); font-size: .85rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: .5rem; }
+
+@media (max-width: 640px) {
+  header { flex-direction: column; align-items: center; text-align: center; }
+  .contacts { justify-content: center; }
+  .about { text-align: left; }
+  .line { flex-direction: column; gap: 0; }
+  .loc, .date { white-space: normal; }
+  .entry { grid-template-columns: 1fr; }
+  .entry .logo { justify-content: flex-start; margin-bottom: .3rem; }
+  .stats { grid-template-columns: 1fr; }
+  .stats > * { grid-column: 1; }
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dominique Makowski",
+  "givenName": "Dominique",
+  "familyName": "Makowski",
+  "jobTitle": "Assistant Professor in Psychology",
+  "description": "Trained as a clinical neuropsychologist and CBT psychotherapist, I am an assistant professor at the University of Sussex, where I head the Reality Bending Lab. My research has three strands. Reality and its distortions: beliefs about AI-generated content, visual illusions, deception, misinformation and fake news, fiction, and altered states of consciousness. The body in cognition: how interoception, physiological states and emotion regulation shape what we take to be real. Methods: Bayesian statistics, computational models and psychophysiology, as well as the development of new software, measures and paradigms, released as open source (easystats, NeuroKit, cogmod) to support open and rigorous science.",
+  "email": "mailto:D.Makowski@sussex.ac.uk",
+  "url": "https://realitybendinglab.com",
+  "image": "img/profile.jpg",
+  "knowsAbout": [
+    "curriculum vitae",
+    "psychology",
+    "cognitive neuroscience",
+    "Bayesian statistics",
+    "psychophysiology",
+    "open source software"
+  ],
+  "sameAs": [
+    "https://github.com/DominiqueMakowski",
+    "https://scholar.google.com/citations?user=bg0BZ-QAAAAJ"
+  ],
+  "knowsLanguage": [
+    "French",
+    "Polish",
+    "English",
+    "Italian"
+  ],
+  "hasOccupation": [
+    {
+      "@type": "OrganizationRole",
+      "roleName": "Assistant Professor (Current Position)",
+      "startDate": "2023 - Present",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "School of Psychology, University of Sussex"
+      }
+    },
+    {
+      "@type": "OrganizationRole",
+      "roleName": "Research Fellow (Postdoc)",
+      "startDate": "2019 - 22",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "School of Social Sciences, Nanyang Technological University (NTU)"
+      }
+    },
+    {
+      "@type": "OrganizationRole",
+      "roleName": "PhD - Psychology",
+      "startDate": "2014 - 18",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Université Paris Cité"
+      }
+    },
+    {
+      "@type": "OrganizationRole",
+      "roleName": "Certified Psychotherapist - Cognitive Behavioural Therapy (CBT)",
+      "startDate": "2014 - 17",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "French Association for Cognitive Behavioural Therapy (AFTCC)"
+      }
+    },
+    {
+      "@type": "OrganizationRole",
+      "roleName": "BSc, MSc - Clinical Neuropsychology and Cognitive Psychology",
+      "startDate": "2009 - 14",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Université Paris Cité"
+      }
+    },
+    {
+      "@type": "OrganizationRole",
+      "roleName": "Assistant Neuropsychologist",
+      "startDate": "2013 - 14",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Adult Psychiatry, Hôpital Pitié-Salpêtrière, Paris"
+      }
+    },
+    {
+      "@type": "OrganizationRole",
+      "roleName": "Assistant Neuropsychologist",
+      "startDate": "2012 - 13",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Geriatric Psychiatry, Hôpital Sainte-Anne, Paris"
+      }
+    },
+    {
+      "@type": "OrganizationRole",
+      "roleName": "Assistant Neuropsychologist",
+      "startDate": "2012",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Gerontology, Hôpital La Porte Verte, Versailles"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <img src="img/profile.jpg" alt="Portrait of Dominique Makowski">
+  <div>
+    <h1>Dominique <strong>Makowski</strong></h1>
+    <p class="where">Assistant Professor in Psychology, University of Sussex, Brighton, UK</p>
+    <div class="contacts"><span><a href="mailto:D.Makowski@sussex.ac.uk">D.Makowski@sussex.ac.uk</a></span><span><a href="https://realitybendinglab.com">realitybendinglab.com</a></span><span><a href="https://github.com/DominiqueMakowski">GitHub</a></span><span><a href="https://scholar.google.com/citations?user=bg0BZ-QAAAAJ">Google Scholar</a></span></div>
+    <p class="about">Trained as a clinical neuropsychologist and CBT psychotherapist, I am an
+assistant professor at the University of Sussex, where I head the
+<a href="https://realitybendinglab.com">Reality Bending Lab</a>. My research has three
+strands. <strong>Reality and its distortions</strong>: beliefs about AI-generated content, 
+visual illusions, deception, misinformation and fake news, 
+fiction, and altered states of consciousness. <strong>The body in cognition</strong>: how
+interoception, physiological states and emotion regulation shape what we take
+to be real. <strong>Methods:</strong> Bayesian statistics, computational models and
+psychophysiology, as well as the development of new software, measures and
+paradigms, released as open source (easystats, NeuroKit, cogmod) to support
+open and rigorous science.</p>
+  </div>
+</header>
+<h2 id="experience"><span class="t"><span class="lead">Exp</span>erience</span></h2>
+<article class="entry"><div class="logo"><img src="img/logos/sussex-brighton.svg" alt=""></div><div class="head"><div class="line"><span class="title">Assistant Professor (Current Position)</span><span class="loc">UK</span></div><div class="line"><span class="org">School of Psychology, University of Sussex</span><span class="date">2023 - Present</span></div></div><ul><li>Full teaching service on courses including Bayesian Statistics and Psychophysiology.</li><li>Head of the <a href="https://realitybending.github.io/">Reality Bending Lab</a>: two doctoral students to date, around two full-time placement students and a dozen dissertation students a year, funded summer interns and research assistants.</li><li>School-level leadership responsibilities, including research ethics, the research participation scheme and postgraduate programme development.</li></ul></article>
+<article class="entry"><div class="logo"><img src="img/logos/ntu-full.svg" alt=""></div><div class="head"><div class="line"><span class="title">Research Fellow (Postdoc)</span><span class="loc">Singapore</span></div><div class="line"><span class="org">School of Social Sciences, Nanyang Technological University (NTU)</span><span class="date">2019 - 22</span></div></div><ul><li>Awarded the NTU Presidential Postdoctoral Fellowship (2021 - 22), a competitive two-year grant bridging postdoc and faculty. Led an independent research track on the neurocognitive and affective processes underlying beliefs about reality within the <a href="https://www.clinicalbrain.org/">Clinical Brain Lab</a>, managing a research budget and a team of three research assistants.</li><li>Research Fellow (2019 - 20) on a Singapore Ministry of Defence funded project on the neurocognitive correlates of deception: study design, data collection, analysis and publications; co-supervision of one PhD student and two research assistants.</li></ul></article>
+<h2 id="education"><span class="t"><span class="lead">Edu</span>cation</span></h2>
+<article class="entry"><div class="logo"><img src="img/logos/universite-paris-mark.svg" alt=""></div><div class="head"><div class="line"><span class="title" title="Thesis: Cognitive Neuropsychology of Implicit Emotion Regulation through Fictional Reappraisal (supervisors: Pr Serge Nicolas and Pr Pascale Piolino). Defended November 2018.">PhD - Psychology</span><span class="loc">France</span></div><div class="line"><span class="org">Université Paris Cité</span><span class="date">2014 - 18</span></div></div></article>
+<article class="entry"><div class="logo"><img src="img/logos/aftcc.svg" alt=""></div><div class="head"><div class="line"><span class="title">Certified Psychotherapist - Cognitive Behavioural Therapy (CBT)</span><span class="loc">France</span></div><div class="line"><span class="org">French Association for Cognitive Behavioural Therapy (AFTCC)</span><span class="date">2014 - 17</span></div></div></article>
+<article class="entry"><div class="logo"><img src="img/logos/universite-paris-mark.svg" alt=""></div><div class="head"><div class="line"><span class="title">BSc, MSc - Clinical Neuropsychology and Cognitive Psychology</span><span class="loc">France</span></div><div class="line"><span class="org">Université Paris Cité</span><span class="date">2009 - 14</span></div></div></article>
+<h2 id="clinical-practice"><span class="t"><span class="lead">Cli</span>nical Practice</span></h2>
+<article class="entry"><div class="logo"><img src="img/logos/salpetriere-full.svg" alt=""></div><div class="head"><div class="line"><span class="title">Assistant Neuropsychologist</span><span class="loc">France</span></div><div class="line"><span class="org">Adult Psychiatry, Hôpital Pitié-Salpêtrière, Paris</span><span class="date">2013 - 14</span></div></div><ul><li>Professional placement (580 h): neuropsychological assessment and diagnosis of inpatients with mood disorders, psychosis and attention deficit hyperactivity disorder, and cognitive remediation.</li></ul></article>
+<article class="entry"><div class="logo"><img src="img/logos/sainte-anne2.svg" alt=""></div><div class="head"><div class="line"><span class="title">Assistant Neuropsychologist</span><span class="loc">France</span></div><div class="line"><span class="org">Geriatric Psychiatry, Hôpital Sainte-Anne, Paris</span><span class="date">2012 - 13</span></div></div><ul><li>Professional placement (304 h): assessment and diagnosis of complex presentations combining psychiatric disorders with early dementia in older adults.</li></ul></article>
+<article class="entry"><div class="logo"><img src="img/logos/porte-verte.svg" alt=""></div><div class="head"><div class="line"><span class="title">Assistant Neuropsychologist</span><span class="loc">France</span></div><div class="line"><span class="org">Gerontology, Hôpital La Porte Verte, Versailles</span><span class="date">2012</span></div></div><ul><li>Observation placement (96 h): assessment of memory deficits in neurodegenerative disease, somatic ageing-related illness and depression.</li></ul></article>
+<h2 id="languages"><span class="t"><span class="lead">Lan</span>guages</span></h2>
+<div class="langs"><div class="tiles spoken" style="flex: 4 1 18rem"><div class="tile"><div class="mark"><img src="img/languages/french.svg" alt=""></div><p class="name">French</p><p class="level">Native</p></div><div class="tile"><div class="mark"><img src="img/languages/polish.svg" alt=""></div><p class="name">Polish</p><p class="level">Native</p></div><div class="tile"><div class="mark"><img src="img/languages/english.svg" alt=""></div><p class="name">English</p><p class="level">Fluent</p></div><div class="tile"><div class="mark"><img src="img/languages/italian.svg" alt=""></div><p class="name">Italian</p><p class="level">B1 · learning</p></div></div><div class="tiles code" style="flex: 2 1 9rem"><div class="tile"><div class="mark"><img src="img/languages/r.svg" alt=""></div><p class="name">R</p><p class="level">Fluent</p></div><div class="tile"><div class="mark"><img src="img/languages/python.svg" alt=""></div><p class="name">Python</p><p class="level">Fluent</p></div></div></div>
+<h2 id="teaching"><span class="t"><span class="lead">Tea</span>ching</span></h2>
+<p class="intro">I have been teaching at university level since 2013, and I am a Fellow of the Higher Education Academy (FHEA). At Sussex my involvement is primarily with advanced and postgraduate courses, but I am equally comfortable with introductory and undergraduate content.</p><section class="topics"><h3>Methods and Statistics</h3><div class="area">Bayesian Statistics</div><div class="level">MSc · PhD</div><div class="what"><strong>Module convenor</strong>; designed from scratch. The Bayesian framework, estimation and inference; multilevel and cognitive models with brms.<span class="where">University of Sussex · 2024 - Present</span></div><div class="area">Advanced Statistics</div><div class="level">BSc · MSc · PhD</div><div class="what">Regression and mixed models; psychometrics; experimental methodology and scientific reasoning. <strong>Taught in R</strong>.<span class="where">University of Sussex · 2023 - Present · Université Paris Cité · 19 h · 2017 - 18</span></div><div class="area">Programming and Tools</div><div class="level">MRes · PhD</div><div class="what">Online experiment building with JavaScript; signal processing with <strong>Python</strong>; version control and collaboration with <strong>GitHub</strong>; Open data and materials; <strong>agentic coding (AI)</strong> tools for research.<span class="where">University of Sussex · 2025 · University of Zurich · 24 h · 2022</span></div><h3>Cognition and Psychobiology</h3><div class="area">Psychophysiology</div><div class="level">BSc · MSc</div><div class="what">Neurophysiological signal recording and preprocessing; heart rate variability; interoception; embodied cognition.<span class="where">University of Sussex · 2023 - Present · University of Basel · 8 h · 2024</span></div><div class="area">Cognitive Neuroscience</div><div class="level">BSc</div><div class="what">Neuroanatomy; memory; emotion regulation; neuroimaging; mindfulness and meditation.<span class="where">Université Paris Cité · 90 h · 2017 - 18</span></div><div class="area">Cognitive Psychology</div><div class="level">BSc</div><div class="what">Models of working memory; mental imagery and categorisation.<span class="where">Université Paris Cité · 48 h · 2014 - 16</span></div><h3>Individual Differences and Clinical Psychology</h3><div class="area">Individual Differences</div><div class="level">BSc</div><div class="what">Intelligence; personality; creativity.<span class="where">Université Paris Cité · 144 h · 2015 - 17</span></div><div class="area">Clinical Neuropsychology</div><div class="level">BSc</div><div class="what">Neuropsychological syndromes; neuropsychological examination, diagnosis and psychometrics; neuropsychology in psychiatry.<span class="where">Université Paris Cité · 51 h · 2017 - 18</span></div><div class="area">Rehabilitation and Practice</div><div class="level">MSc</div><div class="what">Cognitive rehabilitation and intervention; neuropsychology and disability; neurodegenerative and neurodevelopmental disorders; clinical practice supervision.<span class="where">Université Paris Cité · 29 h · 2017 - 18</span></div></section>
+<div class="cards"><section><h3>Design and Delivery</h3><article class="card"><div><div class="line"><span class="name">MSc Programme development</span><span class="reach">2026</span></div><p class="meta">University of Sussex</p><p class="desc">Lead on designing a new postgraduate programme: <strong>MSc Advanced Computational Psychology</strong> with its curriculum structure, module content and learning outcomes.</p></div></article><article class="card"><div><div class="line"><span class="name">Module design</span><span class="reach">2024</span></div><p class="meta">University of Sussex</p><p class="desc">Created <strong>Bayesian Statistics</strong> as a new master's module (also attended by PhDs). Student's evaluation highlight it as one of the most engaging modules.</p></div></article><article class="card"><div><div class="line"><span class="name">Invited teaching</span><span class="reach">2021 - 25</span></div><p class="meta">Basel · Zurich · Paris · Singapore · OHBM</p><p class="desc">I am regularly invited to deliver specific upskilling trainings for Staff or PhDs, with workshops on physiological techniques, programming or statistics.</p></div></article></section><section><h3>Supervision and Examining</h3><article class="card"><div><div class="line"><span class="name">Doctoral supervision and examining</span><span class="reach">4 examined</span></div><p class="desc"><strong>Two PhD students</strong> supervised at Sussex, one graduated. <strong>Internal examiner</strong> for four Sussex PhD theses, on consciousness science, interoception and quantitative methods.</p></div></article><article class="card"><div><div class="line"><span class="name">Dissertation and placement students</span><span class="reach">12 a year</span></div><p class="desc">Supervising nine undergraduate and three master's dissertations a year, two full-time placement students, and funded summer interns.</p></div></article><article class="card"><div><div class="line"><span class="name">Student prizes and scholarships</span><span class="reach">8 since 2023</span></div><p class="desc">Supervised students have won a <strong>SAGE prize for outstanding application of statistical methods</strong>, a Sussex Partnership NHS Trust prize for the highest project mark, an Adam Weiler PhD Impact Award, and five JRA and SoCoBio summer scholarships.</p></div></article></section></div>
+<h2 id="software-and-tools"><span class="t"><span class="lead">Sof</span>tware and Tools</span></h2>
+<div class="cards marks"><section><h3>Software</h3><article class="card"><div class="mark"><img src="img/tools/easystats.png" alt=""></div><div><div class="line"><span class="name"><a href="https://easystats.github.io/easystats/">easystats</a></span><span class="reach">41.2M downloads</span></div><p class="meta">R · Co-founder · 2019 - Present</p><p class="desc">Ten R packages for the post-processing of statistical models: parameters, effect sizes, diagnostics, Bayesian indices, marginal effects, reporting. <strong>Used in over 10,000 publications</strong>. <strong>SIPS Mission Award</strong> (2023).</p></div></article><article class="card"><div class="mark"><img src="img/tools/neurokit.png" alt=""></div><div><div class="line"><span class="name"><a href="https://neuropsychology.github.io/NeuroKit/">NeuroKit</a></span><span class="reach">130k downloads/month</span></div><p class="meta">Python · Creator · 2017 - Present</p><p class="desc">Most popular Python package for signal processing (ECG, PPG, EDA, ...), from peak detection to heart rate variability and complexity indices. <strong>2,355 stars</strong> and dozens of contributors. <strong>SIPS Commendation</strong> (2024).</p></div></article><article class="card"><div class="mark"><img src="img/tools/pyllusion.png" alt=""></div><div><div class="line"><span class="name"><a href="https://realitybending.github.io/Pyllusion/">Pyllusion</a></span><span class="reach">82 stars</span></div><p class="meta">Python · Creator · 2020 - Present</p><p class="desc">Generates visual illusions parametrically, separating illusion strength from the objective difference between the targets, so that sensitivity can be measured continuously.</p></div></article><article class="card"><div class="mark"><img src="img/tools/cogmod.png" alt=""></div><div><div class="line"><span class="name"><a href="https://dominiquemakowski.github.io/cogmod/">cogmod</a></span><span class="reach">22 stars</span></div><p class="meta">R · Creator · 2025 - Present</p><p class="desc">Bayesian models of cognitive tasks - drift diffusion, linear ballistic accumulator, racing diffusion - as custom brms families.</p></div></article></section><section><h3>Measures and Paradigms</h3><article class="card"><div class="mark"><img src="img/tools/illusiongame.png" alt=""></div><div><div class="line"><span class="name"><a href="https://doi.org/10.1038/s41598-023-33148-5">Illusion Game</a></span></div><p class="meta">Scientific Reports · 2023</p><p class="desc">Parametric task measuring visual illusion sensitivity as a continuous trait, with evidence for a general factor.</p></div></article><article class="card"><div class="mark"><img src="img/tools/lie.png" alt=""></div><div><div class="line"><span class="name"><a href="https://doi.org/10.1007/s12144-021-01760-1">LIE Scale</a></span></div><p class="meta">Current Psychology · 2021</p><p class="desc">16-item measure of lying styles and attitudes: ability, frequency, negativity and contextuality.</p></div></article><article class="card"><div class="mark"><img src="img/tools/mint.png" alt=""></div><div><div class="line"><span class="name"><a href="https://doi.org/10.31234/osf.io/8qrht_v1">MINT Scale</a></span></div><p class="meta">PsyArXiv preprint</p><p class="desc">Multimodal interoception questionnaire, across cardiac, respiratory, gastric and other bodily channels.</p></div></article></section></div>
+<h2 id="service-and-leadership"><span class="t"><span class="lead">Ser</span>vice and Leadership</span></h2>
+<div class="cards"><section><h3>School and University</h3><article class="card"><div><div class="line"><span class="name">Programme Developer</span><span class="reach">2026 - Present</span></div><p class="meta">MSc Advanced Computational Psychology · University of Sussex</p></div></article><article class="card"><div><div class="line"><span class="name">Academic Lead</span><span class="reach">2025 - Present</span></div><p class="meta">Research Participation Scheme · School of Psychology, Sussex</p><p class="desc"><strong>Redesigned the credit allocation and study approval rules</strong> to be fairer and more transparent, and trialled changes that raise the educational value of taking part while improving data quality.</p></div></article><article class="card"><div><div class="line"><span class="name"><a href="https://www.sussex.ac.uk/research/centres/centre-for-open-science-and-research-reform/">Seminar Organiser</a></span><span class="reach">2024 - Present</span></div><p class="meta">MORSE · Centre for Open Science and Research Reform, Sussex</p><p class="desc"><strong>Methods for Open and Reproducible Science</strong>: a seminar series on openness and reproducibility in psychological science. Member of the Centre.</p></div></article><article class="card"><div><div class="line"><span class="name">Committee Member</span><span class="reach">2023 - Present</span></div><p class="meta">Cross-Schools Research Ethics Committee · University of Sussex</p></div></article></section><section><h3>Editorial and Peer Review</h3><article class="card"><div><div class="line"><span class="name"><a href="https://royalsocietypublishing.org/journal/rsos">Statistical Editor</a></span><span class="reach">2025 - Present</span></div><p class="meta">Royal Society Open Science</p></div></article><article class="card"><div><div class="line"><span class="name">Associate Editor</span><span class="reach">2020 - 24</span></div><p class="meta">Frontiers in Psychology · Quantitative Psychology and Measurement</p></div></article><article class="card"><div><div class="line"><span class="name"><a href="https://joss.theoj.org/">Regular Reviewer</a></span><span class="reach">2018 - Present</span></div><p class="meta">Journal of Open Source Software</p></div></article><article class="card"><div><div class="line"><span class="name">Reviewer</span><span class="reach">2017 - Present</span></div><p class="meta">Nature Human Behaviour · Biological Psychiatry · Scientific Reports</p><p class="desc">Also Acta Psychologica, Journal of Experimental Psychology: Human Perception and Performance, Neuropsychologia, Personality and Individual Differences and others.</p></div></article></section></div>
+<h2 id="grants-and-awards"><span class="t"><span class="lead">Gra</span>nts and Awards</span></h2>
+<div class="cards"><section><h3>Grants</h3><article class="card"><div><div class="line"><span class="name">Measuring the Deep Self</span><span class="reach">€58,843</span></div><p class="meta">BIAL Foundation · Grants Programme 2026/27 · Under review</p><p class="desc">Prior-weighting in predictive processing as a single trait across belief updating, perception and self-reference.</p></div></article><article class="card"><div><div class="line"><span class="name"><a href="https://www.cos.io/blog/funding-consciousness-research">Illusion Sensitivity and Phenomenological Control</a></span><span class="reach">£20,000</span></div><p class="meta">Centre for Open Science · Registered Reports in Consciousness Research · PI · 2024 - 26</p></div></article><article class="card"><div><div class="line"><span class="name">Perception of Real vs. Fake Information</span><span class="reach">£655,000</span></div><p class="meta">Temasek Laboratories, NTU · Behavioural and Communication Science Programme · co-PI · 2022 - 25</p></div></article><article class="card"><div><div class="line"><span class="name">Crowdedness and Environment Typology (NICE)</span><span class="reach">£179,000</span></div><p class="meta">Singapore National Research Foundation · Intra-CREATE Grant · co-PI · 2021 - 22</p></div></article><article class="card"><div><div class="line"><span class="name">&quot;That&#x27;s Fake News&quot;: Belief in Deceptive Information</span><span class="reach">£258,000</span></div><p class="meta">Nanyang Technological University · Presidential Postdoctoral Fellowship · PI · 2020 - 22</p></div></article></section><section><h3>Awards</h3><article class="card"><div><div class="line"><span class="name"><a href="https://improvingpsych.org/mission/awards/">SIPS Commendation</a></span><span class="reach">2024</span></div><p class="meta">Society for the Improvement of Psychological Science</p><p class="desc">For the NeuroKit Python package.</p></div></article><article class="card"><div><div class="line"><span class="name">Openness in Research Award</span><span class="reach">2024</span></div><p class="meta">University of Sussex Research Culture Awards</p><p class="desc">For building software that makes open research accessible, and for running fully transparent studies.</p></div></article><article class="card"><div><div class="line"><span class="name">School of Psychology Award</span><span class="reach">2024</span></div><p class="meta">University of Sussex</p><p class="desc">For outstanding student supervision.</p></div></article><article class="card"><div><div class="line"><span class="name"><a href="https://improvingpsych.org/mission/awards/">Mission Award</a></span><span class="reach">2023</span></div><p class="meta">Society for the Improvement of Psychological Science</p><p class="desc">For the easystats collection of R packages.</p></div></article><article class="card"><div><div class="line"><span class="name"><a href="https://www.psychonomic.org/page/2020BestArticleAwards">Best Article Award</a></span><span class="reach">2020</span></div><p class="meta">Psychonomic Society</p><p class="desc">For the fictional reappraisal paper, the main output of the PhD.</p></div></article><article class="card"><div><div class="line"><span class="name"><a href="https://improvingpsych.org/mission/awards/">SIPS Commendation</a></span><span class="reach">2020</span></div><p class="meta">Society for the Improvement of Psychological Science</p><p class="desc">For the bayestestR R package.</p></div></article></section></div>
+<h2 id="engagement-and-knowledge-exchange"><span class="t"><span class="lead">Eng</span>agement and Knowledge Exchange</span></h2>
+<div class="cards"><section><h3>Public Engagement and Outreach</h3><article class="card"><div><div class="line"><span class="name">Open Science Champion</span><span class="reach">2024</span></div><p class="meta">British Neuroscience Association · Members' Meeting</p><p class="desc">Invited to argue the open science side of the meeting's debate - whether neuroscience needs a <strong>sustainability</strong> revolution more than an <strong>openness</strong> one - against the Association's Sustainability Champion and a representative of Wellcome.</p></div></article><article class="card"><div><div class="line"><span class="name"><a href="https://realitybendinglab.com/news/">Popular Writing and Media</a></span><span class="reach">40+ posts</span></div><p class="meta">Reality Bending Lab · Television · Podcast · 2015 - Present</p><p class="desc">Methods tutorials, research explainers and essays on research culture, for a general and early-career audience. French national television on violent images and the brain; the <em>Learning Bayesian Statistics</em> podcast; Pint of Science; a public debate on sensory illusions in Bordeaux; press coverage of the 3D-cinema memory and AI-generated faces studies.</p></div></article></section><section><h3>Knowledge Exchange and Consultancy</h3><article class="card"><div><div class="line"><span class="name">Scientific Advisor</span><span class="reach">2025 -</span></div><p class="meta">Artificial intelligence start-up, Singapore · Client confidential</p><p class="desc">Scientific advising on an applied project on deception detection.</p></div></article><article class="card"><div><div class="line"><span class="name">Contract Research</span><span class="reach">2026</span></div><p class="meta">Fragrance industry · Client confidential</p><p class="desc">Contract research on the relationship between smells and emotions.</p></div></article><article class="card"><div><div class="line"><span class="name">Contracted Instructor</span><span class="reach">2026</span></div><p class="meta">South East Doctoral Training Arc (SEDarc)</p><p class="desc">Reusable <em>Introduction to GitHub</em> lecture for PhD students across the six universities of the partnership.</p></div></article><article class="card"><div><div class="line"><span class="name">Contracted Developer</span><span class="reach">2025</span></div><p class="meta">Institute for Advanced Consciousness Studies</p><p class="desc">Hyperscanning capabilities for open-source portable electroencephalography (EEG) software.</p></div></article></section></div>
+<div class="cards marks pictures projects"><section><h3>Science Adjacent Projects</h3><div class="row"><article class="card"><div class="mark"><img src="img/projects/neuropsyxart.jpg" alt=""></div><div><div class="line"><span class="name"><a href="https://dominiquemakowski.github.io/NeuropsyXart/">NeuropsyXart</a></span><span class="reach">OHBM 2023</span></div><p class="meta">Brain Art Exhibition, Montreal · Selected</p><p class="desc">A person's heart or brain activity, recorded during a mental experience and drawn as the <strong>attractor</strong> of that signal: a portrait made of physiology, where the artist is only the facilitator.</p></div></article><article class="card"><div class="mark"><img src="img/projects/realitycheck.jpg" alt=""></div><div><div class="line"><span class="name">Reality Check!</span><span class="reach">In testing</span></div><p class="meta">Card game · Beta-tested in the lab, 2024</p><p class="desc">A bluffing card game built on the <strong>Ebbinghaus illusion</strong>: play a circle the same size or bigger than the last, and call the bluff when your eyes disagree. Out of the lab's work on illusion sensitivity.</p></div></article></div></section></div>
+<h2 id="talks-and-presentations"><span class="t"><span class="lead">Tal</span>ks and Presentations</span></h2>
+<div class="cards"><section><h3>Invited Talks and Seminars</h3><article class="card"><div><div class="line"><span class="name">Reality as an Embodied Process</span><span class="reach">2025</span></div><p class="meta">Nanyang Technological University, Singapore</p><p class="desc">Departmental research seminar on the role of the body in higher cognition, and on the tools - measures, paradigms and software - built to study it.</p></div></article><article class="card"><div><div class="line"><span class="name">Good Tools Breed Good Science</span><span class="reach">2026</span></div><p class="meta">BrainHack · Singapore</p><p class="desc">On how the available software, hardware and methods quietly decide which questions a field is able to ask.</p></div></article><article class="card"><div><div class="line"><span class="name">easystats and NeuroKit</span><span class="reach">4 talks</span></div><p class="meta">OHBM · Sussex · Brighton · 2023 - 2026</p><p class="desc">Invited software talks and demonstrations, including <em>Get Sh*t Done in R with easystats</em> at EARL Brighton, NeuroKit at an OHBM satellite event on research software, and the past, present and future of easystats for the Centre for Open Science and Research Reform.</p></div></article><article class="card"><div><div class="line"><span class="name">The Lying Brain</span><span class="reach">2021</span></div><p class="meta">Temasek Laboratories · Singapore</p><p class="desc">On the neuroscientific approaches to deception, and the case for treating it as a multidimensional phenomenon rather than a signal to be detected.</p></div></article></section><section><h3>Conference Presentations</h3><article class="card"><div><div class="line"><span class="name">Symposia Chaired</span><span class="reach">2024 - 26</span></div><p class="meta">AISC, Rome · ESCAN, Rome</p><p class="desc"><em>The Value of Reality in the Post-Truth Era</em> and <em>Artificial Emotion</em>: two international symposia on how beliefs about artificiality shape affective and neural responses, convened with collaborators in Rome.</p></div></article><article class="card"><div><div class="line"><span class="name">Conference Talks</span><span class="reach">13</span></div><p class="meta">ESCOP · ICOM · ICM · SFP · AFTCC · MBB · 2013 - 2023</p><p class="desc">Talks at European and international meetings in cognitive psychology, consciousness science, neuroimaging and clinical psychology, in English and in French.</p></div></article><article class="card"><div><div class="line"><span class="name">Posters</span><span class="reach">12</span></div><p class="meta">OHBM · SNLF · Société des Neurosciences · 2013 - 2023</p><p class="desc">Including an EEG-attractor artwork, <em>Unicity through Complexity</em>, shown in the Neuroscience x Art track at OHBM 2023.</p></div></article></section></div>
+<h2 id="research-impact"><span class="t"><span class="lead">Res</span>earch Impact</span></h2>
+<section class="stats"><img class="plot" src="img/impact.svg" alt="Bar charts of publications and of citations per year, both rising steeply from 2019."><ul><li>Most cited researcher in the School of Psychology, University of Sussex, since 2024.</li><li><em>h</em>-index 27, i10-index 38; 40 of 67 publications as first (29) or senior (11) author.</li><li>Concepts and tools from this work are now documented independently of their authors: the <a href="https://en.wikipedia.org/wiki/Probability_of_direction">probability of direction</a>, <a href="https://en.wikipedia.org/wiki/Easystats">easystats</a> and <a href="https://en.wikipedia.org/wiki/NeuroKit">NeuroKit</a>.</li></ul><p class="source">Google Scholar, June 2026</p></section>
+<footer>
+  <span>Dominique Makowski &middot; Curriculum Vitae &middot; September 2026</span>
+  <span><a href="cv.pdf">Download as PDF</a></span>
+</footer>
+</div>
+</body>
+</html>

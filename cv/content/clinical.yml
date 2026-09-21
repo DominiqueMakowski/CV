@@ -1,0 +1,44 @@
+# Clinical practice: the placements behind the clinical qualifications listed
+# under Education. One list item per placement, newest first; entry fields as in
+# experience.yml.
+#
+# Hours are those recorded in PROFILE.md > Clinical Activity and total 980 h.
+# All three hospitals carry a mark, rebuilt from their own artwork by
+# tools/make_salpetriere_logo.py, tools/make_ghu_logo.py and
+# tools/make_porte_verte_logo.py.
+#
+# Sainte-Anne uses the current GHU Paris lockup rather than the older "Centre
+# hospitalier Sainte-Anne" crest in sainte-anne.svg, which is what the hospital
+# used at the time of the placement but is no longer how it signs itself.
+
+- title: "Assistant Neuropsychologist"
+  location: "France"
+  org: "Adult Psychiatry, Hôpital Pitié-Salpêtrière, Paris"
+  date: "2013 - 14"
+  logo: salpetriere-full.svg
+  details:
+      - >-
+          Professional placement (580 h): neuropsychological assessment and
+          diagnosis of inpatients with mood disorders, psychosis and attention
+          deficit hyperactivity disorder, and cognitive remediation.
+
+- title: "Assistant Neuropsychologist"
+  location: "France"
+  org: "Geriatric Psychiatry, Hôpital Sainte-Anne, Paris"
+  date: "2012 - 13"
+  logo: sainte-anne2.svg
+  details:
+      - >-
+          Professional placement (304 h): assessment and diagnosis of complex
+          presentations combining psychiatric disorders with early dementia in
+          older adults.
+
+- title: "Assistant Neuropsychologist"
+  location: "France"
+  org: "Gerontology, Hôpital La Porte Verte, Versailles"
+  date: "2012"
+  logo: porte-verte.svg
+  details:
+      - >-
+          Observation placement (96 h): assessment of memory deficits in
+          neurodegenerative disease, somatic ageing-related illness and depression.

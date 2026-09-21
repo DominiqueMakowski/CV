@@ -1,0 +1,93 @@
+# Talks, as two columns of cards: given by invitation on the left
+# (`kind: invited`, the default), taken to a conference on the right
+# (`kind: conference`). Card fields as in grants-awards.yml.
+#
+# Source: PROFILE.md > Talks and Media, which holds all of it - 14 invited
+# talks, 18 conference talks and 18 posters, 2013 to present. This file holds
+# a tenth of that on purpose.
+#
+# The two counts below are smaller than those totals because they count only
+# what he presented himself: they drop the two symposia (their own card) and
+# the co-authored contributions presented by Sperduti, Blonde, Lau,
+# Osborn-Moar and Neves. 13 talks and 12 posters is what survives. A count on a CV is a
+# claim about the person holding it, so it is the conservative reading, and
+# PROFILE.md shows the working.
+#
+# Abstracts that were submitted but never delivered are not in those totals at
+# all: PROFILE.md keeps them under its own "Submitted but Not Presented"
+# heading, and nothing from there may be counted here.
+#
+# A full chronological list of fifty presentations would run a page and a
+# half and would be read as one undifferentiated block, in which the eleven
+# French student posters of 2013-2016 sit at the same weight as a chaired
+# international symposium. The individual cards are therefore the talks that
+# are an argument on their own, and everything else is summed: the count is the
+# evidence of volume, and the venue names are the evidence of level. Nothing is
+# lost, because PROFILE.md keeps the list.
+#
+# Not repeated here: the invited doctoral teaching (Basel, Zurich, Paris,
+# Singapore, OHBM), which is the Invited teaching card in teaching-roles.yml;
+# the BNA open science debate and the podcast, television and Pint of Science
+# appearances, which are engagement.yml. The two contributions delivered by
+# students on joint work (Osborn-Moar at ASSC 2024, Neves at ASSC 2025) are in
+# PROFILE.md but not here: they are their talks.
+
+- name: "Reality as an Embodied Process"
+  kind: invited
+  reach: "2025"
+  meta: "Nanyang Technological University, Singapore"
+  description: >-
+    Departmental research seminar on the role of the body in higher cognition,
+    and on the tools - measures, paradigms and software - built to study it.
+
+- name: "Good Tools Breed Good Science"
+  kind: invited
+  reach: "2026"
+  meta: "BrainHack · Singapore"
+  description: >-
+    On how the available software, hardware and methods quietly decide which
+    questions a field is able to ask.
+
+- name: "easystats and NeuroKit"
+  kind: invited
+  reach: "4 talks"
+  meta: "OHBM · Sussex · Brighton · 2023 - 2026"
+  description: >-
+    Invited software talks and demonstrations, including _Get Sh\*t Done in R
+    with easystats_ at EARL Brighton, NeuroKit at an OHBM satellite event on
+    research software, and the past, present and future of easystats for the
+    Centre for Open Science and Research Reform.
+
+- name: "The Lying Brain"
+  kind: invited
+  reach: "2021"
+  meta: "Temasek Laboratories · Singapore"
+  description: >-
+    On the neuroscientific approaches to deception, and the case for treating it
+    as a multidimensional phenomenon rather than a signal to be detected.
+
+- name: "Symposia Chaired"
+  kind: conference
+  reach: "2024 - 26"
+  meta: "AISC, Rome · ESCAN, Rome"
+  description: >-
+    _The Value of Reality in the Post-Truth Era_ and _Artificial Emotion_: two
+    international symposia on how beliefs about artificiality shape affective
+    and neural responses, convened with collaborators in Rome.
+
+- name: "Conference Talks"
+  kind: conference
+  reach: "13"
+  meta: "ESCOP · ICOM · ICM · SFP · AFTCC · MBB · 2013 - 2023"
+  description: >-
+    Talks at European and international meetings in cognitive psychology,
+    consciousness science, neuroimaging and clinical psychology, in English and
+    in French.
+
+- name: "Posters"
+  kind: conference
+  reach: "12"
+  meta: "OHBM · SNLF · Société des Neurosciences · 2013 - 2023"
+  description: >-
+    Including an EEG-attractor artwork, _Unicity through Complexity_, shown in
+    the Neuroscience x Art track at OHBM 2023.

@@ -2,7 +2,7 @@
 
 Exhaustive, plain-text record of everything about Dominique Makowski. This file is
 the **source of truth**: nothing is ever shortened, curated or deleted here.
-Rendered outputs (`DominiqueMakowski_CV.Rmd`, lab profiles, biosketches, funder
+Rendered outputs (the CV in `cv/`, lab profiles, biosketches, funder
 portals, LinkedIn) are *views* on this file and may select, compress or reorder —
 but they must not be the only place a fact lives.
 
@@ -15,32 +15,52 @@ Resolve and delete each line once settled.
 
 ### Facts to confirm
 
-None.
+- **AISC 2024 symposium** - the chaired symposium was moved here from ASSC 2025
+  after a mix-up, so its title and date came from the wrong venue. Check "The
+  Value of Reality in the Post-Truth Era: Consequences of AI-Authorship on
+  Cognitive and Affective Phenomenology" and the September 2024 date against
+  the AISC programme.
+- **ASSC 2025, Crete** - Ana Neves presented a poster on joint work; the title
+  is not recorded. Ask her, or check the ASSC 2025 programme.
 
 ### Corrections to make on external profiles
 
 Cases where this file is right and a profile elsewhere is wrong, stale or
-incomplete. This repo is upstream: fix the other place, not this one.
+incomplete. This repo is upstream: fix the other place, not this one. What goes
+in which field is under [External Profiles](#external-profiles); this list is
+only what is still outstanding.
 
 ORCID (https://orcid.org/0000-0001-5375-9967):
 
-- **The distinctions, invited positions, memberships and services sections are
-  empty.** The awards under [Awards](#awards), the editorial roles under
-  [Editorial Responsibilities](#editorial-responsibilities) and the committee and
-  seminar roles under [Service and Leadership](#service-and-leadership) all have
-  a place in one of them. The centre memberships under
-  [Affiliations](#affiliations) belong there too.
+- **Service and Editorial Service are both still empty.** Everything to put in
+  them is tabulated under [External Profiles](#external-profiles). Distinctions,
+  invited positions and memberships are done.
+- **Employments is missing the ATER**, the Assistant Lecturer post at Universite
+  Paris Cite, 2017-2018, under [Positions](#positions).
+- **Qualifications holds only the CBT certification.** Four of the six entries
+  under [Titles and Licenses](#titles-and-licenses) are missing: Fellow of the
+  Higher Education Academy (2025), the CNU qualification (2019), Clinical
+  Psychologist Specialized in Neuropsychology (2014), and Certified
+  Hypnotherapist (2019).
+- **Education names the institution "Universite de Paris".** It is Universite
+  Paris Cite.
 
 University of Sussex staff profile
 (https://profiles.sussex.ac.uk/p592424-dominique-makowski):
 
-- **Most achievements exist only as free text in the biography, not as structured
-  entries.** Only the 2024 Research Culture Award appears under Awards and
-  Honours, and only two items under Teaching Activities. The SIPS awards, the
-  Psychonomic Society Best Article Award, the School of Psychology Award, the
-  workshops under [Consultancy and Knowledge Exchange](#consultancy-and-knowledge-exchange)
-  and the modules under [Academic Teaching](#academic-teaching) are not
-  searchable as things stand.
+- **Teaching Activities holds two entries**, Bayesian Statistics and
+  Quantitative and Qualitative Methods. The other Sussex modules under
+  [Academic Teaching](#academic-teaching) and the workshops under
+  [Consultancy and Knowledge Exchange](#consultancy-and-knowledge-exchange) are
+  not there. Awards and Honours is done.
+- **Event Participation holds only the two 2023 OHBM items.** The chaired
+  symposia and the invited and conference talks under
+  [Talks and Media](#talks-and-media) would sit in the same category.
+- **Certifications is missing FHEA and the CNU qualification**, both under
+  [Titles and Licenses](#titles-and-licenses).
+- **The free-text Teaching block disagrees with this file on two facts.** It
+  dates Quantitative and Qualitative Methods 2022-24, which predates the post;
+  this file has 2023-2025. It also caps three ongoing modules at 2025.
 
 
 ---
@@ -55,7 +75,7 @@ and they drift. Here is the canonical version to summarize my research.
 Every place a variant lives, newest first. This is the list to walk through when
 the paragraph changes:
 
-- `DominiqueMakowski_CV.Rmd`, the `aboutme` field in the YAML header (first person).
+- `cv/cv.qmd`, the `aboutme` field in the YAML header (first person).
 - Lab website, `people/dominique-makowski/profile.json`, the `summary` field (third person, written as HTML).
 - ORCID biography (https://orcid.org/0000-0001-5375-9967).
 - University of Sussex staff profile biography (https://profiles.sussex.ac.uk/p592424-dominique-makowski).
@@ -76,6 +96,120 @@ the paragraph changes:
 - LinkedIn: https://www.linkedin.com/in/dominiquemakowski/
 - X (Twitter): https://twitter.com/Dom_Makowski
 - Scopus Author ID: 56850132300 (https://www.scopus.com/authid/detail.uri?authorId=56850132300)
+
+
+---
+
+## External Profiles
+
+Where each thing recorded in this file goes on each external profile. The point
+is that a new achievement can be pushed outwards without working out the mapping
+again, and that the gap between here and there stays visible. What is still
+outstanding is under [To Do](#corrections-to-make-on-external-profiles); the
+tables below are the standing record, and stay after the work is done.
+
+This repo is upstream of all of them. Nothing here is a source: if a profile and
+this file disagree, this file is right.
+
+### ORCID
+
+https://orcid.org/0000-0001-5375-9967
+
+The **Organization** field is a typeahead over ROR and Ringgold, so picking the
+match fills in city, region and country. Only the role title, the department,
+the dates and the URL have to be typed. There is no free-text description field
+on any of these, which is why the role titles below carry the detail.
+
+ORCID separates **Service** from **Editorial Service**, so the editorial roles
+and the rest of the service go in different places.
+
+#### Distinctions - from [Awards](#awards) (done)
+
+| Role/title | Organization | Department | Year | URL |
+| --- | --- | --- | --- | --- |
+| School of Psychology Award - Outstanding Student Supervision | University of Sussex | School of Psychology | 2024 | https://www.linkedin.com/posts/dominiquemakowski_realitybendinglab-activity-7241790839134257152-wjR6 |
+| Openness in Research Award - Research Culture Awards | University of Sussex | | 2024 | |
+| Commendation - NeuroKit Python package | Society for the Improvement of Psychological Science | | 2024 | https://improvingpsych.org/mission/awards/ |
+| Mission Award - easystats R packages | Society for the Improvement of Psychological Science | | 2023 | https://improvingpsych.org/mission/awards/ |
+| Best Article Award | Psychonomic Society | | 2020 | https://www.psychonomic.org/page/2020BestArticleAwards |
+| Commendation - bayestestR R package | Society for the Improvement of Psychological Science | | 2020 | https://improvingpsych.org/mission/awards/ |
+
+Student awards are the students', not his, and do not go here.
+
+#### Invited positions - from [Consultancy and Knowledge Exchange](#consultancy-and-knowledge-exchange) (done)
+
+The invited instructor engagements. Contract research and contracted
+development are paid work for confidential clients and are not listed.
+
+| Role/title | Organization | Year |
+| --- | --- | --- |
+| Invited Instructor - Introduction to GitHub (recorded lecture) | South East Doctoral Training Arc (SEDarc) | 2026 |
+| Invited Instructor - Recording, Analyzing and Using Physiological Signals in Psychology | University of Basel | 2024 |
+| Invited Instructor - Bayesian Statistics | Universite Paris Cite | 2024 |
+| Invited Instructor - Educational Course: Physiological Signals Provide Insights into Cognition | Organization for Human Brain Mapping | 2023 |
+| Invited Instructor - Advanced Python Programming for Signal Processing and Data Analysis | University of Zurich | 2022 |
+| Invited Instructor - Mixed Models in R | Nanyang Technological University | 2021 |
+
+#### Memberships - from [Affiliations](#affiliations) (done)
+
+Organization is University of Sussex for all three; the centre is the
+department.
+
+| Role/title | Department | Start | URL |
+| --- | --- | --- | --- |
+| Member | Sussex Neuroscience | 2023 | https://www.sussex.ac.uk/research/centres/sussex-neuroscience/ |
+| Member | Sussex Centre for Consciousness Science | 2024 | https://www.sussex.ac.uk/research/centres/sussex-centre-for-consciousness-science/ |
+| Member | Centre for Open Science and Research Reform | 2024 | https://www.sussex.ac.uk/research/centres/centre-for-open-science-and-research-reform/ |
+
+The School of Psychology is the employing school, not a membership; it is an
+Employment.
+
+#### Editorial Service - from [Editorial Responsibilities](#editorial-responsibilities) (outstanding)
+
+| Role/title | Organization | Department | Dates | URL |
+| --- | --- | --- | --- | --- |
+| Statistical Editor | The Royal Society | Royal Society Open Science | 2025-present | https://royalsocietypublishing.org/journal/rsos |
+| Associate Editor - Quantitative Psychology and Measurement | Frontiers Media | Frontiers in Psychology | 2020-2024 | https://www.frontiersin.org/journals/all/sections/quantitative-psychology-and-measurement |
+| Reviewer | Open Journals | Journal of Open Source Software | 2018-present | https://joss.theoj.org/ |
+
+The ad-hoc reviewing for other journals is covered by ORCID's own peer review
+section, which is populated automatically and needs nothing typed.
+
+#### Service - from [Service and Leadership](#service-and-leadership) (outstanding)
+
+| Role/title | Organization | Department | Dates |
+| --- | --- | --- | --- |
+| Academic Lead, Research Participation Scheme (SONA) | University of Sussex | School of Psychology | 2025-present |
+| Member, Cross-Schools Research Ethics Committee (C-REC) | University of Sussex | | 2023-present |
+| Convenor, MORSE Seminar Series | University of Sussex | Centre for Open Science and Research Reform | 2024-present |
+| Open Science Champion, Members' Meeting debate | British Neuroscience Association | | 2024 |
+| Symposium Co-organizer - Artificial Emotion | European Society for Cognitive and Affective Neuroscience | | 2026 |
+| Symposium Chair - The Value of Reality in the Post-Truth Era | Italian Association for Cognitive Sciences | | 2024 |
+| Elected PhD Representative, ED261-3CH doctoral school | Universite Paris Cite | | 2016-2018 |
+| Community Manager, Memory and Cognition Lab | Universite Paris Cite | | 2014-2015 |
+
+### University of Sussex staff profile (Elements)
+
+https://profiles.sussex.ac.uk/p592424-dominique-makowski
+
+Two things matter about this one. Most of what a reader sees is **free text** in
+the Bio, Teaching and Awards blocks, and free text is not searchable as
+structured data - the expert-finder, the school's reporting and any external
+harvest read the structured entries instead. So anything that has a structured
+home should have one, even where it already appears in the prose.
+
+| Elements category | Fed from | State |
+| --- | --- | --- |
+| Awards and Honours | [Awards](#awards) > Personal Awards | done |
+| Teaching Activities - Course developed | [Academic Teaching](#academic-teaching), Sussex entries where capacity is convenor or developer | partly done: Bayesian Statistics only |
+| Teaching Activities - Course taught | [Academic Teaching](#academic-teaching), Sussex entries where capacity is module teacher | partly done: Quantitative and Qualitative Methods only |
+| Event Participation | [Talks and Media](#talks-and-media): chaired symposia, invited talks, conference talks, the OHBM art exhibition | partly done: the two 2023 OHBM items only |
+| Certifications | [Titles and Licenses](#titles-and-licenses) | outstanding |
+| Academic Positions, Degrees | [Positions](#positions), [Education](#education) | done |
+
+Only the Sussex teaching goes under Teaching Activities; the Universite Paris
+Cite modules belong to a previous post and the workshops elsewhere are
+Consultancy, not teaching on this profile.
 
 
 ---
@@ -201,9 +335,9 @@ Where the post sits inside the University of Sussex. The post itself is under
 [Service and Leadership](#service-and-leadership).
 
 - **School of Psychology, University of Sussex** — primary affiliation; the school the Assistant Professor post belongs to.
-- **Sussex Neuroscience** (https://www.sussex.ac.uk/research/centres/sussex-neuroscience/) — member. A University of Sussex Centre of Excellence, spanning the neuroscience research done across the University's schools.
-- **Sussex Centre for Consciousness Science (SCCS)** (https://www.sussex.ac.uk/research/centres/sussex-centre-for-consciousness-science/) — member. A University of Sussex Centre of Excellence, launched in 2024 as the successor to the Sackler Centre for Consciousness Science, drawing on the schools of Informatics and Engineering, Psychology, Media Arts and Humanities, and Brighton and Sussex Medical School.
-- **Centre for Open Science and Research Reform** (https://www.sussex.ac.uk/research/centres/centre-for-open-science-and-research-reform/) — member, and convenor of its MORSE seminar series; see [Service and Leadership](#service-and-leadership).
+- **Sussex Neuroscience** (https://www.sussex.ac.uk/research/centres/sussex-neuroscience/) — member since 2023. A University of Sussex Centre of Excellence, spanning the neuroscience research done across the University's schools.
+- **Sussex Centre for Consciousness Science (SCCS)** (https://www.sussex.ac.uk/research/centres/sussex-centre-for-consciousness-science/) — member since 2024. A University of Sussex Centre of Excellence, launched in 2024 as the successor to the Sackler Centre for Consciousness Science, drawing on the schools of Informatics and Engineering, Psychology, Media Arts and Humanities, and Brighton and Sussex Medical School.
+- **Centre for Open Science and Research Reform** (https://www.sussex.ac.uk/research/centres/centre-for-open-science-and-research-reform/) — member since 2024, and convenor of its MORSE seminar series; see [Service and Leadership](#service-and-leadership).
 
 
 ---
@@ -967,7 +1101,7 @@ reach figures and descriptions are under
 - **i10-index:** 38
 - **Author position:** 29 first author, 12 second author, 11 last (senior) author
 - **Details:**
-  - These are the numbers `make_data_impact.R` pulls into `data/data_scholar.Rdata`, and that the CV renders as its "Scientific Impact" figure and table. Re-run that script to refresh them, and update the snapshot date here.
+  - These are the numbers `cv/tools/refresh_scholar.R` pulls into `cv/content/impact.yml`, and that the CV renders as its "Research Impact" figure. Re-run that script to refresh them, and update the snapshot date here.
   - Most cited works at the same snapshot: performance (Journal of Open Source Software, 2021), 7,165; effectsize (Journal of Open Source Software, 2020), 2,514; NeuroKit2 (Behavior Research Methods, 2021), 2,091; bayestestR (Journal of Open Source Software, 2019), 1,869; "Indices of effect existence and significance in the Bayesian framework" (Frontiers in Psychology, 2019), 1,108; correlation (Journal of Open Source Software, 2020), 943; the heart rate variability review (Sensors, 2021), 697; parameters (Journal of Open Source Software, 2020), 652; psycho (Journal of Open Source Software, 2018), 534.
   - No Scopus or Web of Science figures are recorded here. The Scopus author ID is under [Links](#links).
 
@@ -1003,26 +1137,134 @@ literature.
 ### Features and Case Studies
 
 - **Breaking Barriers to Reproducibility** — University of Sussex research culture case study, an interview following the 2024 Openness in Research Award (see [Awards](#awards)). https://www.sussex.ac.uk/research/about/standards/breaking-barriers-research. Linked from the University's research culture page (https://www.sussex.ac.uk/research/about) as "Our Openness award winner tells all about his groundbreaking tools for Open Science".
-- Press coverage, broadcast appearances and the podcast are not recorded here yet; see [Talks and Media](#talks-and-media).
+- Press coverage, broadcast appearances and the podcast are recorded under [Talks and Media](#media-and-public-engagement).
 
 
 ---
 
 ## Talks and Media
 
-Not recorded in this file yet. Conference talks, posters, invited seminars and
-media appearances currently live in `publications.Rmd` in this repo, under the
-"Communications" heading: a "General Audience / Media Coverage" list (the
-Learning Bayesian Statistics podcast, Pint of Science, a public debate on
-sensory illusions in Bordeaux, a magazine article, a French national television
-appearance, and press coverage of the 3D memory and the AI-faces work), and
-"Talks" and "Posters" lists that are commented out rather than deleted. They should be migrated here
-eventually, so that this file holds them like everything else.
+Conference presentations, invited talks, seminars and media appearances.
 
-Known gap: those talks and posters lists stop in 2022. Nothing is recorded for
-OHBM 2023 (Montreal), ESCOP 2023 (Porto), the Italian Association for Cognitive
-Sciences conference 2024 (Rome) or ESCAN 2026 (Rome), all attended, nor for
-anything presented at Sussex since 2023.
+Two sources feed this section, and neither is complete on its own. The local
+`Conferences` archive (one folder per event, 2013 to present; path in
+`AGENTS.md`) holds the decks, posters and abstracts, but has no folder for the
+2021 ECVP or the 2022 OHBM posters. The commented-out "Talks" and "Posters"
+lists in `old_cv/publications.Rmd` hold properly formatted citations, but stop
+in 2022.
+Entries below are merged from both, with the archive used to check dates and
+titles.
+
+Conventions: newest first; the presenting author is the first author unless
+noted. Archive folder names are given in backticks so a deck can be found
+again, and where a folder is misnamed the entry says so rather than being
+renamed, because the folder name is the lookup key.
+
+Co-authored work presented by someone else stays on these lists with the
+presenter named: the contribution is real, and dropping it would lose it. It is
+their talk and not his, which is why the counts on the CV exclude it.
+
+Abstracts that were accepted or drafted but never delivered are kept too, and
+separately, under [Submitted but Not Presented](#submitted-but-not-presented).
+They are not presentations and must never be counted as such; they are recorded
+so they are not re-discovered in the archive and re-added by mistake.
+
+Two kinds of thing are deliberately *not* listed here. Invited doctoral teaching
+(Basel, Kraków, the OHBM educational courses) is recorded under
+[Consultancy and Knowledge Exchange](#consultancy-and-knowledge-exchange),
+because it is instruction rather than a talk. Internal lab meetings, project
+kick-offs and reading groups are in the archive but not on this list.
+
+### Invited Talks and Seminars
+
+- **easystats: Past, Present and Future**. Centre for Open Science and Research Reform, University of Sussex, May 2026. `2026_05_SussexOpenScienceCentre_Easystats`
+- **Good Tools Breed Good Science**. BrainHack, Singapore, May 2026. On how the available tools shape the science that gets done. `2026_05_BrainHack_Singapore`
+- **Reality as an Embodied Process**. Nanyang Technological University, Singapore, July 2025. `2025_07_Singapore`
+- **NeuroKit: A Python Package for Physiological Signals Processing**. Satellite event on research software, Organization for Human Brain Mapping (OHBM), June 2025, online. Invited directly rather than through an abstract submission, which is why it is here and not under conference talks. `2025_06_25_OHBM`
+- **From Academia to Data Science**. Postdoctoral researcher development event, University of Sussex, March 2025. `2025_03_SussexPostdocsDataScience`
+- **Get Sh\*t Done in R with easystats**. EARL / DataCove, Brighton, 3 September 2024. A tour of easystats' most useful features: automated effect size interpretation, model reporting, and model and test assumption checks. `2024_09_03_EARLDataCove_Brighton`
+- **Assumption-Checking Rather Than (Just) Testing**. MORSE (Methods for Open and Reproducible Science) seminar, University of Sussex, 22 March 2024. A discussion of Shatz (2023), opened by a commentary on common misconceptions about assumption checks and how to guide students through them, with an R demonstration. `2024_03_22_SussexMORSE`
+- **Easy Statistics in R with easystats, and Easy Physiological Processing in Python with NeuroKit**. Open Research Sussex, University of Sussex, 27 June 2023. The archive folder is misnamed with the July date. `2023_07_27_OpenResearchSussex`
+- **Urban Psychology: A Neuropsychological Approach? Beauty, Urban Design and Neuroscience**. NeuroLandscape, 24 May 2022, online. `2022_05_24_NeuroLandscape`
+- **The Lying Brain**. Temasek Laboratories, Nanyang Technological University, Singapore, 9 November 2021. On the neuroscientific approaches to deception and the case for a multidimensional perspective on it. `2021_11_09_Agency`
+- **Exploring the Unreal: Emotion, Fiction and the Sense of Reality**. Wake Forest University, 4 August 2020. Invited seminar. `2020_08_04_WakeForest_Presentation`
+- **Exploring the Unreal: Emotion, Fiction and the Sense of Reality**. Clinical Brain Lab, Nanyang Technological University, Singapore, 30 January 2019. `2019_01_30_CBL_Presentation`
+- **How Reality can Modulate Memory and Emotions**. CRPCPO monthly seminar, Amiens, France, 23 March 2018. Invited. `2018_03_23_AmiensSeminar`
+- **Neuropsychological Determinants of the Sense of Reality and its Relationship with Emotion Regulation, Memory and Consciousness**. Journée des Écoles Doctorales, Université Paris Descartes, 8 December 2015. Doctoral project presentation. `2015_12_08_JED_ParisDescartes`
+
+### Conference Talks and Symposia
+
+- **Artificial Emotion: Affective Responses and Interaction with Artificial Intelligence**. Symposium co-organised with Marco Sperduti (Università di Roma Tor Vergata). European Society for Cognitive and Affective Neuroscience (ESCAN), Sapienza University, Rome, 2026. `2026_ESCAN_Rome`
+- **The Value of Reality in the Post-Truth Era: Consequences of AI-Authorship on Cognitive and Affective Phenomenology**. Symposium chaired with Marco Sperduti (Università di Roma Tor Vergata) and Marco Viola (Università Roma Tre). Italian Association for Cognitive Sciences (AISC), Rome, Italy, September 2024. Chaired only: no talk of his own in it, which is why the archive folder holds travel documents and no deck. `2024_09_AISC_Rome`
+- Osborn-Moar, C. & **Makowski, D.** (2024). *Visual Illusions: A New Paradigm for Exploring Perceptual Diversity*. 27th annual meeting of the Association for the Scientific Study of Consciousness (ASSC), University of Tokyo, Tokyo, Japan, 2-5 July 2024. Presented by Catriona Osborn-Moar. The archive folder is misnamed with an August date. `2024_08_ASSC_Catriona`
+- **Makowski, D.**, Te, A. S. & Chen, S. H. A. (2023). *Is This a Real Person? Cognitive and Embodied Factors Contributing to our Beliefs of Reality*. European Society for Cognitive Psychology (ESCOP), Porto, Portugal, 6 September 2023. `2023_09_06_ESCOP_Portugal`
+- **Makowski, D.**, Sperduti, M., Nicolas, S. & Piolino, P. (2018). *Interindividual Determinants of Emotion Regulation through Fiction*. 2ème Congrès Francophone de TCC, 14-16 June, Geneva, Switzerland. `2018_06_15_CFTCC`
+- **Makowski, D.**, Sperduti, M., Nicolas, S. & Piolino, P. (2018). *Engagement in Fiction as an Altered State of Consciousness*. 6th Mind, Brain & Body Symposium, 15-16 March, Berlin, Germany. `2018_03_15_MBB`
+- **Makowski, D.**, Sperduti, M., Nicolas, S. & Piolino, P. (2017). *Vers la thérapie neurocognitive ? L'apport des neurosciences affectives dans la TCC*. 45ème congrès de l'AFTCC, 14-16 December, Paris, France. `2017_12_15_AFTCC`
+- Sperduti, M., **Makowski, D.** & Piolino, P. (2017). *The Role of Self-Relevance and Interindividual Variability in Executive Functions in Implicit Emotion Regulation*. International Society for the Study of Interindividual Differences (ISSID), 24-28 July, Warsaw, Poland.
+- **Makowski, D.**, Sperduti, M. & Piolino, P. (2017). *The Distinctive Effect of Emotion Regulation and Mindfulness on Attentional Capture*. 1ère Journée Scientifique des Jeunes Chercheurs du Centre de Recherches sur la Cognition et l'Apprentissage, 8 June, Poitiers, France. `2017_06_08_JSJC`
+- **Makowski, D.**, Sperduti, M. & Piolino, P. (2016). *"Being There" and Remembering It: Presence Enhances Encoding in Memory*. International Congress on Memory (ICOM), 17-22 July, Budapest, Hungary. `2016_07_17_ICOM`
+- **Makowski, D.**, Sperduti, M. & Piolino, P. (2016). *The Sense of Reality as a Feature of proto-Consciousness, its Alteration and Generation Induced by Fictional Worlds*. Literary States of Consciousness, 2 June, Paris, France. `2016_06_02_Literary States of Consciousness`
+- **Makowski, D.**, Sperduti, M. & Piolino, P. (2016). *Does Mindfulness Ability Differently Affect Implicit and Explicit Emotion Regulation?* 2nd International Conference on Mindfulness (ICM), 11-15 May, Rome, Italy. `2016_05_14_ICM`
+- Sperduti, M., **Makowski, D.** & Piolino, P. (2016). *Does Mindfulness Enhance Interoception? Dissociation Between Different Interoceptive Abilities*. 2nd International Conference on Mindfulness (ICM), 11-15 May, Rome, Italy. `2016_05_14_ICM`
+- **Makowski, D.**, Sperduti, M. & Piolino, P. (2015). *Bon et Mauvais Régulateurs Emotionnels : Un Rôle Spécifique de l'Inhibition ?* 56è Congrès National de la Société Française de Psychologie (SFP), 2-4 September, Strasbourg, France. `2015_09_02_SFP`
+- **Makowski, D.**, Sperduti, M., Pelletier, J. & Piolino, P. (2015). *Régulation émotionnelle et Self Control : De la recherche Fondamentale à l'Application Clinique*. 1er Congrès Francophone de TCC, 27-29 May, Lyon, France. `2015_05_28_Colloque Francophone TCC`
+- **Makowski, D.**, Sperduti, M., Arcangeli, M., Pelletier, J. & Piolino, P. (2014). *From Philosophy to the Rehabilitation of Psychiatric Patients: Fiction/Reality, Emotion and Cognitive Control*. Journée d'hiver de l'IUPDP, 19 December, Boulogne-Billancourt, France. `2014_12_18_IUPDP`
+- **Makowski, D.**, Sperduti, M. & Piolino, P. (2014). *L'émotion face à la fiction : l'étude de patients schizophrènes éclaire le paradoxe de la fiction*. Fête de la Recherche, 27 June, Boulogne-Billancourt, France.
+- **Makowski, D.** & Rossi, S. (2013). *Le jugement esthétique chez l'enfant*. Journées Neurosciences, Esthétique, et Complexité, 28 September, Paris, France. https://www.youtube.com/watch?v=Hvs7t5G_dLM `2013_08_28_Esthetique`
+
+Conference organisation without a talk of one's own:
+
+- Co-organizer (2021). *La recherche aux temps de la COVID*, 1ère journée du COllaborative COgnitive Science, 29 November, online. https://sites.google.com/view/les-cocos/
+
+### Posters
+
+- Neves, A. & **Makowski, D.** (2025). Association for the Scientific Study of Consciousness (ASSC), Crete, Greece, July 2025. Presented by Ana Neves, PhD student in the lab; title not yet recorded. `2025_07_ASSC_Crete`
+- **Unicity through Complexity**. EEG attractors of neurotypical and neuroatypical individuals, shown in the Neuroscience x Art track under the "Neurodiversity" theme. Organization for Human Brain Mapping (OHBM), Montreal, Canada, July 2023. An artwork rather than a poster proper. `2023_07_OHBM`
+- **Makowski, D.**, Te, A. S. & Chen, S. H. A. (2023). *NeuroKit2: An Open-Source Python Software to Analyse Physiological Data*. Organization for Human Brain Mapping (OHBM), Montreal, Canada, July 2023. `2023_07_OHBM`
+- **Makowski, D.**, Lau, Z. J., Pham, T., Te, A. S., & Chen, S. A. (2022). *Fractal Dimension of EEG Activity is Linked to Distinct Facets of Resting-State Cognition*. 28th Annual Meeting of the Organization for Human Brain Mapping (OHBM), 19-23 June, Glasgow, Scotland.
+- **Makowski, D.**, Lau, Z. J., Pham, T., Te, A. S., & Chen, S. A. (2022). *A Closer Look at Cardiac Contraction and the Effect of Cardiac Timing on Cognitive Control*. 28th Annual Meeting of the Organization for Human Brain Mapping (OHBM), 19-23 June, Glasgow, Scotland.
+- Lau, Z. J., Pham, T., Boyce, W. P., Chen, S. A., & **Makowski, D.** (2021). *A Parametric Framework to Generate Visual Illusions using Python*. 43rd European Conference on Visual Perception (ECVP), 22-27 August, online. https://youtu.be/uptP_NxEHaM
+- **Makowski, D.** & Ponchel, A. (2018). *Conditions de travail des psychologues spécialisés en neuropsychologie titulaires d'un doctorat*. Congrès National de Neuropsychologie Clinique (CNNC), 4 October, Lille, France. A survey of the working conditions of doctorate-holding neuropsychologists, run with Amélie Ponchel of the Unité de Neuropsychiatrie Comportementale (Pitié-Salpêtrière / ICM) for the observatory of the Organisation Française des Psychologues spécialisés en Neuropsychologie (OFPN). `2018_10_04_CNNC`
+- **Makowski, D.**, Sperduti, M. & Piolino, P. (2016). *Régulation Emotionnelle, pleine-conscience et bien-être : Interactions et implication dans les troubles de l'humeur*. Journée d'hiver de la Société de Neuropsychologie de Langue Française (SNLF), 2 December, Paris, France. `2016_12_02_SNLF`
+- **Makowski, D.**, Dutriaux, L., Sperduti, M. & Piolino, P. (2016). *NEUROPSYDIA : un outil ouvert, évolutif et moderne facilitant la pratique de la neuropsychologie*. Journée d'hiver de la Société de Neuropsychologie de Langue Française (SNLF), 2 December, Paris, France. The same abstract sits in the 2015 folder; this is the one edition at which it was shown. `2016_12_02_SNLF`
+- Blondé, P., Sperduti, M., **Makowski, D.** & Piolino, P. (2016). *Le rôle des réseaux attentionnels sur l'encodage en mémoire épisodique dans le cadre du vieillissement et de sa variabilité interindividuelle liée aux traits de pleine conscience*. Journée d'hiver de la Société de Neuropsychologie de Langue Française (SNLF), 2 December, Paris, France. `2016_12_02_SNLF`
+- **Makowski, D.**, Sperduti, M. & Piolino, P. (2016). *I Know It's Not Real... What Does It Change?* nCPN day, 16 September, Paris, France.
+- **Makowski, D.**, Sperduti, M. & Piolino, P. (2015). *"J'avais l'impression d'y être" : Sentiment de présence et encodage en mémoire autobiographique*. Journée d'hiver de la Société de Neuropsychologie de Langue Française (SNLF), 4 December, Paris, France. `2015_12_04_SNLF`
+- Sperduti, M., **Makowski, D.** & Piolino, P. (2015). *Interaction entre systèmes attentionnels et encodage en mémoire épisodique*. Journée d'hiver de la Société de Neuropsychologie de Langue Française (SNLF), 4 December, Paris, France. `2015_12_04_SNLF`
+- **Makowski, D.**, Sperduti, M., Arcangeli, M., Pelletier, J. & Piolino, P. (2015). *I Know It's Not Real... What Does It Change?* 12e colloque de la Société des Neurosciences (SDN), 19-22 May, Montpellier, France. `2015_05_19_SDN`
+- **Makowski, D.**, Sperduti, M., Arcangeli, M., Pelletier, J. & Piolino, P. (2014). *N'aie pas peur, ce n'est qu'un film ! La Régulation Emotionnelle Implicite est sous-tendue par les Capacités d'Inhibition*, listed elsewhere in English as *Emotion Regulation by Fiction is Related to Cognitive Inhibition*. Journée d'hiver de la Société de Neuropsychologie de Langue Française (SNLF), 5 December, Paris, France. `2014_12_05_SNLF`
+- Sperduti, M., **Makowski, D.**, Vialatte, F. & Piolino, P. (2014). *The Decline of Autobiographical Memory in Aging, Inhibition and the Cingulate Cortex: An Activation and Resting State fMRI Study*. Journées d'Etudes du Vieillissement, 15-16 September, Caen, France.
+- Sperduti, M., **Makowski, D.** & Piolino, P. (2014). *The Protective Role of Meditation on the Cognitive Decline in Aging: A Cross-Sectional Study*. Journées d'Etudes du Vieillissement, 15-16 September, Caen, France.
+
+- **Makowski, D.**, Sperduti, M., Arcangeli, M., Pelletier, J. & Piolino, P. (2013). *QUID du paradoxe de l'émotion face à la fiction ? Nouvelles données physiologiques comparant la réponse émotionnelle à des scènes réelles ou fictionnelles*. Journées de l'IUPDP, 19 December, Boulogne-Billancourt, France.
+
+### Submitted but Not Presented
+
+Abstracts accepted or drafted, and one meeting attended, where nothing was
+delivered in the end. None of these is a presentation and none is counted as
+one; they are here so that the abstracts sitting in the archive are not
+mistaken for talks and added back.
+
+- **Makowski, D.**, Sperduti, M., Nicolas, S. & Piolino, P. (2018). *Breaking the Assumption of Reality: Implications for Emotions and Consciousness*. Association for the Scientific Study of Consciousness (ASSC), June 2018. Abstract only; not presented. `2018_06_26_ASSC`
+- **Makowski, D.**, Sperduti, M. & Piolino, P. (2018). *Interindividual Determinants of Implicit Emotion Regulation*. Consortium of European Research on Emotion (CERE), April 2018. Abstract only; not presented. `2018_04_04_CERE`
+- **Neurosciences de la régulation émotionnelle : quel futur pour la psychothérapie ?** Congrès de l'Encéphale, Paris, 24 January 2018. Abstract only; not presented. `2018_01_24_Encephale`
+- **Makowski, D.**, Sperduti, M. & Piolino, P. (2016). *"Being There" and Remembering It: Presence Enhances Encoding in Autobiographical Memory*. European Workshop on Imagery and Cognition (EWIC), June 2016. Abstract only; not presented. The companion talk of the same title was given at ICOM 2016. `2016_06_06_EWIC`
+- **Makowski, D.**, Dutriaux, L., Sperduti, M. & Piolino, P. (2015). *NEUROPSYDIA : un outil ouvert, évolutif et moderne facilitant la pratique de la neuropsychologie*. Journée d'hiver de la Société de Neuropsychologie de Langue Française (SNLF), 4 December, Paris, France. Submitted to both the 2015 and the 2016 editions; shown only in 2016. `2015_12_04_SNLF`
+
+### Media and Public Engagement
+
+- Research featured in online journal, *Attractiveness shapes beliefs about whether faces are real or AI-generated, study finds*. 7 July 2025, psypost.org. https://www.psypost.org/attractiveness-shapes-beliefs-about-whether-faces-are-real-or-ai-generated-study-finds/
+- Invited on the *Learning Bayesian Statistics* podcast, episode #55, *Neuropsychology, Illusions & Bending Reality, with Dominique Makowski*. Published 1 February 2022, recorded November 2021. https://www.learnbayesstats.com/episode/55-neuropsychology-illusions-bending-reality-dominique-makowski `2021_11_24_LearnBayesPodcast`
+- Speaker at Pint of Science, *Back to the Matrix : pilule bleue ou rouge ?* 16 May 2018, Paris, France. https://pintofscience.com/ `2018_05_14_PoS`
+- Invited to a public art and science debate on sensory illusions, Rencards du Savoir, FACTS festival, 24 November 2017, Bordeaux, France. https://facts2017.u-bordeaux.fr/FESTIVAL/Programme/Agenda-2017/Rencards-du-savoir-Les-illusions-sensorielles.html `2017_11_28_FACTS` (the archive folder is dated 28 November; the date above is the one previously recorded)
+- Published article in magazine, *Neuroanatomie de la réalité : quand le réel n'est plus*. 2016, Les yeux brouillés, 1, 48-55. https://biblineuropsy.com/2016/04/19/les-yeux-brouilles/
+- Featured on national television, on the effect of violent images on the brain and body. 2015, Testé sous contrôle médical, France 4. https://www.youtube.com/watch?v=ihGs1V9kz4w
+- Research featured in online journal, *"Avengers, l'ère d'Ultron" en 3D : aussitôt vu, aussitôt oublié ?* 2015, francetvinfo.fr. http://blog.francetvinfo.fr/actu-cine/2015/05/07/avengers-lere-dultron-en-3d-aussitot-vu-aussitot-oublie.html
+
+See also the *Breaking Barriers to Reproducibility* interview under
+[Impact](#features-and-case-studies), and the Open Science Champion debate under
+[Service and Leadership](#open-science-and-research-culture).
 
 
 ---
@@ -1058,6 +1300,7 @@ anything presented at Sussex since 2023.
 
 ### Conference Organization
 
+- Chair, "The Value of Reality in the Post-Truth Era" Symposium, AISC 2024, Rome, Italy (2024). "The Value of Reality in the Post-Truth Era: Consequences of AI-Authorship on Cognitive and Affective Phenomenology", chaired with Dr Marco Sperduti (Universita di Roma Tor Vergata) and Dr Marco Viola (Universita Roma Tre) for the meeting of the Italian Association for Cognitive Sciences (AISC).
 - Co-organizer, "Artificial Emotion" Symposium, ESCAN 2026, Sapienza University, Rome, Italy (2026). "Artificial Emotion: Affective Responses and Interaction with Artificial Intelligence", a four-talk symposium on affective, physiological and neural responses to artificial intelligence, co-organised with Dr Marco Sperduti (Universita di Roma Tor Vergata) for the meeting of the European Society for Cognitive and Affective Neuroscience (ESCAN).
 
 ### Earlier Service

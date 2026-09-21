@@ -1,0 +1,73 @@
+# Engagement and knowledge exchange, as two columns of cards: public engagement
+# and outreach on the left (`kind: outreach`, the default), paid and invited
+# work for organisations outside the university on the right
+# (`kind: exchange`). Card fields as in grants-awards.yml.
+#
+# This is the outward-facing work that service.yml deliberately leaves out so
+# that it can answer one question. The invited doctoral teaching (Basel,
+# Zurich, Paris, OHBM) is not repeated here: it is on the Invited instruction
+# card in teaching-roles.yml.
+#
+# Sources: PROFILE.md > Service and Leadership, Consultancy and Knowledge
+# Exchange, Talks and Media. Clients recorded as confidential there stay
+# confidential here.
+#
+# The ESCAN Artificial Emotion symposium used to be an outreach card here. It
+# moved to talks.yml, onto the Symposia chaired card beside the ASSC one:
+# two near-identical credentials in two different sections read as a
+# duplicate rather than as two achievements.
+
+- name: "Open Science Champion"
+  kind: outreach
+  reach: "2024"
+  meta: "British Neuroscience Association · Members' Meeting"
+  description: >-
+    Invited to argue the open science side of the meeting's debate - whether
+    neuroscience needs a *sustainability* revolution more than an *openness*
+    one - against the Association's Sustainability Champion and a
+    representative of Wellcome.
+
+# The blog and the media work were two cards saying one thing: the work told to
+# people who are not being examined on it. Writing it, broadcasting it and
+# standing in a pub explaining it are the same activity in three rooms, and
+# splitting them made a column of four outreach cards where two would do.
+
+- name: "Popular Writing and Media"
+  kind: outreach
+  url: "https://realitybendinglab.com/news/"
+  reach: "40+ posts"
+  meta: "Reality Bending Lab · Television · Podcast · 2015 - Present"
+  description: >-
+    Methods tutorials, research explainers and essays on research culture, for a
+    general and early-career audience. French national television on violent
+    images and the brain; the _Learning Bayesian Statistics_ podcast; Pint of
+    Science; a public debate on sensory illusions in Bordeaux; press coverage of
+    the 3D-cinema memory and AI-generated faces studies.
+
+- name: "Scientific Advisor"
+  kind: exchange
+  reach: "2025 -"
+  meta: "Artificial intelligence start-up, Singapore · Client confidential"
+  description: "Scientific advising on an applied project on deception detection."
+
+- name: "Contract Research"
+  kind: exchange
+  reach: "2026"
+  meta: "Fragrance industry · Client confidential"
+  description: "Contract research on the relationship between smells and emotions."
+
+- name: "Contracted Instructor"
+  kind: exchange
+  reach: "2026"
+  meta: "South East Doctoral Training Arc (SEDarc)"
+  description: >-
+    Reusable _Introduction to GitHub_ lecture for PhD students across the six
+    universities of the partnership.
+
+- name: "Contracted Developer"
+  kind: exchange
+  reach: "2025"
+  meta: "Institute for Advanced Consciousness Studies"
+  description: >-
+    Hyperscanning capabilities for open-source portable electroencephalography
+    (EEG) software.

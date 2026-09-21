@@ -1,0 +1,33 @@
+# What is spoken, then what is programmed in. `kind` picks the group: `spoken`
+# (the default) on the left, `code` on the right. Marks are files in
+# img/languages/, drawn to a common height - see tools/make_languages.py.
+#
+# The spoken levels are the ones in ../PROFILE.md > Languages. The two code
+# levels are on the same scale as the spoken ones on purpose: the tiles sit in
+# one strip, and a language is a language.
+
+- name: French
+  level: Native
+  logo: french.svg
+
+- name: Polish
+  level: Native
+  logo: polish.svg
+
+- name: English
+  level: Fluent
+  logo: english.svg
+
+- name: Italian
+  level: B1 · learning
+  logo: italian.svg
+
+- name: R
+  level: Fluent
+  logo: r.svg
+  kind: code
+
+- name: Python
+  level: Fluent
+  logo: python.svg
+  kind: code

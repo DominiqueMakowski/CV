@@ -1,0 +1,45 @@
+# Research experience. One list item per position, newest first.
+#
+# Fields: title, location, org, date, logo (file in img/logos/), details (bullets).
+# Text fields take light markup - see content/README.md - the common case being
+# [label](url) for a link.
+#
+# The ATER year at Universite Paris Cite (Attache Temporaire d'Enseignement et
+# de Recherche, 2017 - 18) is deliberately not an entry. It has no UK
+# equivalent, so the title explains nothing to a British panel, and it ran
+# alongside the end of the PhD rather than after it: listed as a post it reads
+# as a job held instead of the doctorate. The teaching it covered is in
+# teaching-areas.yml, with the hours, which is the part that carries weight.
+
+- title: "Assistant Professor (Current Position)"
+  location: "UK"
+  org: "School of Psychology, University of Sussex"
+  date: "2023 - Present"
+  logo: "sussex-brighton.svg"
+  details:
+      - "Full teaching service on courses including Bayesian Statistics and Psychophysiology."
+      - >-
+          Head of the [Reality Bending Lab](https://realitybending.github.io/):
+          two doctoral students to date, around two full-time placement students
+          and a dozen dissertation students a year, funded summer interns and
+          research assistants.
+      - "School-level leadership responsibilities, including research ethics, the research participation scheme and postgraduate programme development."
+
+- title: "Research Fellow (Postdoc)"
+  location: "Singapore"
+  org: "School of Social Sciences, Nanyang Technological University (NTU)"
+  date: "2019 - 22"
+  logo: "ntu-full.svg"
+  details:
+      - >-
+          Awarded the NTU Presidential Postdoctoral Fellowship (2021 - 22), a
+          competitive two-year grant bridging postdoc and faculty. Led an
+          independent research track on the neurocognitive and affective
+          processes underlying beliefs about reality within the
+          [Clinical Brain Lab](https://www.clinicalbrain.org/), managing a
+          research budget and a team of three research assistants.
+      - >-
+          Research Fellow (2019 - 20) on a Singapore Ministry of Defence funded
+          project on the neurocognitive correlates of deception: study design,
+          data collection, analysis and publications; co-supervision of one PhD
+          student and two research assistants.
