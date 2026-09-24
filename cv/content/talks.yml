@@ -10,8 +10,10 @@
 # what he presented himself: they drop the two symposia listed there (the
 # symposia card also carries the NTU one, which PROFILE.md files under
 # Conference Organization) and the co-authored contributions presented by
-# Sperduti, Blonde, Lau, Osborn-Moar and Neves. 13 talks and 12 posters is
-# what survives. A count on a CV is a
+# Sperduti, Blonde, Lau, Osborn-Moar and Neves. They also drop the EEG-attractor
+# artwork _Unicity through Complexity_ (OHBM 2023, Neuroscience x Art track),
+# which PROFILE.md files under Posters but which was not a scientific poster.
+# 13 talks and 11 posters is what survives. A count on a CV is a
 # claim about the person holding it, so it is the conservative reading, and
 # PROFILE.md shows the working.
 #
@@ -89,8 +91,5 @@
 
 - name: "Posters"
   kind: conference
-  reach: "12"
+  reach: "11"
   meta: "OHBM · SNLF · Société des Neurosciences · 2013 - 2023"
-  description: >-
-    Including an EEG-attractor artwork, _Unicity through Complexity_, shown in
-    the Neuroscience x Art track at OHBM 2023.

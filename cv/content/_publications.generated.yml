@@ -21,9 +21,9 @@
     url: https://doi.org/10.1016/j.actpsy.2024.104670
   - authors: Dickinson, R., *Makowski, D.*, van Marwijk, H., & Ford, E.
     title: 'Interventions for combating COVID-19 misinformation: A systematic realist review'
-    venue: _PLOS One_, _20_(4), e0317592
+    venue: _PLOS One_, _20_(4), e0321818
     year: '2025'
-    url: https://doi.org/10.1371/journal.pone.0317592
+    url: https://doi.org/10.1371/journal.pone.0321818
   - authors: Dickinson, R., *Makowski, D.*, van Marwijk, H., & Ford, E.
     title: 'Exploring the role of news outlets in the rise of a conspiracy theory: Hydroxychloroquine in the early days of COVID-19'
     venue: _COVID_, _4_(12), 1873–1896
@@ -44,41 +44,41 @@
     title: A parametric framework to generate visual illusions using Python
     venue: _Perception_, _50_(11), 950–965
     year: '2021'
-    url: https://dominiquemakowski.github.io/publication/makowski2021parametric/makowski2021parametric.pdf
+    url: https://realitybendinglab.com/publications/2021_Pyllusion/2021_Pyllusion.pdf
   - authors: '*Makowski, D.*, Pham, T., Lau, Z. J., Raine, A., & Chen, S. H. A.'
     title: 'The structure of deception: Validation of the lying profile questionnaire'
     venue: _Current Psychology_, 1–16
     year: '2021'
-    url: https://dominiquemakowski.github.io/publication/makowski2021structure/makowski2021structure.pdf
+    url: https://realitybendinglab.com/publications/2021_TheStructureOfDeception/2021_TheStructureOfDeception.pdf
   - authors: '*Makowski, D.*, Sperduti, M., Pelletier, J., Blondé, P., La Corte, V., Arcangeli, M., Zalla, T., Lemaire, S., Dokic, J., Nicolas, S., & Piolino, P.'
     title: Phenomenal, bodily and brain correlates of fictional reappraisal as an implicit emotion regulation strategy
     venue: _Cognitive, Affective, & Behavioral Neuroscience_, _19_(4), 877–897
     year: '2019'
-    url: https://dominiquemakowski.github.io/publication/makowski2019phenomenal/makowski2019phenomenal.pdf
+    url: https://realitybendinglab.com/publications/2019_FictionalReappraisal/2019_FictionalReappraisal.pdf
     note: Main PhD paper; Psychonomic Society Best Article Award 2020
     highlight: true
   - authors: '*Makowski, D.*\*, Sperduti, M.\*, Nicolas, S., & Piolino, P.'
     title: '“Being there” and remembering it: Presence improves memory encoding'
     venue: _Consciousness and Cognition_, _53_, 194–202
     year: '2017'
-    url: https://dominiquemakowski.github.io/publication/makowski2017being/makowski2017being.pdf
+    url: https://realitybendinglab.com/publications/2017_BeingThereAndRemembering/2017_BeingThereAndRemembering.pdf
     note: co-first authors
   - authors: Sperduti, M.\*, *Makowski, D.*\*, Arcangeli, M., Wantzen, P., Zalla, T., Lemaire, S., Dokic, J., Pelletier, J., & Piolino, P.
     title: The distinctive role of executive functions in implicit emotion regulation
     venue: _Acta Psychologica_, _173_, 13–20
     year: '2017'
-    url: https://dominiquemakowski.github.io/publication/sperduti2017distinctive/sperduti2017distinctive.pdf
+    url: https://realitybendinglab.com/publications/2017_ExecutiveFunctionsEmotionRegulation/2017_ExecutiveFunctionsEmotionRegulation.pdf
     note: co-first authors
   - authors: Tuena, C., Serino, S., Gaston-Bellegarde, A., Orriols, E., *Makowski, D.*, Riva, G., & Piolino, P.
     title: 'How virtual embodiment affects episodic memory functioning: A proof-of-concept study'
     venue: _Annual Review of Cybertherapy and Telemedicine_, _15_, 93–107
     year: '2017'
-    url: https://dominiquemakowski.github.io/publication/tuena2017virtual/tuena2017virtual.pdf
+    url: https://realitybendinglab.com/publications/2017_VirtualEmbodimentMemory/2017_VirtualEmbodimentMemory.pdf
   - authors: Sperduti, M.\*, Arcangeli, M.\*, *Makowski, D.*, Wantzen, P., Zalla, T., Lemaire, S., Dokic, J., Pelletier, J., & Piolino, P.
     title: 'The paradox of fiction: Emotional response toward fiction and the modulatory role of self-relevance'
     venue: _Acta Psychologica_, _165_, 53–59
     year: '2016'
-    url: https://dominiquemakowski.github.io/publication/sperduti2016paradox/sperduti2016paradox.pdf
+    url: https://realitybendinglab.com/publications/2016_TheParadoxOfFiction/2016_TheParadoxOfFiction.pdf
     note: co-first authors
 - name: Interoception, Emotion Regulation, Neurophysiology
   entries:
@@ -133,30 +133,30 @@
     title: 'NeuroKit2: A Python toolbox for neurophysiological signal processing'
     venue: _Behavior Research Methods_, 1–8
     year: '2021'
-    url: https://dominiquemakowski.github.io/publication/makowski2021neurokit/makowski2021neurokit.pdf
+    url: https://realitybendinglab.com/publications/2021_Neurokit2/2021_Neurokit2.pdf
     note: SIPS Commendation 2024
     highlight: true
   - authors: '*Makowski, D.*, Sperduti, M., Blondé, P., Nicolas, S., & Piolino, P.'
     title: 'The heart of cognitive control: Cardiac phase modulates processing speed and inhibition'
     venue: _Psychophysiology_, _57_(3)
     year: '2019'
-    url: https://dominiquemakowski.github.io/publication/makowski2019heart/makowski2019heart.pdf
+    url: https://realitybendinglab.com/publications/2020_TheHeartOfCognitiveControl/2020_TheHeartOfCognitiveControl.pdf
   - authors: '*Makowski, D.*, Sperduti, M., Lavallée, S., Nicolas, S., & Piolino, P.'
     title: Adaptation and validation of a short French version of the Affective Style Questionnaire
     venue: _International Journal of Cognitive Therapy_, _13_(2), 146–158
     year: '2019'
-    url: https://dominiquemakowski.github.io/publication/makowski2019adaptation/makowski2019adaptation.pdf
+    url: https://realitybendinglab.com/publications/2020_AffectiveStyleQuestionnaire/2020_AffectiveStyleQuestionnaire.pdf
   - authors: '*Makowski, D.*\*, Sperduti, M.\*, Lavallée, S., Nicolas, S., & Piolino, P.'
     title: Dispositional mindfulness attenuates the emotional attentional blink
     venue: _Consciousness and Cognition_, _67_, 16–25
     year: '2019'
-    url: https://dominiquemakowski.github.io/publication/makowski2019dispositional/makowski2019dispositional.pdf
+    url: https://realitybendinglab.com/publications/2019_DispositionalMindfulness/2019_DispositionalMindfulness.pdf
     note: co-first authors
   - authors: '*Makowski, D.*, Sperduti, M., Blanchet, S., Nicolas, S., & Piolino, P.'
     title: 'Régulation émotionnelle face au déclin cognitif dans le vieillissement : un faux paradoxe ?'
     venue: _Gériatrie et Psychologie Neuropsychiatrie du Vieillissement_, _13_(3), 301–308
     year: '2015'
-    url: https://dominiquemakowski.github.io/publication/makowski2015emotion/makowski2015emotion.pdf
+    url: https://doi.org/10.1684/pnv.2015.0561
     note: 'Published bilingually; the English title is “Emotion regulation and the cognitive decline in aging: Beyond the paradox”'
 - name: Statistics
   entries:
@@ -235,7 +235,7 @@
     title: Indices of effect existence and significance in the Bayesian framework
     venue: _Frontiers in Psychology_, _10_
     year: '2019'
-    url: https://dominiquemakowski.github.io/publication/makowski2019indices/makowski2019indices.pdf
+    url: https://realitybendinglab.com/publications/2019_IndicesOfEffectExistence/2019_IndicesOfEffectExistence.pdf
   - authors: '*Makowski, D.*, Ben-Shachar, M. S., & Lüdecke, D.'
     title: 'bayestestR: Describing effects and their uncertainty, existence and significance within the Bayesian framework'
     venue: _Journal of Open Source Software_, _4_(40), 1541
@@ -251,8 +251,8 @@
     title: 'The psycho package: An efficient and publishing-oriented workflow for psychological science'
     venue: _Journal of Open Source Software_, _3_(22), 470
     year: '2018'
-    url: https://dominiquemakowski.github.io/publication/makowski2018psycho/makowski2018psycho.pdf
-- name: Miscellaneous
+    url: https://realitybendinglab.com/publications/2018_Psycho/2018_Psycho.pdf
+- name: Other
   entries:
   - authors: Rinaldi, L. J., Agbude, R., Andermane, N., *Makowski, D.*, Forster, S., Simner, J., & Ward, J.
     title: Attention and physiological responses to task-irrelevant sounds in misophonia
@@ -264,15 +264,14 @@
     venue: _Journal of Cognition_, _8_(1), 60
     year: '2025'
     url: https://doi.org/10.5334/joc.469
-  - authors: Salgues, S., Jacquot, A., *Makowski, D.*, Tahar, C., Baekeland, J., Arcangeli, M., & Sperduti, M.
+  - authors: Salgues, S., Jacquot, A., *Makowski, D.*, Tahar, C., Baekeland, J., Arcangeli, M., Dokic, J., Piolino, P., & Sperduti, M.
     title: Self-reference and emotional reaction drive aesthetic judgment
     venue: _Scientific Reports_, _14_(1), 19699
     year: '2024'
-    url: https://www.nature.com/articles/s41598-024-68331-9
-    note: Author list abbreviated in the source; check against the paper before reuse
+    url: https://doi.org/10.1038/s41598-024-68331-9
   - authors: Lee, H., Jacquot, A., *Makowski, D.*, Arcangeli, M., Dokic, J., Piolino, P., & Sperduti, M.
     title: 'The beauty and the self: A common mnemonic advantage between aesthetic judgment and self-reference'
-    venue: '_Psychology of Consciousness: Theory, Research, and Practice_, _11_(1), 71'
+    venue: '_Psychology of Consciousness: Theory, Research, and Practice_, _11_(1), 71–81'
     year: '2024'
     url: https://doi.org/10.1037/cns0000345
   - authors: Rose, L., Kovarski, K., Caetta, F., *Makowski, D.*, & Chokron, S.
@@ -280,11 +279,6 @@
     venue: _Journal of Experimental Child Psychology_, _239_, 105810
     year: '2024'
     url: https://doi.org/10.1016/j.jecp.2023.105810
-  - authors: Lee, H., Jacquot, A., *Makowski, D.*, Arcangeli, M., Dokic, J., Piolino, P., & Sperduti, M.
-    title: 'Beauty is in the eye of the beholder: Evidence from a common mnemonic advantage between aesthetics judgement and self-reference'
-    venue: '_Psychology of Consciousness: Theory, Research, and Practice_'
-    year: '2023'
-    url: https://dominiquemakowski.github.io/publication/lee2023beauty/lee2023beauty.pdf
   - authors: Kovarski, K., Dos Reis, J., Chevais, C., Hamel, A., *Makowski, D.*, & Sperduti, M.
     title: Movie editing influences spectators' time perception
     venue: _Scientific Reports_, _12_(1), 20084
@@ -299,12 +293,12 @@
     title: 'In medio stat virtus: Intermediate levels of mind wandering improve episodic memory encoding in a virtual environment'
     venue: _Psychological Research_, _85_(4), 1613–1625
     year: '2020'
-    url: https://dominiquemakowski.github.io/publication/blonde2020medio/blonde2020medio.pdf
+    url: https://realitybendinglab.com/publications/2021_InMedioStatVirtus/2021_InMedioStatVirtus.pdf
   - authors: Girardeau, J.-C., Blondé, P., *Makowski, D.*, Abram, M., Piolino, P., & Sperduti, M.
     title: 'The impact of state and dispositional mindfulness on prospective memory: A virtual reality study'
     venue: _Consciousness and Cognition_, _81_, 102920
     year: '2020'
-    url: https://dominiquemakowski.github.io/publication/girardeau2020impact/girardeau2020impact.pdf
+    url: https://realitybendinglab.com/publications/2020_MindfulnessProspectiveMemory/2020_MindfulnessProspectiveMemory.pdf
   - authors: '*Makowski, D.*, & Dutriaux, L.'
     title: 'Neuropsydia.py: A Python module for creating experiments, tasks and questionnaires'
     venue: _Journal of Open Source Software_, _2_(19), 259
@@ -314,27 +308,27 @@
     title: 'Interaction between attentional systems and episodic memory encoding: The impact of conflict on binding of information'
     venue: _Experimental Brain Research_, _235_(12), 3553–3560
     year: '2017'
-    url: https://dominiquemakowski.github.io/publication/sperduti2017interaction/sperduti2017interaction.pdf
+    url: https://realitybendinglab.com/publications/2017_InteractionBetweenAttentionalSystems/2017_InteractionBetweenAttentionalSystems.pdf
   - authors: Nicolas, S., & *Makowski, D.*
     title: Centenaire Ribot (I). La réception de l'œuvre de Théodule Ribot chez l'éditeur Ladrange (1870-1873)
     venue: _Bulletin de Psychologie_, _70_(3), 163–178
     year: '2017'
-    url: https://dominiquemakowski.github.io/publication/nicolas2017centenaire/nicolas2017centenaire.pdf
+    url: https://realitybendinglab.com/publications/2017_CentenaireRibotPremierePartie/2017_CentenaireRibotPremierePartie.pdf
   - authors: Sperduti, M., *Makowski, D.*, Blondé, P., & Piolino, P.
     title: 'Meditation and successful aging: Can meditative practices counteract age-related cognitive decline?'
     venue: _Gériatrie et Psychologie Neuropsychiatrie du Vieillissement_, _15_(2), 205–213
     year: '2017'
-    url: https://dominiquemakowski.github.io/publication/sperduti2017meditation/sperduti2017meditation.pdf
+    url: https://realitybendinglab.com/publications/2017_MeditationAndSuccessfulAging/2017_MeditationAndSuccessfulAging.pdf
   - authors: Nicolas, S., & *Makowski, D.*
     title: Can mental fatigue be measured by Weber's compass? Alfred Binet's answer on the value of aesthesiometry (tactile sensitivity) as an objective measure of mental fatigue
     venue: _European Yearbook of the History of Psychology_, _2_, 11–46
     year: '2016'
-    url: https://dominiquemakowski.github.io/publication/nicolas2016can/nicolas2016can.pdf
+    url: https://realitybendinglab.com/publications/2016_MentalFatigueWeberCompass/2016_MentalFatigueWeberCompass.pdf
   - authors: Sperduti, M., *Makowski, D.*, & Piolino, P.
     title: 'The protective role of long-term meditation on the decline of the executive component of attention in aging: A preliminary cross-sectional study'
     venue: _Aging, Neuropsychology, and Cognition_, _23_(6), 691–702
     year: '2016'
-    url: https://dominiquemakowski.github.io/publication/sperduti2016protective/sperduti2016protective.pdf
+    url: https://realitybendinglab.com/publications/2016_LongTermMeditationExecutive/2016_LongTermMeditationExecutive.pdf
 - name: Book Chapters
   entries:
   - authors: Mavros, P., Olszewska-Guizzo, A., & *Makowski, D.*
@@ -346,4 +340,4 @@
     title: Clinical neuropsychology in the era of neuroimaging
     venue: In _The SAGE Handbook of Clinical Neuropsychology_. SAGE Publications
     year: '2023'
-    url: https://uk.sagepub.com/en-gb/eur/the-sage-handbook-of-clinical-neuropsychology/book270076
+    url: https://doi.org/10.4135/9781529789522.n4

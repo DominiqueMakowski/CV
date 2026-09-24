@@ -15,10 +15,7 @@ Resolve and delete each line once settled.
 
 ### Facts to confirm
 
-- **NTU talk title, 14 July 2025** - the "Truth in the Machine" poster lists
-  speakers but no talk titles. The deck in the archive folder is titled
-  "Reality as an Embodied Process", so that is what is recorded; the title
-  announced in the programme may have differed.
+None.
 
 ### Corrections to make on external profiles
 
@@ -430,6 +427,17 @@ in [Education](#education) and [Titles and Licenses](#titles-and-licenses).
 
 ## Academic Teaching
 
+The retired CV summarised this record as academic lectures totalling **424
+hours since 2014**: the 192 h ATER service, 144 h of Differential Cognitive
+Psychology, 48 h of Cognitive Psychology, the 24 h Zurich workshop (under
+[Consultancy and Knowledge Exchange](#consultancy-and-knowledge-exchange)) and
+the 16 h IT course, which is dated 2013 below. The Sussex teaching is not
+counted in hours and is not in that figure. The same CV's lecture-topic list
+had two things no single entry below carries: a *Signal Processing* heading
+(bodily signal acquisition and preprocessing; heart rate; electrodermal
+activity) with no course attached, and mindfulness among the ATER cognitive
+neuroscience topics.
+
 ### MSc Advanced Computational Psychology
 
 - **Capacity:** Programme Developer
@@ -493,7 +501,7 @@ in [Education](#education) and [Titles and Licenses](#titles-and-licenses).
 - **Details:**
   - Version control and collaboration with Git and GitHub.
 
-### Agentic Programming
+### Agentic Coding
 
 - **Capacity:** Workshop teacher
 - **Dates:** 2026
@@ -502,9 +510,10 @@ in [Education](#education) and [Titles and Licenses](#titles-and-licenses).
 - **Level:** Lab members (PhD students, research assistants and dissertation students in the Reality Bending Lab)
 - **Status:** In preparation as of 21 September 2026; not yet delivered.
 - **Details:**
-  - Subtitled "Letting AI write and run your code". On using coding agents for research work: what an agent is and how it differs from autocomplete or a chat assistant, GitHub as the prerequisite that makes agent-written changes reviewable and reversible, working directories and projects, `AGENTS.md` as the way to give an agent standing instructions about a repository, the agentic workflow cycle, and the one-task-one-session discipline.
+  - Subtitled "Coding with an AI agent in the loop". On using coding agents for research work without handing over understanding of the code: what an agent is and how it differs from autocomplete or a chat assistant, GitHub as the prerequisite that makes agent-written changes reviewable and reversible, working directories and projects, `AGENTS.md` (and supporting markdown files) as the way to give an agent standing instructions about a repository, the agentic workflow cycle, and the one-task-one-session discipline.
+  - Emphasises verification and learning over "vibe coding": small changes one at a time, agents' confident mistakes and hard-to-read code, the rule that you don't know code does what the agent claims until you understand how it works, and using the agent as a tutor (attempt first, then ask for a review that explains rather than rewrites).
   - Surveys the landscape (terminal agents, IDE-based agents, in-editor assistants) and works hands-on in Claude Code.
-  - Deck: https://dominiquemakowski.github.io/teaching/AgenticProgramming/. Slidev source in the `DominiqueMakowski/teaching` repository (https://github.com/DominiqueMakowski/teaching) under `AgenticProgramming/`; working copy at `C:\Users\domma\Dropbox\ENSEIGNEMENT\teaching\AgenticProgramming`.
+  - Deck: https://dominiquemakowski.github.io/teaching/AgenticCoding/. Slidev source in the `DominiqueMakowski/teaching` repository (https://github.com/DominiqueMakowski/teaching) under `AgenticCoding/`; working copy at `C:\Users\domma\Dropbox\ENSEIGNEMENT\teaching\AgenticCoding`. (Renamed from "Agentic Programming" / `AgenticProgramming/` on 23 September 2026.)
   - Listed on the CV under Teaching, in the Open Science and Research Tools group of `cv/content/teaching-areas.yml`.
 
 ### Neuroscience
@@ -648,7 +657,6 @@ in [Education](#education) and [Titles and Licenses](#titles-and-licenses).
 
 - Ana Neves (2024-present), University of Sussex: PhD student in the Reality Bending Lab.
 - Rob Dickinson (2024-2025), University of Sussex: PhD student in the Reality Bending Lab, graduated in 2025. Also recorded under Student Awards.
-
 ### PhD Internal Examiner
 
 - Romy Beauté (University of Sussex, 2026): candidate of Pr Anil Seth.
@@ -660,13 +668,11 @@ in [Education](#education) and [Titles and Licenses](#titles-and-licenses).
 
 - Around nine undergraduate dissertation students each year since 2023.
 - Around three master's dissertation students each year since 2023.
-
 ### Placement and Internship Supervision
 
 - Around two placement students each year since 2024, working full time in the Reality Bending Lab.
 - Funded summer interns under the Junior Research Associate (JRA) and SoCoBio schemes.
 - Two research assistants during the first postdoc (2019-2020) and three during the Presidential Research Fellowship (2021-2022), Nanyang Technological University (NTU), Singapore.
-
 ---
 
 ## Consultancy and Knowledge Exchange
@@ -682,7 +688,7 @@ Supervision.
 - **Dates:** 2026
 - **Institution:** Fragrance industry (client confidential)
 - **Details:**
-  - Contract research on the relationship between smells and emotions.
+  - Contract research on the relationship between smells and emotions, using electroencephalography (EEG).
 
 ### Scientific Advisor
 
@@ -831,7 +837,7 @@ Supervision.
 
 - Sussex School of Psychology Award (2024), for Outstanding Student Supervision. https://www.linkedin.com/posts/dominiquemakowski_realitybendinglab-activity-7241790839134257152-wjR6
 - Commendation, Society for the Improvement of Psychological Science (SIPS) (2024), for the NeuroKit Python package. https://improvingpsych.org/mission/awards/
-- Openness in Research Award, University of Sussex Research Culture Awards (2024). GBP 1,000, presented by Pr Seb Oliver, Deputy Pro-Vice-Chancellor for Research. Awarded for "Make reproducible science accessible! Building software to facilitate open research and lead by example with fully transparent studies", recognising both the open-source tools (easystats, NeuroKit) and the fully transparent studies coming out of the lab. The University published an interview about the award afterwards; it is recorded under [Impact](#impact). The awards themselves are described at https://www.sussex.ac.uk/staff/research/research-culture/research-culture-awards (staff pages; no public per-winner listing, so this is the scheme rather than the citation).
+- Openness in Research Award, University of Sussex Research Culture Awards (2024). GBP 1,000, presented by Pr Seb Oliver, Deputy Pro-Vice-Chancellor for Research. Awarded for "Make reproducible science accessible! Building software to facilitate open research and lead by example with fully transparent studies", recognising both the open-source tools (easystats, NeuroKit) and the fully transparent studies coming out of the lab. The University published an interview about the award afterwards; it is recorded under [Impact](#impact). The awards themselves are described at https://www.sussex.ac.uk/staff/research/research-culture/research-culture-awards (staff pages; no public per-winner listing, so this is the scheme rather than the citation). The School of Psychology announced the results on LinkedIn, in a post congratulating the 5 winners and 6 shortlisted: https://www.linkedin.com/posts/university-of-sussex-school-of-psychology_congratulations-to-the-5-winners-and-6-shortlisted-activity-7209487987682721793-d4qm
 - Mission Award, Society for the Improvement of Psychological Science (SIPS) (2023), for the easystats collection of R packages. https://improvingpsych.org/mission/awards/
 - Best Article Award, Psychonomic Society (2020), for Makowski, D., Sperduti, M., Pelletier, J., Blondé, P., La Corte, V., Arcangeli, M., Zalla, T., Lemaire, S., Dokic, J., Nicolas, S., & Piolino, P. (2019), "Phenomenal, bodily and brain correlates of fictional reappraisal as an implicit emotion regulation strategy", Cognitive, Affective, & Behavioral Neuroscience, 19(4), 877-897 (the main PhD paper). USD 1,000. https://www.psychonomic.org/page/2020BestArticleAwards
 - Commendation, Society for the Improvement of Psychological Science (SIPS) (2020), for the bayestestR R package (Makowski et al., 2019). https://joss.theoj.org/papers/10.21105/joss.01541
@@ -882,8 +888,10 @@ are expected to go out of date.
   - **Repository:** https://github.com/easystats/easystats
   - **Documentation:** https://easystats.github.io/easystats/
   - **Wikipedia:** https://en.wikipedia.org/wiki/Easystats
-  - **Reach:** 41.2 million CRAN downloads across the ten packages and 1,159 stars
-    on the meta-package repository (2026-09-15). Used in more than 1,000
+  - **Reach:** 41.5 million CRAN downloads across the ten packages (cranlogs,
+    2019 to 2026-09-22; 41.2 million was recorded at 2026-09-15). 6,834 GitHub
+    stars across the ten package repositories and the meta-package repository,
+    1,159 of them on the meta-package alone (2026-09-23). Used in more than 10,000
     scientific publications, and taught in university statistics courses, video
     tutorials and textbooks.
   - **Recognition:** Mission Award, Society for the Improvement of Psychological
@@ -913,7 +921,10 @@ are expected to go out of date.
   - **Documentation:** https://neuropsychology.github.io/NeuroKit/
   - **Wikipedia:** https://en.wikipedia.org/wiki/NeuroKit
   - **Reach:** 2,355 GitHub stars and 543 forks, and roughly 130,000 downloads per
-    month on the Python Package Index (PyPI) (2026-09-15). The NeuroKit2 paper had 2,091
+    month on the Python Package Index (PyPI) (2026-09-15). By the raw PyPI
+    download logs (ClickPy), 117,371 downloads in the 30 days to 2026-09-22 and
+    2.65 million in total since release; 2,366 stars on 2026-09-23. Per-year
+    figures under [Impact](#software-adoption). The NeuroKit2 paper had 2,091
     citations on Google Scholar (2026-06-22); see [Impact](#impact).
   - **Recognition:** Commendation, Society for the Improvement of Psychological
     Science (SIPS) (2024), for the NeuroKit Python package. See
@@ -960,6 +971,10 @@ are expected to go out of date.
   - **Role:** Sole author and maintainer.
   - **Repository:** https://github.com/DominiqueMakowski/cogmod
   - **Documentation:** https://dominiquemakowski.github.io/cogmod/
+  - **Notes:** The endpoint of three earlier attempts at the same problem -
+    easyRT, SubjectiveScalesModels.jl and the CognitiveModels book - which are
+    recorded under [Superseded by cogmod](#superseded-by-cogmod). Most of the
+    book's content now lives in this package's vignettes.
   - **Publications:** cite keys in [publications.bib](publications.bib),
     which holds the full citations:
     `makowski_cogmod`, `makowski_choco`, `geller_exgaussian`.
@@ -1071,11 +1086,60 @@ are expected to go out of date.
   - **Repository:** https://github.com/RealityBending/RealityBending.github.io
   - **Website:** https://realitybendinglab.com
 
+### Superseded by cogmod
+
+Three earlier attempts at the same problem - making Bayesian cognitive models
+usable by working psychologists - each of which has since been folded into
+cogmod. They are recorded because they carry DOIs, stars and inbound links, and
+because someone finding them should be told where the live version is, not
+because they are separate ongoing projects.
+
+- **Cognitive Models: Computational Modeling of Cognitive Processes with Bayesian Mixed Models in Julia**
+  - **Type:** Open-access book
+  - **Dates:** March 2024 - September 2024
+  - **Status:** Superseded. Most of its content now lives in cogmod's vignettes.
+  - **Link:** https://dominiquemakowski.github.io/CognitiveModels/ (repository https://github.com/DominiqueMakowski/CognitiveModels)
+  - **DOI:** https://doi.org/10.5281/zenodo.12685343 (concept DOI 10.5281/zenodo.12685342), CC-BY-4.0
+  - **Details:**
+    - Book-length introduction to cognitive modelling - models that fit reaction times, subjective scales and similar data, and license inferences about the processes that generated them - taught in Julia with Turing and SequentialSamplingModels, on the argument that Julia was then the only language in which the whole family could be fitted Bayesianly under one interface.
+    - The preface carried an open call for coauthors. 13 GitHub stars.
+
+- **easyRT**
+  - **Type:** R package and tutorials
+  - **Dates:** 2023
+  - **Status:** Superseded by cogmod, which covers the same ground more fully.
+  - **Link:** https://dominiquemakowski.github.io/easyRT/ (repository https://github.com/DominiqueMakowski/easyRT)
+  - **Details:**
+    - Tutorials on fitting (hierarchical) drift diffusion and ex-Gaussian models to reaction times in R, with convenience functions for simulating and plotting DDMs. The package was a vehicle for the vignettes rather than the point of it. 11 GitHub stars.
+
+- **SubjectiveScalesModels.jl**
+  - **Type:** Julia package, registered in the General registry
+  - **Dates:** 2024-2025
+  - **Status:** Superseded by CognitiveModels, and so in turn by cogmod. Mostly abandoned for now.
+  - **Link:** https://dominiquemakowski.github.io/SubjectiveScalesModels.jl/ (repository https://github.com/DominiqueMakowski/SubjectiveScalesModels.jl)
+  - **Details:**
+    - Beta-like distributions and regression models for Turing, for scores from subjective scales - Likert items, visual analog scales - where the data are bounded, often bimodal, and badly served by ordinary regression. Included a `BetaPhi2` reparameterisation of the Beta distribution and the ordered-beta and Choice-Confidence (CHOCO) families.
+    - The CHOCO model it implemented is now in cogmod and is published as `makowski_choco`.
+
+### Exploratory Work
+
+- **RemotePhysiology**
+  - **Type:** Methodological pilot
+  - **Dates:** 2022
+  - **Link:** https://dominiquemakowski.github.io/RemotePhysiology/ (repository https://github.com/DominiqueMakowski/RemotePhysiology)
+  - **Details:**
+    - A first foray into remote physiology: extracting physiological features (heart rate, blinks) from ordinary webcam recordings, so that physiological measures could be taken in online experiments without hardware.
+    - Compared the remote-photoplethysmography algorithms then available in NeuroKit against other implementations, with true physiological signals as ground truth. Participants ran an 8-minute resting-state paradigm (the lab's Replicable Resting-state Task in jsPsych) while a commercial laptop webcam recorded at 30 Hz and BITalino recorded ECG, PPG and respiration at 1000 Hz.
+    - **Result: negative.** Across the two subjects analysed there was no correlation between real and webcam-estimated PPG. Reported as such in the repository rather than quietly dropped.
+    - Remote physiology remains a direction I intend to return to; this is the early attempt the later work would build on, and the reason for keeping the dataset and the comparison code.
+
 ### Measures
 
 - Illusion Game: parametric visual illusion task measuring illusion sensitivity. https://doi.org/10.1038/s41598-023-33148-5
-- Lie Scale: self-report measure of lying styles and attitudes. https://link.springer.com/article/10.1007/s12144-021-01760-1
+- Lie Scale: self-report measure of lying styles and attitudes. https://link.springer.com/article/10.1007/s12144-021-01760-1. A companion scoring app, profLIEr, is at https://github.com/DominiqueMakowski/profLIEr (R; unmaintained since 2021).
 - MINT Scale: multimodal interoception questionnaire. https://osf.io/preprints/psyarxiv/8qrht
+- DoggoNogo: gamified cognitive control battery optimized via Bayesian statistics. A browser game (JavaScript, no dependencies) that runs standalone or inside a jsPsych experiment, built around established paradigms - simple reaction time (processing speed) and a Simon task (response inhibition, conflict monitoring), with visual illusion levels in development - and wrapped in a narrative, sprites, sound and scoring to raise engagement. A plain, non-gamified mode presents the same tasks with identical timing and data, for comparing gamified against standard presentation. Developed under the Reality Bending Lab GitHub organization since 2023; in development, with a first validation study underway (https://github.com/RealityBending/DoggoNogoValidation). Play at https://realitybending.github.io/DoggoNogo/game/ (repository https://github.com/RealityBending/DoggoNogo).
+- PHQ-4-R: refinement of the PHQ-4 ultra-brief depression and anxiety screener, adding an intermediate "Once or twice" response option to make it sensitive to subclinical variability. Two validation studies, published as `makowski2025phq4` in [publications.bib](publications.bib). Materials, data and analyses at https://dominiquemakowski.github.io/PHQ4R (repository https://github.com/DominiqueMakowski/PHQ4R).
 
 ### Concepts and Frameworks
 
@@ -1172,10 +1236,11 @@ reach figures and descriptions are under
 - **Citations:** 19,693
 - **h-index:** 27
 - **i10-index:** 38
-- **Author position:** 29 first author, 12 second author, 11 last (senior) author
+- **Author position:** 29 first author, 11 second author, 12 last (senior) author
 - **Details:**
-  - These are the numbers `cv/tools/refresh_scholar.R` pulls into `cv/content/impact.yml`, and that the CV renders as its "Research Impact" figure. Re-run that script to refresh them, and update the snapshot date here.
+  - These are the numbers `cv/tools/refresh_scholar.R` pulls into `cv/content/impact.yml`, and that the CV renders as its "Impact" figure. Re-run that script to refresh them, and update the snapshot date here.
   - Most cited works at the same snapshot: performance (Journal of Open Source Software, 2021), 7,165; effectsize (Journal of Open Source Software, 2020), 2,514; NeuroKit2 (Behavior Research Methods, 2021), 2,091; bayestestR (Journal of Open Source Software, 2019), 1,869; "Indices of effect existence and significance in the Bayesian framework" (Frontiers in Psychology, 2019), 1,108; correlation (Journal of Open Source Software, 2020), 943; the heart rate variability review (Sensors, 2021), 697; parameters (Journal of Open Source Software, 2020), 652; psycho (Journal of Open Source Software, 2018), 534.
+  - Seven of those nine are software papers (performance, effectsize, NeuroKit2, bayestestR, correlation, parameters, psycho), and together they hold 15,768 citations: at least 80% of the 19,693 total, and a lower bound, since software papers outside the top nine (see, insight, datawizard, report, modelbased) are not counted.
   - No Scopus or Web of Science figures are recorded here. The Scopus author ID is under [Links](#links).
 
 ### Departmental Standing
@@ -1185,6 +1250,7 @@ reach figures and descriptions are under
 - **Source:** the departmental citation figures ResearchGate reports each month
 - **Details:**
   - First noted in December 2024, and still holding in 2026.
+  - ResearchGate's departmental figures count only staff who have a ResearchGate profile, and not every researcher in the School has one, so this is a ranking among those who do. The CV says so, and words the claim as "one of the most cited, and repeatedly the most cited" to match the partial record above.
   - The evidence kept in this repo (`RG_MostCited_TrackRecord.docx`) is a set of screenshots of those monthly notices, taken when they arrived rather than every month. It is therefore a partial record: it supports being one of the most cited — if not the most cited — researcher in the department, rather than an unbroken run of months.
 
 ### Software Adoption
@@ -1192,10 +1258,35 @@ reach figures and descriptions are under
 Headline figures only, dated 15 September 2026. The full entries, and the
 packages not listed here, are under [Software and Tools](#software-and-tools).
 
-- **easystats:** 41.2 million CRAN downloads across the ten packages; used in more than 1,000 scientific publications; taught in university statistics courses, video tutorials and textbooks.
+- **easystats:** 41.5 million CRAN downloads across the ten packages (to 2026-09-22); 6,834 GitHub stars across the ten package repositories and the meta-package (2026-09-23); used in more than 10,000 scientific publications; taught in university statistics courses, video tutorials and textbooks.
 - **NeuroKit:** roughly 130,000 downloads per month on the Python Package Index; 2,355 GitHub stars and 543 forks; a contributor community of several dozen developers.
 - **psycho:** 190,096 CRAN downloads before deprecation.
 - **OpenMuse:** 87 GitHub stars, the most-starred repository on my personal GitHub account.
+
+**easystats in teaching materials.** Found by a cursory web search on 23 September
+2026, plus one reported directly; not exhaustive.
+
+- **Field, A. (2026). *Discovering Statistics Using R and RStudio* (2nd ed.). SAGE.** The standard psychology statistics textbook builds its R workflow on easystats. Its acknowledgements thank easystats as one of the main drivers behind the simplifications and improvements in this edition (reported by me from the book; not checked against the text online). The companion tutorial package, discovr (https://github.com/profandyfield/discovr), loads `library(easystats)` alongside the tidyverse as the standard setup, and its tutorials teach with seven of the ten packages: parameters (`model_parameters()`, the most used), datawizard, correlation, modelbased, effectsize, performance and insight. Checked in the repository on 23 September 2026.
+- **Tikka, S., Kopra, J., Heinäniemi, M., López-Pernas, S., & Saqr, M. (2024). Introductory statistics with R for educational researchers.** In M. Saqr & S. López-Pernas (Eds.), *Learning Analytics Methods and Tutorials: A Practical Guide Using R* (pp. 121-150). Springer. https://doi.org/10.1007/978-3-031-54464-4_5 (open access: https://lamethods.org/book1/chapters/ch05-basic-stats/ch5-stats.html). Teaches with report, correlation, performance (`check_model()`) and see.
+
+**Downloads per year**, as plotted in the CV's Impact figure. Fetched 23 September
+2026 with `cv/tools/refresh_downloads.py`; 2026 runs to 22 September.
+
+| Year | easystats (CRAN) | NeuroKit2 (PyPI) |
+| --- | ---: | ---: |
+| 2019 | 633,879 | 666 |
+| 2020 | 2,058,870 | 22,882 |
+| 2021 | 3,423,790 | 67,908 |
+| 2022 | 6,035,776 | 107,070 |
+| 2023 | 6,983,569 | 173,865 |
+| 2024 | 6,775,743 | 333,707 |
+| 2025 | 8,763,381 | 921,827 |
+| 2026 (to 22 Sep) | 6,776,106 | 1,018,702 |
+| **Total** | **41,451,114** | **2,646,627** |
+
+- **easystats** is the ten packages summed, from cranlogs (https://cranlogs.r-pkg.org), which counts the RStudio/Posit CRAN mirror only and so undercounts CRAN as a whole. None of the ten had downloads there before 2019.
+- **NeuroKit2** is from ClickHouse's public copy of the PyPI download logs (https://clickpy.clickhouse.com/dashboard/neurokit2): raw counts, mirrors and continuous integration included, the same basis as Google's BigQuery table. It reached PyPI on 29 October 2019, so 2019 is two months, and the CV plot starts in 2020. The original NeuroKit package (`neurokit`, 2017-) adds 5,000-10,000 a year and is not included.
+- Per-year stars are not recorded: the GitHub API now needs a signed-in request to say when each star was given, and the public GitHub events archive thins out from mid-2025.
 
 ### Reference Works
 
@@ -1463,7 +1554,6 @@ track. Grouped by `Domain`, newest first within each domain.
   - License to practice as a certified hypnotherapist. Registered as Certified Hypnotherapist by the National Guild of Hypnotists on 2 December 2019, credential ID 69222.
   - Four further certifications awarded the same day by the Banyan Hypnosis Center for Training and Services (Dallas, Texas), also under Fauziah Shah: Master Hypnotist (course of study in Mastering Hypnosis); 5-PATH (Five-Phase Advanced Transformational Hypnosis) Hypnotherapist; 7th Path Self-Hypnosis Teacher; and Certified Hypnosis Professional of the 5-PATH International Association of Hypnosis Professionals.
   - Primarily done for academic interest (relationship with Phenomenological Control) rather than for clinical practice.
-
 ### Mindfulness based on Compassion and Insight (MBCI)
 
 - **Domain:** Clinical
@@ -1632,6 +1722,15 @@ track. Grouped by `Domain`, newest first within each domain.
 - **Link:** https://musescore.com/dominiquemakowski
 - **Description:**
   - Piano arrangements and scores, published openly on MuseScore.
+
+### Stats & Sorcery
+
+- **Type:** Game
+- **Status:** Proof of concept (December 2025). Parked for now; playable in the browser, single-player against the computer or two-player.
+- **Link:** https://dominiquemakowski.github.io/StatsAndSorcery/ (repository https://github.com/DominiqueMakowski/StatsAndSorcery)
+- **Description:**
+  - A proof of concept for improving statistics education: a turn-based card and combat game meant to build intuition for statistical reasoning rather than teach it by exposition. The player casts spells as a wizard; the design draws on Gwent, Hearthstone, Magic: The Gathering and Baldur's Gate 3.
+  - The teaching counterpart of the Illusion Card Game below: that one grows out of the lab's research, this one out of the statistics teaching.
 
 ### Illusion Card Game
 

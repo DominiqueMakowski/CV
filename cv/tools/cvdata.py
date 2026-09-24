@@ -61,7 +61,13 @@ TOPICS_KEYS = {"lead", "areas"}
 STAT_KEYS = {"year", "publications", "citations"}
 
 # The top level of a `cv-stats` file, which is a mapping rather than a list.
-STATS_KEYS = {"figure", "totals", "history", "partial-year", "notes", "source"}
+STATS_KEYS = {"figure", "totals", "history", "software", "partial-year", "notes",
+              "source"}
+
+# One package family in a `cv-stats` file's `software` list, and one year of
+# its download history.
+SOFTWARE_KEYS = {"name", "registry", "stars", "history"}
+DOWNLOAD_KEYS = {"year", "downloads"}
 
 TOOLS = os.path.join(ROOT, "img", "tools")
 PROJECTS = os.path.join(ROOT, "img", "projects")
@@ -106,11 +112,14 @@ def sections(path: str | None = None) -> list[tuple[str, str, str]]:
     "entries", "tools", "awards", "roles", "topics", "languages" or "stats".
     A heading may have more than one call under it, and then appears once per
     call. Reads the document rather than a separate manifest, so adding a
-    section in one place is enough.
+    section in one place is enough, and commenting one out removes it.
     """
     path = path or os.path.join(ROOT, "cv.qmd")
     text = io.open(path, encoding="utf-8").read()
     _, _, body = text.split("---", 2)
+    # A section commented out of the document (`<!-- ... -->`) is not rendered
+    # by Quarto, so it must not be picked up here either.
+    body = re.sub(r"<!--.*?-->", "", body, flags=re.DOTALL)
     out, heading = [], None
     for m in SECTION_RE.finditer(body):
         if m.group("heading") is not None:

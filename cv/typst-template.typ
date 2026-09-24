@@ -220,9 +220,7 @@
 // Indented into the same text column as the entries above it, so the page has
 // one left edge.
 //
-// The source line is not optional and `validate.py` enforces it. Citation
-// counts are stale the week after they are taken, and an undated one is exactly
-// what a reader is entitled to be suspicious of.
+// The source line is optional, and drawn only when content/impact.yml has one.
 #let cv-stats(data) = block(width: 100%, above: 10pt, below: 0pt)[
   #let notes = data.at("notes", default: ())
   #let source = data.at("source", default: none)
@@ -232,13 +230,15 @@
     [],
     [
       #if figure-path != none [
-        // Every figure in the plot is repeated in the bullets underneath, so
-        // the alt text can say what it shows rather than read it out.
+        // The bullets underneath interpret the plot rather than repeat it,
+        // so the alt text is what says what it shows.
         #image(
           figure-path,
           width: 100%,
-          alt: "Bar charts of publications and of citations per year, both "
-            + "rising steeply from 2019.",
+          alt: "Two charts, per year and not cumulative: publications as bars "
+            + "with citations as a line, both rising steeply from 2019; and "
+            + "software downloads per year for easystats and NeuroKit, on a log "
+            + "scale.",
         )
       ]
       #if notes.len() > 0 [
@@ -1052,7 +1052,11 @@
           weight: "bold",
           fill: accent,
           font: head-font,
-          smallcaps(md(theme.name)),
+          // `upper`, not `smallcaps`: Roboto's small-cap glyphs are drawn as
+          // full capitals anyway, and they extract as mixed case with some
+          // letters lost ("otheR", "Reality PeRcePtion"), which is exactly
+          // what an ATS or a screening model reads.
+          upper(md(theme.name)),
         ),
       )
     ]

@@ -300,16 +300,16 @@ def render_entry(e: dict) -> str:
 def render_stats(data: dict) -> str:
     """The bibliometrics: the plot, then the notes, then the source.
 
-    The source is required (validate.py enforces it): an undated citation count
-    is exactly what a reader is entitled to be suspicious of.
+    The source is optional, and written only when content/impact.yml has one.
     """
     figure = data.get("figure")
-    # Every figure in the plot is repeated in the bullets underneath, so the alt
-    # text can say what it shows rather than read it out.
+    # The bullets underneath interpret the plot rather than repeat it, so the
+    # alt text is what says what it shows.
     img = (
-        f'<img class="plot" src="{html.escape(figure, quote=True)}" alt="Bar charts'
-        " of publications and of citations per year, both rising steeply from"
-        ' 2019.">'
+        f'<img class="plot" src="{html.escape(figure, quote=True)}" alt="Two charts,'
+        " per year and not cumulative: publications as bars with citations as a"
+        " line, both rising steeply from 2019; and software downloads per year"
+        ' for easystats and NeuroKit, on a log scale.">'
         if figure
         else ""
     )

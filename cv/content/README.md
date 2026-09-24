@@ -159,29 +159,42 @@ A mapping, and the only content file with a picture attached.
 
 | Key | Renders as |
 | --- | --- |
-| `figure` | The plot, drawn from `history` by `tools/make_impact.py`. |
+| `figure` | The plot, drawn from `history` and `software` by `tools/make_impact.py`. |
 | `totals` | `publications` and `citations`, used to label the panels. |
 | `history` | One row per year: `year`, `publications`, `citations`. Either count may be missing. Years must be in order. |
-| `partial-year` | The year the snapshot cuts through. Drawn faded and labelled. |
-| `notes` | Bullets under the plot, for what a plot cannot say - the h-index, author positions, the Wikipedia articles. |
-| `source` | Small caps grey, under the notes. **Required** - `validate.py` rejects the file without it. |
+| `software` | One entry per package family: `name`, `registry`, `stars` (current total) and a `history` of `{year, downloads}` rows. Drawn as lines in the second panel. Optional. |
+| `partial-year` | The year the snapshots cut through. Drawn faded (bars) or dashed (lines), and labelled. |
+| `notes` | Bullets under the plot, for what a plot cannot say: interpretation, and evidence the plot does not carry - the h-index, author positions, the Wikipedia articles. Never a restatement of what the plot shows. |
+| `source` | Small caps grey, under the notes. Optional; currently commented out, and kept in the file as the date of the snapshot. |
 
 `totals` is given rather than summed, because the columns do not add up to it:
 Scholar reports two publications without a year, and citations only from 2019.
 
-The plot shows **per year, not cumulative**. A running total only ever goes up,
+The plot shows **per year, not cumulative**, and says so twice - in both panel
+titles and in a caption under the plot - because every series rises, and a
+rising series is easily taken for a running total. A running total only ever goes up,
 so it says the same thing whatever the underlying year was like; per-year bars
 show the shape of the record, which is the interesting part. The part-year bar
 is faded and labelled for the same reason - a snapshot taken in June makes the
 current year look like a collapse, and nothing else on the page would tell a
 reader otherwise.
 
-Everything in the plot is repeated in the bullets underneath, so nothing lives
-only in the picture.
+The bullets underneath interpret the plot rather than read it back: a note that
+repeats a number off the figure spends a line saying nothing new.
 
-To refresh: `Rscript tools/refresh_scholar.R` prints a new `history` block (it
-needs R and the `scholar` package, and is the only part of this repo that does),
-then `./build.sh` redraws the figure. The source date moves with the numbers.
+Two choices in the plot are deliberate exceptions to the usual rules, and
+`tools/make_impact.py` explains both: publications and citations share a panel
+on two y-axes (gridlines aligned to round numbers on both, ticks coloured like
+their series), and the downloads are on a log scale (easystats has ten times
+NeuroKit's downloads, which on a linear axis flattens NeuroKit to nothing).
+
+To refresh: `Rscript tools/refresh_scholar.R` prints a new `history` block and
+the author-position counts for the h-index note (it needs R and the `scholar`
+package, and is the only part of this repo that does),
+and `python tools/refresh_downloads.py` prints a new `software` block (no
+account needed: cranlogs, the public PyPI logs, and the GitHub API). Record the
+figures in `PROFILE.md` > Impact, paste them here, and `./build.sh` redraws the
+figure. The source date moves with the numbers.
 
 Run `python tools/validate.py` after editing. It rejects unknown keys, missing
 logo files, unbalanced brackets and unescaped special characters - all of which
@@ -223,7 +236,9 @@ matches nothing in the bibliography, and a bibliography entry that no theme
 claims, both fail `tools/validate.py` — so a new paper cannot be added to the
 bibliography and quietly left off the CV.
 
-`training.yml` is rendered by `cv-topics`, the same renderer as
+`training.yml` is currently commented out of `cv.qmd` (the Additional
+Training section is off), but kept intact. When on, it is rendered by
+`cv-topics`, the same renderer as
 `teaching-areas.yml`, because the shape is identical: rows banded by a group,
 each with a short label and a line of provenance. The one oddity is that its
 `level` column holds a year rather than a level. Reusing the renderer is why the

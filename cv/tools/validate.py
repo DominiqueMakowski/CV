@@ -29,6 +29,8 @@ from cvdata import (
     PUB_KEYS,
     PUB_THEME_KEYS,
     ROOT,
+    SOFTWARE_KEYS,
+    DOWNLOAD_KEYS,
     STAT_KEYS,
     STATS_KEYS,
     TOPIC_KEYS,
@@ -270,16 +272,39 @@ def check_stats(where: str, data) -> None:
     if partial is not None and partial not in years:
         err(where, f"partial-year {partial!r} is not one of the history years")
 
+    software = data.get("software", []) or []
+    if not isinstance(software, list):
+        err(where, "'software' must be a list of packages")
+        software = []
+    for pkg in software:
+        at = f"{where} > software > {pkg.get('name', '?') if isinstance(pkg, dict) else '?'}"
+        if not isinstance(pkg, dict):
+            err(at, f"expected a mapping, got {type(pkg).__name__}")
+            continue
+        for key in set(pkg) - SOFTWARE_KEYS:
+            err(at, f"unknown key {key!r} (known: {', '.join(sorted(SOFTWARE_KEYS))})")
+        if not pkg.get("name"):
+            err(at, "no name")
+        if pkg.get("stars") is not None and not isinstance(pkg["stars"], int):
+            err(at, "'stars' must be a whole number")
+        rows = pkg.get("history") or []
+        if not rows:
+            err(at, "no download history")
+        pyears = []
+        for row in rows:
+            if not isinstance(row, dict) or set(row) - DOWNLOAD_KEYS or                     not all(isinstance(row.get(k), int) for k in DOWNLOAD_KEYS):
+                err(at, f"history rows need a whole-number year and downloads, got {row!r}")
+                continue
+            pyears.append(row["year"])
+        if pyears != sorted(pyears):
+            err(at, "history years are out of order")
+
     for key, value in (data.get("totals") or {}).items():
         if key not in ("publications", "citations"):
             err(where, f"unknown total {key!r}")
         elif not isinstance(value, int):
             err(where, f"total {key!r} must be a whole number")
 
-    # The figures go stale, and an undated citation count is the thing a reader
-    # is entitled to be suspicious of. See content/README.md.
-    if not data.get("source"):
-        err(where, "no 'source' - date the snapshot these figures come from")
 
     for i, n in enumerate(data.get("notes", []) or [], 1):
         if not isinstance(n, str):

@@ -27,30 +27,40 @@
     one - against the Association's Sustainability Champion and a
     representative of Wellcome.
 
-# The blog and the media work were two cards saying one thing: the work told to
-# people who are not being examined on it. Writing it, broadcasting it and
-# standing in a pub explaining it are the same activity in three rooms, and
-# splitting them made a column of four outreach cards where two would do.
+# The blog and the media work were merged into one card for a while, on the
+# argument that writing it, broadcasting it and standing in a pub explaining it
+# are one activity in three rooms. Split again because the column had room for
+# it, and because the writing is a sustained output with a count while the
+# media work is a list of occasions: one card could only lead with one of them.
 
-- name: "Popular Writing and Media"
+- name: "Science Writing"
   kind: outreach
   url: "https://realitybendinglab.com/news/"
-  reach: "40+ posts"
-  meta: "Reality Bending Lab · Television · Podcast · 2015 - Present"
+  reach: "90+ posts"
+  meta: "Reality Bending Lab · La bibliothèque du Neuropsychologue · 2014 - Present"
   description: >-
     Methods tutorials, research explainers and essays on research culture, for a
-    general and early-career audience. French national television on violent
-    images and the brain; the _Learning Bayesian Statistics_ podcast; Pint of
-    Science; a public debate on sensory illusions in Bordeaux; press coverage of
-    the 3D-cinema memory and AI-generated faces studies.
+    general and early-career audience. Before that, a French neuropsychology
+    blog (54 posts, 69,000 views) and a magazine essay on the neuroanatomy of
+    reality.
 
-- name: "Scientific Advisor"
+- name: "Media and Public Talks"
+  kind: outreach
+  reach: "2015 - 25"
+  meta: "Television · Podcast · Pint of Science · Press"
+  description: >-
+    French national television on violent images and the brain; the _Learning
+    Bayesian Statistics_ podcast; Pint of Science; a public debate on sensory
+    illusions in Bordeaux; press coverage of the 3D-cinema memory and
+    AI-generated faces studies.
+
+- name: "Consultancy: Scientific Advisor"
   kind: exchange
-  reach: "2025 -"
+  reach: "2025 - Present"
   meta: "Artificial intelligence start-up, Singapore · Client confidential"
   description: "Scientific advising on an applied project on deception detection."
 
-- name: "Contract Research"
+- name: "Contract Research: Smell & EEG"
   kind: exchange
   reach: "2026"
   meta: "Fragrance industry · Client confidential"
@@ -64,7 +74,7 @@
     Reusable _Introduction to GitHub_ lecture for PhD students across the six
     universities of the partnership.
 
-- name: "Contracted Developer"
+- name: "Consultancy: Python Developer"
   kind: exchange
   reach: "2025"
   meta: "Institute for Advanced Consciousness Studies"

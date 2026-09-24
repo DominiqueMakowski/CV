@@ -82,14 +82,13 @@ themes:
       - ludecke2019insight
       - makowski2018psycho
 
-  - name: "Miscellaneous"
+  - name: "Other"
     keys:
       - rinaldi2026misophonia
       - geller2025disfluency
       - salgues2024self
       - lee2024beauty
       - rose2024beyond
-      - lee2023beauty
       - kovarski2022movie
       - blonde2022bored
       - blonde2020medio

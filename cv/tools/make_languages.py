@@ -34,11 +34,13 @@ import urllib.request
 
 from cvdata import LANGS
 
-# The stroke that keeps a white flag off a white page. Given per 30 units of
+# The border that keeps a white flag off a white page. Given per 30 units of
 # height so the four come out at the same visual weight once they are drawn to
-# a common height.
-BORDER = "#9a9a9a"
-BORDER_PER_30 = 1.0
+# a common height. Kept light so the flags still read as flat: with no border
+# at all (None), Poland's white half has no edge on a white page. It was
+# #9a9a9a at 1.0 before, which read as a frame.
+BORDER = "#d4d4d4"
+BORDER_PER_30 = 0.8
 
 SOURCES = {
     "python.svg": (
@@ -48,20 +50,28 @@ SOURCES = {
 }
 
 
-def frame(w: float, h: float) -> str:
-    """The hairline border, inset by half its width so it is not half-clipped."""
-    sw = h / 30.0 * BORDER_PER_30
-    return (
-        f'<rect x="{sw / 2}" y="{sw / 2}" width="{w - sw}" height="{h - sw}" '
-        f'fill="none" stroke="{BORDER}" stroke-width="{sw}"/>'
-    )
-
-
 def svg(w: float, h: float, body: str, defs: str = "") -> str:
+    """A flag drawn on a light grey mat rather than outlined by a stroke.
+
+    The border was a stroke laid over the artwork, and at a flag's printed size
+    it is well under a pixel wide. PDF viewers snap and smooth strokes that thin
+    differently at every zoom level, and the edge of the bands underneath showed
+    through, so in Acrobat the outline came and went and darkened on the blue
+    and red sides. A filled rectangle behind the flag, with the flag inset into
+    it, is area rather than line: it renders the same way at every zoom, and no
+    band colour reaches past it.
+    """
+    if BORDER:
+        b = h / 30.0 * BORDER_PER_30
+        body = (
+            f'<rect width="{w:g}" height="{h:g}" fill="{BORDER}"/>'
+            f'<g transform="translate({b:g} {b:g}) '
+            f'scale({(w - 2 * b) / w:g} {(h - 2 * b) / h:g})">{body}</g>'
+        )
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w:g} {h:g}" '
         f'width="{w:g}" height="{h:g}">'
-        f"{defs}{body}{frame(w, h)}</svg>\n"
+        f"{defs}{body}</svg>\n"
     )
 
 

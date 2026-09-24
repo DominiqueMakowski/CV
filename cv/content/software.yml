@@ -8,7 +8,10 @@
 # Keep a description to about four lines in its column - roughly 145 characters.
 # The mark beside it is 46pt wide and that comes out of the same column, so
 # there is less room here than the width of the page suggests.
-# Reach figures are dated snapshots from PROFILE.md (2026-09-15) and go stale.
+# Reach figures are dated snapshots from PROFILE.md (2026-09-23) and go stale.
+# easystats downloads and NeuroKit stars also appear in the Impact plot
+# (content/impact.yml, refreshed by tools/refresh_downloads.py): refresh the two
+# together, or they will disagree on the same page.
 # One figure per item: a row of three numbers reads as padding, and only the
 # largest is remembered.
 #
@@ -20,7 +23,7 @@
   url: "https://easystats.github.io/easystats/"
   logo: "easystats.png"
   meta: "R · Co-founder · 2019 - Present"
-  reach: "41.2M downloads"
+  reach: "41.5M downloads"
   description: >-
       Ten R packages for the post-processing of statistical models: parameters,
       effect sizes, diagnostics, Bayesian indices, marginal effects, reporting.
@@ -33,7 +36,7 @@
   reach: "130k downloads/month"
   description: >-
       Most popular Python package for signal processing (ECG, PPG, EDA, ...), from peak detection
-      to heart rate variability and complexity indices. *2,355 stars* and dozens
+      to heart rate variability and complexity indices. *2,366 stars* and dozens
       of contributors. *SIPS Commendation* (2024).
 
 - name: "Pyllusion"
@@ -82,7 +85,12 @@
       Multimodal interoception questionnaire, across cardiac, respiratory,
       gastric and other bodily channels.
 
-# WIP
-# - name: "DoggoNogo"
-#   kind: measure
-#   meta: "In development"
+# The mark is the game's own level 2 sprite
+# (DoggoNogo/art/images/level2_player_v1_cut3.webp), cropped square.
+- name: "DoggoNogo"
+  kind: measure
+  url: "https://realitybending.github.io/DoggoNogo/game/"
+  logo: "doggonogo.png"
+  meta: "JavaScript · In development"
+  description: >-
+      Gamified cognitive control battery optimized via Bayesian statistics.

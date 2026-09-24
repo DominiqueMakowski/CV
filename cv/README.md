@@ -53,6 +53,8 @@ which happens on this machine *after* the PDF is already written.
 | `tools/crop_logos.py` | Tightens logo viewBoxes to the artwork they contain. |
 | `tools/make_ntu_logo.py` | Rebuilds `ntu-full.svg` (crest + wordmark). |
 | `tools/make_paris_logo.py` | Rebuilds `universite-paris.svg` from the panel version. |
+| `tools/make_impact.py` | Draws the Impact plot from `content/impact.yml`. Run by the build. |
+| `tools/refresh_scholar.R`, `tools/refresh_downloads.py` | Print fresh bibliometrics and download figures to paste into `content/impact.yml`. Run by hand; they need the network. |
 | `tools/make_languages.py` | Draws the four flags; vendors the Python and R marks. |
 
 The split that matters: **content is YAML, layout is Typst, and they never mix.**

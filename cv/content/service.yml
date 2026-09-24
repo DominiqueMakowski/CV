@@ -11,8 +11,10 @@
 # question: what does he run.
 #
 # Both columns name the post and put what it is held over in `meta`:
-# "Academic Lead" over the participation scheme, "Statistical Editor" over the
-# journal. The column is a list of posts, and a reader scanning the bold line
+# "Statistical Editor" over the journal. The participation scheme is the
+# exception: its formal title is "Academic Lead" (as PROFILE.md records it),
+# which says nothing on its own, so the card names the scheme and puts SONA,
+# the system it runs on, in `meta`. The column is a list of posts, and a reader scanning the bold line
 # wants to know what he *is*, not what exists.
 #
 # The order is by what each post amounts to - built, reformed, convened, sat on
@@ -33,10 +35,10 @@
   reach: "2026 - Present"
   meta: "MSc Advanced Computational Psychology · University of Sussex"
 
-- name: "Academic Lead"
+- name: "Research Participation Scheme Lead"
   kind: leadership
   reach: "2025 - Present"
-  meta: "Research Participation Scheme · School of Psychology, Sussex"
+  meta: "SONA · School of Psychology, University of Sussex"
   description: >-
     *Redesigned the credit allocation and study approval rules* to be fairer and
     more transparent, and trialled changes that raise the educational value of
@@ -51,7 +53,7 @@
     *Methods for Open and Reproducible Science*: a seminar series on openness
     and reproducibility in psychological science. Member of the Centre.
 
-- name: "Committee Member"
+- name: "Ethics Committee Member"
   kind: leadership
   reach: "2023 - Present"
   meta: "Cross-Schools Research Ethics Committee · University of Sussex"

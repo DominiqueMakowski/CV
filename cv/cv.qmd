@@ -76,7 +76,7 @@ format:
 //
 // The fit has a few points of slack, no more. Add a line to anything above it
 // and the strip moves to the top of page 2 on its own, which is the signal to
-// either trim above it or move this block back before Research Impact.
+// either trim above it or move this block back before Impact.
 #cv-languages(yaml("content/languages.yml"))
 ```
 
@@ -133,7 +133,7 @@ format:
 #cv-talks(yaml("content/talks.yml"))
 ```
 
-# Research Impact
+# Impact
 
 ```{=typst}
 #cv-stats(yaml("content/impact.yml"))
@@ -148,6 +148,11 @@ format:
 #cv-publications(yaml("content/_publications.generated.yml"))
 ```
 
+<!--
+Left out of the CV for now, and kept rather than deleted so that it can be
+switched back on by removing this comment. content/training.yml is untouched,
+and PROFILE.md > Training remains the full record.
+
 # Additional Training
 
 ```{=typst}
@@ -156,3 +161,4 @@ format:
 // top of content/training.yml for how the columns map.
 #cv-topics(yaml("content/training.yml"))
 ```
+-->
