@@ -10,23 +10,33 @@
 #
 # Sources: PROFILE.md > Side Projects. The pictures are the artwork itself -
 # subject 1, the heart recorded while lying, which is the densest of them and
-# the only one that survives being 66pt wide - and the back of a card.
+# the only one that survives being 66pt wide - and a photo of the printed deck
+# (cropped square, contrast and colour cast corrected). Each picture has an
+# `alt`, since unlike a logo it shows something the text does not name.
 
 - name: "NeuropsyXart"
   url: "https://dominiquemakowski.github.io/NeuropsyXart/"
   logo: "neuropsyxart.jpg"
-  reach: "OHBM 2023"
-  meta: "Brain Art Exhibition, Montreal · Selected"
+  alt: >-
+      Artwork: a dense tangle of thin looping black lines on cream, the
+      attractor of a heart signal recorded while lying.
+  reach: "Art project"
+  meta: ""
   description: >-
-    A person's heart or brain activity, recorded during a mental experience and
-    drawn as the *attractor* of that signal: a portrait made of physiology,
-    where the artist is only the facilitator.
+      A person's heart or brain activity, recorded during a mental experience and
+      drawn as the *attractor* of that signal: a portrait made of physiology,
+      where the artist is only the facilitator. Was selected for the 
+      *Brain Art Exhibition*, Montreal (OHBM, 2023).
 
 - name: "Reality Check!"
   logo: "realitycheck.jpg"
-  reach: "In testing"
-  meta: "Card game · Beta-tested in the lab, 2024"
+  alt: >-
+      Photograph of the printed Reality Check! deck: face cards each showing an
+      Ebbinghaus illusion, a coloured circle ringed by dark circles, beside the
+      purple patterned card backs.
+  reach: "Card game"
+  meta: ""
   description: >-
-    A bluffing card game built on the *Ebbinghaus illusion*: play a circle the
-    same size or bigger than the last, and call the bluff when your eyes
-    disagree. Out of the lab's work on illusion sensitivity.
+      A bluffing card game built on the *Ebbinghaus illusion*: play a circle the
+      same size or bigger than the last, and call the bluff when your eyes
+      disagree. Out of the lab's work on illusion sensitivity.

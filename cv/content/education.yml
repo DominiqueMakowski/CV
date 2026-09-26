@@ -13,7 +13,7 @@
   location: "France"
   org: "Université Paris Cité"
   date: "2014 - 18"
-  logo: "universite-paris-mark.svg"
+  logo: "universite-paris-mark.png"
   tooltip: >-
       Thesis: Cognitive Neuropsychology of Implicit Emotion Regulation through
       Fictional Reappraisal (supervisors: Pr Serge Nicolas and Pr Pascale
@@ -30,7 +30,7 @@
   location: "France"
   org: "French Association for Cognitive Behavioural Therapy (AFTCC)"
   date: "2014 - 17"
-  logo: "aftcc.svg"
+  logo: "aftcc.png"
   # details:
   #   - >-
   #     Dissertation: Cognitive Behavioural Therapy for two Patients: One
@@ -41,7 +41,7 @@
   location: "France"
   org: "Université Paris Cité"
   date: "2009 - 14"
-  logo: "universite-paris-mark.svg"
+  logo: "universite-paris-mark.png"
 # Expanded alternative to the combined BSc + MSc entry above. To use it, comment
 # out that entry and uncomment these two.
 #
@@ -49,7 +49,7 @@
 #   location: "France"
 #   org: "Université Paris Cité"
 #   date: "2012 - 14"
-#   logo: "universite-paris-mark.svg"
+#   logo: "universite-paris-mark.png"
 #   details:
 #     - >-
 #       Second year thesis: How the Study of Emotions in Schizophrenia enlight
@@ -64,4 +64,4 @@
 #   location: "France"
 #   org: "Université Paris Cité"
 #   date: "2009 - 12"
-#   logo: "universite-paris-mark.svg"
+#   logo: "universite-paris-mark.png"

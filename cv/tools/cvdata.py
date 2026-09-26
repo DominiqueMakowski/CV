@@ -24,7 +24,7 @@ LANGS = os.path.join(ROOT, "img", "languages")
 ENTRY_KEYS = {"title", "location", "org", "date", "logo", "details", "tooltip"}
 
 # Same, for one card of a `cv-tools` or `cv-awards` section.
-CARD_KEYS = {"name", "url", "logo", "description", "meta", "reach", "kind"}
+CARD_KEYS = {"name", "url", "logo", "alt", "description", "meta", "reach", "kind"}
 
 # The `kind` values each of those sections splits its two columns on.
 CARD_KINDS = {
@@ -32,7 +32,8 @@ CARD_KINDS = {
     "awards": ("grant", "award"),
     "roles": ("convening", "supervision"),
     "service": ("leadership", "editorial"),
-    "engagement": ("outreach", "exchange"),
+    # Three kinds, one row of three columns: who was reached, then who paid.
+    "engagement": ("openscience", "consultancy", "contract"),
     "talks": ("invited", "conference"),
     # One band rather than two columns, so there is a single kind and no card
     # ever names it.

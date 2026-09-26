@@ -8,7 +8,10 @@
 # Emotion" symposium at ESCAN 2026, the British Neuroscience Association Open
 # Science Champion debate (2024), the lab blog, the media appearances and the
 # consultancy - is in engagement.yml, so that this section answers one
-# question: what does he run.
+# question: what does he run. The MORSE seminar series went there for a while,
+# on the grounds that what it is for is research culture, and came back: it is
+# a seminar series he convenes for the School, which is what this column
+# lists, and the engagement section needed the room.
 #
 # Both columns name the post and put what it is held over in `meta`:
 # "Statistical Editor" over the journal. The participation scheme is the
@@ -30,19 +33,21 @@
 # bare dash is a typographic convention that a reader has to know, and half a
 # range reads as a typo in a column where other cards carry a closed one.
 
-- name: "Programme Developer"
+- name: "MSc Programme Developer"
   kind: leadership
-  reach: "2026 - Present"
+  reach: "2026"
   meta: "MSc Advanced Computational Psychology · University of Sussex"
+  description: >-
+      Developing the School's new master's programme (see Teaching).
 
 - name: "Research Participation Scheme Lead"
   kind: leadership
   reach: "2025 - Present"
-  meta: "SONA · School of Psychology, University of Sussex"
+  meta: "University of Sussex"
   description: >-
-    *Redesigned the credit allocation and study approval rules* to be fairer and
-    more transparent, and trialled changes that raise the educational value of
-    taking part while improving data quality.
+      Redesigned the SONA credit allocation and study approval rules to be fairer and
+      more transparent, and trialled changes that raise the *educational value* of
+      the experiments while improving data quality.
 
 - name: "Seminar Organiser"
   kind: leadership
@@ -50,8 +55,8 @@
   reach: "2024 - Present"
   meta: "MORSE · Centre for Open Science and Research Reform, Sussex"
   description: >-
-    *Methods for Open and Reproducible Science*: a seminar series on openness
-    and reproducibility in psychological science. Member of the Centre.
+      *Methods for Open and Reproducible Science*: a seminar series on openness
+      and reproducibility in psychological science. Member of the Centre.
 
 - name: "Ethics Committee Member"
   kind: leadership
@@ -62,24 +67,30 @@
   kind: editorial
   url: "https://royalsocietypublishing.org/journal/rsos"
   reach: "2025 - Present"
-  meta: "Royal Society Open Science"
+  meta: ""
+  description: >-
+      Royal Society Open Science
 
 - name: "Associate Editor"
   kind: editorial
   reach: "2020 - 24"
-  meta: "Frontiers in Psychology · Quantitative Psychology and Measurement"
+  meta: ""
+  description: >-
+      Frontiers in Psychology: Quantitative Psychology and Measurement
 
 - name: "Regular Reviewer"
   kind: editorial
   url: "https://joss.theoj.org/"
   reach: "2018 - Present"
-  meta: "Journal of Open Source Software"
+  meta: ""
+  description: >-
+      Journal of Open Source Software
 
 - name: "Reviewer"
   kind: editorial
   reach: "2017 - Present"
-  meta: "Nature Human Behaviour · Biological Psychiatry · Scientific Reports"
+  meta: ""
   description: >-
-    Also Acta Psychologica, Journal of Experimental Psychology: Human Perception
-    and Performance, Neuropsychologia, Personality and Individual Differences
-    and others.
+      Nature Human Behaviour, NeuroImage, Behavior Research Methods,
+      Biological Psychiatry, Scientific Reports, Personality and Individual
+      Differences, Acta Psychologica, Neuropsychologia and others.

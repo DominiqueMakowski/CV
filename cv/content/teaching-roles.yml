@@ -3,8 +3,8 @@
 # (`kind: supervision`). Card fields, as in grants-awards.yml and software.yml.
 #
 # The left column runs down the scale of what was built - a programme, then a
-# module, then the workshops - rather than by date, because that is the order
-# the question is asked in.
+# module, then the teaching tools, then the workshops - rather than by date,
+# because that is the order the question is asked in.
 #
 # The MSc Advanced Computational Psychology programme is curriculum design, so
 # it leads here; service.yml keeps a short card for the institutional side of
@@ -19,22 +19,41 @@
   reach: "2026"
   meta: "University of Sussex"
   description: >-
-      Lead on designing a new postgraduate programme: *MSc Advanced Computational Psychology* with its curriculum
-      structure, module content and learning outcomes.
+      Leading the design of a new programme, *MSc Advanced Computational Psychology*: curriculum, modules and learning outcomes.
 
 - name: "Module design"
   kind: convening
   reach: "2024"
   meta: "University of Sussex"
   description: >-
-      Created *Bayesian Statistics* as a new master's module (also attended by PhDs). Student's evaluation highlight it as one of the most engaging modules.
+      Created *Bayesian Statistics*, a new master's and PhD module, rated by students as one of the most engaging.
+
+# The one piece of teaching innovation that is a thing rather than a claim: a
+# game, playable at the link, built for the statistics modules. It sits after
+# the module because it serves the modules. "Innovative teaching" is in `meta`
+# on purpose - it is the phrase job descriptions ask for, and the card is the
+# evidence for it. Still a prototype, not yet used in class or evaluated, and
+# the card says so. Source: ../PROFILE.md > Academic Teaching > Stats & Sorcery.
+
+- name: "Game-based learning"
+  kind: convening
+  url: "https://dominiquemakowski.github.io/StatsAndSorcery/"
+  reach: "Prototype"
+  meta: "Innovative teaching · Open source"
+  description: >-
+      [*Stats & Sorcery*](https://dominiquemakowski.github.io/StatsAndSorcery/), a game teaching statistical intuition through play.
+
+# The invitations only. The Basel and Zurich workshops were paid contracts and
+# are on the Contracted Instructor card in engagement.yml; the pointer at the
+# end ties the two together without listing them twice.
 
 - name: "Invited teaching"
   kind: convening
-  reach: "2021 - 25"
-  meta: "Basel · Zurich · Paris · Singapore · OHBM"
+  reach: "2021 - 24"
+  meta: "Paris · Singapore · OHBM"
   description: >-
-      I am regularly invited to deliver specific upskilling trainings for Staff or PhDs, with workshops on physiological techniques, programming or statistics.
+      Workshops for researchers and PhD students on Bayesian statistics, mixed
+      models and physiological signals. See also *Contracted Instructor*.
 
 # The right column leads with the count rather than the dates, as the grant and
 # software cards lead with the money and the downloads: how many students is
@@ -52,7 +71,7 @@
 
 - name: "Dissertation and placement students"
   kind: supervision
-  reach: "12 a year"
+  reach: "~12/year"
   meta: ""
   description: >-
       Supervising nine undergraduate and three master's dissertations a year, two full-time
@@ -69,8 +88,9 @@
   reach: "8 since 2023"
   meta: ""
   description: >-
-      Supervised students have won a *SAGE prize for outstanding application of statistical
-      methods*, a Sussex Partnership NHS Trust prize for the highest project mark, an Adam
+      Students under my supervision regularly win awards for their work in my lab, including the
+      *SAGE prize for outstanding application of statistical methods*, 
+      the Sussex Partnership NHS Trust prize for the highest project mark, an Adam
       Weiler PhD Impact Award, and five JRA and SoCoBio summer scholarships.
 
 # - name: "Research staff"

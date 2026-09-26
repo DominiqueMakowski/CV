@@ -38,56 +38,55 @@
 
 - name: "Reality as an Embodied Process"
   kind: invited
-  reach: "2 talks"
-  meta: "NTU · SUTD · Singapore · 2025"
+  reach: "2025"
+  meta: "NTU · Singapore"
   description: >-
-    On beliefs of reality and unreality, from faces to erotic content, and a
-    general anti-AI bias: at the _Truth in the Machine_ symposium he
-    co-organised at NTU, and two days later at SUTD's Human-Centred AI seminar.
+      On beliefs of reality and unreality, at the _Truth in the Machine_ symposium I
+      co-organised at NTU.
 
 - name: "Good Tools Breed Good Science"
   kind: invited
   reach: "2026"
   meta: "BrainHack · Singapore"
   description: >-
-    On how the available software, hardware and methods quietly decide which
-    questions a field is able to ask.
+      On how the available software, hardware and methods quietly decide which
+      questions a field is able to ask.
 
-- name: "easystats and NeuroKit"
+- name: "Software Demonstrations"
   kind: invited
   reach: "3 talks"
   meta: "OHBM · Sussex · 2023 - 2026"
   description: >-
-    Invited software talks and demonstrations: NeuroKit at an OHBM satellite
-    event on research software, and easystats at Open Research Sussex and for
-    the Centre for Open Science and Research Reform.
+      Invited software talks and demonstrations: NeuroKit at an OHBM satellite
+      event on research software, and easystats at Open Research Sussex and for
+      the Centre for Open Science and Research Reform.
 
 - name: "The Lying Brain"
   kind: invited
   reach: "2021"
   meta: "Temasek Laboratories · Singapore"
   description: >-
-    On the neuroscientific approaches to deception, and the case for treating it
-    as a multidimensional phenomenon rather than a signal to be detected.
+      On the neuroscientific approaches to deception, and the case for treating it
+      as a multidimensional phenomenon rather than a signal to be detected.
 
 - name: "Symposia Organised"
   kind: conference
   reach: "2024 - 26"
   meta: "AISC, Rome · NTU, Singapore · ESCAN, Rome"
   description: >-
-    _The Value of Reality in the Post-Truth Era_, _Truth in the Machine_ and
-    _Artificial Emotion_: three international symposia on how beliefs about
-    artificiality shape affective and neural responses, convened with
-    collaborators in Rome and Singapore.
+      _The Value of Reality in the Post-Truth Era_, _Truth in the Machine_ and
+      _Artificial Emotion_: three international symposia on how beliefs about
+      artificiality shape affective and neural responses, convened with
+      collaborators in Rome and Singapore.
 
 - name: "Conference Talks"
   kind: conference
   reach: "13"
   meta: "ESCOP · ICOM · ICM · SFP · AFTCC · MBB · 2013 - 2023"
   description: >-
-    Talks at European and international meetings in cognitive psychology,
-    consciousness science, neuroimaging and clinical psychology, in English and
-    in French.
+      Talks at European and international meetings in cognitive psychology,
+      consciousness science, neuroimaging and clinical psychology, in English and
+      in French.
 
 - name: "Posters"
   kind: conference

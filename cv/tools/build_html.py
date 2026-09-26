@@ -155,6 +155,9 @@ h2::after { content: ""; flex: 1; height: 1px; background: var(--rule); }
 /* A picture, not a mark: drawn larger, and framed so that a white-ground image
    has an edge against the page. */
 .cards.pictures .card { grid-template-columns: 3.8rem 1fr; }
+/* Engagement: one row of three labelled columns, as on the page. */
+.cards.three { grid-template-columns: 1.7fr 1fr 1fr; }
+@media (max-width: 800px) { .cards.three { grid-template-columns: 1fr; } }
 /* One band across the page rather than two labelled columns. */
 .projects { grid-template-columns: 1fr; }
 .projects .row {
@@ -330,7 +333,11 @@ CARD_HEADINGS = {
     "roles": (("Design and Delivery", "Supervision and Examining"), None),
     "service": (("School and University", "Editorial and Peer Review"), None),
     "engagement": (
-        ("Public Engagement and Outreach", "Knowledge Exchange and Consultancy"),
+        (
+            "Open Science and Public Engagement",
+            "Consultancy",
+            "Contract Research and Teaching",
+        ),
         None,
     ),
     "tools": (("Software", "Measures and Paradigms"), "img/tools"),
@@ -396,7 +403,8 @@ def card_html(t: dict, logo_dir: str | None) -> str:
     logo = t.get("logo")
     mark = ""
     if logo_dir:
-        img = f'<img src="{logo_dir}/{logo}" alt="">' if logo else ""
+        alt = html.escape(t.get("alt") or "", quote=True)
+        img = f'<img src="{logo_dir}/{logo}" alt="{alt}">' if logo else ""
         mark = f'<div class="mark">{img}</div>'
     return (
         f'<article class="card">{mark}<div>'
@@ -470,7 +478,7 @@ def render_cards(items: list[dict], kind: str) -> str:
     )
     css = "cards" + (" marks" if logo_dir else "") + (
         " pictures" if kind == "projects" else ""
-    )
+    ) + (" three" if len(kinds) == 3 else "")
     return f'<div class="{css}">{cols}</div>'
 
 
@@ -493,7 +501,7 @@ def build() -> str:
     # Labelled by what it is rather than by the username, which is a string
     # only the link needs. Same for Scholar, whose profile id means nothing.
     if github:
-        contacts.append(f'<a href="https://github.com/{github}">GitHub</a>')
+        contacts.append(f'<a href="https://github.com/{github}">github.com/{github}</a>')
     if orcid_url:
         contacts.append(f'<a href="{orcid_url}">orcid.org/{orcid}</a>')
     if scholar_url:

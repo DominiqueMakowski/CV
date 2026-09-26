@@ -69,12 +69,17 @@
       Nanyang Technological University · Presidential Postdoctoral Fellowship ·
       PI · 2020 - 22
 
-- name: "SIPS Commendation"
+# Two commendations, folded into one card: the same award from the same body
+# twice reads better as a record than as a repeat. Filed under the later year.
+# PROFILE.md > Awards keeps them as two entries.
+- name: "SIPS Commendations"
   kind: award
   url: "https://improvingpsych.org/mission/awards/"
-  reach: "2024"
+  reach: "2020, 2024"
   meta: "Society for the Improvement of Psychological Science"
-  description: "For the NeuroKit Python package."
+  description: >-
+      For the NeuroKit Python package (2024) and the bayestestR R package
+      (2020).
 
 - name: "Openness in Research Award"
   kind: award
@@ -104,10 +109,3 @@
   meta: "Psychonomic Society"
   description: >-
       For the fictional reappraisal paper, the main output of the PhD.
-
-- name: "SIPS Commendation"
-  kind: award
-  url: "https://improvingpsych.org/mission/awards/"
-  reach: "2020"
-  meta: "Society for the Improvement of Psychological Science"
-  description: "For the bayestestR R package."

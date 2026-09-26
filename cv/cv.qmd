@@ -7,7 +7,7 @@ profilepic: "img/profile.jpg"
 email: "D.Makowski@sussex.ac.uk"
 www: "realitybendinglab.com"
 github: "DominiqueMakowski"
-# orcid: "0000-0001-5375-9967"
+orcid: "0000-0001-5375-9967"
 scholar: "bg0BZ-QAAAAJ"
 aboutme: |
   Trained as a clinical neuropsychologist and CBT psychotherapist, I am an
@@ -37,6 +37,9 @@ format:
       - typst-show.typ
     font-paths: [fonts]
     keep-typ: true
+    # Tagged, accessible PDF. The compile fails on an image with no alt text
+    # that is not marked decorative, so this is also the accessibility check.
+    pdf-standard: ua-1
 ---
 
 # Experience
@@ -119,7 +122,12 @@ format:
 // heading of their own said "and now, his hobbies", and they are the same
 // thing the two columns above them are - the work shown to people who are not
 // being examined on it - only made rather than written.
-#cv-projects(yaml("content/projects.yml"))
+//
+// The wider gap above is for the page, not the section: the projects close
+// page 3, and at the default 14pt they left the page's slack in one block
+// under them. Moving them down splits it between the two. Retune if the page
+// above changes length.
+#cv-projects(yaml("content/projects.yml"), above: 44pt)
 ```
 
 # Talks and Presentations

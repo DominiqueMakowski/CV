@@ -1,83 +1,169 @@
-# Engagement and knowledge exchange, as two columns of cards: public engagement
-# and outreach on the left (`kind: outreach`, the default), paid and invited
-# work for organisations outside the university on the right
-# (`kind: exchange`). Card fields as in grants-awards.yml.
+# Engagement and knowledge exchange, as one row of three columns of cards.
+#
+#   openscience  Open Science and Public Engagement: who was reached, the
+#                research community first and the public after it. The
+#                default kind.
+#   consultancy  Consultancy: advice and development for outside clients.
+#   contract     Contract Research and Teaching: work delivered under contract.
+#
+# Card fields as in grants-awards.yml.
+#
+# One row of three rather than two rows of two, so that Science Adjacent
+# Projects, which closes the section, sits on the same page as it. The public
+# engagement used to be a column of its own, of three cards; it is now one
+# card at the foot of the open science column. Most of it is from 2014 - 18,
+# and a column of its own weighed it the same as the current open science
+# work. The blog readership is the one hard reach figure it has, so the card
+# leads on the blog, and carries its number.
+#
+# Before that the section was one "Public Engagement and Outreach" column
+# holding a debate for neuroscientists, tutorials for early-career researchers
+# and a list of media appearances side by side, which read as a set of unlike
+# things. The open science advocacy - the thread the two SIPS awards and the
+# Openness in Research Award point at - still leads the column.
+#
+# The open science column is wider than the other two (1.7 : 1 : 1, in
+# typst-template.typ), because it holds three cards to their two, and its
+# cards have the longer descriptions. The descriptions in it are
+# about 110 characters rather than the 160 of the two-column sections.
 #
 # This is the outward-facing work that service.yml deliberately leaves out so
-# that it can answer one question. The invited doctoral teaching (Basel,
-# Zurich, Paris, OHBM) is not repeated here: it is on the Invited instruction
-# card in teaching-roles.yml.
+# that it can answer one question. MORSE was here for a while and went back to
+# service.yml: it is a Sussex seminar series he convenes, which is what that
+# column lists.
+# The invited doctoral teaching (Basel, Zurich, Paris, OHBM) is on the Invited
+# teaching card in teaching-roles.yml. The two contracted workshops of it,
+# Basel and Zurich, are also named on the Contracted Instructor card below.
 #
-# Sources: PROFILE.md > Service and Leadership, Consultancy and Knowledge
-# Exchange, Talks and Media. Clients recorded as confidential there stay
-# confidential here.
+# Sources: PROFILE.md > Service and Leadership (Open Science and Research
+# Culture), Consultancy and Knowledge Exchange, Talks and Media (Science
+# Blogging, Media and Public Engagement). Clients recorded as confidential
+# there stay confidential here.
 #
 # The ESCAN Artificial Emotion symposium used to be an outreach card here. It
 # moved to talks.yml, onto the Symposia chaired card beside the ASSC one:
 # two near-identical credentials in two different sections read as a
 # duplicate rather than as two achievements.
 
+# --- Open Science and Public Engagement -------------------------------------
+
 - name: "Open Science Champion"
-  kind: outreach
+  kind: openscience
   reach: "2024"
-  meta: "British Neuroscience Association · Members' Meeting"
+  meta: "British Neuroscience Association (BNA)"
   description: >-
-    Invited to argue the open science side of the meeting's debate - whether
-    neuroscience needs a *sustainability* revolution more than an *openness*
-    one - against the Association's Sustainability Champion and a
-    representative of Wellcome.
+      Invited to argue for *openness* vs. *sustainability* in the meeting's
+      debate, against Charlotte Rae as the Sustainability Champion.
 
-# The blog and the media work were merged into one card for a while, on the
-# argument that writing it, broadcasting it and standing in a pub explaining it
-# are one activity in three rooms. Split again because the column had room for
-# it, and because the writing is a sustained output with a count while the
-# media work is a list of occasions: one card could only lead with one of them.
+# 44 is every post on the lab site he wrote, lab news included (PROFILE.md has
+# the count and how it was taken). The posts by students are theirs and are
+# not in it.
 
-- name: "Science Writing"
-  kind: outreach
+# "Open" in the name ties the card to the column heading: these are methods
+# taught in the open, free to read. The link is repeated in the description
+# because a card name is linked but not coloured, and a reader of the page
+# should see that there is somewhere to go.
+
+- name: "Open Methods Tutorials"
+  kind: openscience
   url: "https://realitybendinglab.com/news/"
-  reach: "90+ posts"
-  meta: "Reality Bending Lab · La bibliothèque du Neuropsychologue · 2014 - Present"
+  reach: "44 posts"
+  meta: "Reality Bending Lab · 2019 - Present"
   description: >-
-    Methods tutorials, research explainers and essays on research culture, for a
-    general and early-career audience. Before that, a French neuropsychology
-    blog (54 posts, 69,000 views) and a magazine essay on the neuroanatomy of
-    reality.
+      Tutorials for early-career researchers on Bayesian statistics, reaction
+      times and GitHub, and essays on research culture and AI, on the
+      [lab blog](https://realitybendinglab.com/news/).
 
-- name: "Media and Public Talks"
-  kind: outreach
-  reach: "2015 - 25"
-  meta: "Television · Podcast · Pint of Science · Press"
+# The figure is the blog's, which is why the blog comes first in the
+# description. The lab's posts are not counted with it: they are written for
+# researchers, and have the card above.
+
+- name: "Science Communication"
+  kind: openscience
+  url: "https://biblineuropsy.com/"
+  reach: "69,000 views"
+  meta: "Blog · Television · Podcast · Press"
   description: >-
-    French national television on violent images and the brain; the _Learning
-    Bayesian Statistics_ podcast; Pint of Science; a public debate on sensory
-    illusions in Bordeaux; press coverage of the 3D-cinema memory and
-    AI-generated faces studies.
+      A French neuropsychology blog; France 4 television; the _Learning Bayesian
+      Statistics_ podcast; press coverage of the AI-faces study.
 
-- name: "Consultancy: Scientific Advisor"
-  kind: exchange
+# Cut to make room for Science Adjacent Projects, and folded into the Science
+# Communication card above. Kept here so that they can be toggled back.
+#
+# - name: "Popular Science Writing"
+#   kind: openscience
+#   url: "https://biblineuropsy.com/"
+#   reach: "69,000 views"
+#   meta: "La bibliothèque du Neuropsychologue · 2014 - 19"
+#   description: >-
+#     A French neuropsychology blog: 54 posts of book reviews, history of
+#     psychology and commentary on the profession, still read years after the
+#     last one. Also a magazine essay on the neuroanatomy of reality (_Les Yeux
+#     Brouillés_, 2016).
+#
+# - name: "Media"
+#   kind: openscience
+#   reach: "2015 - 25"
+#   meta: "Television · Podcast · Press"
+#   description: >-
+#     French national television (France 4) on violent images and the brain; the
+#     _Learning Bayesian Statistics_ podcast; press coverage of the AI-generated
+#     faces and 3D-cinema memory studies.
+#
+# - name: "Public Talks and Debates"
+#   kind: openscience
+#   reach: "2017 - 18"
+#   meta: "Pint of Science, Paris · FACTS festival, Bordeaux"
+#   description: >-
+#     A Pint of Science talk on reality and simulation, and a public art and
+#     science debate on sensory illusions.
+#
+# - name: "COllaborative COgnitive Science (COCOS)"
+#   kind: openscience
+#   url: "https://sites.google.com/view/les-cocos/"
+#   reach: "2021 - Present"
+#   meta: "Co-founder"
+#   description: >-
+#     An informal group of researchers working on meta-science and slow science:
+#     the pace and incentives of academic work, and collaboration between labs
+#     outside the usual structures.
+
+# --- Knowledge Exchange -----------------------------------------------------
+
+# The column labels say consultancy and contract, so the card names do not
+# carry them as a prefix.
+
+- name: "Scientific Advisor"
+  kind: consultancy
   reach: "2025 - Present"
-  meta: "Artificial intelligence start-up, Singapore · Client confidential"
+  meta: "AI start-up, Singapore · Client confidential"
   description: "Scientific advising on an applied project on deception detection."
 
-- name: "Contract Research: Smell & EEG"
-  kind: exchange
+- name: "Python Developer"
+  kind: consultancy
+  reach: "2025"
+  meta: "Institute for Advanced Consciousness Studies"
+  description: >-
+      Implementation of hyperscanning capabilities for
+      [OpenMuse](https://github.com/DominiqueMakowski/OpenMuse), the open-source
+      portable EEG software I created and maintain.
+
+- name: "Smell and Emotion (EEG)"
+  kind: contract
   reach: "2026"
   meta: "Fragrance industry · Client confidential"
   description: "Contract research on the relationship between smells and emotions."
 
-- name: "Contracted Instructor"
-  kind: exchange
-  reach: "2026"
-  meta: "South East Doctoral Training Arc (SEDarc)"
-  description: >-
-    Reusable _Introduction to GitHub_ lecture for PhD students across the six
-    universities of the partnership.
+# The Basel and Zurich workshops are PROFILE.md > Consultancy and Knowledge
+# Exchange > Contracted Instructor (Psychophysiology) and (Programming and Data
+# Science): paid contracts, not just invitations. They are also counted on the
+# Invited teaching card in teaching-roles.yml.
 
-- name: "Consultancy: Python Developer"
-  kind: exchange
-  reach: "2025"
-  meta: "Institute for Advanced Consciousness Studies"
+- name: "Contracted Instructor"
+  kind: contract
+  reach: "2022 - 26"
+  meta: "Sussex · Basel · Zurich"
   description: >-
-    Hyperscanning capabilities for open-source portable electroencephalography
-    (EEG) software.
+      A reusable _Introduction to GitHub_ lecture for SEDarc's six UK
+      universities (2026); PhD workshops on psychophysiology (Basel, 2024) and
+      Python for signal processing (Zurich, 2022).

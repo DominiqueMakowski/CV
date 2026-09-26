@@ -32,117 +32,116 @@
 figure: "img/impact.svg"
 
 totals:
-  publications: 67
-  citations: 19693
+    publications: 67
+    citations: 19693
 
 history:
-  - year: 2015
-    publications: 1
-  - year: 2016
-    publications: 3
-  - year: 2017
-    publications: 7
-  - year: 2018
-    publications: 2
-  - year: 2019
-    publications: 8
-    citations: 115
-  - year: 2020
-    publications: 6
-    citations: 397
-  - year: 2021
-    publications: 7
-    citations: 1233
-  - year: 2022
-    publications: 4
-    citations: 2089
-  - year: 2023
-    publications: 5
-    citations: 3129
-  - year: 2024
-    publications: 9
-    citations: 3909
-  - year: 2025
-    publications: 12
-    citations: 5442
-  # Part-year: the snapshot was taken in June. Drawn faded, and labelled.
-  - year: 2026
-    publications: 1
-    citations: 3128
+    - year: 2015
+      publications: 1
+    - year: 2016
+      publications: 3
+    - year: 2017
+      publications: 7
+    - year: 2018
+      publications: 2
+    - year: 2019
+      publications: 8
+      citations: 115
+    - year: 2020
+      publications: 6
+      citations: 397
+    - year: 2021
+      publications: 7
+      citations: 1233
+    - year: 2022
+      publications: 4
+      citations: 2089
+    - year: 2023
+      publications: 5
+      citations: 3129
+    - year: 2024
+      publications: 9
+      citations: 3909
+    - year: 2025
+      publications: 12
+      citations: 5442
+    # Part-year: the snapshot was taken in June. Drawn faded, and labelled.
+    - year: 2026
+      publications: 1
+      citations: 3128
 
 software:
-  - name: "easystats"
-    registry: "CRAN"
-    stars: 6834
-    history:
-      - {year: 2019, downloads: 633879}
-      - {year: 2020, downloads: 2058870}
-      - {year: 2021, downloads: 3423790}
-      - {year: 2022, downloads: 6035776}
-      - {year: 2023, downloads: 6983569}
-      - {year: 2024, downloads: 6775743}
-      - {year: 2025, downloads: 8763381}
-      - {year: 2026, downloads: 6776106}
-  # NeuroKit2 reached PyPI on 29 October 2019; two months are not a year, so
-  # the line starts in 2020. PROFILE.md > Impact keeps the 2019 figure.
-  - name: "NeuroKit"
-    registry: "PyPI"
-    stars: 2366
-    history:
-      - {year: 2020, downloads: 22882}
-      - {year: 2021, downloads: 67908}
-      - {year: 2022, downloads: 107070}
-      - {year: 2023, downloads: 173865}
-      - {year: 2024, downloads: 333707}
-      - {year: 2025, downloads: 921827}
-      - {year: 2026, downloads: 1018702}
+    - name: "easystats"
+      registry: "CRAN"
+      stars: 6834
+      history:
+          - { year: 2019, downloads: 633879 }
+          - { year: 2020, downloads: 2058870 }
+          - { year: 2021, downloads: 3423790 }
+          - { year: 2022, downloads: 6035776 }
+          - { year: 2023, downloads: 6983569 }
+          - { year: 2024, downloads: 6775743 }
+          - { year: 2025, downloads: 8763381 }
+          - { year: 2026, downloads: 6776106 }
+    # NeuroKit2 reached PyPI on 29 October 2019; two months are not a year, so
+    # the line starts in 2020. PROFILE.md > Impact keeps the 2019 figure.
+    - name: "NeuroKit"
+      registry: "PyPI"
+      stars: 2366
+      history:
+          - { year: 2020, downloads: 22882 }
+          - { year: 2021, downloads: 67908 }
+          - { year: 2022, downloads: 107070 }
+          - { year: 2023, downloads: 173865 }
+          - { year: 2024, downloads: 333707 }
+          - { year: 2025, downloads: 921827 }
+          - { year: 2026, downloads: 1018702 }
 
 # Both snapshots cut through this year: Scholar in June, the downloads in
 # September. Drawn faded (bars) or dashed (lines), and labelled.
 partial-year: 2026
 
 notes:
-# The notes interpret the plot or add to it, and never restate it: a bullet
-# that reads a number back off the figure spends a line on nothing. Sources in
-# PROFILE.md > Impact.
-#
-# Two notes were tried and dropped: the share of citations going to the
-# software papers (true, but it reads as a discount on the citation count), and
-# NeuroKit's growth against easystats' (a comparison nobody asked for).
-  # ResearchGate is named, and its coverage admitted, because an unsourced
-  # "most cited" is the claim a reader discounts first. "Repeatedly" rather
-  # than "since 2024": the screenshots behind it are a partial record, not an
-  # unbroken run of months (PROFILE.md > Impact > Departmental Standing).
-  - >-
-    One of the most cited researchers in the School of Psychology, University
-    of Sussex, and repeatedly the most cited in ResearchGate's monthly
-    departmental figures since December 2024 (which count only staff with a
-    ResearchGate profile).
-  - >-
-    _h_-index 27, i10-index 38; 41 of 67 publications as first (29) or
-    senior (12) author.
-  # Teaching is its own bullet because it has named, checkable evidence: two
-  # textbooks, found in PROFILE.md > Impact > Software Adoption.
-  - >-
-    easystats ([Wikipedia](https://en.wikipedia.org/wiki/Easystats)) has become
-    part of how statistics is taught: Andy Field's _Discovering Statistics
-    Using R and RStudio_ (2nd edition, 2026) builds its R workflow on it and
-    credits it in the acknowledgements for much of the new edition's
-    simplification, and Springer's _Learning Analytics Methods and Tutorials_
-    (2024) teaches with it.
-  # The claim is adoption, and each item says what it is used for. The
-  # Wikipedia articles are the citation for it, in brackets, rather than the
-  # claim itself: "has a Wikipedia article" is a scoreboard, and one any reader
-  # knows can be edited by anyone.
-  - >-
-    Concepts and tools from this work have made their way into mainstream
-    research: the probability of direction, an index of effect existence in
-    Bayesian statistics
-    ([Wikipedia](https://en.wikipedia.org/wiki/Probability_of_direction));
-    NeuroKit, for physiological signal processing
-    ([Wikipedia](https://en.wikipedia.org/wiki/NeuroKit)); and fictional
-    reappraisal, cited in the scientific account of the paradox of fiction
-    ([Wikipedia](https://en.wikipedia.org/wiki/Paradox_of_fiction)).
+    # The notes interpret the plot or add to it, and never restate it: a bullet
+    # that reads a number back off the figure spends a line on nothing. Sources in
+    # PROFILE.md > Impact.
+    #
+    # Two notes were tried and dropped: the share of citations going to the
+    # software papers (true, but it reads as a discount on the citation count), and
+    # NeuroKit's growth against easystats' (a comparison nobody asked for).
+    # ResearchGate is named, and its coverage admitted, because an unsourced
+    # "most cited" is the claim a reader discounts first. "Repeatedly" rather
+    # than "since 2024": the screenshots behind it are a partial record, not an
+    # unbroken run of months (PROFILE.md > Impact > Departmental Standing).
+    - >-
+        One of the most cited researchers in the School of Psychology, University
+        of Sussex, and repeatedly the most cited in ResearchGate's monthly
+        departmental figures since December 2024 (which count only staff with a
+        ResearchGate profile).
+    - >-
+        _h_-index 27, i10-index 38; 41 of 67 publications as first (29) or
+        senior (12) author.
+    # Teaching is its own bullet because it has named, checkable evidence: two
+    # textbooks, found in PROFILE.md > Impact > Software Adoption.
+    - >-
+        easystats ([Wikipedia](https://en.wikipedia.org/wiki/Easystats)) has become
+        embedded in various textbooks and courses: Andy Field's _Discovering Statistics
+        Using R and RStudio_ (2nd edition, 2026) builds its R workflow on it and
+        credits it in the acknowledgements, and Springer's _Learning Analytics Methods and Tutorials_
+        (2024) teaches with it.
+    # The claim is adoption, and each item says what it is used for. The
+    # Wikipedia articles are the citation for it, in brackets, rather than the
+    # claim itself: "has a Wikipedia article" is a scoreboard, and one any reader
+    # knows can be edited by anyone.
+    - >-
+        Concepts and tools from my work have made their way into mainstream
+        research: the probability of direction, an index of effect existence in
+        Bayesian statistics
+        ([Wikipedia](https://en.wikipedia.org/wiki/Probability_of_direction));
+        NeuroKit, the most popular Python toolbox for physiological signal processing
+        ([Wikipedia](https://en.wikipedia.org/wiki/NeuroKit)); and concepts like fictional
+        reappraisal, cited in the scientific account of the paradox of fiction
+        ([Wikipedia](https://en.wikipedia.org/wiki/Paradox_of_fiction)).
 
 # Not printed. Kept as the date of the snapshot, which moves with the numbers.
 # source: "Google Scholar, June 2026 · CRAN (cranlogs) and PyPI (ClickPy) download logs, GitHub, September 2026"

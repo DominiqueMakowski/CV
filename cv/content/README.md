@@ -11,7 +11,7 @@ flat map of fields. No renderer syntax, no escaping rules beyond the ones below.
 | `location` | First line, right, blue italic. |
 | `org` | Second line, left, small caps grey. The institution. |
 | `date` | Second line, right, grey italic. |
-| `logo` | File in `img/logos/`. Omit or leave empty to reserve the slot blank. |
+| `logo` | File in `img/logos/`: the `.png`, which the build renders from the `.svg` of the same name. Omit or leave empty to reserve the slot blank. |
 | `details` | Bullet points, full text width. |
 | `tooltip` | Plain text shown on hover over the title, **in the web version only**. A PDF has no hover, so the field is ignored there; anything that must reach a print reader goes in `details`. No links or emphasis: it lands in an HTML attribute. Used for the PhD thesis title. |
 
@@ -20,19 +20,22 @@ bullets most-important-first.
 
 ## Card files
 
-Six files are rendered as two labelled columns of short cards rather than as
-entries, and take their own fields. A card is worth three lines; an entry is
-worth as much page as a job, which overstates a grant and understates nothing.
+Six files are rendered as labelled columns of short cards rather than as
+entries - two columns, except `engagement.yml`, which has three - and take
+their own fields. A card is worth three lines; an entry is worth as much page
+as a job, which overstates a grant and understates nothing. A seventh,
+`projects.yml`, uses the same cards as one band under a single label, and has
+no `kind`.
 
 Which column a card lands in is its `kind`:
 
-| File | Left column | Right column |
+| File | Left column | Right column(s) |
 | --- | --- | --- |
 | `grants-awards.yml` | `grant` (the default) | `award` |
 | `teaching-roles.yml` | `convening` (the default) | `supervision` |
 | `software.yml` | `software` (the default) | `measure` |
 | `service.yml` | `leadership` (the default) | `editorial` |
-| `engagement.yml` | `outreach` (the default) | `exchange` |
+| `engagement.yml` | `openscience` (the default) | `consultancy`, then `contract` |
 | `talks.yml` | `invited` (the default) | `conference` |
 
 `talks.yml` splits on who chose the speaker: an invitation is evidence that
@@ -45,10 +48,19 @@ international symposium. The counts on the summary cards count only what was
 presented in person - see the header of the file for what that drops.
 
 `service.yml` and `engagement.yml` split one subject between them: what is run
-*for* the institution (committees, schemes, seminar series, journals) stays in
-service; what faces *outward* (public debate, media, symposia, paid work for
-organisations outside the university) goes in engagement. The invited doctoral
-teaching is in neither - it is a card in `teaching-roles.yml`.
+*for* the institution (committees, schemes, seminar series such as MORSE,
+journals) stays in service; what faces *outward* (open science advocacy,
+public engagement, paid work for organisations outside the university) goes in
+engagement. Symposia are neither: they are a card in `talks.yml`. The invited
+doctoral teaching is a card in `teaching-roles.yml`; the two workshops of it
+that were paid contracts (Basel, Zurich) are also named on the Contracted
+Instructor card in `engagement.yml`, and the invited card points to it.
+
+`engagement.yml` is three columns so that `projects.yml`, which closes the
+section, fits on the same page. Its first column is wider than the other two
+(set in `cv-engagement` in `../typst-template.typ`), and the gap above the
+projects band is set on the `cv-projects` call in `../cv.qmd` to balance the
+page; both need retuning if page 3 changes length.
 
 A grant is named for its project, not its scheme. "Behavioural and Communication
 Science Programme" tells a reader nothing about the research; the scheme belongs
@@ -61,7 +73,8 @@ with the funder in `meta`.
 | `meta` | Line under the name, small caps grey. Funder, role and dates; or language, role and dates. |
 | `reach` | The figure in the corner, accent bold. An amount for a grant, a year for an award or a role, downloads or stars for a package. One per card. |
 | `description` | The rest: the project a grant paid for, what an award was for, what a package does. |
-| `logo` | File in `img/tools/`, drawn in a fixed square. Only `software.yml` uses marks; a funder's logo is advertising for the funder, and an award has no mark to carry. |
+| `logo` | File in `img/tools/` (`software.yml`) or `img/projects/` (`projects.yml`), drawn in a fixed square. Only those two files use pictures; a funder's logo is advertising for the funder, and an award has no mark to carry. |
+| `alt` | Alt text for a picture (`projects.yml`). A mark next to its own name is decorative and needs none; a picture shows something the text does not, and the PDF/UA-1 build will not compile without it. |
 | `kind` | Which column, per the table above. |
 
 Every field except `name` is optional, so a card can be a placeholder - a name
@@ -69,7 +82,8 @@ and `meta: "In development"` - until there is something to point at.
 
 Two things to watch:
 
-- Keep a description to about four lines in its column, roughly 160 characters.
+- Keep a description to about four lines in its column, roughly 160 characters
+  in a two-column file and about 110 in the narrow columns of `engagement.yml`.
 - A card name has to fit beside its figure and cannot be hyphenated. One long
   unbroken word will run under the figure; move the detail into `meta` instead.
 

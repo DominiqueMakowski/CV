@@ -9,3 +9,6 @@ format:
       - typst-show.typ
     font-paths: [fonts]
     keep-typ: true
+    # Tagged, accessible PDF. The compile fails on an image with no alt text
+    # that is not marked decorative, so this is also the accessibility check.
+    pdf-standard: ua-1

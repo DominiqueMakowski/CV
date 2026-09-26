@@ -110,9 +110,12 @@
     // text-driven already and leave it unset.
     box(width: logo-width, height: logo-h)[
       #if logo != none and logo != "" [
+        // Decorative: the institution is named in the text beside it, so the
+        // mark is tagged as an artifact and skipped by screen readers and
+        // tagged-PDF parsers rather than read out as an unlabelled figure.
         #align(
           right + logo-y,
-          image(logo, width: size, height: logo-h, fit: "contain"),
+          pdf.artifact(image(logo, width: size, height: logo-h, fit: "contain")),
         )
       ]
     ],
@@ -289,6 +292,7 @@
   slot: false,
   slot-w: card-logo-width,
   frame: false,
+  alt: none,
 ) = {
   // The name is a link but is not painted like one: with a figure in the accent
   // colour on the same line, two blues compete and neither reads. Dark for what
@@ -349,7 +353,13 @@
               stroke: if frame { 0.5pt + rgb("#dddddd") } else { none },
               radius: if frame { 2pt } else { 0pt },
               clip: frame,
-              image(logo, width: 100%, height: 100%, fit: "contain"),
+              // A mark is decorative, the card names it; a picture shows
+              // something the text does not, so it carries `alt` instead.
+              if alt != none {
+                image(logo, width: 100%, height: 100%, fit: "contain", alt: alt)
+              } else {
+                pdf.artifact(image(logo, width: 100%, height: 100%, fit: "contain"))
+              },
             ))
           ]
         ],
@@ -369,12 +379,15 @@
   #heading(level: 2, outlined: true, md(title))
 ]
 
-// Two columns of cards, split by `kind`, each under its own label.
+// Columns of cards, split by `kind`, each under its own label. Two columns by
+// default; more kinds than columns wrap into further rows, in the order given.
 #let cv-columns(
   items,
   kinds: (),
   headings: (),
   logo-dir: none,
+  columns: 2,
+  widths: none,
   gutter: 26pt,
   row-gap: 11pt,
   breakable: false,
@@ -407,8 +420,9 @@
   // a section that ever outgrows a page passes `breakable: true`.
   block(breakable: breakable, width: 100%, above: 14pt, below: 0pt)[
     #grid(
-      columns: (1fr, 1fr),
+      columns: if widths == none { (1fr,) * columns } else { widths },
       column-gutter: gutter,
+      row-gutter: 20pt,
       align: (left + top, left + top),
       ..kinds
         .zip(headings)
@@ -435,13 +449,30 @@
   headings: ("School and University", "Editorial and Peer Review"),
 ) = cv-columns(items, kinds: ("leadership", "editorial"), headings: headings)
 
-// Public engagement and outreach on the left; paid and invited work for
-// organisations outside the university on the right. The outward-facing
-// counterpart of `cv-service`, which is deliberately institutional.
+// One row of three columns. Who was reached on the left: the research
+// community, then the general public. Then the knowledge exchange, split by
+// what was delivered: advice and development, then research and teaching under
+// contract. The outward-facing counterpart of `cv-service`, which is
+// deliberately institutional. Three columns rather than two rows of two, so
+// that the side projects after it stay on the same page. The first column is
+// wider because it holds more cards, with longer descriptions; with three
+// equal columns it ran well past the other two. The gutter is narrower than the two-column
+// one, because the columns are narrow enough already.
 #let cv-engagement(
   items,
-  headings: ("Public Engagement and Outreach", "Knowledge Exchange and Consultancy"),
-) = cv-columns(items, kinds: ("outreach", "exchange"), headings: headings)
+  headings: (
+    "Open Science and Public Engagement",
+    "Consultancy",
+    "Contract Research and Teaching",
+  ),
+) = cv-columns(
+  items,
+  kinds: ("openscience", "consultancy", "contract"),
+  headings: headings,
+  columns: 3,
+  widths: (1.7fr, 1fr, 1fr),
+  gutter: 18pt,
+)
 
 // Talks given by invitation on the left; talks and posters taken to conferences
 // on the right. The split is who chose the speaker. An invitation is evidence
@@ -505,6 +536,7 @@
       slot: true,
       slot-w: slot-w,
       frame: true,
+      alt: i.at("alt", default: none),
     )),
   )
 ]
@@ -653,7 +685,8 @@
   #set align(center)
   #box(width: 100%, height: lang-slot)[
     #if logo != none and logo != "" [
-      #align(center + horizon, image(logo, height: height, fit: "contain"))
+      // Decorative: the language is named in the text underneath.
+      #align(center + horizon, pdf.artifact(image(logo, height: height, fit: "contain")))
     ]
   ]
   #v(3pt, weak: true)
@@ -742,11 +775,19 @@
 
 // --- header ----------------------------------------------------------------
 
+// The ORCID, set once by `cv` and read by the level-1 heading rule, which puts
+// the ORCID iD mark beside the Publications heading. It is not in the header:
+// spelled out beside the GitHub address the contact row runs to two lines,
+// which pushes the languages strip off the first page.
+#let cv-orcid = state("cv-orcid", "")
+
 #let contact-item(icon, label, url) = {
   let label = unescape(label)
   let url = unescape(url)
   box[
-    #text(font: "FontAwesome", size: 6.8pt, fill: accent, icon)
+    // The icon is a private-use glyph that extracts as a stray symbol, so it
+    // is kept out of the text stream; the label says what the link is.
+    #pdf.artifact(text(font: "FontAwesome", size: 6.8pt, fill: accent, icon))
     #h(1.5pt)
     #link(url)[#text(font: head-font, size: 6.8pt, fill: accent, label)]
   ]
@@ -773,12 +814,12 @@
   // One row, in the order a reader would use them: how to reach him, then
   // where the work is.
   //
-  // Each item is labelled by what it is rather than by its identifier. A
-  // username and a Scholar profile id are strings only the link needs; "GitHub"
-  // and "Google Scholar" say where the link goes, which is the only thing the
-  // line has room to say. The address and the ORCID are the exceptions, and for
-  // the same reason in reverse: those *are* quoted verbatim, one typed into a
-  // browser and one cited in a form.
+  // The email, website, GitHub and ORCID are quoted verbatim, because a
+  // screening parser that reads only the text layer never sees a link target:
+  // an address that exists only behind the word "GitHub" is not in the CV as
+  // far as it is concerned. The Scholar profile is the exception. Its id is a
+  // string nobody types or searches for, so "Google Scholar" says where the
+  // link goes and the id stays in the link.
   let contacts = ()
   if email != "" {
     contacts.push(contact-item(fa-envelope, email, "mailto:" + email))
@@ -789,12 +830,16 @@
   if github != "" {
     contacts.push(contact-item(
       fa-github,
-      "GitHub",
+      "github.com/" + github,
       "https://github.com/" + github,
     ))
   }
   if orcid != "" {
-    contacts.push(contact-item(fa-orcid, orcid, "https://orcid.org/" + orcid))
+    contacts.push(contact-item(
+      fa-orcid,
+      "ORCID " + orcid,
+      "https://orcid.org/" + orcid,
+    ))
   }
   if scholar != "" {
     contacts.push(contact-item(
@@ -803,9 +848,10 @@
       "https://scholar.google.com/citations?user=" + scholar,
     ))
   }
-  let separator = text(font: head-font, size: 6.8pt, fill: text-dark)[
-    #h(4pt) | #h(4pt)
-  ]
+  // Written on one line: markup newlines inside the brackets are spaces, and
+  // those spaces are what pushed the row onto two lines once the GitHub
+  // address and the ORCID were spelled out.
+  let separator = text(font: head-font, size: 6.8pt, fill: text-dark)[#h(3.5pt)|#h(3.5pt)]
 
   grid(
     columns: (104pt, 1fr),
@@ -818,7 +864,13 @@
         radius: 50%,
         clip: true,
         stroke: 0.8pt + rgb("#cccccc"),
-        image(photo, width: 100%, height: 100%, fit: "cover"),
+        image(
+          photo,
+          width: 100%,
+          height: 100%,
+          fit: "cover",
+          alt: "Portrait photograph of " + name + " " + surname,
+        ),
       )
     } else { none },
     [
@@ -852,7 +904,7 @@
         )
         #v(-2pt)
       ]
-      #contacts.join(separator)
+      #block(par(justify: false, contacts.join(separator)))
 
       // The summary shares the column with the name block, so it runs alongside
       // the photo rather than being pushed below it.
@@ -915,7 +967,16 @@
     },
   )
 
-  set text(font: body-font, size: 9pt, fill: text-body, lang: "en", region: "GB")
+  // No hyphenation: a word broken across lines extracts as two fragments
+  // ("disor- ders"), which literal keyword matching in ATS screening misses.
+  set text(
+    font: body-font,
+    size: 9pt,
+    fill: text-body,
+    lang: "en",
+    region: "GB",
+    hyphenate: false,
+  )
   set par(justify: true, leading: 0.55em)
   show link: set text(fill: accent)
 
@@ -937,20 +998,30 @@
   ]
 
   // Section headings: first three characters in the accent colour, then a rule.
-  show heading.where(level: 1): it => {
+  // The Publications heading also carries the ORCID iD mark, linked to the
+  // full record, in place of a sentence spelling the iD out.
+  show heading.where(level: 1): it => context {
     let t = plain(it.body)
     let cut = calc.min(3, t.len())
+    let orcid = cv-orcid.get()
+    let mark = if t == "Publications" and orcid != "" {
+      move(dy: 0.7pt, link(
+        "https://orcid.org/" + orcid,
+        image("img/logos/orcid.svg", height: 11pt, alt: "ORCID " + orcid),
+      ))
+    }
     block(above: 18pt, below: 8pt, width: 100%, sticky: true)[
       #grid(
-        columns: (auto, 1fr),
+        columns: if mark == none { (auto, 1fr) } else { (auto, auto, 1fr) },
         column-gutter: 8pt,
-        align: (left + bottom, left + bottom),
+        align: left + bottom,
         text(size: 16pt, weight: "bold")[
           #text(fill: accent, t.slice(0, cut))#text(
             fill: text-dark,
             t.slice(cut),
           )
         ],
+        ..if mark != none { (mark,) },
         box(inset: (bottom: 4pt), line(length: 100%, stroke: 0.5pt + rgb(
           "#aaaaaa",
         ))),
@@ -967,10 +1038,10 @@
     email: email,
     www: www,
     github: github,
-    orcid: orcid,
     scholar: scholar,
     about: about,
   )
+  cv-orcid.update(unescape(orcid))
 
   doc
 }

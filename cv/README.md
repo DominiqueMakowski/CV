@@ -18,9 +18,10 @@ Validates the content, then produces two files from it:
 | `cv.pdf` | The CV. |
 | `cv.html` | Web version, with schema.org JSON-LD. |
 
-A third, `cv-accessible.pdf`, appears if a standalone Typst 0.14+ is on PATH
-(`winget install --id Typst.Typst`) - same document, tagged and PDF/UA-1
-validated. See the caveat below for why that is not the default.
+`cv.pdf` is tagged and PDF/UA-1 (`pdf-standard: ua-1` in `cv.qmd`). The UA-1
+compile *refuses* to build if, say, an image loses its alt text, so it doubles
+as the accessibility check: `build.sh` then reports that `cv.pdf` was not
+rewritten.
 
 For the PDF alone, `./build.sh --pdf`. For one render on its own,
 `quarto render cv.qmd`. About a second, against ~40 s for the LaTeX build, and
@@ -48,11 +49,17 @@ which happens on this machine *after* the PDF is already written.
 | `tools/build_html.py` | The web version. |
 | `tools/cvdata.py` | Shared loading, so the tools cannot disagree about the content. |
 | `fonts/` | Roboto, Source Sans 3, FontAwesome — vendored so the build is self-contained. |
-| `img/logos/` | Institution logos, as SVG (see caveat below). |
+| `img/logos/` | Institution logos: SVG sources, and the PNGs rendered from them that the CV embeds (see caveat below). |
+| `tools/rasterize_logos.py` | Renders `img/logos/*.svg` to PNG. Run by the build; only stale PNGs are redrawn. |
 | `img/languages/` | The four flags and the Python and R marks, for the Languages section. |
+| `img/tools/`, `img/projects/` | The software marks, and the pictures for Science Adjacent Projects. |
+| `img/preview.png` | The first three pages side by side, shown in the repository README. |
 | `tools/crop_logos.py` | Tightens logo viewBoxes to the artwork they contain. |
 | `tools/make_ntu_logo.py` | Rebuilds `ntu-full.svg` (crest + wordmark). |
 | `tools/make_paris_logo.py` | Rebuilds `universite-paris.svg` from the panel version. |
+| `tools/make_ghu_logo.py`, `tools/make_salpetriere_logo.py`, `tools/make_porte_verte_logo.py` | Rebuild the three hospital logos (`sainte-anne2.svg`, `salpetriere.svg`, `porte-verte.svg`) from the raw assets beside them. |
+| `tools/svgtext.py`, `tools/fonts/` | Set a line of type as SVG paths, for the logo text no institution publishes as vectors; the subset fonts it uses. |
+| `tools/make_preview.py` | Redraws `img/preview.png` from `cv.pdf`. Not run by the build (it needs PyMuPDF and Pillow); run it by hand after a layout change. |
 | `tools/make_impact.py` | Draws the Impact plot from `content/impact.yml`. Run by the build. |
 | `tools/refresh_scholar.R`, `tools/refresh_downloads.py` | Print fresh bibliometrics and download figures to paste into `content/impact.yml`. Run by hand; they need the network. |
 | `tools/make_languages.py` | Draws the four flags; vendors the Python and R marks. |
@@ -88,30 +95,27 @@ those produce a PDF that looks fine until someone reads it closely. The
 validator turns them into errors, and it catches the unbalanced parenthesis that
 sat in the NTU entry of the LaTeX CV unnoticed.
 
-## Two caveats from Typst's version
+## Typst version
 
-Quarto 1.8.25 bundles **Typst 0.13**, not 0.14. Two consequences:
+Quarto 1.8 bundled Typst 0.13; Quarto 1.9 bundles 0.14, which writes tagged
+PDF and takes `pdf-standard`, so the accessible PDF is the only PDF - headings,
+paragraphs, links and figures in a structure tree, `/Lang en-GB`, PDF/UA-1
+declared in the metadata. `keep-typ: true` still leaves the generated `cv.typ`
+in place, which is useful for reading the error when a compile fails.
 
-1. **Logos are SVG, not PDF.** Native PDF images landed in Typst 0.14. This is
-   no longer a real constraint: `img/logos/*.svg` are the original vector
-   sources copied from the lab website
-   (`RealityBending.github.io/people/dominique-makowski/assets/`), so they are
-   cleaner than the PDFs the LaTeX build used, not a lossy conversion of them.
-   `sussex-brighton.svg` is the variant with
-   "Brighton" under the wordmark, unused for now.
+Logos are SVG: `img/logos/*.svg` are the original vector sources copied from
+the lab website (`RealityBending.github.io/people/dominique-makowski/assets/`),
+cleaner than the PDFs the LaTeX build used. `sussex-brighton.svg` is the
+variant with "Brighton" under the wordmark.
 
-2. **No tagged PDF or PDF/UA-1.** Those are 0.14 features, and they were a
-   large part of the reason for moving off LaTeX. The escape hatch is already
-   wired up: `keep-typ: true` leaves the generated `cv.typ` in place, so a
-   standalone Typst 0.14 can compile the same file with the accessibility
-   checks turned on:
-
-   ```bash
-   typst compile --font-path fonts --pdf-standard ua-1 cv.typ
-   ```
-
-   That command is **untested** — it needs a standalone `typst` 0.14 on PATH,
-   which this machine does not have yet.
+The CV embeds PNGs rendered from them, not the SVGs themselves. Several logos
+are traced artwork made of many abutting paths, and PDF viewers anti-alias each
+path separately, so at some zoom levels seams and ragged edges showed between
+shapes. `tools/rasterize_logos.py` renders each SVG through Typst at 1,200 px on
+the long side (about 2,000 ppi at the size the CV prints them), which has no
+seams and stays sharp well past any normal zoom. Edit the SVG, never the PNG;
+the build redraws the PNG. The flags and the software marks are simple shapes
+and stay SVG.
 
 ## Machine readability
 
@@ -136,3 +140,21 @@ essential is image-only. Two improvements over the LaTeX build:
   lowercase `i` surviving as literal `i`. Typst extracts it as
   `School of Psychology, University of Sussex`. Same appearance, but a parser
   now reads the actual words.
+
+Accessibility and ATS rules the template now enforces:
+
+- **Every image is either described or marked decorative.** Logos, flags and
+  the contact icons sit next to the name they stand for, so they are tagged as
+  artifacts (`pdf.artifact`) and skipped. The photo, the impact plot and the
+  project pictures carry alt text - the last from `alt:` in `projects.yml`.
+  The build fails on a figure with neither.
+- **No hyphenation.** A word broken across lines extracts as two fragments
+  (`disor- ders`), which literal keyword matching misses. Only real compounds
+  (`ageing-related`) still break at their hyphen.
+- **Identifiers are in the text, not only behind links.** The GitHub address
+  is spelled out in the header. The ORCID is an iD mark beside the
+  Publications heading, linked to the record and with the iD as its alt text
+  (the header has no room for it); it and the Scholar profile id are the only
+  identifiers that are link-only.
+- The contact icons still appear as four private-use characters to extractors
+  that ignore tagging (pypdf does); tag-aware readers skip them.

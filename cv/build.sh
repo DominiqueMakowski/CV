@@ -46,6 +46,11 @@ python tools/make_impact.py || exit 1
 echo "==> content/_publications.generated.yml"
 python tools/build_publications.py || exit 1
 
+# The CV embeds the logos as PNGs rendered from the SVG sources; only the stale
+# ones are redrawn, so an edited SVG cannot silently fall out of the PDF.
+echo "==> img/logos/*.png"
+python tools/rasterize_logos.py || exit 1
+
 echo "==> validating content"
 python tools/validate.py || exit 1
 
@@ -57,22 +62,11 @@ if [[ "${1:-}" != "--pdf" ]]; then
   python tools/build_html.py || exit 1
 fi
 
-# Quarto's bundled Typst is 0.13, which cannot write tagged PDF. If a
-# standalone Typst 0.14+ is on PATH, re-compile the generated cv.typ with the
-# accessibility checks on. This is the file to send anywhere that runs it
-# through automated screening.
-#   winget install --id Typst.Typst
-if command -v typst >/dev/null 2>&1; then
-  echo "==> cv-accessible.pdf (PDF/UA-1, tagged)"
-  typst compile --font-path fonts --pdf-standard ua-1 cv.typ cv-accessible.pdf \
-    || echo "   skipped: see the messages above (UA-1 is stricter than plain export)" >&2
-fi
-
 # Quarto leaves this behind when its own cleanup is blocked.
 rmdir cv_files 2>/dev/null || true
 
 echo
-for f in cv.pdf cv-accessible.pdf cv.html; do
+for f in cv.pdf cv.html; do
   [[ -f "$f" ]] && printf '  %-18s %5.0f KB\n' "$f" "$(($(wc -c <"$f") / 1024))"
 done
 exit 0

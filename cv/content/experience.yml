@@ -11,11 +11,11 @@
 # as a job held instead of the doctorate. The teaching it covered is in
 # teaching-areas.yml, with the hours, which is the part that carries weight.
 
-- title: "Assistant Professor (Current Position)"
+- title: "Assistant Professor in Psychology"
   location: "UK"
   org: "School of Psychology, University of Sussex"
   date: "2023 - Present"
-  logo: "sussex-brighton.svg"
+  logo: "sussex-brighton.png"
   details:
       - "Full teaching service on courses including Bayesian Statistics and Psychophysiology."
       - >-
@@ -29,7 +29,7 @@
   location: "Singapore"
   org: "School of Social Sciences, Nanyang Technological University (NTU)"
   date: "2019 - 22"
-  logo: "ntu-full.svg"
+  logo: "ntu-full.png"
   details:
       - >-
           Awarded the NTU Presidential Postdoctoral Fellowship (2021 - 22), a

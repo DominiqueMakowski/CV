@@ -22,7 +22,7 @@
 - name: "easystats"
   url: "https://easystats.github.io/easystats/"
   logo: "easystats.png"
-  meta: "R · Co-founder · 2019 - Present"
+  meta: "R · Co-founder · 2019"
   reach: "41.5M downloads"
   description: >-
       Ten R packages for the post-processing of statistical models: parameters,
@@ -32,7 +32,7 @@
 - name: "NeuroKit"
   url: "https://neuropsychology.github.io/NeuroKit/"
   logo: "neurokit.png"
-  meta: "Python · Creator · 2017 - Present"
+  meta: "Python · Creator · 2017"
   reach: "130k downloads/month"
   description: >-
       Most popular Python package for signal processing (ECG, PPG, EDA, ...), from peak detection
@@ -42,7 +42,7 @@
 - name: "Pyllusion"
   url: "https://realitybending.github.io/Pyllusion/"
   logo: "pyllusion.png"
-  meta: "Python · Creator · 2020 - Present"
+  meta: "Python · Creator · 2020"
   reach: "82 stars"
   description: >-
       Generates visual illusions parametrically, separating illusion strength
@@ -52,7 +52,7 @@
 - name: "cogmod"
   url: "https://dominiquemakowski.github.io/cogmod/"
   logo: "cogmod.png"
-  meta: "R · Creator · 2025 - Present"
+  meta: "R · Creator · 2025"
   reach: "22 stars"
   description: >-
       Bayesian models of cognitive tasks - drift diffusion,

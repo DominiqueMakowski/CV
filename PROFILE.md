@@ -516,6 +516,23 @@ neuroscience topics.
   - Deck: https://dominiquemakowski.github.io/teaching/AgenticCoding/. Slidev source in the `DominiqueMakowski/teaching` repository (https://github.com/DominiqueMakowski/teaching) under `AgenticCoding/`; working copy at `C:\Users\domma\Dropbox\ENSEIGNEMENT\teaching\AgenticCoding`. (Renamed from "Agentic Programming" / `AgenticProgramming/` on 23 September 2026.)
   - Listed on the CV under Teaching, in the Open Science and Research Tools group of `cv/content/teaching-areas.yml`.
 
+### Stats & Sorcery
+
+- **Capacity:** Designer and developer
+- **Dates:** 2025-present (proof of concept December 2025; development resumed September 2026)
+- **Level:** Bachelor, Master and PhD (aimed at students in statistics modules, and at researchers building an intuition for uncertainty)
+- **Type:** Educational game for statistics teaching; open source, playable in the browser
+- **Status:** Work in progress. Early prototype (v0.3.0, September 2026): a three-duel run against three computer opponents, plus quick and two-player (same computer) duels. Not yet used in teaching or evaluated.
+- **Link:** https://dominiquemakowski.github.io/StatsAndSorcery/ (repository https://github.com/DominiqueMakowski/StatsAndSorcery)
+- **Details:**
+  - A turn-based wizard duelling card game meant to build intuition for statistical reasoning (spread, 95% intervals, probabilities, distributions) through play rather than exposition. Every spell is a noisy linear model, `y = β₀ + β₁·x`, whose true 95% band is revealed as it flies; alteration cards are named after the parameters they change (Intercept, Slope, SD), so players pick up the vocabulary.
+  - Built around a predict, act, observe, compare loop: no aiming aid and no hit chance while planning, and the exact odds are shown only afterwards, as feedback against the player's own judgement. The statistics are honest by design: the bands are the true intervals, and any probability shown is the real one (hit chances are computed exactly, including for spells bouncing off the mirrored edges of the field, which make the landing point a folded normal).
+  - Planned modules extend it beyond regression to probability and distributions (area-of-effect, skewed and heavy-tailed spells; the deck as a distribution, a hand as sampling without replacement), and to Bayesian inference ("playing priors" over hidden information and watching posteriors update).
+  - Because the odds of every decision are exact, the game can also measure a player's calibration, which makes it an assessment tool as well as an intervention.
+  - Written in TypeScript with Vite, with no framework and no image assets (a hand-drawn "bored student's notebook" style, all drawn in code), and a tested statistics core.
+  - The design draws on Gwent, Hearthstone, Magic: The Gathering and Baldur's Gate 3. It is the teaching counterpart of the Illusion Card Game (see [Side Projects](#side-projects)): that one grows out of the lab's research, this one out of the statistics teaching.
+  - On the CV as the game-based learning card in `cv/content/teaching-roles.yml`, as the evidence for innovative teaching.
+
 ### Neuroscience
 
 - **Capacity:** Assistant Lecturer (Attaché Temporaire d'Enseignement et de Recherche, ATER)
@@ -706,6 +723,7 @@ Supervision.
 - **Institution:** Institute for Advanced Consciousness Studies
 - **Details:**
   - Development of hyperscanning capabilities for an open-source portable electroencephalography (EEG) software.
+  - The software is OpenMuse (https://github.com/DominiqueMakowski/OpenMuse), which I created and maintain; see [Software](#software).
 
 ### Contracted Instructor
 
@@ -716,7 +734,7 @@ Supervision.
 - **Details:**
   - Recording of a re-usable "Introduction to GitHub" lecture for PhD students across the SEDarc partnership of six UK universities.
 
-### Invited Instructor (Psychophysiology)
+### Contracted Instructor (Psychophysiology)
 
 - **Type:** Instructor
 - **Dates:** 2024
@@ -725,6 +743,7 @@ Supervision.
 - **Duration:** 8 h
 - **Details:**
   - Full-day workshop for PhD students: Recording, Analyzing and Using Physiological Signals in Psychology.
+  - Paid contract.
   - Reference: Dr Dorothee Bentz (https://psychologie.unibas.ch/de/personen/dorothee-bentz/).
 
 ### Invited Instructor (Bayesian Statistics)
@@ -747,7 +766,7 @@ Supervision.
 - **Details:**
   - OHBM 2023 Educational Course: "Physiological Signals Provide Insights into Cognition".
 
-### Invited Instructor (Programming and Data Science)
+### Contracted Instructor (Programming and Data Science)
 
 - **Type:** Instructor
 - **Dates:** 2022
@@ -756,6 +775,7 @@ Supervision.
 - **Duration:** 24 h
 - **Details:**
   - Online workshop for PhD students: advanced Python programming for signal processing and data analysis.
+  - Paid contract.
   - Python programming; experiment creation using Python.
   - Recorded as "Programming for Psychologists" in the CV's lecture-topic list.
   - Reference: Dr Maike Krannich (https://www.psychologie.uzh.ch/de/studium/doktorat/team.html).
@@ -1463,7 +1483,7 @@ See also the *Breaking Barriers to Reproducibility* interview under
 - Statistical Editor, Royal Society Open Science (2025-present). https://royalsocietypublishing.org/journal/rsos
 - Associate Editor, Frontiers in Psychology, section Quantitative Psychology and Measurement (2020-2024). https://www.frontiersin.org/journals/all/sections/quantitative-psychology-and-measurement
 - Regular Reviewer, Journal of Open Source Software (2018-present). https://joss.theoj.org/
-- Reviewer for Acta Psychologica, Biological Psychiatry, Journal of Experimental Psychology: Human Perception and Performance, Nature Human Behaviour, Neuropsychologia, Personality and Individual Differences, Scientific Reports and others (2017-present).
+- Reviewer for Nature Human Behaviour, NeuroImage, Behavior Research Methods, Biological Psychiatry, Scientific Reports, Personality and Individual Differences, Acta Psychologica, Neuropsychologia, Journal of Experimental Psychology: Human Perception and Performance and others (2017-present), listed roughly by journal impact.
 - Verified review record: https://orcid.org/0000-0001-5375-9967 (partial; it does not cover every journal listed above).
 
 ---
@@ -1481,12 +1501,15 @@ See also the *Breaking Barriers to Reproducibility* interview under
 - Co-founder, COllaborative COgnitive Science (COCOS) (2021-present). An informal group of researchers working on meta-science and slow science - research culture, the pace and incentives of academic work, and what collaboration between labs can look like outside the usual structures. Its first event, *La recherche aux temps de la COVID*, is under [Conference Organization](#conference-organization). https://sites.google.com/view/les-cocos/
 - Open Science Champion, British Neuroscience Association (BNA) Members' Meeting (2024). Invited to argue the open science position in the meeting's interactive debate, "A cultural revolution in sustainable neuroscience is needed more than a cultural revolution in open neuroscience now", alongside Dr Charlotte Rae (Sustainability Champion) and Hannah Hope (Wellcome).
 - Author of the Reality Bending Lab's public-facing writing (2019-present).
-  Around forty posts on the lab website (https://realitybendinglab.com/news/),
-  written for a general or early-career audience: methods tutorials (Bayesian
-  statistics in R, analysing reaction times, task reliability, GitHub for
-  psychologists, collecting data with DataPipe), research explainers, advice
-  posts for students, and essays on research culture and on what AI does to
-  academic work.
+  44 posts on the lab website (https://realitybendinglab.com/news/), of the 56
+  there on 26 September 2026 (counted from the `author` field of each post in
+  the site's source); the other 12 are by students and lab members, among them
+  the DataPipe data-collection tutorial, which is Ana Neves's. Written for a
+  general or early-career audience: methods tutorials (Bayesian statistics in
+  R, analysing reaction times, task reliability, GitHub for psychologists),
+  research explainers, advice posts for students, essays on research culture
+  and on what AI does to academic work, and lab news (awards, releases, events)
+  - roughly fifteen of the 44 are announcements of that kind.
 
 ### Conference Organization
 
@@ -1723,15 +1746,6 @@ track. Grouped by `Domain`, newest first within each domain.
 - **Description:**
   - Piano arrangements and scores, published openly on MuseScore.
 
-### Stats & Sorcery
-
-- **Type:** Game
-- **Status:** Proof of concept (December 2025). Parked for now; playable in the browser, single-player against the computer or two-player.
-- **Link:** https://dominiquemakowski.github.io/StatsAndSorcery/ (repository https://github.com/DominiqueMakowski/StatsAndSorcery)
-- **Description:**
-  - A proof of concept for improving statistics education: a turn-based card and combat game meant to build intuition for statistical reasoning rather than teach it by exposition. The player casts spells as a wizard; the design draws on Gwent, Hearthstone, Magic: The Gathering and Baldur's Gate 3.
-  - The teaching counterpart of the Illusion Card Game below: that one grows out of the lab's research, this one out of the statistics teaching.
-
 ### Illusion Card Game
 
 - **Type:** Game
@@ -1739,7 +1753,19 @@ track. Grouped by `Domain`, newest first within each domain.
 - **Description:**
   - A card game built around visual illusions, growing out of the lab's work on
     illusion sensitivity (see the Illusion Game under [Measures](#measures) and
-    Pyllusion under [Software](#software)).
+    Pyllusion under [Software](#software)). Its teaching counterpart is
+    Stats & Sorcery, recorded under [Academic Teaching](#academic-teaching).
+
+### Neuropsychological Tarot
+
+- **Type:** Card deck
+- **Status:** Work in progress, started February 2026. Not released; the repository is private.
+- **Link:** https://github.com/DominiqueMakowski/NeuropsychologicalTarot
+- **Description:**
+  - A Tarot-inspired deck, working title *Black Sun*, whose cards stand for psychological constructs rather than esoteric symbols. It has 13 cards, each drawn in four seasonal variants (52 images), and each card is a diptych split on the diagonal into two mirrored halves that set the two poles of a construct against each other.
+  - The visual direction is ancient but timeless: medieval etching, alchemical and esoteric illustration, Old European folktale illustration and Gustave Doré, mostly in high-contrast black and white with pops of colour on the symbolically important elements. The placeholder images are AI-generated style explorations; the aim is to replace them with commissioned art, and sketches have been commissioned from several illustrators to settle the visual direction.
+  - The project site also carries an encyclopedia of the symbolism behind each card and a personality test built on the deck.
+- **Research use:** The deck became the stimulus set of the "Latent Evaluation of the Narrative Self" (LENS), a computational projective task proposed in the BIAL Foundation application *Measuring the Deep Self: A Computational and Psychophysiological Investigation of Prior-Weighting across Perception, Identity, and Anomalous Experience* (Grants Programme 2026/27, submitted August 2026, EUR 58,843 requested over 36 months, outcome pending). Participants choose between card pairs under self-referential ("which describes you better"), aesthetic and perceptual-symmetry instructions, and a Bradley-Terry model of the choices estimates how far self-judgments leak into the perceptual ones. The application requested funds to commission the outstanding artwork from a professional illustrator, to validate the task, and to release the finished set under an open licence.
 
 ---
 

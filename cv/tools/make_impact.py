@@ -23,7 +23,7 @@ Deliberate choices, all of them about not misleading:
   totals.
 - A log scale on the right. easystats has ten times NeuroKit's downloads, and
   on a linear axis NeuroKit would be a flat line along the bottom. The ticks
-  say 10k / 100k / 1M / 10M, and the title says "log scale".
+  say 10k / 100k / 1M / 10M, which is what tells the reader it is a log scale.
 - The part year is drawn faded (bars) and dashed (lines). A snapshot taken
   mid-year makes the current year look like a collapse, and a reader who does
   not know the snapshot date has no way to tell that from a real one.
@@ -187,7 +187,7 @@ def downloads_panel(ax, software, partial):
         ax.annotate(detail, xy=(ys[-1], vs[-1]), xytext=(6, -1),
                     textcoords="offset points", va="top", fontsize=5.8, color=GRAY)
 
-    ax.set_title("SOFTWARE DOWNLOADS PER YEAR  ·  LOG SCALE", **TITLE)
+    ax.set_title("SOFTWARE DOWNLOADS PER YEAR", **TITLE)
 
 
 def build(out: str | None = None) -> str:
