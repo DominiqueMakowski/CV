@@ -3,9 +3,9 @@
 # education.yml, and the credentials they confer are in PROFILE.md > Titles and
 # Licenses.
 #
-# Source: PROFILE.md > Training, which holds all nineteen with their exact
+# Source: PROFILE.md > Training, which holds all twenty with their exact
 # dates, instructors, credential IDs and expiry. This file is the compressed
-# reading of it: fifteen rows covering all nineteen, since several rows merge
+# reading of it: sixteen rows covering all twenty, since several rows merge
 # two closely related courses (the two fMRI courses, the two EEG ones, the two
 # Python ones, CITI with Epigeum). Nothing is dropped - a merged row names both
 # institutions and both durations.
@@ -25,7 +25,7 @@
 #           belongs on a CV - a lapsed certificate says so here.
 
 lead: >-
-  Nineteen short courses, master classes and certifications outside the degree
+  Twenty short courses, master classes and certifications outside the degree
   track, from 2014 on. Grouped by domain, newest first. The neuroimaging and
   programming blocks are where the methods came from; the teaching block is the
   formal side of a teaching record that runs to 2013.
@@ -53,6 +53,15 @@ areas:
     level: "2017"
     topics: "Université Paris Cité. Pedagogy and innovative teaching."
     where: "40 h · Paris, France"
+
+  - group: "Professional"
+    area: "Equality, safeguarding and data protection"
+    level: "2023 - 2025"
+    topics: >-
+      University of Sussex staff training: diversity in the workplace,
+      unconscious bias, recruitment and selection, safeguarding, harassment and
+      sexual misconduct affecting students, and data protection (GDPR).
+    where: "Completed on joining and refreshed since · Online"
 
   - group: "Clinical"
     area: "Certified Hypnotherapist"

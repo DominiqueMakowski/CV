@@ -1210,9 +1210,26 @@
   // Section headings: first three characters in the accent colour, then a rule.
   // The Publications heading also carries the ORCID iD mark, linked to the
   // full record, in place of a sentence spelling the iD out.
+  //
+  // The two colours are one run of text with a hard-edged gradient fill, not
+  // two runs. Split into two, the word reaches the PDF as two pieces, and pypdf
+  // (the reader behind LangChain's PDF loader, so a likely one for automated
+  // screening) decides whether to join them from its own estimate of the first
+  // piece's width. That estimate is off whenever the bold face also carries
+  // small caps (the band labels), because pypdf keys glyph widths by letter
+  // and the small-cap m is narrower: "Impact" came out as "Imp act". One run
+  // leaves nothing to join. The cost falls on a glyph whose ink overhangs its
+  // advance: the tip of the f in "Software" takes the dark colour, not the
+  // accent.
   show heading.where(level: 1): it => context {
     let t = plain(it.body)
     let cut = calc.min(3, t.len())
+    let style = (size: 16pt, weight: "bold")
+    let split = (
+      measure(text(..style, t.slice(0, cut))).width
+        / measure(text(..style, t)).width
+        * 100%
+    )
     let orcid = cv-orcid.get()
     let mark = if t == "Publications" and orcid != "" {
       move(dy: 0.7pt, link(
@@ -1225,12 +1242,19 @@
         columns: if mark == none { (auto, 1fr) } else { (auto, auto, 1fr) },
         column-gutter: 8pt,
         align: left + bottom,
-        text(size: 16pt, weight: "bold")[
-          #text(fill: accent, t.slice(0, cut))#text(
-            fill: text-dark,
-            t.slice(cut),
-          )
-        ],
+        // The box is the gradient's frame of reference ("parent"), so the
+        // split is a fraction of the word's own width.
+        box(text(
+          ..style,
+          fill: gradient.linear(
+            (accent, 0%),
+            (accent, split),
+            (text-dark, split),
+            (text-dark, 100%),
+            relative: "parent",
+          ),
+          t,
+        )),
         ..if mark != none { (mark,) },
         box(inset: (bottom: 4pt), line(length: 100%, stroke: 0.5pt + rgb(
           "#aaaaaa",

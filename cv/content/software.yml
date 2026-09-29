@@ -35,7 +35,7 @@
   meta: "Python · Creator · 2017"
   reach: "130k downloads/month"
   description: >-
-      Most popular Python package for signal processing (ECG, PPG, EDA, ...), from peak detection
+      Most popular Python package for physiological signal processing (ECG, PPG, EDA, ...), from peak detection
       to heart rate variability and complexity indices. *2,366 stars* and dozens
       of contributors. *SIPS Commendation* (2024).
 
@@ -52,7 +52,7 @@
 - name: "cogmod"
   url: "https://dominiquemakowski.github.io/cogmod/"
   logo: "cogmod.png"
-  meta: "R · Creator · 2025"
+  meta: "R · Creator · 2024"
   reach: "22 stars"
   description: >-
       Bayesian models of cognitive tasks - drift diffusion,

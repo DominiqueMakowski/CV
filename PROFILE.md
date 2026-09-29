@@ -458,6 +458,7 @@ neuroscience topics.
 - **Details:**
   - Bayesian framework.
   - Bayesian models with the brms R package.
+- **Student feedback:** Rated by students as one of the most engaging modules. Three sources: a mid-module review I ran myself, the end-of-term module feedback, and informal feedback (one email kept as a screenshot). This is the basis for the "rated by students as one of the most engaging" line in `cv/content/teaching-roles.yml`.
 
 ### Advanced Statistics
 
@@ -508,13 +509,13 @@ neuroscience topics.
 - **Institution:** University of Sussex
 - **Location:** Brighton, United Kingdom
 - **Level:** Lab members (PhD students, research assistants and dissertation students in the Reality Bending Lab)
-- **Status:** In preparation as of 21 September 2026; not yet delivered.
+- **Status:** Scheduled for the week of 28 September 2026 (in preparation as of 21 September 2026).
 - **Details:**
   - Subtitled "Coding with an AI agent in the loop". On using coding agents for research work without handing over understanding of the code: what an agent is and how it differs from autocomplete or a chat assistant, GitHub as the prerequisite that makes agent-written changes reviewable and reversible, working directories and projects, `AGENTS.md` (and supporting markdown files) as the way to give an agent standing instructions about a repository, the agentic workflow cycle, and the one-task-one-session discipline.
   - Emphasises verification and learning over "vibe coding": small changes one at a time, agents' confident mistakes and hard-to-read code, the rule that you don't know code does what the agent claims until you understand how it works, and using the agent as a tutor (attempt first, then ask for a review that explains rather than rewrites).
   - Surveys the landscape (terminal agents, IDE-based agents, in-editor assistants) and works hands-on in Claude Code.
   - Deck: https://dominiquemakowski.github.io/teaching/AgenticCoding/. Slidev source in the `DominiqueMakowski/teaching` repository (https://github.com/DominiqueMakowski/teaching) under `AgenticCoding/`; working copy at `C:\Users\domma\Dropbox\ENSEIGNEMENT\teaching\AgenticCoding`. (Renamed from "Agentic Programming" / `AgenticProgramming/` on 23 September 2026.)
-  - Listed on the CV under Teaching, in the Open Science and Research Tools group of `cv/content/teaching-areas.yml`.
+  - Listed on the CV under Teaching, in the Programming and Tools row of `cv/content/teaching-areas.yml`.
 
 ### Stats & Sorcery
 
@@ -681,6 +682,13 @@ neuroscience topics.
 - Martina Sladekova (University of Sussex, 2024): candidate of Pr Andy Field; thesis on quantitative methods.
 - Frederico Micheli (University of Sussex, 2024): candidate of Pr Anil Seth; thesis on consciousness science.
 
+### Dissertation Examining and Assessment Moderation
+
+- Examiner of BSc and master's dissertations, University of Sussex, each year.
+- Moderator of assessments on other modules, University of Sussex:
+  - 2025/26: Discovering Statistics; Research Reform and Open Science; Research Skills in Psychology.
+  - 2026/27: the same three modules.
+
 ### Dissertation Supervision
 
 - Around nine undergraduate dissertation students each year since 2023.
@@ -690,6 +698,19 @@ neuroscience topics.
 - Around two placement students each year since 2024, working full time in the Reality Bending Lab.
 - Funded summer interns under the Junior Research Associate (JRA) and SoCoBio schemes.
 - Two research assistants during the first postdoc (2019-2020) and three during the Presidential Research Fellowship (2021-2022), Nanyang Technological University (NTU), Singapore.
+
+### Advising and References
+
+- **Academic Personal Tutor** (formerly "Academic Advisor") to my final-year project students, School of Psychology, University of Sussex (about 2024-present). A formal role: under the School's advising model, in place for about two years as of 2026, final-year project supervisors act as Academic Personal Tutors for their supervisees. That is around nine undergraduates a year, with advice on career paths as well as academic matters.
+- The master's dissertation students get the same academic and career advice as part of their supervision (University of Sussex, 2023-present), outside the formal tutoring role.
+- Around ten or more reference letters a year for current and former students: PhD, master's, job and scholarship applications.
+- Career guidance beyond my own students: the "From Academia to Data Science" talk for Sussex postdoctoral researchers (see [Talks and Media](#talks-and-media)), and the advice posts for students on the lab blog (see [Service and Leadership](#open-science-and-research-culture)).
+
+### Selection and Interviewing
+
+- Interviewed every candidate recruited to my groups, at both the University of Sussex and Nanyang Technological University (NTU): PhD students, research assistants, placement students, and Junior Research Associate (JRA) and SoCoBio summer interns.
+- Co-interviewer for colleagues' recruitment.
+- Interview panel member for the School of Psychology PhD scholarships, University of Sussex, on several occasions. Also recorded under [Service and Leadership](#institutional-service).
 ---
 
 ## Consultancy and Knowledge Exchange
@@ -1463,6 +1484,7 @@ mistaken for talks and added back.
 
 ### Media and Public Engagement
 
+- Contributed a live demonstration to a University of Sussex Open Day, June 2026 (exact day not on record): guitar sound modulated in real time by facial electromyography (fEMG). Oliver Collins, a student in the lab (JRA scholar, 2026; see [Awards](#student-awards)), played the guitar while moving his face, and the guitar's sound was filtered in Python according to the fEMG signal, using the lab's physiological recording equipment and processing pipelines developed in the lab. Presented by the student, not by me; the lab supplied the equipment, the pipeline and the demonstration.
 - Research featured in online journal, *Attractiveness shapes beliefs about whether faces are real or AI-generated, study finds*. 7 July 2025, psypost.org. https://www.psypost.org/attractiveness-shapes-beliefs-about-whether-faces-are-real-or-ai-generated-study-finds/
 - Invited on the *Learning Bayesian Statistics* podcast, episode #55, *Neuropsychology, Illusions & Bending Reality, with Dominique Makowski*. Published 1 February 2022, recorded November 2021. https://www.learnbayesstats.com/episode/55-neuropsychology-illusions-bending-reality-dominique-makowski `2021_11_24_LearnBayesPodcast`
 - Speaker at Pint of Science, *Back to the Matrix : pilule bleue ou rouge ?* 16 May 2018, Paris, France. https://pintofscience.com/ `2018_05_14_PoS`
@@ -1494,6 +1516,7 @@ See also the *Breaking Barriers to Reproducibility* interview under
 
 - Academic Lead, Research Participation Scheme (SONA), School of Psychology, University of Sussex (2025-present). Redesigned the credit allocation and study approval rules of the School's research participation scheme to make it fairer and more transparent for both students and researchers. Trialled changes aimed at increasing the educational value of participation for students while simultaneously improving data quality, including measures to address low-effort responding.
 - Member, Cross-Schools Research Ethics Committee (C-REC), University of Sussex (2023-present).
+- Interview panel member, School of Psychology PhD scholarships, University of Sussex (several rounds). Details of the lab's own recruitment are under [Supervision](#selection-and-interviewing).
 
 ### Open Science and Research Culture
 
@@ -1564,6 +1587,22 @@ track. Grouped by `Domain`, newest first within each domain.
 - **Location:** Paris, France
 - **Duration:** 40 h
 - **Notes:** Training in pedagogy and innovative teaching.
+
+### University of Sussex Staff Training: Equality, Safeguarding and Data Protection
+
+- **Domain:** Professional
+- **Dates:** 2023-2025
+- **Institution:** University of Sussex (LearnUpon staff training platform)
+- **Location:** Online
+- **Notes:**
+  - Mandatory HR training for Sussex staff, completed on joining and refreshed since. Recorded here because the equality, bias, recruitment and safeguarding courses answer application criteria (the Equality Act and Public Sector Equality Duty, inclusive environments, pastoral care), not because a short mandatory course is a distinction.
+  - Diversity in the Workplace — completed 10 February 2023 (score 90, passed; 1 h). Three-year certificate to February 2026; the LearnUpon record shows auto-recertification on 8 February 2026.
+  - Unconscious Bias (mandatory for Grades 7 and above) — completed 10 February 2023 (passed; 45 min).
+  - Recruitment and Selection (mandatory for Grades 5 and above) — completed 10 February 2023 (45 min).
+  - Safeguarding Essentials — completed 3 September 2023 (v.1, passed) and again 15 November 2024 (v.2) (1 h each).
+  - Addressing Harassment and Sexual Misconduct Affecting Students in Higher Education — completed 8 August 2025 (passed; 1 h).
+  - GDPR — completed 9 February 2023 (score 100, passed); Data Protection Refresher — completed 13 September 2024 (score 80, passed; certificate to 13 September 2026).
+  - Left out as not relevant to applications: fire awareness, health and safety, finance and purchasing, travel and expenses, the Worktribe research management system, freedom of information, counter fraud and anti-money laundering.
 
 ### Certified Hypnotherapist
 
