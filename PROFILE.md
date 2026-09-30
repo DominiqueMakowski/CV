@@ -15,7 +15,20 @@ Resolve and delete each line once settled.
 
 ### Facts to confirm
 
-None.
+- **Currency of two Singapore grants.** [Grants](#grants) records the BCSP and
+  NICE amounts in US dollars, but the documents give the same figures in
+  Singapore dollars: the Temasek Laboratories agreement endorsed for the BCSP
+  project reads S$915,427.00, and the NICE budget submitted to the NRF totals
+  S$249,730.00. If SGD is right, the CV's sterling figures (GBP 655,000 and
+  179,000, converted at the USD rate) overstate both. The USD 360,000 of the
+  Presidential Postdoctoral Fellowship may be the same case; nothing in the
+  application folder states it.
+- **Outcomes of the unfunded applications.** Most outcomes under
+  [Unfunded and Pending Applications](#unfunded-and-pending-applications) are
+  marked *(to confirm)*. Also open: whether the 2026 Leverhulme outline was
+  submitted, and whether an application to the NTU Presidential Postdoctoral
+  Fellowship went in before the successful 2020 one (the 2020 folder keeps a
+  cover letter labelled as last year's).
 
 ### Corrections to make on external profiles
 
@@ -458,7 +471,7 @@ neuroscience topics.
 - **Details:**
   - Bayesian framework.
   - Bayesian models with the brms R package.
-- **Student feedback:** Rated by students as one of the most engaging modules. Three sources: a mid-module review I ran myself, the end-of-term module feedback, and informal feedback (one email kept as a screenshot). This is the basis for the "rated by students as one of the most engaging" line in `cv/content/teaching-roles.yml`.
+- **Student feedback:** Rated by students as one of the most engaging modules. Three sources: a mid-module review I ran myself, the end-of-term module feedback, and informal feedback (one email kept as a screenshot). Quotes from my own survey and from the email are under [Quotes from Students](#bayesian-statistics-university-of-sussex). This is the basis for the "rated by students as one of the most engaging" line in `cv/content/teaching-roles.yml`.
 
 ### Advanced Statistics
 
@@ -713,6 +726,108 @@ neuroscience topics.
 - Interview panel member for the School of Psychology PhD scholarships, University of Sussex, on several occasions. Also recorded under [Service and Leadership](#institutional-service).
 ---
 
+## Quotes from Students
+
+What students have said about my teaching and supervision, with the module, the
+date and the source. Quoted as written, spelling included; `[...]` marks a cut.
+Students are identified by the programme they gave, never by name: this file is
+public, and some quotes come from private correspondence, whose originals are
+kept outside the repository.
+
+### Bayesian Statistics, University of Sussex
+
+The module is under [Academic Teaching](#bayesian-statistics). Most quotes come
+from the anonymous online evaluation survey I ran myself during the module
+(jsPsych, responses stored on OSF; the raw responses are in the
+`DominiqueMakowski/teaching` repository under `evaluation/`). Where two
+paragraphs are quoted, the first answers "What did you like best about this
+module?" and the second is the free comment at the end. Only the favourable
+comments are quoted; the suggestions for change, chiefly more hands-on practice
+in R, more depth on the computations and less revision of earlier material, are
+in the raw data.
+
+**2024 survey** (the module's first year, spring term 2023/24; opened 13 March 2024; 12 responses, 10 quoted):
+
+- PhD student, Psychology:
+
+  > Really clear and thorough introduction to Bayesian statistics, that even starts off by revising Frequentist statistics and how Bayes links to these. The course is also technical enough, without bogging the lectures down in complex math formulas that scares and confuses people. Really great stuff!
+  >
+  > Thank you for finally bringing a full taught Bayes module to Sussex! And for teaching it so clearly and engagingly:)
+
+- Visiting PhD student, auditing the module:
+
+  > the fact that it is cristal clear, and the professor provide first an in depth analisis of the frequentist statistics before presenting the bayesian one.
+  >
+  > [...] You are a very brilliant professor, that explains the contents very clearly. I enjoyed a lot this course
+
+- MRes student:
+
+  > I genuinely did not know anything about Bayesian stats before and this module has been enlightening. I enjoy the pace, content and interactiveness of the class.
+
+- Postdoctoral research fellow:
+
+  > Dom's enthuasiasm for and experience with the subject matter, and a good amount of background information presented.
+  >
+  > I've really enjoyed this module, and have taken some really useful information from it :)
+
+- MRes student, Psychological Methods:
+
+  > The detailed explanations and creativity in explaining both basic and complicated concepts
+
+- PhD student, Psychology:
+
+  > Dom's explanations are great, the recapping is really helpful each session to build up our understanding
+
+- Technician and PhD student, Psychology:
+
+  > Charismatic teacher
+  >
+  > Very interesting! I needed to know most of this for my viva [...]
+
+- MRes student:
+
+  > Dom keeps things light and is very thorough
+  >
+  > I love getting rick roll'd every week ^-^
+
+- MRes student:
+
+  > Everything's really clearly explained
+
+- PhD student, Neuroscience:
+
+  > how streamlined and neat the presentations were
+  >
+  > it's a very good course!
+
+**2025 survey** (spring term 2024/25; 13 March 2025; 5 responses, all quoted):
+
+- MRes student:
+
+  > I liked the pace, the teaching style, and the depth of detail. Everything was explained so well. It has definitely been my favourite module this term :)
+
+- PhD student, Psychology:
+
+  > Great visual explanations used to get the concepts across
+
+- MRes student:
+
+  > the code is very well explained on the slides and they are explained even further in class, it makes it very easy to go over notes and actually remember what was going on
+
+- PhD student, Neuroscience:
+
+  > It makes you think cos there a lot of questions during the teaching (a lot of them trick questions but still good). The content is good and covers a broad range of methods and components of Bayes.
+
+- MRes student:
+
+  > Relaxed pace, engaging teaching style, cake = good
+
+**Email** (9 April 2025), from an MRes student of the 2024/25 cohort:
+
+> Thank you again for this term. Bayesian Statistics has definitely been my favourite module of the MRes. The lectures were so well paced and thought out. I learned so much but never felt overwhelmed. I definitely hope to use Bayesian analyses in the future!
+
+---
+
 ## Consultancy and Knowledge Exchange
 
 Paid and invited engagements delivered outside the duties of a substantive post:
@@ -815,11 +930,15 @@ Supervision.
 
 ## Grants
 
+Awarded grants, one entry each. Applications that were not funded, or are still
+awaiting a decision, are listed briefly at the end under
+[Unfunded and Pending Applications](#unfunded-and-pending-applications).
+
 ### Consciousness Registered Reports: Illusion Sensitivity and Phenomenological Control
 
 - **Role:** Principal Investigator (PI)
 - **Dates:** 2024-2026
-- **Funder:** Centre for Open Science (COS)
+- **Funder:** Center for Open Science (COS)
 - **Scheme:** Funding Consciousness Research with Registered Reports (https://www.cos.io/blog/funding-consciousness-research)
 - **Amount:** USD 28,163
 - **Details:**
@@ -869,6 +988,31 @@ Supervision.
 - **Details:**
   - Three years of PhD fully funded. Also recorded under [Education](#education).
   - Currently commented out of the rendered CV rather than deleted.
+
+### Unfunded and Pending Applications
+
+Applications that did not lead to an award, or have not yet, newest first. Kept
+deliberately short: funder and scheme, title, role, amount requested, outcome.
+They are recorded because probation, promotion and appraisal forms ask for
+applications submitted as well as awarded, and because a resubmission starts
+from the last round. Reconstructed in September 2026 from the application
+folders. An outcome marked *(to confirm)* is inferred from the application not
+being among the awards above, not read from a decision letter; see
+[To Do](#to-do). A funded application moves up into its own entry, and one
+still being drafted is not listed until it is submitted. None of these are on
+the rendered CV except the BIAL application, which is marked there as under
+review.
+
+- **BIAL Foundation** (2026), Grants Programme 2026/27: *Measuring the Deep Self: A Computational and Psychophysiological Investigation of Prior-Weighting across Perception, Identity, and Anomalous Experience*. PI. EUR 58,843 over 36 months. Submitted 31 August 2026; under review, with the decision expected in 2027. Its stimulus set is the [Neuropsychological Tarot](#neuropsychological-tarot).
+- **Royal Society** (2026), Research Grants 2026, Round 1 (`RGS\R1\261719`): *AI-Systems falling for Illusions: Feature or Bug? Quantifying the Biases of Visual-Language Models using Machine Psychophysics*. PI. GBP 14,989. Submitted March 2026. Outcome *(to confirm)*.
+- **Leverhulme Trust** (2026), Research Project Grant, outline stage: *Attractor Dynamics of Experience Across Neural and Experiential State Spaces*. Co-applicant, with Theo Karapanagiotidis (lead) and Giulia Poerio. Amount not stated in the outline summary. Submission and outcome *(to confirm)*.
+- **UK Research and Innovation (UKRI)** (2025), Research Software Maintenance Fund (RSMF), Round 1: *NeuroKit: Sustaining Open-Source Physiological Signal Analysis Software for Health, Neuroscience, and Technology*. PI. GBP 268,027 (80% of a full economic cost of GBP 335,034), for a postdoctoral Research Software Engineer over 2026-2027. Expression of interest May 2025, full application September 2025. Not funded *(to confirm)*. Panel scores out of 6: impact 5, value beyond the software 4, feasibility 3.93, processes and procedures 3.8; the recurring criticism was that one engineer could not also carry the community-building work.
+- **University of Sussex** (2025), Faculty of Science, Engineering and Medicine (FSEM) Research Culture Call 2024/25: *Doggo/Nogo: A Collaborative Science and Art Initiative for Open Neuropsychological Assessment*. PI. GBP 4,900. Submitted January 2025. Outcome *(to confirm)*. The game is under [Measures](#measures).
+- **Chan Zuckerberg Initiative (CZI)** (2021), Essential Open Source Software for Science (EOSS), Cycle 4 (`EOSS4-0000000376`): *Neurophysiological Signal Processing with 'NeuroKit2' Python Toolbox*. PI. USD 300,150 over 24 months in the full proposal; the letter of intent had asked USD 324,300. Letter of intent March 2021, full proposal May 2021. Not funded *(to confirm)*.
+- **Singapore National Research Foundation (NRF)** (2020), Intra-CREATE Seed Collaboration Grant, Call 7: *Thresholds: Disentangling the effects of social and physical environment in the subjective experience, aesthetic judgement, wellbeing, and productivity of high-density city residents*. Co-investigator; lead PI Panos Mavros. SGD 249,840. Submitted December 2020. Not funded *(to confirm)*: the same team applied to Call 8 in 2021 and was awarded the NICE grant above.
+- **Mistletoe Research Fellowship** (2020): individual application, August 2020, to a fellowship matching researchers with companies. No project title or amount in the application. Outcome *(to confirm)*.
+- **Institut Europlace de Finance** (2020) *(funder to confirm: only the file name says "Europlace")*: *The Impact of COVID-19 Fake News on the Trust in the Political Environment and Decision Making: A Psychological and Experimental Economics Cross-cultural Study*. Co-applicant with Marco Sperduti and Annabel Chen. EUR 10,000. June 2020. Outcome *(to confirm)*.
+- **Campus France** (2019), PHC Merlion (Hubert Curien Partnership, France-Singapore), researcher projects for 2020: *A Gut Feeling of Fakeness: Understanding Embodied Mechanisms of Reality Construction*. Team member (postdoc; study implementation and data analysis), with Marco Sperduti and Annabel Chen as the two PIs. Travel and research stays over 2020-2021; the amount is not in the submitted form. Outcome *(to confirm)*.
 
 ---
 
@@ -992,7 +1136,7 @@ are expected to go out of date.
   - **Documentation:** https://realitybending.github.io/Pyllusion/
   - **Reach:** 82 GitHub stars (2026-09-15). Provides the stimuli for the Illusion
     Game (see [Measures](#measures)) and for the illusion sensitivity work funded
-    by the Centre for Open Science (see [Grants](#grants)).
+    by the Center for Open Science (see [Grants](#grants)).
   - **Publications:** cite keys in [publications.bib](publications.bib),
     which holds the full citations:
     `makowski2021parametric`, `makowski2023illusion`.

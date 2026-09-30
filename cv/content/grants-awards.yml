@@ -14,11 +14,11 @@
 # Amounts are approximate sterling equivalents, rounded to the nearest thousand.
 # All four grants were awarded in US dollars; PROFILE.md > Grants holds the
 # awarded figures. The rate used is 0.716, which is the one ORCID records for the
-# Centre for Open Science award - USD 28,163 entered there as GBP 20,175 - so the
+# Center for Open Science award - USD 28,163 entered there as GBP 20,175 - so the
 # four sit on a single documented basis rather than on four different days'
 # rates. They are approximations and should not be quoted as exact.
 #
-#   Centre for Open Science          USD  28,163
+#   Center for Open Science          USD  28,163
 #   Temasek Laboratories, NTU        USD 915,427
 #   Singapore NRF                    USD 249,730
 #   NTU Presidential Fellowship      USD 360,000  (whole award, salary included;
@@ -30,6 +30,9 @@
 # panel reports. The amount is on the line underneath so that the size of the
 # bid is still legible. Submitted 31 August 2026; the outcome is expected in
 # 2027. Drop this card, or move the euros into the corner, when it is decided.
+#
+# The other applications, unfunded or pending, are listed in PROFILE.md >
+# Grants > Unfunded and Pending Applications. They stay off the CV.
 
 - name: "Measuring the Deep Self"
   kind: grant
@@ -45,7 +48,7 @@
   url: "https://www.cos.io/blog/funding-consciousness-research"
   reach: "£20,000"
   meta: >-
-      Centre for Open Science · Registered Reports in Consciousness Research ·
+      Center for Open Science · Registered Reports in Consciousness Research ·
       PI · 2024 - 26
 
 - name: "Perception of Real vs. Fake Information"
