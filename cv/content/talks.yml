@@ -3,16 +3,17 @@
 # (`kind: conference`). Card fields as in grants-awards.yml.
 #
 # Source: PROFILE.md > Talks and Media, which holds all of it - 14 invited
-# talks, 18 conference talks and 18 posters, 2013 to present. This file holds
+# talks, 19 conference talks and 18 posters, 2013 to present. This file holds
 # a tenth of that on purpose.
 #
 # The two counts below are smaller than those totals because they count only
 # what he presented himself: they drop the two symposia listed there (the
 # symposia card also carries the NTU one, which PROFILE.md files under
 # Conference Organization) and the co-authored contributions presented by
-# Sperduti, Blonde, Lau, Osborn-Moar and Neves. They also drop the EEG-attractor
-# artwork _Unicity through Complexity_ (OHBM 2023, Neuroscience x Art track),
-# which PROFILE.md files under Posters but which was not a scientific poster.
+# Sperduti, Blonde, Lau, Osborn-Moar, Neves and Zogheib. They also drop the
+# EEG-attractor artwork _Unicity through Complexity_ (OHBM 2023, Neuroscience
+# x Art track), which PROFILE.md files under Posters but which was not a
+# scientific poster.
 # 13 talks and 11 posters is what survives. A count on a CV is a
 # claim about the person holding it, so it is the conservative reading, and
 # PROFILE.md shows the working.
@@ -21,7 +22,7 @@
 # all: PROFILE.md keeps them under its own "Submitted but Not Presented"
 # heading, and nothing from there may be counted here.
 #
-# A full chronological list of forty-nine presentations would run a page and a
+# A full chronological list of fifty presentations would run a page and a
 # half and would be read as one undifferentiated block, in which the eleven
 # French student posters of 2013-2016 sit at the same weight as a chaired
 # international symposium. The individual cards are therefore the talks that
@@ -32,9 +33,9 @@
 # Not repeated here: the invited doctoral teaching (Basel, Zurich, Paris,
 # Singapore, OHBM), which is the Invited teaching card in teaching-roles.yml;
 # the BNA open science debate and the podcast, television and Pint of Science
-# appearances, which are engagement.yml. The two contributions delivered by
-# students on joint work (Osborn-Moar at ASSC 2024, Neves at ASSC 2025) are in
-# PROFILE.md but not here: they are their talks.
+# appearances, which are engagement.yml. The three contributions delivered by
+# students on joint work (Osborn-Moar at ASSC 2024, Neves at ASSC 2025,
+# Zogheib at AFPBN 2026) are in PROFILE.md but not here: they are their talks.
 
 - name: "Reality as an Embodied Process"
   kind: invited

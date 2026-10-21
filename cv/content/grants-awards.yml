@@ -12,33 +12,37 @@
 # are the heads of the full titles, which are in PROFILE.md.
 #
 # Amounts are approximate sterling equivalents, rounded to the nearest thousand.
-# All four grants were awarded in US dollars; PROFILE.md > Grants holds the
-# awarded figures. The rate used is 0.716, which is the one ORCID records for the
-# Center for Open Science award - USD 28,163 entered there as GBP 20,175 - so the
-# four sit on a single documented basis rather than on four different days'
-# rates. They are approximations and should not be quoted as exact.
+# PROFILE.md > Grants holds the awarded figures. The Center for Open Science
+# award was made in US dollars; the three Singapore awards were made in
+# Singapore dollars (confirmed 6 October 2026; earlier versions of this file
+# wrongly treated them as US dollars, which overstated them by about a fifth).
+# USD uses 0.716, the rate ORCID records for the COS award (USD 28,163 entered
+# there as GBP 20,175). SGD uses 0.58, a round figure for the 2025-26 range
+# (0.577 at 31 Oct 2025, 0.585 at 11 Mar 2026). They are approximations and
+# should not be quoted as exact. Total about GBP 905,000.
 #
-#   Center for Open Science          USD  28,163
-#   Temasek Laboratories, NTU        USD 915,427
-#   Singapore NRF                    USD 249,730
-#   NTU Presidential Fellowship      USD 360,000  (whole award, salary included;
-#                                                  the research budget within it
-#                                                  was roughly USD 200,000)
+#   Center for Open Science          USD  28,163  -> GBP  20,000
+#   Temasek Laboratories, NTU        SGD 915,427  -> GBP 531,000
+#   Singapore NRF                    SGD 249,730  -> GBP 145,000
+#   NTU Presidential Fellowship      SGD 360,000  -> GBP 209,000  (whole award,
+#                                                  salary included; the research
+#                                                  budget within it was roughly
+#                                                  SGD 200,000)
 
 # An application, not an award, and marked as one in the corner where every
-# other card carries money: "Under review" is the honest figure until the
-# panel reports. The amount is on the line underneath so that the size of the
-# bid is still legible. Submitted 31 August 2026; the outcome is expected in
-# 2027. Drop this card, or move the euros into the corner, when it is decided.
+# other card carries money: "Pending" is the honest figure until the panel
+# reports. The amount (EUR 58,843) is deliberately left off the card. Submitted
+# 31 August 2026; the outcome is expected in 2027. Drop this card, or move the
+# euros into the corner, when it is decided.
 #
 # The other applications, unfunded or pending, are listed in PROFILE.md >
 # Grants > Unfunded and Pending Applications. They stay off the CV.
 
 - name: "Measuring the Deep Self"
   kind: grant
-  reach: "€58,843"
+  reach: "Pending"
   meta: >-
-      BIAL Foundation · Grants Programme 2026/27 · Under review
+      BIAL Foundation · Grants Programme 2026/27
   description: >-
       Prior-weighting in predictive processing as a single trait across belief
       updating, perception and self-reference.
@@ -53,21 +57,21 @@
 
 - name: "Perception of Real vs. Fake Information"
   kind: grant
-  reach: "£655,000"
+  reach: "£531,000"
   meta: >-
       Temasek Laboratories, NTU · Behavioural and Communication Science
       Programme · co-PI · 2022 - 25
 
 - name: "Crowdedness and Environment Typology (NICE)"
   kind: grant
-  reach: "£179,000"
+  reach: "£145,000"
   meta: >-
       Singapore National Research Foundation · Intra-CREATE Grant · co-PI ·
       2021 - 22
 
 - name: '"That''s Fake News": Belief in Deceptive Information'
   kind: grant
-  reach: "£258,000"
+  reach: "£209,000"
   meta: >-
       Nanyang Technological University · Presidential Postdoctoral Fellowship ·
       PI · 2021 - 22

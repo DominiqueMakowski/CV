@@ -15,20 +15,18 @@ Resolve and delete each line once settled.
 
 ### Facts to confirm
 
-- **Currency of two Singapore grants.** [Grants](#grants) records the BCSP and
-  NICE amounts in US dollars, but the documents give the same figures in
-  Singapore dollars: the Temasek Laboratories agreement endorsed for the BCSP
-  project reads S$915,427.00, and the NICE budget submitted to the NRF totals
-  S$249,730.00. If SGD is right, the CV's sterling figures (GBP 655,000 and
-  179,000, converted at the USD rate) overstate both. The USD 360,000 of the
-  Presidential Postdoctoral Fellowship may be the same case; nothing in the
-  application folder states it.
 - **Outcomes of the unfunded applications.** Most outcomes under
   [Unfunded and Pending Applications](#unfunded-and-pending-applications) are
   marked *(to confirm)*. Also open: whether the 2026 Leverhulme outline was
   submitted, and whether an application to the NTU Presidential Postdoctoral
   Fellowship went in before the successful 2020 one (the 2020 folder keeps a
   cover letter labelled as last year's).
+- **Details of three training entries recovered from the old personal website**
+  (October 2026), which recorded only title, year and institution:
+  [Multiscale Neurodynamics of Emotions](#multiscale-neurodynamics-of-emotions-and-their-pathologies-from-oscillations-to-complex-networks),
+  [Introduction to Statistics with R](#introduction-to-statistics-with-r) and
+  [Italian Language](#italian-language). Durations, instructors and certificates
+  are still to be filled in.
 
 ### Corrections to make on external profiles
 
@@ -36,6 +34,13 @@ Cases where this file is right and a profile elsewhere is wrong, stale or
 incomplete. This repo is upstream: fix the other place, not this one. What goes
 in which field is under [External Profiles](#external-profiles); this list is
 only what is still outstanding.
+
+All profiles:
+
+- **Singapore grant currency.** The three NTU and NRF amounts (and the
+  ~200,000 fellowship research budget) are in Singapore dollars, confirmed on 6
+  October 2026; they were long given as USD. Check ORCID Funding, LinkedIn and
+  the lab website (`profile.json`) for "USD" or "US$" next to any of them.
 
 ORCID (https://orcid.org/0000-0001-5375-9967):
 
@@ -233,6 +238,7 @@ Consultancy, not teaching on this profile.
 - **Details:** 
   - PhD Title: "Cognitive Neuropsychology of Implicit Emotion Regulation through Fictional Reappraisal"
   - Thesis defended in November 2018.
+  - Thesis record: https://theses.fr/2018USPCB188
   - PhD Supervisors: Pr Serge Nicolas (http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Serge-Nicolas); Pr Pascale Piolino (http://recherche.parisdescartes.fr/LaboratoireMemoireCognition/Membres/Enseignants-Chercheurs/Pascale-Piolino)
   - PhD Funding: Ministerial PhD scholarship — three years of PhD fully funded by the French Ministry of Research, 2014-2017, EUR 80,000 (also recorded under Grants)
 
@@ -306,7 +312,7 @@ details.
   - Exact boundaries: the fellowship ran from December 2020 to January 2023, as recorded on LinkedIn and ORCID. The span above is tidied so that it abuts the first postdoc and the Sussex post.
   - The NTU Presidential Postdoctoral Fellowship is a competitive two-year grant meant as an intermediate step between postdoc and faculty ("senior" postdoctoral position).
   - Own research track on the neurocognitive and affective processes underlying the beliefs in fake vs. real stimuli (fake news, fiction, ...), while integrated within a larger team (the Clinical Brain Lab, https://www.clinicalbrain.org/, directed by Pr Annabel Chen, https://www.clinicalbrain.org/author/annabel-chen/).
-  - Managed own team (3 research assistants and several undergraduate students) and a research budget of roughly USD 200,000. The fellowship award was larger, USD 360,000, because it covered salary as well; see [Grants](#grants).
+  - Managed own team (3 research assistants and several undergraduate students) and a research budget of roughly SGD 200,000. The fellowship award was larger, SGD 360,000, because it covered salary as well; see [Grants](#grants).
 
 ### Research Fellow
 
@@ -471,7 +477,7 @@ neuroscience topics.
 - **Details:**
   - Bayesian framework.
   - Bayesian models with the brms R package.
-- **Student feedback:** Rated by students as one of the most engaging modules. Three sources: a mid-module review I ran myself, the end-of-term module feedback, and informal feedback (one email kept as a screenshot). Quotes from my own survey and from the email are under [Quotes from Students](#bayesian-statistics-university-of-sussex). This is the basis for the "rated by students as one of the most engaging" line in `cv/content/teaching-roles.yml`.
+- **Student feedback:** Rated by students as one of the most engaging modules. Three sources: a mid-module review I ran myself, the end-of-term module feedback, and informal feedback (one email kept as a screenshot, and one public LinkedIn post). Quotes from my own survey, the email and the post are under [Quotes from Students](#bayesian-statistics-university-of-sussex). This is the basis for the "rated by students as one of the most engaging" line in `cv/content/teaching-roles.yml`.
 
 ### Advanced Statistics
 
@@ -732,7 +738,8 @@ What students have said about my teaching and supervision, with the module, the
 date and the source. Quoted as written, spelling included; `[...]` marks a cut.
 Students are identified by the programme they gave, never by name: this file is
 public, and some quotes come from private correspondence, whose originals are
-kept outside the repository.
+kept outside the repository. The one exception is a public LinkedIn post, quoted
+under the author's name and linked, with their agreement.
 
 ### Bayesian Statistics, University of Sussex
 
@@ -826,6 +833,10 @@ in the raw data.
 
 > Thank you again for this term. Bayesian Statistics has definitely been my favourite module of the MRes. The lectures were so well paced and thought out. I learned so much but never felt overwhelmed. I definitely hope to use Bayesian analyses in the future!
 
+**LinkedIn post** (September 2026, public; [link](https://www.linkedin.com/posts/mahima-das-880876210_what-a-year-full-of-memories-and-lots-of-ugcPost-7510191264949100544-ENA_/)), from Mahima Das, MRes student (2025/26 cohort). Quoted with their agreement; the post is a general reflection on their year, and only the passage on the module is given here:
+
+> I specially would also thank one of my most cherished modules- Bayesian statistics taught by Dr. Dominique; without your guidance and teaching, I wouldn't dare to come out of the frequentist illusion and learn the world beyond it.
+
 ---
 
 ## Consultancy and Knowledge Exchange
@@ -869,6 +880,21 @@ Supervision.
 - **Location:** United Kingdom
 - **Details:**
   - Recording of a re-usable "Introduction to GitHub" lecture for PhD students across the SEDarc partnership of six UK universities.
+
+### Invited Instructor (Bayesian Statistics, Kraków) - agreed, not delivered
+
+- **Type:** Instructor
+- **Dates:** 2025 (planned)
+- **Institution:** Doctoral School of Social Sciences, Jagiellonian University
+- **Location:** Kraków, Poland
+- **Duration:** 16 h planned (two full days, 8 h each, 9:00-17:00)
+- **Status:** Agreed with the host and the syllabus approved, then cancelled by me for personal reasons before it took place. Not delivered. Describe it as an invitation ("invited by the Doctoral School in Kraków to teach..."), never as a course taught.
+- **Details:**
+  - Organised with Szymon Wichary (dr hab., prof. UJ; deputy director of the Institute of Psychology and director of the CogNeS doctoral studies at Jagiellonian University; https://psychologia.uj.edu.pl/szymon-wichary), who approved the syllabus.
+  - Course: "Bayesian Statistics in R for Psychologists and Neuroscientists". English; optional; open to doctoral students in all years; 16 contact hours (8 h x 2); 2 ECTS. Prerequisite: basic statistics (linear models). Delivered as lecture, exercises and practice; class activity monitored, no exam.
+  - Learning outcomes in the syllabus: the principles of Bayes' theorem and its applications; fitting models and selecting priors; describing posterior distributions with credible intervals and indices of effect "significance"; reporting and visualising Bayesian models.
+  - Content: a refresher on R and frequentist statistics, then probabilities, distributions and bootstrapping, then Bayes' theorem and its use on real data.
+  - The host offered to try to cover travel costs; whether accommodation would be covered was asked and is not recorded.
 
 ### Contracted Instructor (Psychophysiology)
 
@@ -950,7 +976,8 @@ awaiting a decision, are listed briefly at the end under
 - **Dates:** 2022-2025
 - **Funder:** Temasek Laboratories at Nanyang Technological University (TL@NTU)
 - **Scheme:** Behavioural and Communication Science Programme (BCSP) Grant (https://www.ntu.edu.sg/temasek-labs/research-focus/programme)
-- **Amount:** USD 915,427
+- **Amount:** SGD 915,427
+  - Singapore dollars, as in the Temasek Laboratories agreement endorsed for the project (S$915,427.00). Earlier versions of this file, the CV and several applications gave it as USD; confirmed SGD on 6 October 2026.
 - **Details:**: 
   - Co-PI with Pr Annabel Chen
   - Technically PI but listed as co-PI because I was a postdoctoral researcher at the time.
@@ -963,7 +990,8 @@ awaiting a decision, are listed briefly at the end under
 - **Dates:** 2021-2022
 - **Funder:** Singapore National Research Foundation (NRF)
 - **Scheme:** Intra-CREATE Grant (https://researchgrant.gov.sg/Pages/GrantCallDetail.aspx?AXID=NRF2021-ITS008&CompanyCode=nrf)
-- **Amount:** USD 249,730
+- **Amount:** SGD 249,730
+  - Singapore dollars, as in the budget submitted to the NRF (S$249,730.00). Earlier versions gave it as USD; confirmed SGD on 6 October 2026.
 - **Details:**
   - Project page: https://fcl.ethz.ch/research/research-projects/NICE.html
   - Co-PI with [Dr Panos Mavros](https://www.telecom-paris.fr/panos-mavros), postdoc at the time at NUS
@@ -974,10 +1002,11 @@ awaiting a decision, are listed briefly at the end under
 - **Dates:** 2021-2022
 - **Funder:** Nanyang Technological University (NTU)
 - **Scheme:** NTU Presidential Postdoctoral Fellowship (https://www.ntu.edu.sg/research/research-careers/presidential-postdoctoral-fellowship-(ppf))
-- **Amount:** USD 360,000
+- **Amount:** SGD 360,000
 - **Details:**
   - This grant is the fellowship award: the two are one and the same, and the fellowship itself is recorded under [Positions](#positions). The dates follow it.
-  - The USD 360,000 is the whole award, salary included. The research budget within it, the part actually managed and spent on the work, was roughly USD 200,000 — which is the figure LinkedIn and the lab website give, and why the two numbers differ. From recollection; the award letter would settle the split exactly.
+  - Singapore dollars, confirmed on 6 October 2026; earlier versions gave USD.
+  - The SGD 360,000 is the whole award, salary included. The research budget within it, the part actually managed and spent on the work, was roughly SGD 200,000 — which is the figure LinkedIn and the lab website give, and why the two numbers differ. From recollection; the award letter would settle the split exactly.
 
 ### Ministerial PhD Scholarship
 
@@ -1448,6 +1477,13 @@ packages not listed here, are under [Software and Tools](#software-and-tools).
 - **psycho:** 190,096 CRAN downloads before deprecation.
 - **OpenMuse:** 87 GitHub stars, the most-starred repository on my personal GitHub account.
 
+**Impact-case metrics (15 October 2026).** Computed by the scripts in
+`RECHERCHE/applications/Awards/2027_ImpactCaseSoftware` (sources and methods in its
+`plan.md`); the numbers are also shown in that folder's two infographics.
+
+- **easystats:** ranked by CRAN downloads from October 2025 to September 2026, out of 25,325 packages: insight 253rd (top 1%), datawizard 294th, performance 332nd, bayestestR 347th, parameters 361st, effectsize 446th; all ten packages in the top 6% (report is 1,292nd), and the easystats meta-package 1,634th. 92 CRAN packages import an easystats package directly and 153 more depend on one indirectly (245, 1.0% of CRAN), plus 10 Bioconductor packages; these dependents were downloaded 6.3 million times over the same 12 months. One week of raw CRAN logs (5 to 11 October 2026) recorded downloads from 162 countries. Cited by 11,263 unique works in OpenAlex, 253 of them in the top 1% of their field and year, with authors in 167 countries. Since January 2023 (Sussex): 30.0 million of the downloads (71%) and 186 of the 402 CRAN releases, 28 of them of bayestestR and modelbased.
+- **NeuroKit2:** 2,751,079 PyPI downloads to 14 October 2026, from 159 countries; 1.39 million from October 2025 to September 2026, rank 11,235 of 1,028,830 PyPI packages (top 1.1%), and 4.6 times as many as BioSPPy, the next Python toolbox that covers several physiological signals. Used by 944 GitHub repositories and 66 packages (GitHub dependency graph); 51 PyPI projects declare it as a requirement. Cited by 1,849 unique works in OpenAlex, 63 of them in the top 1%. Since January 2023 (Sussex): 2.55 million of the downloads (93%), 10 of the 40 PyPI releases, and 363 of the 958 commits (38%).
+
 **easystats in teaching materials.** Found by a cursory web search on 23 September
 2026, plus one reported directly; not exhaustive.
 
@@ -1544,6 +1580,7 @@ kick-offs and reading groups are in the archive but not on this list.
 
 ### Conference Talks and Symposia
 
+- Zogheib, J.†, **Makowski, D.**†, Elhssaini, C., Kervadec, E., Roméo, B., Piolino, P., Sperduti, M.‡ & Fauvel, B.‡ (2026). *Psychédéliques, flexibilité psychologique, et effet de référence à soi en mémoire associative*. Journées Scientifiques de l'Association Française de Psychiatrie Biologique et de Neuropsychopharmacologie (AFPBN), "Troubles de l'humeur, schizophrénie, addictions", Mama Shelter Paris West, Paris, France, 24 September 2026. Presented by Joy Zogheib, a student, in the session *Neurostimulation et innovations thérapeutiques en psychiatrie* (10-minute talk and 5 minutes of discussion). Shared first authorship with Joy Zogheib (†) and shared senior authorship between Marco Sperduti and Baptiste Fauvel (‡), as marked on the title slide; Baptiste Fauvel is the corresponding author. The programme lists the presenter only; the author list is from the title slide. `2026_09_AFPBN_Paris`
 - **Artificial Emotion: Affective Responses and Interaction with Artificial Intelligence**. Symposium co-organised with Marco Sperduti (Università di Roma Tor Vergata). European Society for Cognitive and Affective Neuroscience (ESCAN), Sapienza University, Rome, 2026. `2026_ESCAN_Rome`
 - **The Value of Reality in the Post-Truth Era: Consequences of AI-Authorship on Cognitive and Affective Phenomenology**. Symposium chaired with Marco Sperduti (Università di Roma Tor Vergata) and Marco Viola (Università Roma Tre). Italian Association for Cognitive Sciences (AISC), Rome, Italy, September 2024. Chaired only: no talk of his own in it, which is why the archive folder holds travel documents and no deck. `2024_09_AISC_Rome`
 - Osborn-Moar, C. & **Makowski, D.** (2024). *Visual Illusions: A New Paradigm for Exploring Perceptual Diversity*. 27th annual meeting of the Association for the Scientific Study of Consciousness (ASSC), University of Tokyo, Tokyo, Japan, 2-5 July 2024. Presented by Catriona Osborn-Moar. The archive folder is misnamed with an August date. `2024_08_ASSC_Catriona`
@@ -1757,6 +1794,7 @@ track. Grouped by `Domain`, newest first within each domain.
 - **Duration:** 100 h
 - **Instructor:** Fauziah Shah
 - **Notes:** 
+  - Course taken at the Petra Hypnosis Centre, Singapore.
   - License to practice as a certified hypnotherapist. Registered as Certified Hypnotherapist by the National Guild of Hypnotists on 2 December 2019, credential ID 69222.
   - Four further certifications awarded the same day by the Banyan Hypnosis Center for Training and Services (Dallas, Texas), also under Fauziah Shah: Master Hypnotist (course of study in Mastering Hypnosis); 5-PATH (Five-Phase Advanced Transformational Hypnosis) Hypnotherapist; 7th Path Self-Hypnosis Teacher; and Certified Hypnosis Professional of the 5-PATH International Association of Hypnosis Professionals.
   - Primarily done for academic interest (relationship with Phenomenological Control) rather than for clinical practice.
@@ -1788,6 +1826,13 @@ track. Grouped by `Domain`, newest first within each domain.
 - **Duration:** 32 h
 - **Instructor:** Dr Paul Johns
 - **Notes:** Certificate ("Human Brain Anatomy Course") issued 28 January 2021; approved by the Royal Society of Biology for 72 Continuing Professional Development (CPD) points.
+
+### Multiscale Neurodynamics of Emotions and their Pathologies: from Oscillations to Complex Networks
+
+- **Domain:** Neuroimaging
+- **Dates:** 2017
+- **Institution:** University of Lille
+- **Location:** Lille, France
 
 ### Magnetic Resonance Imaging (MRI) Connectivity Analysis
 
@@ -1881,6 +1926,29 @@ track. Grouped by `Domain`, newest first within each domain.
 - **Location:** Paris, France
 - **Duration:** 16 h
 - **Instructor:** Dr François Vialatte
+
+### Introduction to Statistics with R
+
+- **Domain:** Statistics and programming
+- **Dates:** 2014
+- **Institution:** Université Paris-Sud
+- **Location:** France
+
+### Italian Language
+
+- **Domain:** Languages
+- **Dates:** 2020
+- **Institution:** APICS (https://www.apics.com.sg/)
+- **Location:** Singapore
+- **Notes:** Italian course; current level under [Languages](#languages).
+
+### History of Arts and Archaeology (Bachelor, first year)
+
+- **Domain:** Miscellaneous
+- **Dates:** 2020
+- **Institution:** Université de Lille
+- **Location:** France
+- **Notes:** Started in 2020 but abandoned due to COVID-19 travel restrictions; not completed.
 
 ### History of Arts
 
